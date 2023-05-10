@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/fundo-body1.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+}
+
+li a {
+    text-decoration: none;
+}
+
+.top {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 5%;
+    margin-left: 2%;
+    display: flex;
+}
+
+.logo a {
+    margin: auto;
+}
+
+.login {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.lng-google {
+    bottom: 0;
+}
+
+.menu-top {
+    width: 100%;
+    height: 10vh;
+    background-color: #004FA3;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.pages {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.pages button {
+    width: auto;
+    color: #fff;
+
+}
+
+.srch-btn {
+    width: 15%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wellcome {
+    width: 70%;
+    max-width: 600px;
+    height: 50vh;
+    margin: 10vh auto;
+    background-color: #ffffff9c;
+    border: 1px solid #000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+}
+
+.info-title {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
