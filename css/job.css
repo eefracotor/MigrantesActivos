@@ -1,0 +1,28 @@
+.job-title{
+    width: 800px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #ffffff9c;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.main-info {
+    width: 750px;
+    height: auto;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: #ffffff9c;
+}
+
+.main-info p {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+}
