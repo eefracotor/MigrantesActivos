@@ -23,7 +23,8 @@ img {
 ul {
     list-style: none;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 li a {
@@ -41,7 +42,7 @@ li a {
 }
 
 .logo {
-    width: 5%;
+    width: 15%;
     margin-left: 2%;
     display: flex;
 }
@@ -75,6 +76,11 @@ li a {
     width: auto;
     display: flex;
     align-items: center;
+}
+
+.btn img {
+    width: 80%;
+    filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(107%) contrast(100%);
 }
 
 .pages button {
@@ -153,3 +159,4 @@ li a {
 .card-descrip {
     font-size: 1rem;
 }
+
