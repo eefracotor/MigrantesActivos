@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="resources/css/login.css">
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+        <h2>Registro</h2>
+        <form id="signupForm" action="register" method="POST">
+            <div class="inputbox">
+                <ion-icon name="full-name-outline"></ion-icon>
+            <label>Nombre</label>
+            <input type="text"  id="name" name="name" required autofocus>
+            </div>
+            
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+            <label>Mail</label>
+            <input type="text"  id="user" name="user" >
+                </div>
+            
+                <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <label>Contraseña</label>
+                <input type="password"  id="pass" name="pass" required >
+                </div>
+
+                <div class="" id="select">
+                    <!-- <p id="selecion">select</p> -->
+                    <div>
+                        <label for="mgt">Migrante</label>
+                        <input type="radio" id="mgt" name="rol" value="migrante">
+                    </div>
+                   <div>
+                       <label for="inc">Empresa</label>
+                       <input type="radio" id="inc" name="rol" value="empresa">
+                   </div>
+                    </div>
+            <input type="submit" value="Registro" class="button">
+            <div class="Register">
+            <p>do you already have an account?<a href="login">Login</a></p>
+            </div>
+            </div>
+        </div>
+        </form>
+       
+    </section>
+    <!-- <script src="resources/javascript/register.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+                title:'<%= alertTitle %>',
+                text:'<%= alertMessage %>',
+                icon:'<%= alertIcon %>',
+                showConfirmButton: <%= showConfirmButton %> ,
+                timer: <%= timer %>
+            }).then(()=>{
+                window.location = '/<%= ruta %>'
+            })
+        </script>
+    <% } %>
+</body>
+</html>
