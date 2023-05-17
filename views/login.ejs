@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="resources/css/login.css">
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+        <h2>Login</h2>
+        <form id="loginForm" action="auth" method="POST">
+                <div class="inputbox">
+                    <ion-icon name="full-mane-outline"></ion-icon>
+                    <label>E-mail</label>
+                    <input type="text"  id="user" name="user" autofocus>
+                </div>
+                <div class="inputbox">
+                 <ion-icon name="full-mane-outline"></ion-icon>
+            <label>Password</label>
+            <input type="password"  id="pass" name="pass">
+            </div>
+
+            <div class="forget">
+                <label for=""><input type="checkbox">Remember Me </label> 
+            </div>
+
+            <input type="submit" value="Login" class="button">
+        </form> 
+
+            <div class="Register">
+                <p>You do not have an account? <a href="register">Register</a></p>
+                <a href="newpassword">I forgot my password  </a>
+            </div>
+               
+        </section>
+        
+        
+        
+    <!-- <script src="resources/javascript/login.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11%22%3E</script> -->
+    
+
+        <% if(typeof alert != "undefined") { %>
+            <script>
+                Swal.fire({
+                    title:'<%= alertTitle %>',
+                    text:'<%= alertMessage %>',
+                    icon:'<%= alertIcon %>',
+                    showConfirmButton: <%= showConfirmButton %> ,
+                    timer: <%= timer %>
+                }).then(()=>{
+                    window.location = '/<%= ruta %>'
+                })
+            </script>
+        <% } %>
+</body>
+</html>
