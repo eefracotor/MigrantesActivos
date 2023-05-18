@@ -25,9 +25,12 @@ img {
 .mr-title{
     width: 800px;
     margin: auto;
+    margin-bottom: 50px;
     padding: 5px;
-    border-radius: 25px;
-    background-color: #ffffff9c;
+    border-radius: 5px 25px;
+    background-color: #f2f2f2;
+    /* background-color: #ffffff9c; */
+    /* background-color: #E0FFFF; */
 }
 
 .mr-title h1 {
@@ -48,11 +51,13 @@ img {
     height: auto;
     margin: auto;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     text-align: justify;
-    border: 1px solid #000;
-    border-radius: 25px;
-    background-color: #ffffff9c;
+    /* border: 1px solid #000; */
+    border-radius: 5px 25px;
+    background-color: #f2f2f2;
+    /* background-color: #ffffff9c; */
+    /* background-color: #E0FFFF; */
 }
 
 .main-info p {
@@ -63,8 +68,10 @@ img {
 
 .carousel {
     width: 100%;
-    height: auto;
-    background-color: #ffffff9c;
+    height: 100px;
+    background-color: #f2f2f2;
+    /* background-color: #ffffff9c; */
+    /* background-color: #E0FFFF; */
     display: flex;
     
 }
@@ -121,6 +128,16 @@ img {
     font-weight: 600;
 }
 
+.who-visa {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 .whatsis-visa, 
 .who-visa, 
 .cfooter1, 
@@ -131,13 +148,14 @@ img {
 .cfooter6 {
     display: none;
 }
+
 /* .card-descrip-visa p {
     font-size: 1rem;
     text-align: justify;
 } */
 
 /* Estilos CPF */
-.card-container-cpf, .card-container-visa {
+.card-container-cpf, .card-container-visa, .mapa-container {
     width: 100%;
     max-width: 1700px;
     height: auto;
@@ -156,7 +174,9 @@ img {
     overflow: hidden;
     text-align: center;
     transition: all 0.25s;
-    background-color: #E0FFFF;
+    /* background-color: #E0FFFF; */
+    background-color: #f2f2f2;
+    /* background-color: #ffffff9c; */
     margin: 20px;
 }
 
@@ -168,7 +188,9 @@ img {
     overflow: hidden;
     text-align: center;
     transition: all 0.25s;
-    background-color: #E0FFFF;
+    /* background-color: #E0FFFF; */
+    background-color: #f2f2f2;
+    /* background-color: #ffffff9c; */
     margin: 20px;
 }
 
@@ -208,8 +230,12 @@ img {
 }
 
 .cft {
+    width: 50px;
     margin-bottom: 25px;
 }
+
+
+
 .cfooter {
     margin-bottom: 0;
     border-top: 1px solid rgba(0,0,0,0);
@@ -233,35 +259,39 @@ img {
 
 .mr-details-title {
     width: 50%;
-    background-color: #E0FFFF;
+    /* background-color: #ffffff9c; */
+    background-color: #f2f2f2;
+    /* background-color: #E0FFFF; */
     text-align: center;
-    border-radius: 15px;
+    border-radius: 5px 25px;
     padding: 20px;
-    margin-top: 20px;
     margin: auto;
+    margin-bottom: 25px;
 }
 
 /* Estilos Mapa */
 
-.mapa-container {
-    width: 80%;
+/* .mapa-container { */
+    /* width: 80%;
     height: auto;
     display: flex;
-    margin: auto;
+    margin: auto; */
     /* justify-content: center;
     align-items: center; */
-}
+/* } */
 
 .mapa-info {
     width: 600px;
     height: auto;
     margin: auto;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     text-align: justify;
-    border: 1px solid #000;
-    border-radius: 25px;
-    background-color: #ffffff9c;
+    /* border: 1px solid #000; */
+    border-radius: 5px 25px;
+    background-color: #f2f2f2;
+    /* background-color: #ffffff9c; */
+    /* background-color: #E0FFFF; */
 }
 
 .mapa-info p {
@@ -288,3 +318,111 @@ img {
     /* stroke: #8B4513;
     stroke-width: 1px; */
  }
+
+ .cft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .whatsis-visa {
+    padding: 30px;
+ }
+
+ .whatsis-visa p {
+    font-size: 1.2rem;
+    font-weight: 500;
+ }
+
+ #whatsis-visa img, #who-visa img, .cft img {
+    width: 50px;
+    height: 50px;
+}
+
+.cft img {    
+    margin-top: 0;
+}
+
+#whatsis-visa img:hover, #who-visa img:hover, .cft img {
+    cursor: pointer
+}
+
+
+.rotated {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.rotated1 {
+    transform: rotate(-180deg);
+    transition: 0.3s;
+}
+
+.ask-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Estilos Modales */
+.modal-dialog {
+    max-width: 600px;
+    /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+}
+
+.modal-content {
+    border-radius: 35px 5px 5px 5px;
+}
+
+.modal-body {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0;
+}
+
+.th5 {
+    height: 75px;
+    background-color: #c1c1c1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);;
+}
+
+.th5 h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.txt {
+    padding: 35px;
+    /* background-color: #cecece; */
+}
+
+.btn-secondary {
+    margin: auto;
+    display: flex;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: navy;
+    text-transform: uppercase;
+    border-radius: 15px 5px;
+}
+
+.btn-close {
+    background-color: #ff0000
+    width: 2em;
+    height: 2em;
+}
