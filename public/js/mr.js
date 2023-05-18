@@ -5,7 +5,7 @@ var refugio = document.getElementById("mr-refugio")
 var wheretogo = document.getElementById("mr-wheretogo")
 var afterBtn = document.getElementById("after")
 var nextBtn = document.getElementById("next")
-const vistas = ["Main Info","Residence","CPF","Refugio","Where to go"]
+const vistas = ["Migratory Regularization","Residence","CPF","Refugio","Superintendencies and Police Stations"]
 var i = 0
 
 
@@ -17,8 +17,10 @@ function btnVisa(){
     btnWV.addEventListener("click", function() {
         if(contWV.style.display == 'block'){
             contWV.style.display = 'none'
+            document.getElementById("whatsis-visa").classList.remove("rotated");
         } else {
             contWV.style.display = 'block'
+            document.getElementById("whatsis-visa").classList.add("rotated");
         }
     })
 }
@@ -30,101 +32,103 @@ function btnVisa2(){
     btnWHV.addEventListener("click", function() {
         if(contWV.style.display == 'block'){
             contWV.style.display = 'none'
+            document.getElementById("who-visa").classList.remove("rotated");
         } else {
             contWV.style.display = 'block'
+            document.getElementById("who-visa").classList.add("rotated");
         }
     })
 }
 
-function btnft1(){
-    var btnft1 = document.querySelector("#showFooter1")
-    var contCF = document.querySelector(".cfooter1")
-    var wcf1 = document.querySelector("#cv1")
+// function btnft1(){
+//     var btnft1 = document.querySelector("#showFooter1")
+//     var contCF = document.querySelector(".cfooter1")
+//     var wcf1 = document.querySelector("#cv1")
     
-    btnft1.addEventListener("click", function() {
-        wcf1.style.height = 'auto'
-        if(contCF.style.display == 'block'){
-            contCF.style.display = 'none'
-        } else {
-            contCF.style.display = 'block'
-        }
-    })
-}
+//     btnft1.addEventListener("click", function() {
+//         wcf1.style.height = 'auto'
+//         if(contCF.style.display == 'block'){
+//             contCF.style.display = 'none'
+//         } else {
+//             contCF.style.display = 'block'
+//         }
+//     })
+// }
 
-function btnft2(){
-    var btnft2 = document.querySelector("#showFooter2")
-    var contCF = document.querySelector(".cfooter2")
-    var wcf2 = document.querySelector("#cv2")
+// function btnft2(){
+//     var btnft2 = document.querySelector("#showFooter2")
+//     var contCF = document.querySelector(".cfooter2")
+//     var wcf2 = document.querySelector("#cv2")
     
-    btnft2.addEventListener("click", function() {
-        wcf2.style.height = 'auto'
-        if(contCF.style.display == 'block'){
-            contCF.style.display = 'none'
-        } else {
-            contCF.style.display = 'block'
-        }
-    })
-}
+//     btnft2.addEventListener("click", function() {
+//         wcf2.style.height = 'auto'
+//         if(contCF.style.display == 'block'){
+//             contCF.style.display = 'none'
+//         } else {
+//             contCF.style.display = 'block'
+//         }
+//     })
+// }
 
-function btnft3(){
-    var btnft3 = document.querySelector("#showFooter3")
-    var contCF = document.querySelector(".cfooter3")
-    var wcf3 = document.querySelector("#cv3")
+// function btnft3(){
+//     var btnft3 = document.querySelector("#showFooter3")
+//     var contCF = document.querySelector(".cfooter3")
+//     var wcf3 = document.querySelector("#cv3")
     
-    btnft3.addEventListener("click", function() {
-        wcf3.style.height = 'auto'
-        if(contCF.style.display == 'block'){
-            contCF.style.display = 'none'
-        } else {
-            contCF.style.display = 'block'
-        }
-    })
-}
+//     btnft3.addEventListener("click", function() {
+//         wcf3.style.height = 'auto'
+//         if(contCF.style.display == 'block'){
+//             contCF.style.display = 'none'
+//         } else {
+//             contCF.style.display = 'block'
+//         }
+//     })
+// }
 
-function btnft4(){
-    var btnft4 = document.querySelector("#showFooter4")
-    var contCF = document.querySelector(".cfooter4")
-    var wcf4 = document.querySelector("#cv4")
+// function btnft4(){
+//     var btnft4 = document.querySelector("#showFooter4")
+//     var contCF = document.querySelector(".cfooter4")
+//     var wcf4 = document.querySelector("#cv4")
     
-    btnft4.addEventListener("click", function() {
-        wcf4.style.height = 'auto'
-        if(contCF.style.display == 'block'){
-            contCF.style.display = 'none'
-        } else {
-            contCF.style.display = 'block'
-        }
-    })
-}
+//     btnft4.addEventListener("click", function() {
+//         wcf4.style.height = 'auto'
+//         if(contCF.style.display == 'block'){
+//             contCF.style.display = 'none'
+//         } else {
+//             contCF.style.display = 'block'
+//         }
+//     })
+// }
 
-function btnft5(){
-    var btnft5 = document.querySelector("#showFooter5")
-    var contCF = document.querySelector(".cfooter5")
-    var wcf5 = document.querySelector("#cv5")
+// function btnft5(){
+//     var btnft5 = document.querySelector("#showFooter5")
+//     var contCF = document.querySelector(".cfooter5")
+//     var wcf5 = document.querySelector("#cv5")
     
-    btnft5.addEventListener("click", function() {
-        wcf4.style.height = 'auto'
-        if(contCF.style.display == 'block'){
-            contCF.style.display = 'none'
-        } else {
-            contCF.style.display = 'block'
-        }
-    })
-}
+//     btnft5.addEventListener("click", function() {
+//         wcf4.style.height = 'auto'
+//         if(contCF.style.display == 'block'){
+//             contCF.style.display = 'none'
+//         } else {
+//             contCF.style.display = 'block'
+//         }
+//     })
+// }
 
-function btnft6(){
-    var btnft6 = document.querySelector("#showFooter6")
-    var contCF = document.querySelector(".cfooter6")
-    var wcf6 = document.querySelector("#cv6")
+// function btnft6(){
+//     var btnft6 = document.querySelector("#showFooter6")
+//     var contCF = document.querySelector(".cfooter6")
+//     var wcf6 = document.querySelector("#cv6")
     
-    btnft6.addEventListener("click", function() {
-        wcf4.style.height = 'auto'
-        if(contCF.style.display == 'block'){
-            contCF.style.display = 'none'
-        } else {
-            contCF.style.display = 'block'
-        }
-    })
-}
+//     btnft6.addEventListener("click", function() {
+//         wcf4.style.height = 'auto'
+//         if(contCF.style.display == 'block'){
+//             contCF.style.display = 'none'
+//         } else {
+//             contCF.style.display = 'block'
+//         }
+//     })
+// }
 
 // Fin funcionas para activar Botones
 
@@ -158,8 +162,7 @@ function showInfo (info) {
     }
 
 }
-    showInfo()
-
+showInfo()
 
 
 nextBtn.addEventListener("click", function (e) {
@@ -196,7 +199,7 @@ afterBtn.addEventListener("click", function (e) {
 function changePage(i) {
     switch (i) {
         case 0: showInfo("mainInfo")
-            document.getElementById("name").innerHTML = "Introducing it"
+            document.getElementById("name").innerHTML = "Migratory Regularization"
             visaTypes.innerHTML = ""
             cpf.innerHTML = ''
             refugio.innerHTML = ''
@@ -210,11 +213,6 @@ function changePage(i) {
             wheretogo.innerHTML = ''
             btnVisa();
             btnVisa2();
-            btnft1();
-            btnft2();
-            btnft3();
-            btnft4();
-            // console.log("Visa Types changePages");
             break;
         case 2: showInfo("CPF")
             document.getElementById("name").innerHTML = "CPF"
@@ -222,38 +220,26 @@ function changePage(i) {
             visaTypes.innerHTML = ""
             refugio.innerHTML = ''
             wheretogo.innerHTML = ''
-            btnVisa();
-            btnft1();
-            btnft2();
-            btnft3();
-            // console.log("CPF");            
+            btnVisa();          
             break;
         case 3: showInfo("Refugio")
-            document.getElementById("name").innerHTML = "Refugio"
+            document.getElementById("name").innerHTML = "Refuge"
             mainInfo.innerHTML = ''
             visaTypes.innerHTML = ''
             cpf.innerHTML = ''
             wheretogo.innerHTML = ''
             btnVisa();
-            btnVisa2();
-            btnft1();
-            btnft2();
-            btnft3();
-            btnft4();
-            btnft5();
-            btnft6();
-            // console.log("Refugio");            
+            btnVisa2();           
             break;
         case 4: showInfo("wheretogo")
-            document.getElementById("name").innerHTML = "Where to go"
+            document.getElementById("name").innerHTML = "Superintendencies and Police Stations"
             mainInfo.innerHTML = ''
             visaTypes.innerHTML = ''
             cpf.innerHTML = ''
             refugio.innerHTML = ''
-            // console.log("Wher to go");
             break;
         default: showInfo("mainInfo")
-            document.getElementById("name").innerHTML = "Introducing it"
+            document.getElementById("name").innerHTML = "Migratory Regularization"
             visaTypes.innerHTML = ""
             cpf.innerHTML = ''
             refugio.innerHTML = ''
@@ -267,10 +253,10 @@ function changePage(i) {
 
 function imprimirMainInfo() {
     mainInfo.innerHTML =
-    `
+    `<!-- 
         <div class="mr-title">
             <h1>Migratory Regularization</h1>
-        </div>
+        </div> -->
 
         <div class="main-info">
             <p>If you were born in another country and are living in Brazil, it is important that you regularize your immigration status. This way, it is easier to access the healthcare system, education, housing, transportation, justice, and even more importantly, the job market. The Federal Police (PF) and the Federal Revenue Service are the competent authorities to handle the immigration procedures, which may vary depending on your country of origin and the way you entered Brazilian territory.</p>
@@ -283,50 +269,29 @@ function imprimirVisasTypes(){
     visaTypes.innerHTML = 
     `   
         <div class="mr-title">
-    <!--        <div class="">
-                <h1>Visa Types</h1>
-                <p>En brasil se puiede tramitar dos tipos de residencias, con diferntes tiempos de validez, las cuales no se enuentran disponiles para todos los paises, siendo también que existen condiciones que permiten a los migrantes de estos paises obtener alguna de las residencias.</p>
-            </div> -->
             <div class="">
-                <a id="whatsis-visa"><span class="material-symbols-outlined">arrow_forward_ios </span></a><h1>O que é?</h1>
-                <div class="whatsis-visa"
+                <div class="ask-title">
+                    <a id="whatsis-visa"><img src="resources/img/down.png"></a><h2>O que é?</h2>
+                </div>
+                <div class="whatsis-visa">
                     <p>Este serviço é para quem pretende solicitar, renovar ou transformar autorização de residência e obter carteira (CRNM).
-                    A autorização de residência é concedida ao imigrante que pretenda trabalhar ou residir e se estabelecer temporária ou definitivamente no Brasil, desde que satisfaça as exigências de caráter especial, previstas na Lei de Migração e seu regulamento.
-                    A partir da autorização de residência o imigrante é registrado (o registro consiste na identificação civil, por dados biográficos e biométricos), para obter um número de Registro Nacional Migratório (RNM) e a Carteira de Registro Nacional Migratório (CRNM).</p>
-                    <div class="duvidas-resicendia">
-                        <p>Está em dúvida qual serviço escolher, utilize a <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/navegacao-guiada-da-regularizacao-migratoria/voce-esta-no-brasil">Navegação Guiada.</a></p>
-                    </div>
+                    A autorização de residência é concedida ao imigrante que pretenda trabalhar ou residir e se estabelecer temporária ou definitivamente no Brasil, desde que satisfaça as exigências de caráter especial, previstas na Lei de Migração e seu regulamento.</p>
+                    <p>A partir da autorização de residência o imigrante é registrado (o registro consiste na identificação civil, por dados biográficos e biométricos), para obter um número de Registro Nacional Migratório (RNM) e a Carteira de Registro Nacional Migratório (CRNM).</p>
+                    <p>Está em dúvida qual serviço escolher, utilize a <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/navegacao-guiada-da-regularizacao-migratoria/voce-esta-no-brasil">Navegação Guiada.</a></p>
                 </div>                
             </div>
             <div class="">
-                <button id="who-visa" ><span class="material-symbols-outlined">arrow_forward_ios </span></button><h1>Quem pode utilizar este serviço</h1>
+                <div class="ask-title">
+                    <a id="who-visa" ><img src="resources/img/down.png"></a><h2>Quem pode utilizar este serviço</h2>
+                </div>
                 <div class="who-visa">
                     <li>O imigrante que reside no Brasil.</li>
                     <li>O imigrante que deseja renovar a carteira com classificação TEMPORÁRIA.</li>
                 </div>
             </div>
         </div>
-<!--        <div class="card-container-visa">
-            <div class="card-visa">
-                <img src="resources/img/temporaria.png" alt="fundo1">
-                <div class="card-descrip-visa">
-                    <div class="card-parrafo">
-                        <h2>Residencia Temporaria</h2>
-                        <p>Este es el primer tipo de visa que el extrangero puede solicitar al ingresar al territorio brasilero, esta cuenta con una validez de 2 (dos) años.
-                        Para poder solictar este tipo de visa es necesario cumplr con una serie de requisitos entre los cuales está el haber ingresado legalmente al país [...]</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-visa">
-                <img src="resources/img/permanente.png" alt="fundo2">
-                <div class="card-descrip-visa">
-                    <div class="card-parrafo">
-                        <h2>Residencia Permanente</h2>
-                        <p>Posee una validez de nueve (9) o diez(10) años, este tipo de visa solo se puede solcitar luego de haber obtenido al Residencia temporaria y haber residido dentro del territorio brasilero durante el periodo de validez de la misma, teneindo que sumplri tambiéncon una serie de requisitos [...]</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
+
         <div class="mr-details-title item">
             <h3>Etapas para a realização desse serviço</h3>
         </div>
@@ -338,18 +303,11 @@ function imprimirVisasTypes(){
                         <h2>Solicitar a Autorização de Residência.</h2>
                         <p>De posse da documentação necessária, preencha o formulário, conforme modalidade pretendida.</p>
                     </div>
-                    <div><button class="cft" id="showFooter1"><span class="material-symbols-outlined">add_circle</span></button></div>
-                    <div class="cfooter cfooter1">
-                        <div><h5>CANAIS DE PRESTAÇÃO</h5></div>
-                        <p>Web: <a href="https://servicos.dpf.gov.br/gru2/gru?nac=1&rec=9" target="blank">Incluir GRU</a>(<strong>Atenção!</strong> Caso esteja utilizando <strong>tradução automática</strong>, é necessário retornar ao site original (URL original), conforme <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/imagem/imagem2.jpg/view">imagem</a>).</p>
-                        <p>Web: <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/autorizacao-residencia/formularios/capa" target="blank">Prencher formulário</a>(<strong>Atenção!</strong> Caso esteja utilizando <strong>tradução automática</strong>, é necessário retornar ao site original (URL original), conforme <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/imagem/imagem2.jpg/view">imagem</a>).</p>
-                        <div><h5>DOUMENTAÇÃO</h5></div>
-                        <p><strong>Documentação em comum para todos os casos</strong>.</p>
-                         <li>Para verificar a documentação necessária<a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/autorizacao-residencia/documentos/capa">clique aqui</a>).</li>
-                        <div><h5>CUSTOS</h5></div>
-                        <li>Taxa de Processamento e Avaliação de Pedidos de Autorização de Residência - código da Receita STN 140066   R$ 168,13.</li>
-                        <li>Taxa de Emissão da Carteira de Registro Nacional Migratório - código da Receita STN 140120   R$ 204,77.</li>
-                </div>
+                    <div class="cft">
+                        <a id="" data-bs-toggle="modal" data-bs-target="#showFooter1">
+                            <img src="resources/img/more.png">
+                        </a>                    
+                    </div>
                 </div>
             </div>
             <div class="card-visa" id="cv2">
@@ -359,10 +317,10 @@ function imprimirVisasTypes(){
                         <h2>Realizar agendamento.</h2>
                         <p>Salvo os casos previstos no art. 67 do <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/Decreto/D9199.htm">Decreto nº 9.199/2017</a>, o atendimento ocorrerá somente na unidade da Polícia Federal da circunscrição onde esteja domiciliado o requerente.</p>
                     </div>
-                    <div><button class="cft" id="showFooter2"><span class="material-symbols-outlined">add_circle</span></button></div>
-                    <div class="cfooter cfooter2">
-                        <div><h5>CANAIS DE PRESTAÇÃO</h5></div>
-                        <p>Web: <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/InscricaoCpfEstrangeiro/default.asp" target="blank">Inscrição de ciddaão Estrangeiro</a></p>
+                    <div class="cft">
+                        <a id="" data-bs-toggle="modal" data-bs-target="#showFooter2">
+                            <img src="resources/img/more.png">
+                        </a>                    
                     </div>
                 </div>
             </div>
@@ -373,10 +331,10 @@ function imprimirVisasTypes(){
                         <h2>Comparecer na unidade da Polícia Federal</h2>
                         <p>Compareça a uma unidade da Polícia Federal para atendimento no dia e horário marcado após o agendamento realizado no preenchimento do formulário inicial.</p>
                     </div>
-                    <div><button class="cft" id="showFooter3"><span class="material-symbols-outlined">add_circle</span></button></div>
-                    <div class="cfooter cfooter3">
-                        <div><h5>CANAIS DE PRESTAÇÃO</h5></div>
-                        <p>Web: <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/InscricaoCpfEstrangeiro/default.asp" target="blank">Inscrição de ciddaão Estrangeiro</a></p>
+                    <div class="cft">
+                        <a id="" data-bs-toggle="modal" data-bs-target="#showFooter3">
+                            <img src="resources/img/more.png">
+                        </a>                    
                     </div>
                 </div>
             </div>
@@ -387,14 +345,180 @@ function imprimirVisasTypes(){
                         <h2>Receber a Carteira de Registro Nacional Migratório</h2>
                         A Carteira de Registro Nacional Migratório será entregue na unidade de atendimento da Polícia Federal.</p>
                     </div>
-                    <div><button class="cft" id="showFooter4"><span class="material-symbols-outlined">add_circle</span></button></div>
-                    <div class="cfooter cfooter4">
-                        <div><h5>CANAIS DE PRESTAÇÃO</h5></div>
-                        <p>Web: <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/InscricaoCpfEstrangeiro/default.asp" target="blank">Inscrição de ciddaão Estrangeiro</a></p>
+                    <div class="cft">
+                        <a id="" data-bs-toggle="modal" data-bs-target="#showFooter4">
+                            <img src="resources/img/more.png">
+                        </a>                    
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- MODAL 1 -->
+
+        <div class="modal fade" id="showFooter1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exModalLabel"> Detalles </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="th5">
+                            <h5>CANAIS DE PRESTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p>Web: <a href="https://servicos.dpf.gov.br/gru2/gru?nac=1&rec=9" target="blank">Incluir GRU</a>(<strong>Atenção!</strong> Caso esteja utilizando <strong>tradução automática</strong>, é necessário retornar ao site original (URL original), conforme <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/imagem/imagem2.jpg/view">imagem</a>).</p>
+                            <p>Web: <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/autorizacao-residencia/formularios/capa" target="blank">Prencher formulário</a>(<strong>Atenção!</strong> Caso esteja utilizando <strong>tradução automática</strong>, é necessário retornar ao site original (URL original), conforme <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/imagem/imagem2.jpg/view">imagem</a>).</p>
+                        </div>
+                        <div class="th5">
+                            <h5>DOUMENTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p><strong>Documentação em comum para todos os casos</strong>.</p>
+                            <li>Para verificar a documentação necessária<a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/autorizacao-residencia/documentos/capa">clique aqui</a>).</li>
+                        </div>
+                        <div class="th5">
+                            <h5>CUSTOS</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Taxa de Processamento e Avaliação de Pedidos de Autorização de Residência - código da Receita STN 140066   R$ 168,13.</li>
+                            <li>Taxa de Emissão da Carteira de Registro Nacional Migratório - código da Receita STN 140120   R$ 204,77.</li>
+                        </div>
+                        <div class="th5">
+                            <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Não estimado ainda.</li>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 2 -->
+
+        <div class="modal fade" id="showFooter2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="th5">
+                            <h5>CANAIS DE PRESTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p>   Web :  
+                            Ao preencher o formulário de solicitação, será possível fazer agendamento. Após isso, caso queira <strong>agendar, reagendar, consultar ou cancelar</strong> atendimento, <a href="https://servicos.dpf.gov.br/agenda-web/acessar">clique aqui</a>. (<strong>Atenção!</strong> Caso esteja utilizando </strong>tradução automática</strong>, é necessário retornar ao site original (URL original), conforme <a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/imagem/imagem2.jpg/view">imagem</a>).</p>
+                        </div>
+                        <div class="th5">
+                            <h5>CUSTOS</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Sem custo.   R$ 0,00</li>
+                            <li>Taxa de Emissão da Carteira de Registro Nacional Migratório - código da Receita STN 140120   R$ 204,77.</li>
+                        </div>
+                        <div class="th5">
+                            <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Não estimado ainda.</li>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 3 -->
+        <div class="modal fade" id="showFooter3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exModalLabel"> Goiás </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="th5">
+                            <h5>CANAIS DE PRESTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p>  Presencial : 
+                            O solicitante deve se dirigir à Unidade da Polícia Federal em que haja atendimento a imigrantes da circunscrição onde esteja domiciliado o requerente.
+                            
+                            Tempo estimado de espera :  Até 30 minuto(s)</p>
+                        </div>
+                        <div class="th5">
+                            <h5>CUSTOS</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Sem custo.   R$ 0,00</li>
+                            <li>Taxa de Emissão da Carteira de Registro Nacional Migratório - código da Receita STN 140120   R$ 204,77.</li>
+                        </div>
+                        <div class="th5">
+                            <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Em média 30 minuto(s).</li>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL 4 -->
+        <div class="modal fade" id="showFooter4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="th5">
+                            <h5>CANAIS DE PRESTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p> Presencial : </p>
+                            <li>É necessário verificar se o documento está pronto para ser retirado. Quando isso ocorrer o sistema irá informar “Seu documento foi confeccionado e está pronto para ser retirado” e disponibilizará um formulário específico para entrega de documento.</li>
+                            <li>Preencha o formulário disponibilizado e faça o agendamento para a retirada do documento na unidade de atendimento correta. Algumas unidades dispensam o agendamento (nestes casos o sistema irá informar que "não há agenda para o serviço escolhido").</li>
+                            <p>Tempo estimado de espera :  Até 30 minuto(s)</p>
+                            <p>Web :</p>  
+                            <p><a hef="https://servicos.dpf.gov.br/sismigra-internet/faces/restrito/atendimento/pesquisarRequerimento.seam" target="blank">Consultar status da carteira</a> (<strong>Atenção!</strong> Caso esteja utilizando <strong>tradução automática</strong>, é necessário retornar ao site original (URL original), conforme <a href="" target="blanck">imagem</a>).</p>
+                        </div>
+                        <div class="th5">
+                            <h5>CUSTOS</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Sem custo.   R$ 0,00</li>
+                            <li>Taxa de Emissão da Carteira de Registro Nacional Migratório - código da Receita STN 140120   R$ 204,77.</li>
+                        </div>
+                        <div class="th5">
+                            <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Em média 30 dia(s) útil(eis)</li>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     `
 } 
 
@@ -402,8 +526,10 @@ function imprimirCpf() {
     cpf.innerHTML = 
     `
         <div class="mr-title">
-            <a id="whatsis-visa"><span class="material-symbols-outlined">arrow_forward_ios </span></a><h2>Cadastro de Pessoas Físicas (CPF)</h2>
-            <div class="whatsis-visa"
+            <div class="ask-title">
+                <a id="whatsis-visa"><img src="resources/img/down.png"></a><h2>O que é o Cadastro de Pessoa Física (CPF)?</h2>
+            </div>
+            <div class="whatsis-visa">
                 <p>É um banco de dados gerenciado pela Receita Federal do Brasil (RFB), que armazena informações cadastrais de contribuintes obrigados à inscrição no CPF ou de cidadãos que se inscreveram voluntariamente.</p>
                 <p>Esse serviço pode ser utilizado por qualquer Cidadão brasileiro ou cidadão estrangeiro, residente no país ou em trânsito.</p>
             </div>
@@ -424,11 +550,11 @@ function imprimirCpf() {
                             <h4>Solicitar inscrição</h4>
                             <p>Preencha e envie o formulário eletrônico pela internet ou solicite inscrição através da rede conveniada à Receita Federal. Informe os dados solicitados conforme seus documentos de identificação.</p>
                         </div>
-                        <div><button class="cft" id="showFooter1"><span class="material-symbols-outlined">add_circle</span></button></div>
-                        <div class="cfooter cfooter1">
-                            <div><h5>CANAIS DE PRESTAÇÃO</h5></div>
-                            <p>Web: <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/InscricaoCpfEstrangeiro/default.asp" target="blank">Inscrição de ciddaão Estrangeiro</a></p>
-                        </div>
+                        <div class="cft">
+                        <a id="" data-bs-toggle="modal" data-bs-target="#showFooter1">
+                            <img src="resources/img/more.png">
+                        </a>                    
+                    </div>
                     </div>
                 </div>
                 <!-- Item 3 -->
@@ -439,12 +565,11 @@ function imprimirCpf() {
                             <h4>Apresentar documentos</h4>
                             <p>Nos casos em que o preenchimento do formulário eletrônico ou atendimento por entidade conveniada resultar na emissão de um protocolo de atendimento, apresente o protocolo gerado e os documentos necessários, listados na etapa acima, à Receita Federal.</p>
                         </div>
-                        <div><button class="cft" id="showFooter2"><span class="material-symbols-outlined">add_circle</span></button></div>
-                        <div class="cfooter cfooter2">
-                            <h5>CANAIS DE PRESTAÇÃO</h5>
-                            <p>Email <a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf/envio-de-documentos-por-e-mail/" target="blank">Atendimento por email</a>
-                            Presencial <a href="https://www.gov.br/receitafederal/pt-br/canais_atendimento/atendimento-presencial/" target="blank">Atendimento presencial da Receita Federal</a></p>
-                        </div>                        
+                        <div class="cft">
+                        <a id="" data-bs-toggle="modal" data-bs-target="#showFooter2">
+                            <img src="resources/img/more.png">
+                        </a>                    
+                    </div>                       
                     </div>
                 </div>
                 <!-- Item 4 -->
@@ -455,18 +580,150 @@ function imprimirCpf() {
                             <h4>Acompanhar o andamento do pedido</h4>
                             <p>Se você enviou os documentos da 2ª etapa por e-mail, acompanhe o andamento do pedido a partir do número de protocolo de atendimento gerado na 1ª etapa.</p>
                         </div>
-                        <div><button class="cft" id="showFooter3"><span class="material-symbols-outlined">add_circle</span></button></div>
-                        <div class="cfooter cfooter3">
-                            <h5>CANAIS DE PRESTAÇÃO</h5>
-                            <p>Web: <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaAndamento/ConsultaAndamento.asp" target="blank">Aonsultar andamento do pedido</a></p>
-                        </div>                        
+                        <div class="cft">
+                        <a id="" data-bs-toggle="modal" data-bs-target="#showFooter3">
+                            <img src="resources/img/more.png">
+                        </a>                    
+                    </div>                       
                     </div>
                 </div>
+            </div>            
         </div>
-        
 
-            
+
+        <!-- MODAL 1 -->
+        <div class="modal fade" id="showFooter1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div <div class="th5">
+                            <h5>CANAIS DE PRESTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <li>Web:  <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/InscricaoCpfEstrangeiro/default.asp" target="blank">Inscrição de cidadão estrangeiro</a></li>                          
+                            <li>Presencial: <a href="https://www.gov.br/receitafederal/pt-br/canais_atendimento/atendimento-presencial/" target="blank">Atendimento presencial da Receita Federal</a></li>                            
+                            <li>Tempo estimado de espera :  Até 15 minuto(s)</li>                            
+                            <p><strong>Atendimento em unidades conveniadas</strong></p>                            
+                            <li>Presencial: <a href="https://rfb.registrocivil.org.br/" target="blank">Cartório de Registro Civil de Pessoas Naturais</a></li>
+                            <li>Banco do Brasil</li>
+                            <li>Caixa Econômica Federal</li>
+                            <li>Correios.</li>
+                            <li>Tempo estimado de espera :  Até 15 minuto(s)</li>
+                        </div>
+                        <div class="th5">
+                            <h5>DOCUMENTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p><strong>Documentação em comum para todos os casos</strong></p>
+                            <li>Documento de identificação oficial com foto do interessado.</li>                            
+                            <li>Certidão de Nascimento ou Certidão de Casamento, caso não conste no documento de identificação oficial apresentado a naturalidade, a filiação e a data de nascimento.</li>                            
+                            <li>Título de eleitor ou documento que comprove o alistamento eleitoral (obrigatório para maiores de 18 anos e menores de 70 anos).</li>                            
+                            <li>Documentos adicionais poderão ser solicitados pelo atendente.</li>                            
+                            <p>Cidadão com 16 ou 17 anos de idade:</p>
+                            <li>Documento de identificação oficial com foto do solicitante (um dos pais), se for o caso.</li>                            
+                            <p><strong>Cidadão menor de 16 anos de idade:</strong></p>
+                            <li>Documento de identificação oficial com foto do solicitante (um dos pais, tutor, ou responsável pela guarda)</li>                            
+                            <li>Documento que comprove tutela ou responsabilidade pela guarda, conforme o caso, do incapaz.</li>                            
+                            <p><strong>Demais casos de representação legal:</strong></p>
+                            <li>Documento de Identificação oficial com foto do solicitante.</li>                            
+                            <li>Documentos que comprovem a representação legal, como procuração, tutela, termo de curatela, termo de compromisso de inventariante, etc., conforme o caso.</li>                            
+                            <li>Certidão de óbito, se o CPF for de pessoa falecida.</li>
+                        </div>
+                        <div class="th5">
+                            <h5>CUSTOS</h5>
+                        </div>
+                        <div class="txt">
+                            <p>Atendimento em unidade conveniada</p>
+                            <li>Tarifa   R$ 7,00</li>
+                        </div>
+                        <div class="th5">
+                            <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                        </div>
+                        <div class="txt">
+                            <p>Em média 5 minuto(s)</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        <!-- MODAL 2 -->
+        <div class="modal fade" id="showFooter2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="th5">
+                            <h5>CANAIS DE PRESTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p>Email <a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf/envio-de-documentos-por-e-mail/" target="blank">Atendimento por email</a>
+                            Presencial <a href="https://www.gov.br/receitafederal/pt-br/canais_atendimento/atendimento-presencial/" target="blank">Atendimento presencial da Receita Federal</a></p>
+                            <p>Tempo estimado de espera :  Até 15 minuto(s)</p>
+                        </div>
+                        <div class="th5">
+                            <h5>DOCUMENTAÇÃO</h5>
+                        </div>
+                        <div class="txt">
+                            <p><strong>Documentação em comum para todos os casos</strong></p>
+                            <li>Documentos listados na etapa anterior.</li>
+                        </div>
+                        <div class="th5">
+                            <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                        </div>
+                        <div class="txt">
+                            <p>Em média 2 dia(s) útil(eis)</p> 
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <<!-- MODAL 3 -->
+        <div class="modal fade" id="showFooter3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="th5">
+                    <h5>CANAIS DE PRESTAÇÃO</h5>
+                </div>
+                <div class="txt">
+                    <p>Web: <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaAndamento/ConsultaAndamento.asp" target="blank">Aonsultar andamento do pedido</a></p>
+                </div>
+                <div class="th5">
+                    <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                </div>
+                <div class="txt">
+                    <p>Atendimento imediato</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     `
 }
 
@@ -474,12 +731,16 @@ function imprimirRefugio() {
     refugio.innerHTML = 
         `
             <div class="mr-title">
-                <a id="whatsis-visa"><span class="material-symbols-outlined">arrow_forward_ios </span></a><h2>O que é?(CPF)</h2>
-                <div class="whatsis-visa"
+                <div class="ask-title">
+                    <a id="whatsis-visa"><img src="resources/img/down.png"></a><h2>O que é?</h2>
+                </div>
+                <div class="whatsis-visa">
                     <p>É uma proteção legal que o Brasil oferece a cidadãos de outros países que estejam sofrendo perseguição por motivos de raça, religião, nacionalidade, grupo social ou opiniões políticas, ou ainda, que estejam sujeitos, em seu país, a grave e generalizada violação de direitos humanos.</p>
                 </div>
                 <div class="">
-                    <button id="who-visa" ><span class="material-symbols-outlined">arrow_forward_ios </span></button><h1>Quem pode utilizar este serviço</h1>
+                    <div class="ask-title">
+                        <a id="who-visa" ><img src="resources/img/down.png"></a><h2>Quem pode utilizar este serviço</h2>
+                    </div>
                     <div class="who-visa">
                         <li>Imigrante
                         Que possuir fundado temor de perseguição por motivos de raça, religião, nacionalidade, grupo social ou opiniões políticas encontrando-se fora de seu país de nacionalidade e não possa ou não queira ser protegido por este país.</li>
@@ -505,17 +766,10 @@ function imprimirRefugio() {
                                 <h4>Criar um email, ou conferir se tem acesso a um email já existente</h4>
                                 <p>Ter um email é essencial para acessar o Sisconare. Certifique-se de que você tem acesso ao seu email, ou crie um email, antes de iniciar o preenchimento do formulário no Sisconare.</p>
                             </div>
-                            <div><button class="cft" id="showFooter1"><span class="material-symbols-outlined">add_circle</span></button></div>
-                            <div class="cfooter cfooter1">
-                                <div><h5>CANAIS DE PRESTAÇÃO</h5></div>
-                                <p>   E-mail :  </p>
-                                <p>Acesse o seu email, ou crie uma nova conta em qualquer prestador de email.</p>                           
-                                <p>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível
-                                Acesse o seu email, ou crie uma nova conta em qualquer prestador de email. </p>
-                                <div><h5>CUSTOS</h5></div>
-                                <li>Pedir refúgio   R$ 0,00</li>
-                                <div><h5>TEMPO DE DURAÇÃO DA ETAPA</h5></div>
-                                <li>Em média 10 minuto(s)</li>
+                            <div class="cft">
+                                <a id="" data-bs-toggle="modal" data-bs-target="#showFooter1">
+                                    <img src="resources/img/more.png">
+                                </a>                    
                             </div>
                         </div>
                     </div>
@@ -530,17 +784,10 @@ function imprimirRefugio() {
                                 - Confira os seus dados pessoais. Eles aparecerão nos seus documentos de identidade (Protocolo de Refúgio e Documento Provisório de Registro Nacional Migratório). 
                                 - Caso ainda não tenha endereço no Brasil, coloque o endereço do seu local de entrada. </p>
                             </div>
-                            <div><button class="cft" id="showFooter2"><span class="material-symbols-outlined">add_circle</span></button></div>
-                            <div class="cfooter cfooter2">
-                                <h5>CANAIS DE PRESTAÇÃO</h5>
-                                <p>SITE <a href="https://sisconare.mj.gov.br/" target="blank">sisconare.mj.gov.br</a>
-                                Clicar em "<a href="https://sisconare.mj.gov.br/" target="blank">cadastrar-se</a>".</p>
-                                <p><strong>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível</strong></p>
-                                <p>Enviar um email, relatando o problema, para <a href="sisconare@mj.gov.br" target="blank">sisconare@mj.gov.br</a></p>
-                                <div><h5>CUSTOS</h5></div>
-                                <li>Solicitar refúgio   R$ 0,00</li>
-                                <div><h5>TEMPO DE DURAÇÃO DA ETAPA</h5></div>
-                                <li>Entre 10 e 30 minuto(s)</li>
+                            <div class="cft">
+                                <a id="" data-bs-toggle="modal" data-bs-target="#showFooter2">
+                                    <img src="resources/img/more.png">
+                                </a>                    
                             </div>
                         </div>
                     </div>
@@ -554,14 +801,10 @@ function imprimirRefugio() {
                                 - Clique no link desse email. O link irá te direcionar para a tela de definição de senha do Sisconare.                                
                                 - Defina a senha de acordo com a sua preferência.</p>
                             </div>
-                            <div><button class="cft" id="showFooter3"><span class="material-symbols-outlined">add_circle</span></button></div>
-                            <div class="cfooter cfooter3">
-                                <h5>CANAIS DE PRESTAÇÃO</h5>
-                                <p E-mail: Acessar o seu email para definir a senha do Sisconare.</p>
-                                <div><h5>CUSTOS</h5></div>
-                                <li>Solicitar refúgio   R$ 0,00</li>
-                                <div><h5>TEMPO DE DURAÇÃO DA ETAPA</h5></div>
-                                <li>Até 5 minuto(s)</li>
+                            <div class="cft">
+                                <a id="" data-bs-toggle="modal" data-bs-target="#showFooter3">
+                                    <img src="resources/img/more.png">
+                                </a>                    
                             </div>                        
                         </div>
                     </div>
@@ -573,17 +816,11 @@ function imprimirRefugio() {
                                 <h4>Realizar login no Sisconare</h4>
                                 <p>- Acesse o <a href="http://sisconare.mj.gov.br/" target="blanck">sisconare.mj.gov.br</a>, e coloque o seu login e senha na caixa azul da primeira tela. </p>
                             </div>
-                            <div><button class="cft" id="showFooter4"><span class="material-symbols-outlined">add_circle</span></button></div>
-                            <div class="cfooter cfooter3">
-                                <h5>CANAIS DE PRESTAÇÃO</h5>
-                                <p>SITE <a href="https://sisconare.mj.gov.br/" target="blank">sisconare.mj.gov.br</a>
-                                <p><strong>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível</strong></p>
-                                <p>Enviar um email, relatando o problema, para <a href="sisconare@mj.gov.br" target="blank">sisconare@mj.gov.br</a></p>
-                                <div><h5>CUSTOS</h5></div>
-                                <li>Solicitar refúgio   R$ 0,00</li>
-                                <div><h5>TEMPO DE DURAÇÃO DA ETAPA</h5></div>
-                                <li>Até 1 minuto(s)</li>
-                            </div>                        
+                            <div class="cft">
+                                <a id="" data-bs-toggle="modal" data-bs-target="#showFooter4">
+                                    <img src="resources/img/more.png">
+                                </a>                    
+                            </div>                       
                         </div>
                     </div>
                     <!-- Item 6 -->
@@ -598,18 +835,11 @@ function imprimirRefugio() {
                                 - Clique no sino no canto superior direito e no item “finalização de solicitação”. Anote o número de controle do seu pedido. 
                                 A Polícia Federal somente poderá emitir o seu Protocolo de Refúgio se você tiver clicado em "finalizar". Até a ida à PF, você pode reabrir a sua solicitação para editar ou corrigir informações. Lembre-se de finalizar novamente.</p>
                             </div>
-                            <div><button class="cft" id="showFooter5"><span class="material-symbols-outlined">add_circle</span></button></div>
-                            <div class="cfooter cfooter5">
-                                <h5>CANAIS DE PRESTAÇÃO</h5>
-                                <p>SITE <a href="https://sisconare.mj.gov.br/" target="blank">sisconare.mj.gov.br</a>
-                                Clicar em "<a href="https://sisconare.mj.gov.br/" target="blank">cadastrar-se</a>".</p>
-                                <p><strong>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível</strong></p>
-                                <p>Enviar um email, relatando o problema, para <a href="sisconare@mj.gov.br" target="blank">sisconare@mj.gov.br</a></p>
-                                <div><h5>CUSTOS</h5></div>
-                                <li>Solicitar refúgio   R$ 0,00</li>
-                                <div><h5>TEMPO DE DURAÇÃO DA ETAPA</h5></div>
-                                <li>Até 10 e 60 minuto(s)</li>
-                            </div>                        
+                            <div class="cft">
+                                <a id="" data-bs-toggle="modal" data-bs-target="#showFooter5">
+                                    <img src="resources/img/more.png">
+                                </a>                    
+                            </div>                       
                         </div>
                     </div>
                     <!-- Item 7 -->
@@ -622,19 +852,243 @@ function imprimirRefugio() {
                                 - Vá até a unidade da Polícia Federal no dia e horário escolhido. Leve todos os documentos que você tiver, inclusive o número de controle do Sisconare (impresso ou anotado).  
                                 - Se outras pessoas da sua família também tiverem pedido refúgio, será preciso agendar um horário para cada pessoa, e todos devem ir à Polícia Federal.</p>
                             </div>
-                            <div><button class="cft" id="showFooter6"><span class="material-symbols-outlined">add_circle</span></button></div>
-                            <div class="cfooter cfooter6">
+                            <div class="cft">
+                                <a id="" data-bs-toggle="modal" data-bs-target="#showFooter6">
+                                    <img src="resources/img/more.png">
+                                </a>   
+                            </div>                 
+                        </div>                       
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- MODAL 1 -->
+                <div class="modal fade" id="showFooter1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="th5">
+                                    <h5>CANAIS DE PRESTAÇÃO</h5>
+                                </div>
+                                <div class="txt">
+                                    <p>   E-mail :  </p>
+                                    <p>Acesse o seu email, ou crie uma nova conta em qualquer prestador de email.</p>                           
+                                    <p>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível
+                                    Acesse o seu email, ou crie uma nova conta em qualquer prestador de email. </p>
+                                </div>
+                                <div class="th5">
+                                    <h5>CUSTOS</h5>
+                                </div>
+                                <div class="txt">
+                                    <li>Pedir refúgio   R$ 0,00</li>
+                                </div>
+                                <div class="th5">
+                                    <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                                </div>
+                                <div class="txt">
+                                    <li>Em média 10 minuto(s)</li> 
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- MODAL 2 -->
+                <div class="modal fade" id="showFooter2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="th5">
                                 <h5>CANAIS DE PRESTAÇÃO</h5>
+                            </div>
+                            <div class="txt">
+                                <p>SITE <a href="https://sisconare.mj.gov.br/" target="blank">sisconare.mj.gov.br</a>
+                                Clicar em "<a href="https://sisconare.mj.gov.br/" target="blank">cadastrar-se</a>".</p>
+                                <p><strong>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível</strong></p>
+                                <p>Enviar um email, relatando o problema, para <a href="sisconare@mj.gov.br" target="blank">sisconare@mj.gov.br</a></p>
+                            </div>
+                            <div class="th5">
+                                <h5>CUSTOS</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Solicitar refúgio   R$ 0,00</li>
+                            </div>
+                            <div class="th5">
+                                <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Entre 10 e 30 minuto(s)</li>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL 3 -->
+            <div class="modal fade" id="showFooter3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="th5">
+                                <h5>CANAIS DE PRESTAÇÃO</h5>
+                            </div>
+                            <div class="txt">
+                                <p> E-mail: Acessar o seu email para definir a senha do Sisconare.</p>
+                            </div>
+                            <div class="th5">
+                                <h5>CUSTOS</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Solicitar refúgio   R$ 0,00</li>
+                            </div>
+                            <div class="th5">
+                                <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Até 5 minuto(s)</li>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL 4 -->
+
+            <div class="modal fade" id="showFooter4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="th5">
+                                <h5>CANAIS DE PRESTAÇÃO</h5>
+                            </div>
+                            <div class="txt">
+                                <p>SITE <a href="https://sisconare.mj.gov.br/" target="blank">sisconare.mj.gov.br</a>
+                                <p><strong>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível</strong></p>
+                                <p>Enviar um email, relatando o problema, para <a href="sisconare@mj.gov.br" target="blank">sisconare@mj.gov.br</a></p>
+                            </div>
+                            <div class="th5">
+                                <h5>CUSTOS</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Solicitar refúgio   R$ 0,00</li>
+                            </div>
+                            <div class="th5">
+                                <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Até 1 minuto(s)</li> 
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL 5 -->
+            <div class="modal fade" id="showFooter5">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exModalLabel"> Deails </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="th5">
+                                <h5>CANAIS DE PRESTAÇÃO</h5>
+                            </div>
+                            <div class="txt">
+                                <p>SITE <a href="https://sisconare.mj.gov.br/" target="blank">sisconare.mj.gov.br</a>
+                                Clicar em "<a href="https://sisconare.mj.gov.br/" target="blank">cadastrar-se</a>".</p>
+                                <p><strong>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível</strong></p>
+                                <p>Enviar um email, relatando o problema, para <a href="sisconare@mj.gov.br" target="blank">sisconare@mj.gov.br</a></p>
+                            </div>
+                            <div class="th5">
+                                <h5>CUSTOS</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Solicitar refúgio   R$ 0,00</li>
+                            </div>
+                            <div class="th5">
+                                <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                            </div>
+                            <div class="txt">
+                                <li>Até 10 e 60 minuto(s)</li> 
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL 6 -->
+            <div class="modal fade" id="showFooter6">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exModalLabel"> Details </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="th5">
+                                <h5>CANAIS DE PRESTAÇÃO</h5>
+                            </div>
+                            <div class="txt">
                                 <p>SITE <a href="https://servicos.dpf.gov.br/agenda-web/formulario/1" target="blamck">https://servicos.dpf.gov.br/agenda-web/formulario/1<a>.
                                 <p><strong>Procedimentos de atendimento quando o sistema informatizado se encontrar indisponível</strong></p>
                                 <p>Contatar a ouvidoria da Polícia Federal.</p>
-                                <div><h5>CUSTOS</h5></div>
+                            </div>
+                            <div class="th5">
+                                <h5>CUSTOS</h5>
+                            </div>
+                            <div class="txt">
                                 <li>Solicitar refúgio   R$ 0,00</li>
-                                <div><h5>TEMPO DE DURAÇÃO DA ETAPA</h5></div>
+                            </div>
+                            <div class="th5">
+                                <h5>TEMPO DE DURAÇÃO DA ETAPA</h5>
+                            </div>
+                            <div class="txt">
                                 <li>Não estimado ainda</li>
-                            </div>                        
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
+                </div>
             </div>
         `
 }
@@ -644,89 +1098,89 @@ function imprimirWhereToGo() {
         `
             <div class="mapa-container">
                 <div class="mapa-info">
-                    <p>If you were born in another country and are living in Brazil, it is important that you regularize your immigration status. This way, it is easier to access the healthcare system, education, housing, transportation, justice, and even more importantly, the job market. The Federal Police (PF) and the Federal Revenue Service are the competent authorities to handle the immigration procedures, which may vary depending on your country of origin and the way you entered Brazilian territory.</p>
+                    <p>Ainda tem dúvidas ou preferer atendimento presencial para esclarecer melhor as suas inquetudes? Só seleccionar no mapa o estado onde você estja e verá os endereços das Superintendências e Delegacias da Policia Federal onde também poderá solicitar informacion sobre o proceso de regularização migratória.</p>
                 </div>
                     <div class="mapa-Br">
                     <svg version="1.2" viewbox="0 0 1000 921" xmlns="http://www.w3.org/2000/svg">
-                        <a xlink:title="Goiás" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Goias">
+                        <a xlink:title="Goiás" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/goias/superintendencia-regional-de-goias" target="blanck">
                         <path d="M621.3 406.9l0.3 0.5 0.3 0.4 2.7 1.9 0.4 0.4 0.1 0.2 0.1 0.2-0.1 0.2 0 0.1-0.2 0.2-0.2 0.2-0.2 0.1-1.3 0.9-0.2 0.2-0.1 0.3-0.4 2.5 0 0.8 0 0.4 0.1 0.1 0.5 0.3 1.6 0.6 0.1 0.1 0.1 0.3 0 0.6-0.1 0.3-0.1 0.4 0 0.2-0.1 0.1-0.2 0.2-0.7 0.6-0.5 0.3-0.8 0.4-0.3 0.3-0.3 1.1-0.5 1.7-0.4 1.2-0.3 1-0.1 0.3 0 0.2-0.1 2.1 0.3 2.7 0.9 3 1 1.5 0.1 0.2 1 2.6 0 0.1 0.2 0.2 1.2 0.6 0.1 0.2 0.5 0.5 0.6 1.1 0.1 0.1 1 0.5 0.6 0.2 0.2 0.2 0.1 0.1 0 0.2 0 0.3-0.3 1.1-0.6 1.1-0.1 0.2 0 0.3 0 0.6 0 0.5 0.2 0.5 0 0.1 0.3 0.4 0.4 0.9 0.1 0.6 0.1 0.4 0.1 0.7-0.1 0.4-0.1 0.4-0.1 0.2-0.1 0.3-0.5 0.5-0.5 0.5-1.1 1.8-0.6 0.3-0.2 0.3-0.2 0.3-0.2 0.3-0.2 0.2-0.2 0.1-0.1-0.1-0.4-0.1-0.2 0-0.3 0-0.9 0.2-0.3 0-0.4-0.3-0.2-0.1-0.6-0.1-0.6 0-0.3 0-0.2-0.1 0-0.1-0.4-1.3-0.2-0.3-0.6-0.8-0.4-0.4-0.4-0.2-1.8-0.9-0.5-0.4-0.3-0.1-0.2 0-0.1 0-1.2 1.4-0.2 0.4 0 0.1-0.1 0.3 0.1 0.4 0.1 0.2 0.3 0.5 0.1 0.2 0 0.1-0.1 0.2-0.3 0.5 0 0.1-0.1 0.3 0.1 0.1 0.1 0.2 0.2 0.2 0.1 0.2 0 0.2 0 0.5 0.1 0.7 0.1 0.5 0 0.2-0.4 0.4-0.6 0.4-0.2 0.1-0.2 0-0.1 0-0.5-0.2-2.2-1.1-0.2-0.1-0.5-0.2-0.6 0-0.9 0.1-0.2 0.1-0.4 0.1-0.2 0.2-0.3 0.3-0.2 0.2 0 0.2-0.1 0.2-0.7 3.7 0 0.3 0.1 0 0.4-0.1 0.3 0 0.1 0 0.2 0.3 0.1 0.4 0.3 0.6 0.1 0.3 0.1 0.3 0 0.1-0.3 0.4-0.2 0.2-0.3 0.6-0.3 0.3-0.4 0.4-0.2 0.2-0.2 0.2 0 0.2 0.2 2.7 0.1 0.2 0.1 0.1 0.3 0.3 0.1 0 0.5 0.1 0.2 0.1 0.1 0.2 0.3 3 0 0.2 0.3 0.7 0.1 0.2 0 0.2-0.1 0.6 0.2 1-0.1 0.2 0 0.2-0.1 0.1-0.5 0.3-0.4 0.1-0.1 0-0.4 0.3-0.4 0.1-0.4 0-0.2 0.1-0.3 0.2-0.3 0-1 0-0.3 0-0.2 0.1-0.3 0.2-0.2 0.1-0.3 0.1-0.3 0.1-0.3-0.1-0.3-0.1-0.1-0.2-0.2 0-0.1 0.1-0.2 0.2-0.5 1-0.1 0.2-0.3 0.1-0.2 0.2-0.2 0.3-0.1 0.2-0.3 0.2-0.2 0.1-0.3-0.1-0.5-0.1-0.1 0-0.7 0.3-0.2-0.3-0.1-0.1-0.6-0.4-0.2-0.1-0.2-0.3 0-0.1 0-0.2 0-0.3 0.1-0.6 0.1-0.4-0.1-0.3 0-0.3-0.1-0.1 0.1-0.8 0.1-0.5 0.4-0.6 0.1-0.3 0.3-0.9 0.1-1 0-0.2-0.1-0.5-0.1-0.4 0.1-0.9 0-0.3 0.2-0.4 0-0.1-0.2-0.1-0.4-0.2-0.7-0.3-0.5-0.3-0.1 0-0.3-0.2-0.2-0.2-0.1-0.1-0.1-0.2 0-0.5-7.7-0.2-5.9 0-3.3 0-0.3 0.3-0.1 0.5-0.3 2.1-0.1 0.4-0.2 0.1-0.2 0.2-0.1 0.2-0.1 0.9 0.1 0.2 0.1 0.2 0.4 0.2 0.3 0.3-0.3 0.8-0.2 0.5-0.2 0.2-0.3 0.3-0.2 0.1-0.3 0.1-0.1 0.1-0.1 0.1 0 0.3 0.3 1.4 0 0.7 0.2 0.2 0.3 0.1 0.2 0.3-0.1 0.2-0.1 0.5-0.2 0.3-0.1 0.5 0.1 0.2 1.5 0.2 7.3 0.1 5.6 0 6.8-0.1-0.1 0.8-0.6 1.2-0.1 0.3 0 0.2 0.3 1.9 0 0.2-0.1 0.3-0.5 1.2-0.4 0.7-0.2 0.3-0.3 0.6-0.2 0.2-0.8 0.7 0 0.2-0.4 1.8 0 0.1 0.2 0.6 0.2 0.2 0.7 0.8 0.2 0.2 0.4 0.2 0.4 0.1 0.3 0.1 0.1 0.1 0.2 0.3 0.2 0.2 0.4 0.1 0.2 0.2 0.2 0.3 0.1 0.1 0.2 0.2 0.2 0.1 0.3 0.7 0.1 0.2 0.4 0.8 0.3 1.5 0.2 0.3 0.2 0.4 0.2 0.3 0.2 0.9 0.1 0.2 0.1 0.2 0.2 0.5 0.2 0.8 0 0.3 0 0.3-0.1 0.2-0.2 0.1-0.2 0-0.2-0.1-0.2 0-0.2 0.1-0.5 0.5-0.1 0.2-0.1 0.1 0 0.2 0.1 0.2 0.4 0.5 0 0.2 0 0.1-0.4 0-0.2 0.2-0.1 0-0.4 0.3-0.1 0.3-0.2 0.4 0 0.1-0.2 0.2-0.2 0.1-0.1 0-0.2-0.1-0.2 0-0.2 0.3-0.2 0.1-0.1 0.1 0.1 0.3-0.1 0-0.2 0 0 0.1 0 0.3 0 0.1-0.2 0.3-0.3 0.2-0.2 0.4-0.1 0.1-0.3-0.1 0 0.1-0.2 0.1-0.1 0.2-0.2 0.3-0.1 0.1 0.1 0.5-0.1 0.4-0.1 0.1-0.2 0.1-0.1 0.2 0 0.2 0 0.1-0.2 0.2-0.1 0-0.5-0.2-0.3-0.3-0.1 0-0.2 0.1-0.2 0.5 0 0.2-0.2 0.4-0.1 0.3 0 0.4-0.1 0.2 0 0.3 0 0.6 0.1 0.3 0 0.2 0.8 1 0.2 0.2 0.3 0.1 0.2-0.1 0.1 0 0.2-0.3 0.3-0.2 0.3-0.1 0.2-0.1 0.2 0.1 0.4 0.2 0.3 0.1 0.4 0 0.2 0.1 0.8 0.4 0.4 0.3 0.1 0.2 0.3 0.6 0 0.3 0.1 0.6 0 0.9-0.1 0.3-0.3 0.2-0.3 0.2-0.2 0.4-0.3 0.4-0.1 0.2-0.1 0.3 0 0.4-0.1 0.2-0.2 0.3-0.1 0.2 0 0.3-0.1 0.2-0.1 0.3 0 0.1 0 0.3 0.1 0.3 0.1 0.6 0 0.2 0.2 0.3 0.1 0.2 0 0.3 0.1 0.4 0.1 0.1 0.3 0.3 0.1 0.3-0.1 0.4 0.2 0.5 0.5 1.2-0.4 0.1-0.3 0.1-0.3 0.1-0.3 0.3-0.2 0.2-0.1 0.3-0.3 0.2-0.3 0.1-0.2 0.2-0.1 0.1-0.1 0.2-0.1 0-0.3 0-0.1 0.1-0.2 0.4-0.2 0.1-2.6 1-0.6 0.4-0.4 0.3-0.2 0.4-0.3 0.8-0.4 0.5-0.3 0.2-5.6 3.1-0.3 0-0.3 0.1-0.2-0.1-0.2-0.1-0.6-0.2-0.8-0.1-0.2 0-0.4-0.1-0.2-0.2-0.3-0.4-0.1 0-0.3 0.1-0.2 0.1-0.6 0-0.2 0-0.2-0.1-0.1-0.1-0.2-0.2-0.6-0.4-1-0.4-1-0.3-0.9-0.1-1.5 0.2-5.5-0.3-4.6 0.3-0.8-0.2-1.3-0.4-0.9 0-1.4 0.9-2.6 1-0.5 0.3-0.4 0.3-0.5 0.8-3.7 3.7-0.4 0.2-0.3 0-0.3-0.3-0.4-0.3-0.7-0.9-0.3-0.5-0.3-0.9 0-0.1-0.2-0.2-0.1 0-0.4 0-0.2 0-0.4 0.5-0.3 0.3-0.4 0.1-0.5 0.2-4.6 1.8-0.8 0.2-1.4-0.3-2.1-0.1-0.5 0.1-0.5 0.2-0.5 0.3-0.6 0.4-0.6 0.2-3.4 0.6-0.7 0.3-0.6 0.3-2.8 4-0.6 0.6-0.5 0.4-0.1 0.1 0 0.3 0 0.3 0.2 0.3 0.1 0.4 0.1 0.4 0 0.3-0.1 0.1-0.1 0.5 0 0.1-0.2 0.1-0.2 0.2-0.5 0.9-0.2 0.3-0.4 0.2-0.6 0.2-0.5 0-1-0.3-0.4 0.2-0.5 0.7-0.5 0.3-0.4 0.2-0.2 0.3-0.1 0.6-0.2 0.3-0.5 0.4-0.7 0.5-0.4 0.4-0.3 0.4-0.2 0.5 0 0.6-0.1 0.5-0.5 0.8 0 0.4 0.6 0.7 0.3 0.5-0.3 0.2-0.1 0.1-0.2 0.2-0.1 0-0.1 0-0.2-0.1-0.2-0.1-0.3-0.3-0.2-0.1-0.5-0.1-0.3 0.1-0.2 0.3-1.7-2.4-1.1-1.3-0.3-0.3-0.3-0.2-0.3-0.2-0.3 0-0.3 0-0.5 0-0.3 0-0.6-0.3-0.3-0.1-0.9 0-0.3-0.1-0.3-0.1-0.3-0.2-0.2-0.1-0.5-0.6-1.5-1.3-0.3-0.1-0.2-0.1-0.9-0.1-1.3-0.4-0.3 0-0.9 0-1.1-0.1-0.3-0.1-4.4-1.9-0.2-0.2-0.6-0.6-0.8-0.6-0.8-0.3-1.2-0.3-0.8-0.3-0.5-0.2-0.2-0.2-0.2-0.4-0.1-0.2-0.3-0.3-1.7-1.1-1.3-0.7-0.6-0.1-0.2-0.1-1.2 0.1-0.5 0-0.3-0.1-0.2-0.2-1.7-1.7-0.6-0.4-0.3-0.2-0.3 0-2.7 0.4-0.6-0.1-1-0.2-1.6 0-2.4-0.7-0.6-0.4 0-0.2 0-0.4 0.9-1.9 0.2-0.5 1.3-1.7 0.2-0.3 0.1-0.4 0.1-0.5-0.1-0.3-0.2-0.2-2-0.9-0.5-0.1-0.3-0.1-0.2 0.1-0.2 0.1-0.9 0.6-0.3 0.1-0.2 0.1-0.2 0-0.3-0.2-0.5-0.5-0.2-0.3-0.2-0.4-0.1-0.3 0-0.5 0.3-4.7 0-0.6-0.1-0.5-0.1-0.7-0.4-1-0.9-1.8-0.5-1.6-0.2-0.7-0.2-0.5-0.6-0.8-1.2-2.2-0.2-0.7-0.1-0.7 0-0.6 0.3-1.2 0.2-0.3 0-0.3 0-0.9 0.2-1 0.2-0.4 0.1-0.2 0.1-0.2 0.1-0.2 0-0.3-0.1-0.2-0.1-0.3-0.1-1.1 0.1-0.4 0.2-0.2 0.5-0.5 0.2-0.3 0.2-0.5 0.2-0.3 0.1-0.6 0.1-0.1 0.4-0.4 0.8-1.2 0.2-0.2 0.3-0.2 0.2-0.4 0.2-0.4 0.1-0.5 0-0.2-0.1-0.4 0-0.2 0-0.3 0.2-0.5 0.3-1.5-0.1-0.4 0.7-0.7 0.6-0.4 1.5-0.8 0.9-0.3 0.2-0.1 0.4-0.3 0.4-0.3 0.8-0.9 1-0.8 0.4-0.5 0.2-0.4 0-0.5 0.1-0.5 0.3-0.4 0.3-0.3 0.6-0.4 0.3-0.3 0.1-0.5 0-1 0.2-0.9-0.3-0.2-0.1-0.1-0.4-0.2-0.3-0.2-0.2-0.3-0.1-0.3-0.1-0.2 0.1-0.5 0-0.6 0.1-0.3 0.1-0.2 0.2-0.1 0.4-0.3 0.5-0.2 1.2-0.4 0.3-0.1 0.2-0.1 0.1-0.2 0.1-0.1 0-0.3-0.1-1.1 0.1-0.2 0.1-0.2 0.2-0.1 0.2-0.2 1.2-0.4 0.3-0.2 0.1-0.4 0.3-0.3 0.9-0.3 0.6-0.4 0.4-0.1 0.2 0 0.1-0.2 0.5-1.2 1-1.1 0.2-0.5 0.1-0.1 0.2-0.2 0.2-0.2 0.6-0.2 1-0.2 2.4-0.1 0.5-0.2 0.5-0.3 0.8-0.7 0.1-0.2 0-0.2 0-0.1 0.3-0.1 0.3 0.1 0.3 0.2 0.3 0 0.4 0 0.3-0.1 0.2-0.3 0.3-0.8 0.8-1 0.6-1.5 0.3-0.5 0.2-0.4 0-0.6-0.2-0.6-0.2-0.5 0.2-0.3 0.5 0.3 0.3-0.2 0.5-0.8 0.3-0.5 0.2-0.4 0.1-1.1 0.1-0.3 0.3-0.4 0.1-0.3 0-0.3-0.1-0.5 0-0.2 0-0.3 0.1-0.3 0-0.2 0.1-0.2 0.4-0.2 0.1-0.2 0-0.5-0.1-0.4-0.1-0.3 0.2-0.5 0.2-0.2 0.4-0.3 0.3-0.3 0.4-0.1 0.4-0.2 0.9-1.4 0.4-0.4 0.9-0.4 0.5-0.3 0.6-0.6 0.3-0.3 0.5-0.1 0.5 0 0.4-0.2 0.7-0.6 0.2 0.4 0.1 0.4 0.2 0.5 0.5 0.1 0.4 0 0.4-0.2 0.6-0.4 0.8-0.3 0.3-0.3 0.2-0.2 0-0.1 0.1-0.2 0.1-0.5 0.1-0.2 0.2-0.2 0.5-0.2 0.2-0.2 0.1-1.5 0.2-0.2 0.4-0.2 0.1-0.4-0.1-1 0.2-0.5 0.4-0.9 0-0.6 0.2-0.2 0.5-0.5 0.1-0.2 0-0.2 0.2-0.5 0.1-0.3 0.2-0.2-0.1-0.3 0.1-0.2 0.2-0.3 0.1-0.3 0-0.4 0-0.3-0.4-1 0-0.2-0.1-0.4-0.1-0.2 0-0.2 0.1-0.4 0-0.2 0.1-0.4 0.2-0.5 0.1-0.3 0-0.2 0-0.3 0-0.3 0.3-1.2 0.8-1.6 0.1-0.3 0-0.2-0.1-0.3 0-0.2 0.1-0.2 0.5 0.1 0.7-0.2 0.2-0.2 0.2-0.1 0.1-0.3 0-0.4-0.1-0.1-0.2-0.3 0-0.2-0.1-0.3 0.1-0.6-0.1-0.4-0.1-0.2 0-0.3 0.1-0.2 0.2-0.8 0.2-0.9-0.1-0.5-0.1-0.4-0.1-0.4 0-0.2 0-1.3-0.1-0.2-0.1-0.4 0-0.2 0.1-0.3 0.4-0.1 0.4-0.1 0.1-0.1 0.3-0.3 0.3-0.2 0.1-0.3 0.5-1.4 0.2-1.4 0.1-0.2 0.3-0.4 0.2-0.2 0.3-0.1 0.1-0.1 0.4-0.6 0.1-0.3 0.3-0.3 0.2-0.2 0.1-0.3 0.1-0.7 0.1-0.3 0.3-0.4 0.3-0.3 0.3-0.4 0.3-0.7 0.6-1.3 0.1-0.4 0-0.2-0.2-0.4 0-0.2 0-0.4 0-0.3 0.1-0.9 0-0.3-0.1-0.2-0.2-0.3 0-0.2 0.1-0.2 0.2-0.1 0.3-0.2 0.2-0.2 0.1-0.2-0.1-0.2-0.2-0.1-0.1-0.2 0.1-0.2 0.2-0.1 0.8-0.5 0.1-0.1 0.2-0.2 0.1-0.3 0.1-0.1 0.4-1.7 0-0.3-0.1-0.3-0.1-0.2 0.4-0.8 0.2-0.6 0-0.2 0-0.3 0.1-0.4 0-0.2 0-0.3 0.2-0.5 0.1-0.1 0.3-0.2 0.2-0.2 0.1-0.3 0.1-0.3-0.1-0.2 0.1-0.3 0.2-0.3 0.7-0.8 0.2-0.2 0.1-0.2 0-0.2 0.1-0.3 0.4-0.2 0.2-0.2 0.1-0.3 0.3-0.1 0.2-0.3 0.4-0.3 0.5-0.3 0.5-0.4 1.9-1.1 0.2 0.2 0.2 0.2 0.1 0.2 0.1 0.2-0.1 0.5-0.1 0.2-0.1 0.2-1.2 1.3-0.1 0.2-0.2 0.2 0 0.2 0 0.3 0.2 1-0.1 0.5 0 0.4-0.2 0.3-1.2 1.7-0.1 0.4-0.2 0.3 0 0.3 0.1 2.4 0.1 0.4 0.2 0.3 0.4 0.3 4.2 2 1.1 0 0.2-0.1 0.2 0.1 0.3 0.1 1.3 1 5.1 2.4 2.6 0.3 1.1 0.3 2.2 1 0.5 0.1 0.3 0 0.2-0.4 0.1-0.3 0-0.7 0.1-0.5 0.2-0.7 1.3-3 3.6-6.2 1.7-1.2 1-0.6 0.1 0 0.2 0 0 0.1-0.2 1.1-0.1 0.4 0.2 0.3 0.2 0.3 1.6 0.8 1.5 1.1 0.4 0.4 0.4 0.5 0.3 0.6 0.3 0.7 0 0.3 0 0.3-0.1 0.9 0 0.3 0 0.3 0.1 0.3 0.5 1 0.1 0.4 0.2 2.6-0.4 1.8 0 0.4 0 0.3 0 0.2 0.1 0.6 0.1 0.2 0.1 0.3 0.2 0.2 0.2 0 0.2 0 0.8-0.6 0.2-0.2 0.2-0.3 0.1-0.1 0.1-0.4 0.1-1.1 0.1-1.2 0.1-0.6 0.1-0.2 0.1-0.2 0.2-0.2 0.2-0.1 0.3-0.1 0.5 0 0.3 0.1 0.3 0.1 1.3 0.6 0.7 0.2 1.7-0.1 0.5 0 0.4-0.1 0.4-0.1 0.5-0.3 2.3-1.7 0.5-0.4 0.8-0.3 0.4 0 0.1 0.2 0 0.2-0.1 0.3-0.4 1.2-0.2 0.5 0.1 0.2 0.5 0 0.5 0 0.6 0.2 0.5 0.2 0.8 0.5 0.8 0.7 0.4 0.2 0.4 0.1 0.4-0.4 0.1-0.1 0.2 0.1 0.3 0.1 0.6 0.5 0.9 0.5 3.9 1.4 0.3 0.1 0.2-0.1 0.1-0.2 0-0.3-0.1-0.2-1.3-2.9-0.2-0.5 0-0.2 0-0.1 0.1-0.2 0.2-0.3 1-0.8 0.3-0.1 0.2 0.1 0.1 0.2 0.2 0.4 0.1 0.4 0.7 0.6 0.1 0.2 0.1 0.4 0 0.2 0.7 0.8 0.1 0.2 0 0.3 0.2 0.6 0.1 0.1 0.2 0 0.1-0.3 0.2-0.2 0.1-0.2 0.1-0.2 1.4-0.2 0.6-0.2 0.4-0.3 1.5-0.7 0.3 0 0.2 0 0.3 0 0.2 0 0.3-0.2 4.1-2.1 0.9-0.3 1.7-0.3 0.2 0 0.4 0 0.5 0.1 1.1 0 1.1-0.1 0.6-0.2 0.5-0.1 0.3-0.3 0.3-0.2 2.3-2.5 0.3-0.3 0.3-0.2 0.6-0.2 1.5-0.3 0.8-0.3 0.8-0.4 0.2-0.1 0.2 0 2-0.1 1-0.2 1.5-0.9z" id="BRA1294" name="Goiás">
                         </path></a>
-                        <a xlink:title="São Paulo" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#SaoPaulo">
+                        <a xlink:title="São Paulo" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/sao-paulo/superintendencia-regional-de-sao-paulo" target="blanck">
                         <path d="M594.2 688.1l-1 0.7-0.8 0.3-0.5 0.2-5.2 4.5-0.9 0.4-0.3 0.4-0.5 0.8-0.4 0.9-0.2 0.4-0.3-0.2 0-0.5 0.4-0.8 0.1-0.4 0.1-0.2 0.9-1.1 2.6-2 1-0.5 1.3-1.4 1.2-0.5 0.6-0.6 0.4-0.2 0.2-0.1 0.5 0.1 0.2-0.1 0.4-0.2 0.2-0.1 0 0.2z m23.8-19l0.8 0.2 0.4 0 0.2 0 0 0.2 0.1 0.1 0.3 0.5 0.2 0.5 0 0.3-1.1-0.5-0.3 0-0.2 0.2-0.2 0-0.4-0.1-0.2 0-0.1-0.1-0.4-0.6 0.4-0.1 0.1 0 0.1 0.1 0.2-0.3-0.1-0.1-0.1-0.3 0.3 0z m28.3-2.8l-0.1 0.2-0.3 0-0.1 0.1-0.3 0-0.1-0.3-0.2 0 0.1-0.2 0.4-0.1 0.4 0.2 0.2 0.1z m-2.5-0.8l-0.2 1.8-0.7-0.1-0.1 0.7 0.4 0.7 0.7-0.1 0.1 0.1 0.1 0.2-0.3 0.1 0 0.2 0.1 0.2 0 0.3 0.1 0.2 0 0.1-0.2 0.2-0.3 0.2-0.1-0.1-0.4-0.1-0.2-0.3-0.2-0.5-0.2-0.4-0.3 0.2-0.2-0.1-0.8 0.3-0.9 0.3-0.8-0.1-0.5-0.5-0.2-0.6 0.2-0.3 0.3-0.2 0.3-0.3 1.4-1.4 0.3-0.4 0.1-0.8 0.2-0.3 0.1-0.3 0.2-0.1 0.2 0 0.2 0.1 0.3 0.1 1.1 0.8 0.2 0.2z m8.8-33.1l0.4 0 0.2 0.1 0.8 0.3 0.3 0.2 0.1 0.2 0.2 0.2 0.6 1.2 0.2 0.3 0.3 0.3 0.4 0.4 0.1 0.2 0.1 0.1 0.3 0.1 0.1 0.1 0.2 0.7 0.1 0.2 0.2 0.2 0.5 0.2 0.3 0 0.7-0.1 0.1 0 0.3 0.3 0.4 0 0.3 0 0.3-0.1 0.2-0.1 0.1 0 0.9-0.1 0.1 0 0.2-0.2 0.3-0.1 0.4 0 0.2 0 0.2-0.1 0.1-0.2 0.1 0 0.1 0 0.2 0.3 0.2 0.1 0.2-0.1 0.3-0.1 0.3 0 0.6 0 0.7 0.1 0.4 0 0.1-0.1 0.2-0.1 0.2 0 0.2 0.5 0.4 0.5 0.5 0.9 0 0.2 0.1 0.2 0 0.2-0.1 0.1-0.1 0.1-0.3 0.1-0.5 0.1-0.1 0.1-0.3 0.2-0.6 0.6 0 0.2 0.1 0.4 0 0.3-0.4 0.6-0.2 0.3-0.8 0.2-1.1 0.7-0.3 0.1-0.1 0-0.4-0.2-0.1 0-0.7 0.3-0.4 0.1-0.2-0.1-0.1-0.4-0.1 0-0.2 0-1.2 0.7-0.2 0.1-0.2 0-0.4-0.2-0.2 0-0.3 0.1-0.6 0.2-0.8 0.6-0.4 0.2-0.2 0.1-0.7 0.1-0.2 0-0.2 0.2-0.3 0.3-0.3 0.5-0.1 0.1-0.2 0.1-0.5 0.1-0.1 0-0.1 0.2 0 0.2 0.1 0.4 0 0.2-0.3 1.3 0 0.5 0 0.3 0.1 0.2 0 0.2-0.1 0.3-0.2 0.4-0.2 0.2-0.2 0.1-0.1 0.1-0.2 0.1-0.4 0.7 0 0.2 0 0.3 0 0.1 0.1 0.2 0.6 0.8 0.3 0.6 0.1 0.1 0.2 0 0.2-0.2 0.1 0 0.1 0.1 0.2 0.3 0.2 0.4 0.3 0.3 0.6 0.4-0.1 0.3-0.3 0.2-0.4 0-0.4 0.2-0.4-0.2-0.3 0.1-0.3 0.2-0.4 0-0.1-0.1-0.1-0.3-0.1-0.2-0.2-0.1-0.4 0.1-0.3 0.1 0.2-0.6-0.6 0.2-0.8 0.5-0.2 0.3-0.2 0-0.1 0.3-0.1 0.1-0.2 0.1-0.4 0.1-0.5 0.3-0.1-0.1-0.2-0.2-0.2 0.5 0.3 0.3 0.4 0.2 0.3 0.3-0.6 0.1-0.4 0.2-0.4 1.1-0.2-0.5-0.3-0.1-0.1 0.1 0.1 0.5-0.2-0.1-0.3-0.1-0.2-0.2-0.3-0.2-0.2-0.1-0.1 0.3 0 0.4 0.1 0.3-0.4 0.1-0.4-0.2-0.4 0-0.3 0.4 0.2 0.5 0.1 0.3-0.2 0.1-0.3 0-0.7 0.3-0.2-0.1-0.4-0.3-0.2-0.1-0.3 0.1-0.2 0.2-0.2 0.3-0.1 0.1-0.5 0.1-0.4 0.3-0.5 0.2-0.6-0.1 0 0.2-0.3 0.4-0.1 0.2 0 0.3 0.1 0.5 0 0.3 0.1 0.3 0.2 0.1 0.2 0.1 0.1 0.1 0.1 0.3-0.2 0.5 0.1 0.3 0.2 0.4-0.1 0.5-0.2 0.4-0.5 0.3-0.2 0-0.4-0.2-0.2 0-0.3 0.1-0.5 0.2-0.2 0-0.4-0.2-0.6-0.6-0.5-0.2-0.7 0.2-0.2 0-0.1-0.1-0.1-0.2-0.2 0-0.4-0.1 0 0.1-1.5-0.5-1.4-0.1-0.3 0-0.4-0.2-0.2-0.1-0.9 0-2.1 0.6-0.7 0.3-0.4 0.2-0.3 0.3-0.2 0.4-0.2 0-0.5-0.1-0.4 0.1-0.5 0.2-0.8 0.4-0.1-0.2-0.1 0-0.3 0.6-0.5 0.5-0.5 0.4-0.7 0.2 0 0.1 0.5 0 0.3-0.1 0.3-0.2 0.9-0.9 0.3-0.1 0.4 0-0.8 1-0.2 0.3-0.1 0.4-0.1 0.5 0 0.4 0 0.2-0.2 0.3-0.2 0.1-0.3-0.1-0.1-0.2-0.1-0.1-0.3 0-0.3 0.2-0.4 0.2-0.3 0.4-0.5 0.2-0.6-0.1 0.1-0.4 0.6-0.2 0.2-0.3-0.1-0.3-0.1-0.3-0.2-0.2-0.1-0.2-0.1-0.3-0.1-0.3-0.3-0.1-0.6-0.1-0.3-0.1-0.1-0.2 0.1-0.2 0-0.2-0.6-0.1-0.1 0.3 0.1 0.5-0.2 0.2-0.3 0 0 0.2 0 0.2 0 0.1-0.5-0.1-0.5-0.1 0.1 0.3 0.2 0.2 0.3 0.1 0 0.1 0.2 0.5 0.1 0.1 0.3 0.1 0.3 0 0.2 0 0.1 0.2 0 0.6-0.1 0.2-0.2 0.1 0-0.2-0.1-0.1-0.3-0.2-1.4 0.8-2.8 1.2-3.4 2.1-2.5 1.3-1.8 1.1-0.6 0.6-0.5 0.8-0.3 0.9-0.2 0.2 0.2 0.6 0 0.2-0.3 0.4-0.5 0.2-0.3-0.1 0-0.6-0.5 1.1-0.2 0.1-0.4 0.1-0.5 0.6-0.3 0.2-1 1.1-5.9 3.6-0.2-0.1-0.4 0.1-0.6 0.3-0.5-0.1-0.3 0-0.2 0.3-0.4 0.3-0.5 0.4-1.1 0.6-4.3 3.4-0.4 0.4-0.5 0.8-0.5 0.3-0.1 0.2-0.9 1.8-0.6 0.4-1.1-0.2 0.1-0.4 0.3 0 0.4 0 0.2-0.1 0.1-0.2-0.3-0.1-1 0-0.1 0.1-0.1 0.2 0.1 0.3-0.1 0.2-0.2 0.1-0.2 0-0.2-0.3 0 0.4 0.5 0.3 0.5 0.1 0.5 0.1 0.5 0.2 0.3 0 0.3-0.1 0.2-0.2 0.3-0.2 0.3-0.1 0.3 0-0.8 2.5-0.6 1.1-1.2 0.3-0.4 0.3-1 1.3-0.2 0.4-0.1 0.3 0-0.3 0.1-0.2 0.2-0.3 0.6-0.8 0.2-0.3-0.1-0.2-0.1-0.1-0.2 0-0.2 0.1-0.3 0.3-0.2 0.1-0.3 0-1.3-0.4-0.3-0.2-0.3-0.2-0.1-0.2-0.1-0.2 0-0.1 0.1-0.3 0-0.3-0.1-0.3-0.4-1.3 0-0.1-0.1-0.5-0.5-1.4-0.7 0.5-0.3 0-0.1-0.4-0.2-0.2-0.3 0-0.4 0.1-0.2 0-0.1-0.1-0.1-0.4-0.2-0.2-0.3-0.2-0.2-0.1-0.4 0-0.2-0.1-0.4-0.3-0.2 0.1 0 0.1-0.1 0.1-0.4 0.3-0.2 0.1-0.2 0.2 0 0.2 0 0.1 0.1 0.4 0 0.3-0.2 0.2-0.3 0.2-0.1 0.2-0.2 0.4-0.1 0.2-0.2 0-0.7-0.3-0.6-0.3-0.2-0.3-0.3-0.8 0-0.3 0.1-0.2 0.4-0.2 0.1-0.1 0.1-0.3 0.1-0.6-0.2-0.8 0.1-0.4 0.3-0.3 0.1-0.1 0-0.3-0.1-0.3 0-0.6 0-0.3 0-0.2 0.2-0.2 0.5-0.2 0.1-0.2 0.2-0.2 0.2-0.6 0.1-0.2 0-0.2-0.2 0-1.1-0.5-0.2 0-0.1-0.2-0.3-0.5-0.2-0.2-0.3-0.1-0.1 0-0.3 0.1-0.4 0.2-0.4 0.3-0.2 0.1-0.2-0.1-0.2-0.7-0.3 0-0.1 0.3-0.3 0.1-0.8 0.1-0.5-0.1-0.2 0.1-0.1 0-0.4-0.2-0.4-0.3-0.3-0.3-0.5 0.1 0.1 0.1-0.6 0-1.8 0.1-0.5-0.1-0.7-0.7-0.5-0.2 0.1 0.9-0.6 0.4-0.8 0.1-1.3-0.3-0.5 0.1-0.4 0.3-0.3 0-0.4-0.1-1.5-0.4-0.2-0.2-0.2-0.3 0-0.5 0.1-0.7-0.1-0.3-0.3-0.6-0.1-0.3 0-0.2 0.1-0.2 0.1-0.2 0.6 0 0.1-0.2 0-0.3 0-0.3 0.2-0.6-0.5-0.4 0-0.2 0-0.1 0.2-0.2 0.7-0.2 0.3-0.3 0.1-0.1 0-0.1-0.2-0.2-0.1-0.2 0-0.1 0.2-0.2 0.2-0.2 0.1-0.2 0.1-0.3 0-0.2-0.1-0.1-0.2-0.2-0.4-0.1-0.2-0.2-0.2-0.1-0.2-0.2-0.2-0.3-0.3-1-0.1-0.3-0.1 0-0.4-0.2-0.1-0.2-0.1-0.2 0-0.1 0.1-0.3 0-0.3 0.1-0.9-0.1-0.3-0.1-0.1-0.1-0.2-0.2-0.3-0.3-0.3-0.2-0.1-0.6-0.2-0.2-0.1-0.1-0.1-0.2-0.3-0.2-0.2-0.3-0.2-0.1-0.1-0.3-0.4-0.3-0.5-0.4-0.5-0.1-0.3-0.1-0.3-0.2-0.3 0-0.1 0-0.3-0.1-0.1-0.2 0-0.2 0-0.3-0.2-0.4-0.6-0.3-0.2-0.1 0-0.2-0.3-0.2-0.4 0-0.2 0.1-0.1 0.1-0.1 0.3 0 0.1-0.2 0.2-0.2 0-0.2 0.1-0.4 0-1.1 0.2-1.2 0-0.3-0.1-0.1-0.1-0.1-0.3-0.3-0.2-0.3-0.5-0.7-0.3-0.6-0.1-0.5 0-1-0.1-0.3-0.1-0.2-0.1-0.1-0.2-0.2-0.1-0.2-0.1-0.2 0.1-0.2 0.1-0.2 0.7-1.9 0.1-0.4-0.2-1.1-0.4-2.2-0.7-1.5-0.6-0.9-0.5-0.4-0.1-0.2-0.1-0.2 0-0.2 0-0.3-0.1-0.2-0.1 0-0.2 0-0.4 0-0.1 0-0.5-0.2-0.2-0.1-0.7-0.4-0.2-0.1-0.7-0.1-0.2-0.1-0.3-0.2-0.3-0.3-0.1-0.2 0.1-0.7-0.1-0.3-0.4-0.2-0.7-0.3-0.2-0.3 0.1-0.6-0.1-0.4-0.2-0.2-0.2-0.1-0.2 0.1 0 0.4-0.4-0.2-0.3 0-1.6 0.5-0.2 0.1-0.4 0.1-1.8 0.2-0.6-0.1-0.2-0.1-0.4-0.1-0.4 0-0.1 0.2-0.2 0.2-0.3 0-0.4-0.2-0.2-0.1-0.5-0.4-0.3-0.2-0.4-0.1-0.3 0.1-0.2 0.2-0.5 0.6-0.2-0.2-1.4 0.2-0.2-0.1-0.2-0.2-0.5-0.1-1.9-0.3-0.6 0-0.4 0.1-0.5 0.4-0.3 0.1-0.4 0.2-0.5 0.1-0.3-0.1-0.3-0.1-0.2-0.1-0.2-0.2-0.1-0.3-0.2-0.6-0.2-0.3-0.9-1.2-0.3-0.2-0.2-0.2-2.7-0.7-2.5-0.6-1.5-0.6-1.9-1.3-0.5-0.3-0.7-0.2-0.4-0.3-0.2-0.1-0.2 0-0.3 0-0.2 0.1-0.5 0-0.4 0-0.3 0-0.1 0-0.1 0.1-0.6 0.3-0.2 0.1-0.3 0.2-0.5 0-0.8 0-0.5-0.1-0.4-0.1-0.8-0.4-0.4-0.2-0.4 0-0.5 0.3-0.3 0-0.4-0.4-0.7-0.7-0.5-0.2-1.4 0.2-0.6-0.1-0.4-0.1-2.5-1.5-0.9-0.4-0.9-0.2-0.5 0-0.6 0.1-0.5 0.3-0.3 0.5 0 0.5-0.2 0.5-0.3 0.6-0.4 0.3-0.6 0.1-0.2-0.2-0.1-0.4-0.2-0.2-0.1 0-0.4-0.3-0.3 0-0.2 0.1-0.6 0.4-0.5 0-1.1-0.3-0.5-0.1-0.9 0-0.3 0.1-0.4 0.1-0.9 0.1-0.7-0.4-0.7-0.6-0.7-0.1-1.3 0.7-0.5 0.1-2.2-0.3-1 0-0.4-0.1-0.6-0.3-0.3-0.1-1.2 0.1-0.4 0.1-0.6 0.3-0.3 0.3-1.1 0.8-1.1 1.1-0.2 0.1-0.8 0.4-0.4 0 0.7-0.6 0.6-0.7 1.3-2.5 0.1-0.1 0.3-0.1 0.3-0.1 0.2-0.1 0.2-0.2 0.3-0.8 0.5-0.7 0.1-0.1 0.2 0.2 0.4 0 0.4-0.1 1.7-0.9 0.1-0.1 0.2-0.6 0.1-0.1 0.1-0.2 2.1-1.2 0.7-0.6 0.4-0.2 1.2-0.5 0.7-0.6 0.5-0.3 0.2 0 0.5-0.1 0.2-0.1 0.2-0.1 0.5-0.6 0.2-0.1 0.6-0.3 0.1-0.2 0.4-0.5 1.5-1.3 0.1-0.2 0.2-0.7 0-0.2 0.7-1.3 0.1-0.4 0.1-0.7 0.1-0.4 0.2-0.3 1.1-1.1 0.2-0.1 0.4-0.2 0.2-0.1 0.2-0.2 0.2-0.3 0.1-0.3 0.1-0.3 0.1-0.4 0.1-0.3 0.7-1.2 0.3-0.2 0.8-0.4 0.5-0.3 0.4-0.4 0.4-0.5 0.1-0.5-0.1-0.2-0.2-0.3-0.2-0.1-1-1.6 0.1-0.7 0.2-0.1 0.2-0.2 0-0.3 0.1-0.3 0.2-0.1 0.2-0.1 0.3 0 0.4 0.1 0.4 0.1 0.3 0 0.4-0.1 0.4-0.3 0.6-1.1 0.2-0.5 1.3-1.4 0.4-1.1-0.1-1-0.4-2 0.1-0.7 0.2-0.3 0.4-0.2 0.6-0.5 0.4-0.2 0.1-0.1 0.1-0.1 0.4-0.7 0.6-1.4 0.2-0.2 0-0.1 0.5-0.4 1.6-1.7 0.2-0.5 0.2-2.6 0-1.1 0.1-0.5 0.5-0.9 0.2-1.1 0.2-0.5 0.4-0.2 1-0.3 1.2-1.2 0.5-0.8 1-1.2 0.3-0.5 0.8-1 0.4-0.3 1.3-0.7 2.9-0.9 0.6-0.3 0.6-0.5 0.7-0.8 0.6-1 0.7-2 1-1.2 1.3-1.1 0.5-0.3 3.8-1.4 0.6-0.2 0.4-0.3 1.7-1.6 0.5-0.9 0.7-0.4 0.8-0.2 0.7-0.1 0.7 0.3 0.6 0.5 0.8 1.1 0.6 0.2 7.2 1.1 3 0.4 7.5 0 1 0.2 2.1 0.6 0.5 0.4 1.5-0.3 0.5-0.1 0.5 0.1 0.4 0.2 0.2 0.3-0.1 0.4-0.8 0.3-0.2 0.1-0.1 0.3 0 0.3-0.2 0.6 0 0.6 0.2 1.1 0.1 0.5 0.6 1.1 0.6 0.8 0.3 0.8 0.2 0.3 0.8 0.4 0.7-0.3 0.7-0.7 0.4-0.7 0.7-1.6 0.6-0.7 0.9 0.2 0.5 0.8 0.2 1.1-0.1 2.2 0.1 1.9 0.2 0.2 1 0.5 0.4 0.2 0.6-0.6 0.1-0.2 0-0.3-0.2-0.7-0.1-0.3 0-1.3 0-0.4-0.1-0.2-0.1-0.3 0.3-0.4 0.3-0.6 0.2-0.7 0.2-0.6 0.6-0.3 1.1 0 0.9-0.1 0.3 0 1.3 0.2 0.5 0.1 0.3-0.1 0.8-0.5 0.5-0.2 1.7 0.1 0.3 0 0.2-0.2 0.5-0.1 0.9-0.2 1.9 0 0.6 0.2 0.6 0.5 0.5 0 0.5-0.6-0.5-1.6 0.4-0.7 0.5 0.4 0.3 0.5 0.2 0.6 0.2 0.6 0.4 0.3 0.9 0.4 0.6 0.4 0.3 0 0.3 0 0.2-0.2 0.4-0.4 0.1-0.1 0.3-0.1 0.1-0.1 0.3-0.4 0.1-0.5 0-1.1 0.3 0.1 0.3 0.2 0.2 0.2 0.1 0.3 0.1 0.3 0 0.2 0 0.3 0.2 0.3 0.2 0.1 0.2 0.1 0.2-0.1 0.3-0.1 0.3-0.2 0.2-0.5 0.1-0.6 0.1-0.5-0.2-0.4-0.1-0.2 0.2-0.2 0.2-0.2 0.2-0.2 0.2-0.1 2.8-0.1 0.4 0.2 0.5 0.4 0.5 0.7 0.4 0.3 0.5-0.2 0.4-0.3 0.1-0.3 0.3-0.4 0.5-0.1 0.5 0 0.5-0.2 0.5-0.2 0.4-0.2 0.3 0.2 0.4 0.3 0.1 0.1 0.1 0.3-0.1 0.3 0 0.4-0.1 0.2 0.6 0.6 0.3 0.3 0.2 0 0.3 0 1.6 1.1 0.2 0.4 0.9 0.7 0.2 0.4 0.3 0.5-0.1 0.4 0 0.4-0.1 0.3-0.1 0.2-0.1 0.3-0.4 0.3-0.1 0.2 0 0.1-0.1 0.5-0.1 1.4-0.1 0.6 0 0.3-0.1 0.2 0 0.2 0 0.1 0.1 0.2 0.6 0.7 0.2 0.1 2.2 1.1 0.2 0.2 0.1 0.2 0.1 0.2 0.6 2 0 0.2 0 0.4-0.1 0.2-0.1 0.2-0.2 0.3-0.1 0.1-0.1 0.1-0.3 0-0.1 0.1-0.1 0.1-0.1 0.6 0 0.2-0.1 0.3-0.3 0.4-0.1 0.2-0.1 0.1-0.3 0.2-0.2 0.5-0.2 1.7-0.1 0.5 0 0.2 0.1 0.1 0.2 0.2 0.1 0.1 0.3 0.1 0.2 0.1 0.1 0.2 0.3 0.4 0.2 0.2 0.2 0.2 0.1 0.1-0.1 0.2-0.1 0.3 0 0.4 0.5 1.5 0 0.2 0 0.6 0 0.2 0.1 0.2 1.1 1.3 0.2 0.1 0.3 0.2 0.1 0.1 0.1 0.7 0.4 1 0.1 0.3 0.1 0.5 0.1 0.2 0.4 0.7 0.1 0.3 0 0.3-0.2 0.6 0 0.2 0.1 0.1 0.1 0.1 0.3 0 1.9-0.1 0.2-0.1 0.3-0.2 0.2-0.1 0.3 0 0.2-0.1 0.2-0.2 0.1-0.3 0.1-0.1 0.2 0 0.6 0 0.2 0 0.3 0 0.5 0.2 0.6 0.3 0.4 0.3 0.2 0.1 0.2-0.1 0.2-0.3 0.3-0.2 0.2-0.1 0.1 0.1 0 0.4 0.1 0.2 0.1 0.1 0.5 0.2 0.1 0.1 0.1 0.4 0.1 0.1 0.2 0 0.4-0.2 0.3 0 0.3 0.1 0.2 0.1 0.3 0.1 0.1 0.1 0.2 0.3 0 0.1 0.1 1 0.1 0.2 0.1 0.3 0 0.1 0 0.1-0.3 0.1-0.1 0.2-0.1 0.2-0.1 0.3 0 0.7 0.1 0.1 0 0.1-0.4 0.3-0.2 0.3-0.4 1.1-0.1 0.2-0.1 0.1-0.1 0-0.6-0.1-0.1 0-0.1 0.2-0.4 2-0.1 0.2-0.1 0.1-0.4 0.3-0.2 0.2-0.1 0.2 0 0.1 0 0.2 0.1 0.4 0.1 0.1 0.2 0.2 0.1 0.2 0 0.2-0.1 0.2-0.2 0.2-0.1 0.1 0.1 0.3 0.5 1.3 0.4 0.6 0.1 0.1-0.1 0.2-0.2 0.2-0.1 0-0.3 0-0.2 0.1-0.3 0.3-0.1 0.2 0.1 0.2 0.2 0.2 0 0.1-0.1 0.1-0.2 0.1-0.4 0-0.1 0.1-0.1 0.1 0.1 0.1 0.1 0.2 0.3 0.2 0.1 0.1 0.8 0 0.1 0 0.2 0.2 0.5 0.8 0 0.1-0.1 0.2-0.6 0.5-0.3 0.3-0.4 0.6-0.8 1.9-0.1 0.6 0 0.2 0.2 0.2 0.7 0.8 0.1 0.2 0 0.2 0 0.4 0 0.2 0.2 0.1 0.2 0.2 1.1 0.4 0.8 0.2 0.1 0 0.1 0.1 0.1 0.3 0 0.4 0 0.2 0.2 0 0.4 0.1 0.5 0.2 0.9 0.7 0.2 0 0.5 0.2 0.4 0 0.3 0 0.1 0.1-0.1 0.2-0.2 0.2-0.3 0.2-0.1 0.3 0.1 0.3 0.1 0.3 0.3 0.5 0 0.3-0.2 0.2-0.1 0-1.1 0.4-0.2 0.2-0.2 0.1 0 0.2 0.1 0.3 0.6 0.5 0.4 0.3 1.3 0.7 0.3 0.3 0.1 0.1-0.2 0.4-0.1 0.3 0 0.4 0 0.3 0.1 0.6 0.1 0.3 0.2 0.2 0.4 0.1 0.4 0 0.3 0.1 0.2 0.2 0.2 0 0.2-0.1 0.2-0.2 0.3 0 0.3 0.1 0.1 0 0.3-0.1 0.1-0.1 0.3-0.2 0.3-0.1 0.6-0.1 0.3 0 0.1 0.2 0 0.1-0.2 0.4 0 0.1 0.1 0.2 0.5 0 1.8-0.3 0.5-0.1 0.4-0.1 0.4-0.4 0.2-0.3 0.1-0.1 0.2-0.1 0.2 0 0.3 0.1 0.1 0 0.1-0.1 0.1-0.2 0.2-0.2 0.2 0.1 0.1 0.3 0.2 0.2 0.4 0.3 0.2 0.2 0.1 0 0.1 0 0.2-0.2 0.3-0.5 0.3-0.2 0.2 0 0.1 0.1 0.1 0.1 0.1 0.3 0.2 0.1 0.1 0 0.1-0.1 0.2-0.2 0.1-0.1 0-0.3-0.1-0.4 0-0.2 0.2-0.2 0.1 0 0.3 0.2 0.2-0.1 0.1-0.2 0.1-0.2 0-0.3 0.1-0.3-0.1-0.3-0.1-0.2-0.2-0.1-0.4 0-0.6 0-0.3 0-0.1-0.1-0.1-0.2 0-0.2 0.1-0.1 1.9-1.2 0.2-0.2 0-0.1 0-0.2-0.1-0.2-0.3-0.3-0.1-0.1 0-0.3 0.2-0.1 0.3-0.1 0.9-0.1 0.3 0.1 0.2 0.1-0.2 0.3-0.2 0.2-0.2 0.2-0.1 0.3 0 0.2 0 0.1 0.2 0.2 0.3 0 0.2 0 0.2-0.1 0.6-0.3 0.4-0.3 0.2-0.1 0.2 0 0.1 0.1 0 0.4 0.2 0.2 0.7 0.1 0.3-0.1 0.2 0 0.5-0.3 0.2-0.2 0.1-0.1 0.3-0.5 0.3-0.1 0.1 0 0.3 0.1 0.2 0.3 0.1 0.2 0 0.3 0.1 0.3 0.1 0.1 0.2 0 0.2-0.1 0.9-0.5 1.7-0.5 0.3-0.2 0.2-0.3 0-0.1-0.1-0.3 0.1-0.1 0.1-0.1 0.2 0.1 0.2 0 0.1-0.1 0.4-0.3 0.4-0.4 0.1-0.1 1.2-0.7 0.3-0.2 1.3-0.6 0.2 0 0.4 0 0.2 0 0.3 0 0.3-0.2 0.3-0.1 0.2-0.1 0.6 0 0.3 0.1 0.2-0.1 0.6-0.2 1.4-0.8z" id="BRA1311" name="São Paulo">
                         </path></a>
-                        <a xlink:title="Pernambuco" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Pernambuco">
+                        <a xlink:title="Pernambuco" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/pernambuco/superintendencia-regional-de-pernambuco" target="blanck">
                         <path d="M875.7 293.7l-0.1 0.1-0.3 0-0.4-0.1-0.2-0.1 0-0.4 0-0.5 0.1-0.2 0.2-0.3 0.2-0.3 0.1-0.6 0.1-0.1 0.2-0.1 0.2 0.1 0.1 0.1 0 0.2 0.2 0.6 0 0.3-0.1 0.3-0.2 0.3 0 0.4-0.1 0.3z m-1.2-6l-0.4 0.1-0.4 0.2 1.4-0.1 0.7 0.2 0.1 0.5 0.2 0.4 0.3 0.3 0.1 0.2-0.4 0.7-0.2 0.6-0.1 0 0-0.3-0.1-0.3-0.1 0.1 0 0.3-0.5-0.9-0.2-0.3 0 0.4 0.3 1.1-0.1 0.5-0.2-0.1-0.3 0.1-0.2 0.2-0.2 0.4 0.4-0.2 0.3-0.2 0.1 0 0.1 0-0.1 0.3-0.1 0.2-0.2 0.2-0.2 0.4 0 0.9 0.2 0.2 0.8 0.2 0 0.3 0.1 0.3 0 0.8 0.3-0.6 0.1 0.3 0.2 0.5 0.1 0.3-0.1 0.2 0 0.1 0 0.1 0.1 0.2-0.2 0.4-0.5 2 0 0.4-0.2 0.3-0.2 0-0.4-0.2-0.5-0.4-0.2-0.2-0.4 0 0.4 0.2 0.1 0.2 0.1 0.2 0.1 0.3 0 0.2 0 0.2 0.2 0.2 0.1-0.1 0.1 0.2-0.3 0.8-0.2 0.9 0 0.2-0.4 0.5-0.3 0.7-0.1 0.6-0.1 0.9 0 0.6 0.1 0.2 0 0.1-0.3 0.3-0.1 0.4-1.6 4.4-0.9 2 0 0.2-0.3 0.2-0.1 0.4 0 0.9-0.2 0.5-0.7 1-0.2 0.5-0.1 1-0.2 0.9-0.4-0.2-0.2 0-0.6 0-2.2-0.4-2 0-0.6-0.3-0.8-0.2-0.2-0.1-0.1-0.2-0.1-0.4-0.4 0-0.5 0.1-2.2 0.6-0.4 0.2-1.6 0.9-0.2 0.1-0.3 0.1-0.4-0.1-0.6-0.3-0.4-0.1-0.2-0.1-0.1-0.2 0-0.2-0.1-0.2-0.3 0-0.4 0.1-1.1 0.1-0.6 0.1-1.1 0.5-0.3 0.1-0.2-0.1-0.3-0.3-0.4 0.1-1.2 0.9-0.5 0.5-0.5 0.2-0.2 0.1 0 0.2 0.2 0.3 0 0.2-0.1 0.1-0.1 0.2-2.6 1.6-0.2 0.2-0.1 0.4-0.2 0.4-0.1 0.3-1.8 1.3-2.1 0.2-0.3 0.1-0.4 0.2-0.8 0.5-0.7 0.4-0.5 0.3-0.2 0.2-0.2 0.2-0.3 0.1-0.3-0.1-0.6-0.2-0.2-0.1-0.3 0-4-0.3-0.5 0-0.5 0.1-0.6 0.5-0.8 1.4-0.3-0.1-0.2-0.2-0.8-0.8-0.6-0.3-0.6-0.2-1.4-0.2-0.2-0.1-1.3-0.6-4.7-4.6-1-0.5-0.2-0.1-0.6-0.2-0.2-0.2-0.2-0.2-0.2-0.5-0.4-0.5-0.4 0-0.5 0-0.3 0.1-0.3 0.1-0.9 0.7-0.3 0.1-0.4 0-0.3-0.1-0.3-0.1-0.1-0.2-0.1-0.2 0-0.3-0.1-0.2 0-0.2-0.4-0.5-0.2-0.4-0.1-0.2-0.4-0.4-0.3-0.1-0.2 0.1-0.7 0.5-0.2 0.2 0 0.4-0.1 0.6 0 0.3 0 0.3 0 0.3-0.2 0.3-0.2 0.4-0.7 0.5-0.8 0.6-0.8 0.8-0.7 1.1-0.7 0.4-2.1 0.6-0.2 0.1-0.3 0.3-0.4 0.5-0.5 0.9-0.8 0.8-1 0.7-0.3-0.7-0.8-2.3 0-0.5-0.1-0.3-0.4-0.5-0.2-0.2 0-0.3 0-0.2 0.1-0.3 0.1-0.2-0.2-0.3 0.1-0.2 0.2-0.2 0.2-0.2 0.1-0.3 0.1-0.3-0.1-0.2-0.4-0.2-0.1-0.3-0.2-0.1-0.4 0.2-0.5 0.4-0.5 0.3-0.6 0.2-0.5-0.2-0.4-0.3-0.4-0.1-0.3-0.2-0.5-0.9-0.2-0.3 0.9-1.3 0.2-0.6-0.5-0.6-0.9-0.4-0.8 0.2-0.6 0.7-0.3 0.9 0 1.1-0.1 0.5-0.4 0.2-0.4 0-0.3-0.3-0.8-2.1-0.1-0.4-0.2-0.3-0.5-0.2-0.8-0.4-0.3-0.2-0.2-0.3-0.3-0.2-0.6-0.1-0.5-0.2-0.2 0-0.2 0-0.7 0.3-1 0.1-0.6 0-0.2-0.2-0.2-0.4-0.4-0.4-0.5-0.2-1.9-0.6-0.7-0.1-0.2-0.1 0-0.2-0.2-0.1-0.2-0.1-0.6-0.1-0.3 0.1-0.2-0.1-0.1-0.3-0.2-0.3-0.1-0.2-0.3-0.3-0.5-1.2-0.3-0.3-0.8-0.3-0.9-0.5-0.4 0-0.5 0.2-4.5 2.4-0.3 0.1-0.9 0-0.5 0.1-0.2 0.2 0 0.4 0.3 1.5-0.1 0.6-0.2 0.3-0.4 0.1-0.5 0-0.5 0.1-1 0.3-1.4 0.1-0.5 0.2-0.3 0.3 0 0.4 0.1 0.5 0.1 0.4 0.2 0.2 0.1 0.2-0.2 0.6-0.1 0.6-0.2 0.3-1.3 1.3-0.3 0.3-1 0.1-0.9 0.3-0.9 0.7-0.5 0.2-0.4 0-0.1-0.1-0.3 0-0.1 0-0.1-0.1-0.2-0.3-0.2-0.1-0.3-0.2-0.4-0.1-0.9 0.2-0.5 0.7-1 4.3-0.2 0.5 0 0.8-0.2 0.2-0.2 0.2-0.2 0.1-0.3 0-0.2-0.1-0.5-0.2-0.2 0-0.4 0.1-0.6 0.7-0.4 0.3-1 0.1-0.3 0.1-0.3 0.9-0.3 0.2-1.5 0.5-0.2 0-0.3 0-0.4-0.2-0.3-0.1-0.2-0.1-0.5-0.4-0.3-0.1-0.1 0-0.6 0.1-0.1 0 0.3-0.7 0.2-0.2 0.3-0.3 0.3-0.4 0.1-0.3 0.2-0.3 0.1-0.2 0-0.1-0.1-0.5 0.1-0.5-0.1-0.3-0.1-0.2-0.1-0.2 0-0.5 0-0.4 0-0.2-0.2-0.2-0.3-0.1-0.5 0-0.3-0.1-1.4-0.8-0.2-0.1-0.2 0-0.3-0.2 0-0.1-0.1-0.4 0.1-0.8-0.1-0.3-0.1-0.1-0.5-0.6-0.1-0.3-0.1-0.3 0-0.2 0.1-0.7 0-0.3-0.1-0.5 0-0.3 0.1-1 0.1-0.4 0-0.2-0.1-0.2-0.2-0.2-0.3-0.3-0.2-0.1-0.1-0.1-0.1 0.1-0.2 0.2-0.1 0-0.1 0-0.2-0.1-0.3-0.1-0.2-0.3-0.1-0.2 0-0.4-0.1-0.2-0.2-0.1-0.2 0-0.2 0-0.6 0.2-0.6 0.1-0.3 0-0.1-0.1-0.2-0.1-0.1-0.1 0-0.3 0.1-0.5-0.1-0.3-0.1-0.2-0.1 0-0.3-0.1-0.4-0.1-0.4 0-1.3 0.1-0.5 0.2-0.3 0.2-0.2 0.1-0.4 0-0.4 0.1-0.4-0.1-0.2 0-0.4-0.2-0.6-0.3 2-0.9 1.6-0.9 0.2-0.2 0.2-0.3 0.1-0.3 0.2-0.4 0.4-0.7 0.3-0.2 0.5-0.1 0.5-0.1 0.3-0.1 0.1-0.1 0.2-0.2 0.1-0.2 0.1-0.4 0-0.1 0.2-0.2 0.3-0.4 0.2-0.3 0.1-0.3 0.1-0.1 0.2-0.1 0.4-0.1 0.4 0 0.9 0.2 0.4 0.2 0.1-0.1 0.2-0.1 0.2-0.3 0.1-0.2 0-0.5 0.2-0.6 0-0.1 0.1-0.1 0.2 0 0.2 0.1 0.4 0.2 0.2 0.1 0.2 0 0.1-0.1 0.1-0.3 0.2-0.5 0.2-0.2 0.6-0.4 0.5-1 0.1-0.2 1.4-0.8 0.1-0.1 0.4-0.5 0.4-0.4 0.5-0.5 0.2-0.1 0.3-0.1 0.2-0.2 0.1-0.2 0.2-0.3 0.7-1.6 0.2-0.8 0.1-2-0.1-1.3-0.2-0.4-0.1-0.1-0.5-0.4-0.4-0.2-1.3-0.6-0.1-0.1-0.2-0.2 0-0.2 0.1-0.3 0.3-0.5 0.2-0.4 0.2-0.3 0.1-0.3 0-0.6 0-0.2-0.1-0.5-0.5-0.6-0.9-1.7 0-0.1-0.1-0.5 0-0.1 0.1-1.1 0.1-0.3 0.2-0.1 0.5-0.3 0.1 0 2.5-0.2 5.4 0 0.3 0 0.5 0 1.9 0.6 0.5 0 2-0.2 0.4-0.2 0.9-0.4 1.2-0.5 0.5-0.1 1.8-0.2 4.3 0.6 0.5 0.3 1.2 1.1 0.6 0.5 0.4 0.4 0.3 0.1 0.8 0.2 0.2 0.1 0.3 0.1 0.9 0.7 0.8 0.2 0.3 0.1 0.5 0.1 0.1 0.1 0.1 0.1 0.2 0.3 0.2 0.3 0.2 0.7 0.1 0.2 1 1.1 0.4 0.2 1.9 0.8 0.7 0.4 0.2 0.1 0.3 0.3 0.1 0.2 0.5 1.7 0 0.2 0.2 0.2 0.2 0 0.3-0.1 0.6-0.4 0.3-0.2 0.3 0 0.1 0 0.2 0.5 0.1 0.1 0.1 0 0.1 0 0.3-0.4 0.3-0.4 0.2-0.4 0.4-0.7 0.2-0.3 0.5-0.5 0.3-0.4 0.2-0.2 0.2 0 0.1 0.1 0.1 0.2 0.2-0.1 0.1-0.1 0-0.5 0.1-0.2 0.2-0.2 0.1-0.1 0.2-0.1 0.5-0.1 0.3 0.1 0.2 0 0.2 0 0.3-0.5 0.2-0.1 0.7-0.3 0.3 0.1 0.2 0 0.2 0 0.1 0 0.1 0.1 0.1 0.2 0 0.4 0.1 0.3 0 0.2 0.2 0.2 0.3 0.1 0.2 0.1 0.4-0.1 0.2 0.1 0 0.1 0.1 0.2-0.1 0.3 0 0.5 0.2 0.1 0.2 0.1 0.4 0 0.3 0.1 0.1 0.2 0.2 0.1 0.4-0.1 0.5-0.1 0.3-0.1 0.2-0.2 0.3-0.3 0.1 0 0.3 0 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0 0.2-0.1 0.2-0.3 0.3-0.4 0.6-0.4 0.3 0.1 0.2 0.1 0.1 0.2 0.3 0.5 0.2 0.5 0.2 0.5 0 0.2 0 0.2-0.1 0.4 0 0.3 0.1 0.1 0.4 0.1 0.3 0.1 0.2 0.1 0.3 0 0.2-0.2 0-0.1 0-0.4 0.2-0.2 0.1 0.1 0.2 0.1 0.2 0.1 0.2 0 0.3-0.1 0.2-0.1 0.1-0.2 0.2-0.2 0.1-0.4 0.1-0.2 0.1 0 0.2 0 0.1 0.2 0.1 0.5 0.2 0.1 0.1 0.2 0.6 0.2 0.3-0.1 0-0.1 0-0.1-0.1-0.3-0.1-0.2 0.1-0.2 0.2-0.3 0.1-0.1 0.3-0.2 0.3 0 0.4 0.1 0.9 0.4 0.2 0 0.2-0.1 0.5-0.4 0.2-0.2 0.3-0.4 0.3-0.7 0.1-0.2 0.3-0.2 0.2-0.2 0.2-0.1 1.7-0.6 0.3-0.2 0.3-0.2 0.6-0.9 0.6-0.6 0.1-0.1 2.4-1 1-0.6 0.2-0.1 0.2-0.3 0.2-0.4 0.1-0.1 0.3-0.3 0.2-0.2 0.2-0.3 0.1-0.1 0-0.4 0.1-0.2 0.1-0.1 0.9-0.4 0.2 0 0.1 0.3 0.1 0.1 0.2 0 0.4-0.1 0.2-0.2 0.2-0.1 0.1-0.2 0.1-0.4 0.1-0.3 0.1-0.1 0.2-0.1 1.5-0.4 0.4-0.2 0.2 0 0.3 0.1 0.3 0.2 1.7 1.4 1 0.4 0.7 0.5 0.2 0.1 0.2 0 0.3-0.1 0.3 0 0.2 0.2 0.1 0.1 0 0.2 0 0.4 0 0.3 0.1 0.2 0.4 0.5 0 0.3 0 0.1-0.1 0.2-0.2 0.1-0.1 0.1-1.3 0.5-0.5 0.2-0.5 0.2-0.1 0-0.7 0.1-0.1 0-0.4 0.2-0.4 0.1-0.1 0.2-0.1 0.2-0.1 0.2-0.2 0.7 0 0.3 0 0.2 0.5 1.1 0.1 0.5 0.4 0.6 0 0.2 0.1 0.3-0.1 0.2-0.1 0.2-0.1 0.1-0.3 0.2-0.6 0.3-0.1 0.1-0.2 0.3-0.2 0.6-0.1 0.1-0.9 1.4 0 0.1-0.3 0.3-0.9 0.6-0.2 0.4 0 0.2 0.2 0.2 0.1 0.1 0.2 0 0.2-0.1 0.5-0.3 0.2 0 0.3 0 0.3 0 0.2-0.1 0.3-0.3 0.1-0.1 0.4-0.1 0.3 0 0.2 0.1 0.3 0.1 0.6 0.2 0.1 0.1 0.1 0.2 0.1 0.3 0 0.2-0.1 0.1-0.1 0.2-0.1 0.2 0 0.3 0 0.2 0.2 0.6 0.1 0.2 0 0.6 0.2 1 0.1 0.2 0.2 0.2 0.8 0.8 0.1 0.1 0.3 0.2 0.5 0.2 0.3 0.1 0.5 0.5 0.9 0.4 0.3 0 0.3-0.2 1.2-0.8 0.4-0.2 0.3 0 0.4-0.1 1.1-0.1 0.2 0 0.2-0.2 0.9-0.9 0.2-0.3 0.2-0.3 0.3-0.2 0.3-0.2 0.3 0 0.2-0.1 0.1-0.2 0.4-0.3 0.1-0.2 0.1-0.2-0.1-0.3 0-0.4-0.3-0.3-0.2-0.4-0.1-0.2 0-0.2 0.1-0.1 0.6-0.8 0.3-0.2 0.3 0 0.4 0 0.1 0 0-0.2-0.1-0.3 0.1-0.1 0.2-0.1 0.5-0.1 1.1-0.1 0.5 0 0.2 0 0.2 0 0.2-0.1 0.5-0.4 0.2-0.2 0.1-0.2 0-0.3-0.1-0.2-0.2-0.4 0-0.2 0.2-0.1 0.3-0.1 1.5-0.1 0.5 0 0.5 0.2 0.4 0.1 0.2 0 0.2-0.2 0.3-0.2 0.6-0.6 0.2 0.2 0 0.2 0 0.3 0.2 0.2 0.2 0 0.5 0 0.1 0 0.2-0.1 0.2-0.2 0.5-0.6 0.2-0.1 0.1-0.1 0.3 0 0.1 0.1 0.2 0.1 0.1 0.3-0.1 0.4 0.1 0.3 0.2 0.1 0.3 0 1.2-0.3 0.5-0.1 0.3 0.1 0.3 0.1 0.1 0.1 0.3 0.3 0.2 0 0-0.2 0-0.3 0.1-0.2 0.1-0.1 0.4 0 0.4 0.1 0.2 0 0.1-0.1 0.1-0.2-0.1-0.2-0.1-0.2-0.3-0.1-0.2-0.2-0.2-0.1 0-0.1 0-0.3 0.1-0.2 0.2-0.1 0.2 0 0.1 0 0.1 0.1-0.1 0.4 0.2 0.1 0.2 0 0.6-0.2 0.2 0 0.5-0.1 2-0.8 0.1 0 0.2 0 0.3 0.2 0.3-0.1 0.3-0.2 0.6-0.4 0.4-0.3 1.2-0.4 0.3-0.5 0.5-2.1 0.2-1.2 0.1-0.4 0.2-0.2 0.3-0.1 1.3 0 0.2 0.1 0.3 0.1 0.3 0.1 0.1-0.1 0.3-0.1 0.2-0.2 0.4-0.5 0.7-0.6 0.2-0.1 0.4-0.2 0.1-0.1 0.3 0 0.3 0 0.5 0 1.8 0.5 0.3-0.1 0.5-0.1 0.2 0 0.5 0.1 0.5 0.2 0.5 0.3 0.9 1 0.2 0.4 0.2 0.5 0.1 0.1 1.2 0.3 0.7 0.4z" id="BRA1313" name="Pernambuco">
                         </path></a>
-                        <a xlink:title="Acre" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Acre">
+                        <a xlink:title="Acre" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/acre/superintendencia-regional-do-acre" target="blanck">
                         <path d="M161.5 339.6l4 1.7 0 0.2-0.1 0.3-0.1 0.2-0.2 0.1-1.9 0.7-0.4 0.3-2.9 2.2-3.6 3.8-1.1 0.5-0.2 0.1-0.5 0-0.2 0.1-0.2 0.2-0.1 0.2-0.2 0.3-0.2 0.1-0.4 0-0.9-0.2-0.4-0.1-0.9 0.1-0.5 0.1-0.3 0.1-0.1 0.2 0.1 0.5 0 0.2-0.2 0.2-0.2 0.1-0.3 0-0.9 0-0.2 0.1-0.3 0.2 0 0.2-0.1 0.1-0.1 0.3-0.3 0.4-0.4 0.4-0.4 0.3-0.9 0.3-0.8 0.4-0.5 0.1-0.3 0.3-0.3 0.3-0.4 0.7-0.3 0.4-0.7 0.5-0.2 0.3-0.2 0.7-0.2 0.8-0.4 0.6-0.8 0.2-0.4-0.1-0.9-0.7-0.4-0.3-0.3-0.1-0.4 0-2.6 0.1-0.7-0.1-0.3 0-0.4 0.2-0.7 0.3-0.5 0.4-0.3 0.3-0.8 1.5-1.3 1.4-0.3 0.4-0.6 1.3-0.3 0.5-0.4 0.5-0.4 0.5-0.4 0.3-0.4 0.1-1.1 0.1-0.4 0.3-0.7 0.6-0.3 0.1-0.4 0-0.4 0-0.3 0-1 0.3-1.2 0.9-0.6 0.3-3.2 0.6-0.4 0-0.1-0.1-0.1-0.2-0.1-0.9 0.1-0.6 0.3-0.6 0.4-0.5-0.4-0.2-0.7-0.2-0.6 0.1-0.6 0.3-0.6 0.1-0.5-0.1-1.1-0.3-0.8 0.1-0.1 0-1.7-0.7-0.3-0.1-0.8 0.1-0.8-0.2-1.7-0.2-1.3 0-0.8-0.1-0.8-0.2-0.7-0.1-1.5 0.3-0.9 0.1-1.7-0.1-0.4 0-2.7 0.3-0.8-0.1-0.8-0.6-0.4-0.1-0.6-0.1-0.9 0.1-0.4 0-0.5-0.2-0.9 0-5.4 2.8-0.9 0.3-1.1 0.2-1.2 0.1-1.1-0.2-1-0.5-0.6-0.5-1-1.2-0.6-0.6-0.5 0.1-1.9 1.6 0-10.5 0-5.8 0.1-8.7 0-1.3 0.2-0.9 0.1-0.3 0.2-0.2 0.2-0.1 0.2-0.2 0.1 0 0.3 0.2 0.1-0.1 0.1-0.1 0.1-0.3 0-0.1 0.3-0.4 0.2-0.4 0-0.4-0.1-0.5-0.3-0.3-0.6-0.5-0.3-0.3-0.1-0.5-0.2-0.7-0.2-0.4 0.1 0 0.6-0.1 0.1 0.1 0.3 0 0.2 0-0.3-0.6 0.1-0.2 0.1-0.3 0.3 0-0.1-0.4 0.4-0.2 0.1-0.2 0.1-0.4 0.2-0.5 0-0.3-0.9 0.1-0.5 0.1-0.4 0.2-0.5 0.4-0.8 1-0.4 0.4-1.5 0.9-0.4 0.3-0.9 0.9-0.4 0.3-1.1 0.6-0.4 0.4-0.6 1-0.3 0.2-0.6 0.4-0.2 0.2-0.2 0.2-0.3 0.6-0.1 0.3-0.5 0.3-1.3 0.4-1.5 0.6-0.4 0.3-0.3 0.5-0.2 0.5-0.3 0.5-1.1 0.3-0.8 0.6-0.4 0.3-0.3 0-0.2-0.1-0.2-0.2-0.2 0-0.3 0-0.1 0.1-0.1 0.2-0.2 0.2-0.4 0.1-4.9 0-3.9 0-8 0-1.2 0 0.2-0.5 0.1-0.4-0.1-0.4 0.1-0.5 0.1-0.2 0.3-0.4 0.1-0.3-0.1-0.3-0.2-0.4 0-0.3-0.5-0.9-1.6-1-0.2-0.8 0.2-0.9 0.1-0.4-0.1-0.4-0.6-0.7-0.2-0.4-0.1-0.5 0-0.7 0-0.2-0.1-0.2-0.2 0-0.3 0.1-0.2-0.1-0.4-0.2-0.6-0.6-0.5-0.2-0.4-0.1-1.4 0.1-1-0.1-0.4-0.1-0.9-0.5-0.9-0.3-0.5-0.1-0.1 0-0.1 0.2-0.1 0-0.2 0-0.2-0.2-0.1-0.1-2.7-0.5-9-0.1 0.5-0.7 1.2-1.2 0.5-0.7 0.4-0.7 0.2-0.4 0.3-0.2 0.3 0 0.4-0.1 0.3-0.2 0.1-0.3 0-0.6 1-0.8 0.3-0.3 0.1-0.4 0.1-0.7-0.2-1.9-0.1-0.3-0.6-1-0.3-0.3-0.9-0.5-0.3-0.3-1.7-2.5-0.4-1-0.3-0.4-0.3-0.4-0.5-0.2-1.3-0.3-0.4-0.3-0.4-0.4-1-1.2-0.1-0.4 0-0.4 0.2-1-0.1-0.5-0.1-0.4-0.3-0.3-0.2-0.1-0.5 0-0.2-0.1-0.2-0.2-0.4-0.5-0.2-0.2-1.8-1-0.3-0.3-0.2-0.4-0.1-0.9-0.2-0.6-0.6-0.9-0.3-0.5-0.1-0.4 0.1-0.9 0-0.4-0.2-0.6-0.8-1-0.1-0.5-0.4-0.7-0.8-0.4-1-0.4-0.6-0.5-0.2-0.3-0.2-1.1 0-0.4 0.3 0 0.8 0.2 0.7-0.4 0.3-0.9-0.3-0.9-0.6-0.5-0.9-0.3-0.7-0.3-0.6-0.4-2.9-3.1-0.9-0.5-0.2-0.4 1.1-0.4 0.2-0.5 0.1-0.5 0.1-0.3 0.2-0.4-0.2-0.6-0.6-1.1-0.1-0.4 0.5 0 0.9 0.4 0.4 0 0.5-0.2 0.8-0.5 0.4-0.1 0.6-0.1 0.9 0.1 0.4-0.1 0.4-0.2 0.2-0.5 0-0.4-0.2-0.4-0.3-1-1.5-2.2-0.1-0.2 0.3 0.1 25.2 10.6 51.2 12.8 12.6 6.7 66.5 31.3z" id="BRA576" name="Acre">
                         </path></a>
-                        <a xlink:title="Amazonas" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Amazonas">
+                        <a xlink:title="Amazonas" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/amazonas/superintendencia-regional-do-amazonas" target="blanck">
                         <path d="M339.2 113.8l0.5 6.8-0.1 0.6-0.1 0.2-0.2 1.3 0 2.5 0.1 0.8 0.2 0.6 0.1 0.3 0.1 0.2 0.2 0.2 0.2 0.1 0.2 0.2 1.2 0.4 0.3 0.2 0.2 0.2 0.2 0.4 0 0.3 0 0.2-0.2 0.4-0.1 0.3 0 1-0.1 1.1 0 0.6 0.1 0.3 0.1 0.4 0.8 0.9 1.7 1.6 0.3 0.1 0.2 0 0.5-0.1 0.3 0 0.2 0 0.3 0.2 1.1 0.9 0.1 0.1 0.4 0.2 0.3 0.1 0.3 0.3 0.2 0.3 0.2 0.9 0.1 0.4 0.2 0.4 0.1 0.4 0 0.2 0 0.6 0.1 0.5 0.1 0.3 0.1 0.3 0.2 0.2 1.6 1.5 0.3 0.2 0.2 0.1 0.2 0 0.5 0 0.2 0 0.3 0.1 0.2 0.3 0.8 1.3 0.3 0.3 0.3 0.3 0.2 0.1 0.3 0 0.4 0 0.2 0.2 0.2 0.2 0.2 0.5 0.2 0.3 0.3 0.2 1.7 0.9 0.6 0.2 0.2 0.2 0.4 0.3 0.5 0.6 0.3 0.4 0.3 0.2 1.7 0.4 0.3 0.2 0.4 0.4 0.7 0.8 0.3 0.3 0.3 0.3 0.5 0 0.2 0.1 0.2 0.1 0.2 0.3 0.2 0.4 0.3 0.3 0.2 0.1 2.1 0.7 0.5 0.3 0.6 0.4 0.6 0.3 0.6 0.4 0.3 0.1 0.9 0.4 0.2 0.1 0.5 0.1 0.2 0 0.4 0.2 0.2 0.1 0.3 0 0.2 0 0.5-0.2 0.5-0.1 0.2 0 0.2 0 0.1 0.2-0.1 0.5 0.1 0.3 0.1 0.1 0.3 0.1 0.8-0.1 0.3 0 0.3 0.1 0.7 0.5 0.3 0.1 0.5 0.2 0.3 0.1 0.1 0.3 0.3 0.7 0.4 0.7 1 1.1 0.3 0.2 0.4 0.2 0.9 0.3 0.4 0.2 1.4 1.1 0.2 0.1 0.5 0.1 0.2 0.1 0.3 0 0.5-0.1 0.3 0 0.3 0.1 0.1 0.1 0.1 0.3 0 0.2-0.1 0.2-0.3 1.2 0 0.3 0 0.3 0.1 0.3 0.2 0.2 0.2 0.1 0.4 0.2 0.4 0.2 0.4 0.2 0.5 0.1 0.4 0.2 0.2 0 0.3-0.1 1-0.7 0.1-0.1 1.1-0.4 0.3 0 0.2 0 0.2 0 0.2 0.2 0.1 0.4 0 0.3-0.2 0.6 0 0.2 0 0.2 0.2 0.2 0.2 0.1 0.5 0.1 0.5 0 0.6 0.1 0.4-0.3 0.2-0.1 1.3-0.4-0.1 0.2-0.1 0.1-0.5 0.3-0.8 0.5-0.2 0.1-0.1 0.1-0.1 0.2-0.1 0.2 0.1 0.1 0.1 0.3 0.3 0.2 0 0.5-0.2 0.7-8.2 17.8-34.3 74.2-0.9 1.4-0.2 0.2-1.8 1.5-0.3 0.3-0.4 0.5-0.3 0.7-0.1 0.4 0 0.5 0 0.5 0.1 0.4 0.8 2.4 0.2 0.5 0.3 0.4 0.4 0.6 0.3 0.3 0.9 0.5 0.4 0.4 1.3 1.4 0.6 0.5 0.4 0.4 0.6 0.9 0.1 0.3 0.2 1.2 0 0.5 0 0.4 0 0.3 0 0.3 0.1 0.3 0.4 0.5 0.4 0.4-0.4 0.4-0.4 0.7-0.2 0.2-0.6 0.5-0.2 0.3-0.1 0.4-0.1 0.2 0 0.5-0.1 0.4 0.1 0.3 0.1 0.4 0.3 0.4 0 0.3 0 0.2-0.1 0.5-0.3 0.7-0.1 0.2-0.2 0.2-0.6 0.7-0.1 0.2-0.6 1.2-0.2 0.2-0.6 0.4-0.5 0.4-0.3 0.5-0.1 0.2-0.1 0.2-0.1 0.5 0 0.4 0.1 0.5 0.1 0.4 0.1 0.2 0.6 1.1 0.4 1.1 0.4 1.8 0 0.2 0 0.3 0 0.2-0.8 2 0 0.3 0.1 0.4 0 0.3-0.1 0.2-0.3 0.4-0.3 0.5-0.1 0.2-0.2 0.9-0.2 0.4-0.1 0.2-0.2 0.2-0.6 0.5-0.1 0.2-0.1 0.2 0 0.3 0.2 1.5 0.1 0.3 0.1 0.4 0.1 0.2 0 0.2-0.1 0.3-0.5 0.7-0.2 0.6-0.4 1.6-0.2 0.3-0.4 0.3-1 0.7-68.5 0.5 0.1-0.9-0.1-0.2-0.2-0.2-0.3-0.2-1.2-0.2-0.4-0.1-0.3-0.1-0.3 0.1-0.2 0.2-0.3 0.4-0.2 0.2-0.2 0.2-0.3 0-0.7 0-0.3 0.1-0.2 0.1-0.1 0.2-0.2 0.2-0.1 0.5-0.1 0.5 0 0.5-0.1 0.2-0.1 0.3-0.1 0.1-0.2 0.2-0.2 0.1-0.3 0.1-0.3 0-0.4-0.1-0.5-0.3-0.4-0.3-0.2-0.2-0.2-0.5-0.2-0.1-0.2-0.1-1.5-0.4-0.2 0-0.3 0-0.2 0-0.2-0.1-0.3-0.2-0.1-0.3 0-0.2-0.2-1-0.1-0.5-0.4-0.7-0.1-0.2 0-0.3 0.1-0.4-0.1-0.2-0.2-0.2-0.6-0.1-0.3 0-0.8 0-0.4 0-0.3-0.1-0.2-0.1-0.1-0.2-0.1-0.2-0.1-0.5-0.4-0.9-0.2-0.8-0.1-0.3-0.3-0.4-0.1-0.3 0-0.4-0.1-0.2-0.1-0.2-0.2-0.3-0.3-0.2-0.5-0.1-0.8-0.2-0.5 0-0.3 0-0.3 0.2-0.2 0.1-0.4 0-0.2 0-0.1-0.2-0.1-0.2 0-0.9-0.1-0.2-0.1-0.2-0.2-0.3-0.4-0.3-0.6-0.4-0.3-0.3-0.3-0.2-0.6-1.3-0.1-0.2 0-0.5 0-0.2-0.2-0.2-1-1.2-0.3-0.1-0.2-0.2-0.3-0.1-1.1-0.4-0.3-0.1-0.2-0.1-1.7-0.2-14.1-0.2-0.5 0.6-0.6 1-0.1 0.2 0 0.2 0 0.3 0.2 0.9 0.1 0.2-0.1 0.2-0.2 0.1-0.4 0.1-0.3 0-0.3 0-0.7 0.3-0.8 0.1-0.3 0-0.2 0.1-0.2 0.2-0.2 0.2-0.1 0.2 0 0.3 0.2 0.6 0 0.3 0 0.2-0.3 0.1-0.8 0.2-0.9 0.3-1.1 0.1-0.3 0.1-0.2 0.1-0.2 0.1-0.2 0.2-0.4 0.8-0.2 0.3-0.8 0.8-0.2 0.3-0.1 0.2 0 0.3 0.1 0.2 0.1 0.2 0.2 0.2 0.2 0.2 0.5 0.3 0.2 0.2 0.1 0.2 0.2 0.2 0 0.2 0 0.2-0.1 0.2-0.2 0.5-0.1 0.4-0.2 0.2-0.1 0.3-0.2 0.2-0.2 0.2-0.5 0.9-0.1 0.1-0.1 0.2-0.3 0.1-0.5 0.2-0.4 0.2-0.4 0.1-0.3-0.1-0.2-0.1-0.3-0.4-0.2-0.1-0.2 0.1-0.1 0.2-0.1 0.2 0 0.2 0.1 0.7 0.1 0.2-0.1 0.5 0 0.2 0.1 0.2 0.1 0.3 0.1 0.2 0 0.2-0.2 0.5-0.1 0.2 0 0.2 0 0.3 0.4 1.4 0 0.2-0.1 0.2-0.2 0.1-0.3-0.1-0.5-0.4-0.3-0.1-0.2 0-0.7 0.4-0.2 0-0.6-0.3-0.4-0.1-0.7 0.1-1.3-0.1-0.3 0-0.2 0.1-0.2 0.2-0.4 0.4-0.2 0.1-0.2 0-0.3-0.1-0.5-0.3-0.2 0-0.4 0.1-0.4 0.1-0.4 0.4-0.3 0.2-0.4 0.5-0.2 0.2-0.3 0.1-0.4 0.1-2-0.2-0.3 0-0.2-0.1-0.2-0.1-0.3-0.3-0.2-0.2-0.2-0.1-0.3 0-0.3 0.1-1.4 0.8-0.6 0.4-0.4 0.4-0.2 0.2-0.1 0.3-0.1 0.2-0.4 0.4-0.1 0.3 0 0.3 0 0.2 0.4 1.2 0.1 0.2 0 0.2-0.1 0.3-0.1 0.2-0.2 0.2-0.7 0.6-0.2 0.2-0.1 0.2 0 0.5-0.1 0.2-0.2 0.2-0.4 0.2-0.2 0.3-0.3 0.7-0.2 0.2-0.2 0.2-0.2 0.2-0.4 0.4-0.3 0.1-0.3 0.1-0.3 0-0.3-0.1-0.3-0.1-0.3-0.2-0.2-0.2-0.2-0.3-0.1-0.2-0.1-0.3 0-0.2-0.1-0.2 0.1-0.5 0-0.2-0.2-0.2-0.2-0.2-0.1-0.2-0.1-0.2 0-0.5-0.1-0.2-0.2-0.1-0.2 0.1-0.4 0.3-0.3 0.2-0.4 0.3-1.5 0.7-0.4 0.4-0.3 0.3-0.2 0.2-0.2 0.2-0.7 0.4-0.2 0.2-0.1 0.2-0.1 0.2-0.1 0.5 0 0.2-0.2 0.2-0.3 0-0.4-0.1-0.2-0.1-0.2-0.4-0.2-0.1-0.2-0.2-0.2-0.1-0.2 0-0.3 0-0.3 0-1.6 0.8-0.3 0.3-0.2 0.2-0.1 0.3-0.1 0.7-0.1 0.2-0.2 0.2-0.2 0.2-0.6 0.3-0.3 0.2-0.3 0.1-0.3 0.1-0.3-0.1-0.2-0.2-0.2-0.4-0.2-0.2-0.5-0.2-0.2-0.2-0.1-0.3-0.1-0.1-0.7-0.3-0.2-0.2-0.5-0.6-0.4-0.5-0.3-0.2-0.3-0.2-0.2-0.1-0.7-0.1-0.4 0.1-2.3 0.4-1.1 0-1-0.1-0.6-0.1-0.5-0.1-0.3 0-0.3 0-0.5 0.1-0.7-0.1-0.4 0-0.3 0-0.4-0.1-0.2-0.1-0.2 0.2-0.1 0.2 0 0.3 0.2 0.9 0 0.2 0 0.5-0.1 0.2-0.2 0.3-1.6 1.7-0.4 0.6-0.2 0.3-0.6 0.2-1.3 0.3-0.2 0.1-0.8 0.6-1.4 1.3-0.3 0.1-0.6-0.1-0.2 0-0.1 0.3-0.2 0.2-0.2 0.3-0.2 0.3-1.2 1-66.5-31.3-12.6-6.7-51.2-12.8-25.2-10.6-0.3-0.1-0.1-0.3 0.1-0.6 0.4-0.6 0.5-2 0-1.3 0.2-0.4 0.2-0.2 1-0.6 0.2-0.3 0.2-0.5 0.3-0.3 0.7-0.4 1.1-0.9 1.8-1 1.5-1.3 0.9-0.6 0.8-0.7 0.4-0.1 1.6-0.1 1-0.2 0.8-0.4 0.6-0.7 0.5-0.9 0.4-0.9 0.1-0.5 0-0.5-0.1-0.5-0.5-1-0.2-0.6-0.2-1.8-0.1-0.3-1.1-1.3-0.2-0.5 0-1.1 0.4-0.8 0.4-0.8 1.3-2.8 0.8-0.7 2.3-3.1 0.3-0.7 0.3-0.6 0.3-2.1 0-0.6-0.2-0.7-0.1-0.8 0.2-0.7 0.7-1.4 0.1-0.3 0.1-1 0.2-0.3 0.3-0.3 0.1-0.3 0.1-0.4-0.1-1.4-0.2-0.3-0.2-0.3-0.1-0.4 0.1-0.4 0.5-0.1 0.3 0 0.2-0.1 0.3-0.1 0-0.1 0-0.3 0.1-0.2 0.1 0 0.3 0.1 0.1 0 0.9-0.1 0.4-0.2 0.3-0.4 0.3-0.2 0.4 0.1 0.5 0.1 1.2 0 0.2-0.1 0.2-0.2 0-0.2 0.1-0.2 0.1-0.2 0.2-0.3 0.7-0.3 0.5-0.6 0.4-0.3 0.4-0.1 0.4-0.1 0.3 0 0.1-0.1 0.1-0.2 0.2-0.3 0-0.3 0-0.1 0.1-0.1 0.3 0 0.2 0 0.4-0.2 0.4-0.3 0.2-0.4 0.2-1.2 0.2-0.2 1-0.3 0.1-0.1 0-0.2 0.2-0.1 0.2-0.1 0.9 0.1 0.3 0 0.4-0.1 0.4-0.3 1.1-0.8 1.2-0.7 0.5-0.3 0.2-0.4 0.4-0.8 0.2-0.2 0.2 0 0.4 0.2 0.2 0 0.2-0.2 0.3-0.3 0.7-0.2 1.1-1 0.5-0.4 0.4-0.1 1.9-0.2 0.1-0.1 0.1-0.1 0.1-0.3 0.2-0.1 0.2 0.1 0.5 0.2 0.3 0.1 0.4-0.1 0.2-0.2 0.3 0 0.3 0.2 0.3 0.3 0.1 0 0.2 0 0.3-0.1 0.5-0.4 0.2-0.1-0.1 0.5 1-0.5 0.3 0 0.6 0.1 0.2 0 0.1-0.1 0.1-0.5 0.2-0.2 0.3-0.1 0.3-0.1 0.7 0 1-0.1 0.4 0 0.2 0.2 0.1 0.2 0.2 0.2 0.3-0.2 0.3-0.3 0.1-0.1 0.4 0.1 0.2-0.3 0-0.2-0.1-0.2 0.1-0.3 0.3-0.3 0.6-0.1 0.5 0.1 0.6 0.7 0.3-0.4 0.3-0.5 0.4-0.2 0.1 0.1 0.3 0.5 0.2 0.2 0.3 0.1 0.2-0.2 0.3-0.5 0.6-0.2 1.1 0.5 0.5-0.3 0.1-0.5 0.3 0.4 0.5 0.4 0.4-0.5 0.3-0.4 0.2-0.4 0.7-0.6 0.2-0.4 0.1-0.4 0.2-0.3 0.4-0.2 0.3-0.1 0.1-0.2-0.2-0.5 0-0.3 0.3-0.3 1.1-0.5 0.2-0.1 1.4 0.4 0.4 0 0.3-0.2 0.2-0.6 0.2-0.3 0.4-0.1 0.3 0 0.1 0.4-0.1 0.4 0 0.3 1 0.6 0.2-0.2 0.1-0.4 0.2-0.4 0.3-0.2 0.4 0.2 0.1 0.3 0.1 0.3 0.2 0.2 0.3-0.2 0.9-0.7 0.4-0.1 0.3-0.1 0.3 0 0.4 0.2 0.6 0.5 0.2 0 0.5-0.6 0.2 0.1 0.3 0.3 0.2 0.3 0 0.5-0.2 0.8 0 0.4 0.3 0.3 1.1 0.9 0.2 0 0.2 0 0.2 0.1 0.1 0.2 0.2 0.3 0.2 0.4 0.5-0.4 0.3-0.9 0.3-0.4 0.4-0.2 0.5 0 0.5 0.1 0.2 0.4 0.1 0.6 0.1 0.2 0.3 0.2 0.3 0.2 0.3 0.1 0.3 0 0.8-0.6 0.3-0.5 0.3-0.6-0.1-0.6 0.4-0.8 1.3-7.2 2-10.9 0.6-3.6 0.7-3.6 1.3-7.2 1.3-7.2 1.3-7.2 2.2-12.2 0.4-1.1-0.1-0.4 0.5-1.6-0.1-1 0.4-2-0.1-1.1 0.5-1.2-0.2-0.7-0.9-1.3 0-0.3 0.2-0.5 0-0.2-0.1-0.8 0.1-0.1-0.2-0.3-0.1 0-0.2 0-0.2-0.2-0.5-0.7-0.2-0.1-0.5-0.2-0.1-0.2-0.2-0.3 0-0.2 0.1-0.2-0.1-0.3-0.1-0.2-0.1-0.1-0.2-0.1-0.2-0.1-0.2-0.4 0-0.2 0.1-0.6-0.2-0.3-0.9-0.9-0.2-0.5 0.2-0.4 0.7-1.1 0.1-0.5-0.1-0.3-0.2-0.4-0.2-0.2 0-0.2 0-0.7-0.1-0.5-0.2-0.4-0.3-0.4-0.4-0.3-0.3-0.2-1.8-0.7-0.4-0.3-0.6-0.7-0.3-0.2-0.5-0.2-0.2-0.2-0.2-0.2-0.2-0.5-0.1-0.2-0.4-0.2-0.9-0.2-0.4-0.2-0.2-0.2-0.5-0.7-1.2-1.1-0.8-1-0.3-0.4-0.1-0.8 0-1.7 0.2-6.1 0-2.4 0.2-4.2 0-1.6 0.3 0.4 0.5-0.2 0.4-0.2 0.5 0 0.6 0.1 0.4-0.1 0.4-0.1 1.6-0.1 0.9-0.2 0.8-0.3 0.8-0.4 0.8-0.7 0.4 0 0.6 0.3 0.7 0.2 0.3-0.4 0.3-0.5 0.4-0.2 0.4-0.1 0.8-0.4 0.4-0.2 0.6-0.1 0.4 0.1 0.4 0.3 1.6 1.6 0.1 0.1 0.5-0.2 0.5-0.2 0.4 0 0.2 0.3-0.1 0.6 0.4 0 0.8 0.1 0.4 0 0.2-0.2 0.2-0.3 0.2-0.1 0.2 0 0.4 0.2 0.2 0 0.4-0.2 0.2-0.2-0.1-0.4-0.3-0.5-0.1-0.2-0.5-0.2-0.2-0.2-0.1-0.3 0.2-0.2 0.2-0.2 0.2-0.2 0-0.5-0.2-1 0-0.5 0.2-0.1 0.2 0 0.1-0.1 0-0.3-0.1-0.2-0.3-0.1-0.5-0.2-0.3-0.4 0.1-0.8-0.5-0.3-0.1-0.2 0-0.3-0.1-0.2-0.1-0.2-0.4-0.2-0.4-0.5-0.3-0.2-1.1-0.6-0.4 0-0.3 0-1.1 0.8-0.2 0-0.4-0.3-0.3-0.3-0.2-0.1-0.2 0-0.7 0.1-0.8 0-0.2 0-1-0.4-0.5 0-2.1 0.3-0.3 0 0-0.5-0.2-0.1-0.3-0.1-0.3 0-0.5 0.2-1 0.6-0.5-0.1 0-1.3 0-3.1 0.1-7.7 0-1.5-0.2-0.9 1.1 0.1 0.4-0.2 1-0.5 0.4-0.1 0.4 0.1 0.4 0 1-0.1 1.5-0.7 0.8 0 1.7 0.3 1.7 0.8 0.9 0.1 7.8 0 9.2-0.1 6.8 0 2.7 0-0.4-0.1-0.1-0.2-0.1-0.1 0-0.3-0.1-0.2-0.1-0.1-0.9-0.1 0-0.4 0-0.4-0.2-0.3-0.5-0.1-0.2-0.1 0.4-0.6 1.4-3.4 0.2-0.1 0.1 0.1 0 0.5 0 0.1 0.2 0.2 0.2 0.1 0.4 0.1 0.6 0.2 0.3 0.3 0.2 0.4 0.5 1.4 0.5 1 0.6 0.9 0.7 0.6 0.8 0.2 0.8 0 0.8-0.2 0.7-0.3 0.9-0.5 0.6-0.6 2.7-3.6 1.8-1.8 0.8-0.4 0.6-0.5 0.4-0.3 0.8-0.1 0.2-0.1 0.4-0.4 0.2-0.1 0.3 0 1 0.4 0.3 0.1 0.6 0.6 0.4 0.8 0.7 1.8 0.6 0.9 2.4 3.2 0.9 1.8 0.7 2.3 0.3 1.5-0.6 6.4 0.1 1.2 0.2 0.5 0.4 0.1 3.4-0.9 0.9-0.2 4.7 4.3 1.8 1.5 2.6 2.4 1.3 1.2 1.4 0.9 1.4 0.3 1.2-0.4 0.5 0 0.4 0.2 0.4 0.3 0.3 0.2 0.5 0.1 0.5-0.3 0.8-0.8 0.4-0.2 1-0.1 0.4-0.1 0.5-0.2 0.5-0.5 0.8-1 0.5-0.5 0.5-0.3 1.9-0.9 0.9-0.6 0.5-0.1 0.5-0.1 1.6 0.1 0.5-0.1 0.2 0 0.3 0.2 0.3 0.2 0.2 0.2 0.6 0.6 0.2 0.5 0.2 0.5 0 0.5-0.4 1.1-0.6 0.8-0.6 0.9 0.1 1 0.2 0.5 0.3 0.3 0.4 0.2 0.5-0.1 0.5-0.1 0.6-0.3 0.5-0.4 0.4-0.7 0.4-0.5 0.1-0.3 0-0.6 0-0.2 0.2-0.6 0.3-0.4 1.3-1.6 0.4-0.2 0.6 0 0.9 0.1 0.5 0 0.4-0.2 0.5-0.8 0.3-0.9 0.2-1.8 0.5-1.1 0.8-0.2 0.9 0.1 0.8-0.2 0.1-0.1 0-0.3 0.1-0.1 0.4-0.2 0.7-0.6 0.2-0.2 0.5-0.1 0.5 0 0.3-0.2 0.5-0.3 0.5-0.5 0.3-0.3 0.4 0 1.2 0.5 0.4 0.1 0.5-0.1 2.8-1.8 0.3-0.5 0.4-1 0.5-0.5 0.5-0.4 1.2-0.6 0.9-0.7 0.5-0.3 0.5 0 0.5 0.2 0 0.5-0.4 0.9-0.2 0.4 0 0.6 0.1 0.5 0.4 0.2 0.4-0.1 0.3-0.4 0.4-0.9 0.4-0.5 1.6-1.2 1.2-1.2 1.1-0.6 0.4-0.4 0.4-0.6 0.3-0.5 0.1-0.4 0.1-0.4-0.1-1.4 0.3-1.4 0.2-1.9 0.4-0.8 0.9-0.6 0.8-0.3 0.8-0.1 2.7 0 0.4 0 0.5-0.3 3.2-2.5 1.2-0.6 0.3-0.1 0.7 0.1 0.2 0 1.5-0.3 0.7-0.2 0.2-0.5 0-0.4 0.1-0.4 0.3-0.7 1.2 1.3 0.6 0.3 0.3 0.2 0.6 0 0.2 0 0.6-0.1 0.6-0.3 0.3 0 0.4-0.1 0.5 0 0.3 0.2 0.1 0.2 0 0.5 0 0.3 0.2 0.3 0.4 0.3 0.7 0.9 0.5 0.4 0.4 0.2 0.6 0.3 0.4 0 0.3 0 0.4-0.1 0.3-0.1 0.3 0.1 0.4 0.1 0.3 0 0.8 0 0.3 0 0.6 0.3 1.3 0.7 0.7 0.3 0.3 0.1 0.2 0.2 0.2 0.2 0.1 0.3 0.1 0.3 0 0.2-0.1 0.3-0.6 0.7-0.1 0.3-0.1 0.2-0.1 0.3 0.1 0.2 0.3 1 0.1 0.7 0 0.2-0.2 0.2-0.6 0.4-0.1 0.2-0.2 0.8-0.1 0.2-0.4 0.4-0.1 0.3 0.1 0.3 0.7 1.1 0.4 0.8 0.3 0.5 0.3 0.3 0.3 0.2 0.2 0.1 0.2 0.2 0.3 0.2 0.4 0.2 0.5 0.6 0.2 0.3 0 0.3 0 0.3 0 0.3 1.3 3.9 0 0.7 0.1 0.2 0.1 0.3 0.6 1.1 0.1 0.5 0.1 2.2 0.2 0.5 1 1.9 0.2 0.7 0.1 0.4-0.4 0.5-0.5 0.4-0.3 0.2-0.4 0.2-0.2 0.1-0.2 0.2-0.2 0.2 0 0.3 0 0.2 0.1 0.6 1.2 3 0.1 0.5 0 0.2-0.2 0.5-0.1 0.5-0.2 0.3-0.4 0.3-0.2 0.2-0.1 0.2-0.1 0.3 0 0.2 0.2 1.2 0 0.2 0 0.3-0.1 0.2-0.6 1-0.1 0.2-0.1 0.3 0.1 1.6 0.1 0.2 0.1 0.3 0.5 0.7 0.2 0.3 0 0.3-0.4 1.1-0.2 0.2-0.2 0.2-0.2 0.1-0.2 0.1-0.1 0.2-0.1 0.4 0.2 0.5 0.2 0.4 0.5 0.4 0.3 0.4 0.3 0.5 0.2 0.3 0.4 1.5 0.1 0.4 0.3 0.4 0.2 0.2 0.2 0.1 0.7 0.3 0.2 0.1 0.3 0.3 0.5 0.9 0.1 0.4 0.1 0.3 0.1 0.6 0 0.5-0.2 1.1 0.1 0.4 0 0.2 0.2 0.2 0.2 0.2 0.5 0.3 0.1 0.1 0.2 0.4 0.3 2 0 0.3 0 0.2-0.1 0.2-0.5 0.6-0.1 0.1-0.4 0.2-0.2 0.2-0.2 0.4-0.1 0.2-0.2 0.1-0.3 0-0.2-0.1-0.4-0.2-0.2-0.1-0.9-0.2-0.3 0-0.1 0-0.1 0.1-0.1 0.2-0.1 0.7 0 0.4 0 0.3 0.1 0.3 0.1 0.1 0.1 0.1 0.2 0.1 1.1 0.4 0.4 0.3 0.2 0.3 0.5 0.7 1.6 1.5 0.3 0.3 0.4 0.2 0.3 0 0.3 0.2 0.3 0.2 0.8 1.4 0.2 0.2 0.2 0.1 0.2 0 0.5 0 0.2 0.1 0.2 0.1 1.3 1.1 1 0.5 0.2 0.1 0.2 0.3 0.2 0.4 0.4 0.7 0.2 0.2 0.2 0.2 0.2 0 0.2 0.1 0.2 0.2 0.2 0.2 1.3 2.8 0.1 0.1 0.2 0.2 0.3 0.1 0.3 0 0.3-0.1 1-0.4 0.5-0.2 0.1 0.1 0.2 0.1 0.4 0.4 0.2 0.2 0.1 0.1 0.2 0 0.5 0 0.9 0.1 0.9 0.4 0-0.5-0.4-2.3 0-0.2 0-0.3 0.6-1.5 0.4-1.4 0-0.3-0.1-0.8 0.1-0.2 0-0.3 0.1-0.2 0.1-0.2 0.1-0.2 0-0.2 0-0.3-0.4-1.7-0.1-0.5 0.1-0.3 0.1-0.5 0.5-1.1 0-0.2 0.2-1.3 0.2-0.7 0.1-0.2 0.1-0.2 0.1-0.2 0.6-0.4 0.2-0.4 0.2-0.4 0.1-0.2 0.1-0.1 0.2-0.2 1.6-0.8 0.2-0.1 0.8-0.2 1.8-0.6 0.4-0.3 0.1-0.1 0.1-0.2 0.1-0.2 0.2-0.5 0.1-0.2 0.3 0 0.4 0 0.3 0 0.7-0.1 0.3 0 0.2 0 0.3 0.1 0.2 0.1 0.4 0.4 0.2 0.2 0.2 0.1 1.2 0.3 0.2 0 0.9 0.1 0.3 0 0.3 0.2 0.1 0.2 0.2 0.5 0.1 0.3 0.2 0.2 0.2 0.2 0.3 0.2 0.4 0.2 0.5 0.6 0.6 0.5 0.2 0.3 0.6 1.1 0.1 0.5 0.1 0.2 0.1 0.1 0.1 0.2-0.1 0.4 0.1 0.3 0.1 0.3 0.2 0.2 0.2 0.1 1.4 0.1 0.6 0.1 0.2 0 0.2-0.1 0.2-0.1 0.3-0.3 0.2-0.1 0.4 0 0.4-0.1 0.6 0.1 0.3 0 0.2-0.1 0.1-0.2 0.1-0.2 0.1-0.5 0.1-0.2 0.1-0.2 0.2-0.4 0.1-0.2 0.2-0.1 1.5-0.4 0.6-0.3 0.8-0.1 0.2-0.1 0.2-0.1 0.2-0.1 0.1-0.2 0-0.2 0.1-0.2-0.1-0.3 0-0.2-0.1-0.3-0.1-0.2-1.3-1.4-0.2-0.4-0.2-0.4 0-0.4 0.2-0.9 0.1-0.4 0.3-0.4 0-0.2 0.2-0.5 0.1-0.2 0.3-0.7 0.1-0.4 0.4-0.7 0.1-0.4 0-1.2 0.1-0.2 0.1-0.2 0.4-0.4 0.7-1.1 0.1-0.2 0.1-0.2 0.1-0.7 0.1-0.3 0.2-0.5 0.1-0.2 0.1-0.2 0.2-0.2 0.9-1 0.7-1.3 0.1-0.3 0-0.2-0.1-0.2 0-0.3 0.1-0.2 0.1-0.2 0.2-0.2 0.3-0.1 0.2-0.1 0.4-0.3 0.3-0.1 0.1-0.2 0.1-0.3 0.1-0.2 0-0.2 0.1-0.2 0.5-0.2 5.7-0.2 20.1 0.2z" id="BRA592" name="Amazonas">
                         </path></a>
-                        <a xlink:title="Maranhão" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Maranhao">
+                        <a xlink:title="Maranhão" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/maranhao/superintendencia-regional-do-maranhao" target="blanck">
                         <path d="M659.7 181.9l0 0.2 0.2-0.3 0.6-0.6-0.2 1.7-0.1 0.5-0.2 0.2-0.1 0.3 0.2 0.8-0.4 0.2-0.5 0.2-0.5 0.8-0.6 0.7 0.1 0.2-0.2 0.2 0 0.1-0.2 0 0-0.1-0.1-0.4 0-0.3 0.3-0.5 0.2-0.2 0.1-0.2 0.1-0.6 0.2-0.5 0-0.3 0-0.4-0.4-0.9-0.1-0.3 0-0.4 0.2-0.7 0.7-1.2 0.4-0.4 1.1-0.5-0.1 1.3-0.3 1-0.2 0-0.2 0.2 0 0.2z m53.8-1.2l-0.6 0-0.9-0.1-0.4-0.3-0.6-0.2-0.7-0.2-0.2-0.4 0-0.5 0.1-0.3 0.3 0 0.2 0.2 0.3 0.2 0.4 0.4 0.7 0.2 0.4 0.2 0.5 0.4 0.4 0.2 0.1 0.2z m1-1.7l0.3 0.3 0.1-0.1 0.2 0-0.1 0.2 0.1 0.3 0 0.2 0.1 0.2-0.3 0.2-0.2 0.1-0.5 0-0.3 0-0.2-0.1-0.2-0.2 0.4-0.1 0.1 0 0-0.2-0.3-0.1-0.2-0.1-0.1-0.1 0.1-0.3-0.4 0.1-0.5-0.2-0.9-0.5 0.3-0.1 1.8 0.1 0.4 0.1 0.3 0.3z m-39.2-5.4l0.3 0.1 0-0.1 0.3-0.3 0.3-0.3 0.3 0 0.1 0.5-0.2 0.6-0.1 0.4-0.2 0.2-0.7 0.2-0.3 0-0.3-0.1-0.1-0.3 0-0.3 0.1-0.4 0.1-0.2 0-0.3-0.1-0.2-0.2-0.2 0.2-0.2 0.3-0.1 0.3 0 0.1 0.3-0.1 0.3-0.1 0.4z m5.7-0.8l-0.3 0.1-0.3-0.2-0.3 0-0.2-0.6 0-0.3 0.7-0.2 0.3-0.1 0.4 0 0.1 0.2-0.1 0.5-0.2 0.3-0.1 0.3z m-1.7-0.4l-0.1 0.1-0.3-0.1-0.5 0-0.2 0-0.2 0.2-0.1 0-0.1 0.1-0.1 0.2-0.1 0.1-0.4-0.2-0.3-0.1 0-0.2 0.2-0.2 0.1-0.5-0.1-0.4 0-0.5 0.2-0.3 0.2-0.7 0.4-0.3 0.3-0.3 0.4-0.1 0.3 0 0.4-0.1 0.2 0 0.5 0.1 0.1 0.6-0.2 0.4-0.4 0.3 0 0.4-0.1 0.6 0 0.4-0.2 0.1 0.1 0.2 0 0.2z m-28-25.2l0.3 0.3 0 0.2-0.2 0.7-0.1 0-0.1-0.1-0.2-0.2-0.1-0.1-0.2-0.1 0 0.2 0.1 0.2 0.1 0.1 0.2 0.1-0.2 0.2-0.1 0.1-0.3 0.4-0.2 0.1-0.2 0.1-0.2 0-0.2-0.1 0 0.5-0.4 0.2-0.5-0.2-0.4-0.3-0.1-0.3 0-0.5 0.1-0.4 0.1-0.2 0.3 0.1 0.1 0.2 0.1 0.3 0 0.3 0.3-0.7 0.1-0.5-0.4-0.2 0.2-0.5 0.2-0.2 0.6 0.3 0.2-0.1 0.2-0.1 0.2-0.1 0.1 0 0.2 0.1 0.4 0.2z m68 33.4l-0.1 0.4-0.2 1.2-0.3-0.1 0.1 0.4 0.2 0.7 0 0.4 0.2 0.2 0.6 0.4 0.2 0.2 0 0.4-0.1 0.3-0.3 0.3-0.1 0.4 0 0.5-0.1 0.3-0.5 0.4-0.4 0.6-0.3 0.3-0.6 0.3-0.3 0.4-0.3 1 0 0.1-0.1 0.2-0.4 0-0.1 0.1-0.1 0.1-0.3 0.7-0.3 0.2-2.2 0.7-0.3 0.1 0.1 0.2 0.3 0.2 0.1 0.2-0.1 0.2-1.7 2.2-0.9 0.7-0.7 0.1-0.3 0.1-0.4 0.1-1-0.1-0.6 0.2-0.3 0-0.2 0.1-0.2 0.2-0.3 0-0.4 0-0.3 0-0.2 0.1-0.4 0.2-0.3 0-0.2-0.2-0.1-0.2-0.2-0.2-0.2 0-0.1 0.1-0.2 0.6-0.1 0.1-0.4 0.4-0.5 1-0.3 0.5-1.3 1-0.8 1.2-0.2 0.6 0.1 0.3 0.1 1.7-0.2 0.3-0.6 0.7-0.1 0.5-0.1 0.4-0.2 0.5-0.2 0.4-0.1 0.3-0.7 0.4-0.3 0.1-0.1 0.2-0.1 0.2-0.1 0.2-1.1 1.1-0.2 0.4-0.1 0.2-0.1 0.8-0.1 0.1-0.3 0.4 0 0.1-0.4 0.7-0.2 0.2-0.1 0.1-0.4 0.1-0.4 0.3-0.9 1-0.2 0.5 0.2 1.1-0.1 0.3 0.3 0.5 0.2 1 0.3 0.4 0.3-0.2 0.3 0.1 0.3 0.2 0.3 0.2 0.2 0.4 0.2 0.9 0.3 0.5 0.1 0.3-0.1 0.6-0.2 1-0.5 1-0.3 0.6-0.4 0.2-0.5 0.2 0.1 0.5 0.3 0.7 0.1 0.5-0.2 0.3-0.2 0.3-0.1 0.4 0.1 0.4 0.3 0.2 0.4 0.2 0.2 0.3 0.3 0.9 0.2 0.7 0.1 0.2 0.4 0.2 0.1 0.2 0.1 0.2-0.1 0.4 0 0.3 0.1 0.4 0.3 0.8 0.1 0.4 0 1.4 0.1 0.4 0.6 1 0 0.4 0 0.3-0.4 0.5-0.2 0.2 0 0.3 0 0.2 0 0.5 0 1-0.4 0.6-1.4 1.1-0.2 0.3-0.5 0.7-0.1 0.3-0.6 0.6-0.1 0.1-1 2-0.3 0.2-0.3 0.4-0.1 0.2-0.2 0.1-0.4 0-0.2 0-0.3 0.4 0.1 0.3 0.1 0.3 0.1 0.4 0 0.1-0.1 0.2 0 0.2 0.2 0.3 0.1 0.1-0.1 0.4-0.1 0.1-0.1 0.2-0.2 0.3-0.1 0.4 0.2 1.6 0.2 0.5 0 0.2-0.2 0.5-0.1 0.2 0 0.4 0.1 0.5 0.2 0.4 0.6 0.8 0.1 0.4-0.1 0.4-0.3 0.4 0.2 0.3 0.3 0.7 0.3 0.3 0.2 0.1 0.5 0.1 0.2 0.1 0.1 0.1 0.2 0.4 0.2 0.4 0.2 0.3 0.1 0.2 0.2 0.1 0.3 0.1 0.1 0.1 0.4 0.4 0.3 0.2 1 0.3 0.3 0.3 0 1.7 0.1 0.2 0.3 0 0 0.3-0.5 0.4-0.1 0.2-0.3 1.4 0.1 0.2 0.2 0.5 0 0.3-0.1 0.2-0.3 0.1 0 0.1-0.1 1.3-0.1 0.5-0.1 0.2-0.4 0.3-0.1 0.2 0 0.3 0 0.5-0.1 0.4-0.2 0.4-1.2 1.4-0.4 0.3-0.5 0.2-0.5-0.1-0.4-0.1-0.3 0-0.5 0.2-0.5 0.1-0.4 0.1-0.4 0-0.5-0.3-0.5-0.2-0.6 0.1-0.8 0.6-0.5 0.2-0.4 0.1-1 0-0.5 0.1-0.4 0.3-0.2 0.3-0.4 0.2-0.2 0.1-0.9-0.1-0.2 0-0.2-0.2-0.2-0.1-0.4-0.6-0.2-0.1-0.2-0.1-0.4-0.1-0.1-0.1-0.2-0.5-0.1-0.2-0.1-0.1-0.5 0.1-0.1 0-0.1-0.2-1.2-0.7 0.1 0-0.7-0.2-0.8-0.1-1.7 0.2-0.3-0.1-0.2 0.1-0.1 0.1-0.3 0.3-0.2 0.1-0.4 0.1-0.5 0.2-0.5 0.2-0.8 0.2-0.4 0-0.1-0.2-0.1-0.2-0.2-0.1-0.3 0.4-0.2 0.1-0.3 0.1-0.7 0.1-0.2 0.1-0.1 0.3-0.1 0.7-0.1 0.2-0.6-0.4-0.2 0.1-0.2 0.1-0.1 0.2 0.2 0.1 0.2 0.2 0 0.3-0.3 0-0.2 0-0.2 0.1-0.4 0.5-0.4 0.1-0.1 0.2 0 0.5-0.1 0.2-0.1 0.1-0.3 0.2-0.3 0.6-0.1 0.2-0.6 0.5-0.2 0.1-0.2 0-0.2 0.1-0.6 1.8-0.2 0.4-0.2 0.2-0.8 0-0.4 0-0.3 0.3-0.6 0-1.2 0.5-1.1 0.7-0.5 0.7-0.1 0.2-1.1 0.6-0.6 1.1-0.3 0.3-0.2-0.1-0.7 0.4-0.3 0.3-0.2 0.4-0.2 0.7-0.2 0.2-0.4 0.1-0.5-0.5-0.3-0.2-0.3 0-0.2 0.2-0.3 0.1-0.3-0.1-0.3-0.2-1 0.6-0.1 0.2-0.1 0.3-0.3 0-0.3 0-0.1 0.2 0 0.3-0.2 0.2-0.8 0.3-1.5 0.7-0.3 0.1-1.7 0.3-1.6 0.6-1 0.3-1.4 0.1-0.4 0.1-1.2 1-1.9 1-0.8 0.7-0.5 0.9-0.3 1.6-0.4 1.1-0.1 0.4 0 0.1-0.2 0.1-0.1 0.2 0.2 0.2 0 0.1-0.2 0.8-0.1-0.2 0 0.4-0.1 0.4-0.1 0.3 0.2 0.3 0 0.1-0.2 0.2 0.1 0.2 0.2 0.1 0 0.2-0.1 0.1-0.2 0.2-0.1 0.1 0 1.1-0.3 1.7-0.2 0.2-0.3 0.4-0.3 0.9-0.1 0.1-0.3 0.2-0.4 0.4-0.1 0.1-0.1 0.1-0.1 0.3 0 0.2 0.1 0.5-0.1 0.2-0.6 1.2-0.1 0.2-0.2 0.2-0.3 0.4-0.4 0.8-0.1 1.9-0.3 1-0.7 0.5 0 0.1 0.4 0.2 0 0.2-0.6 0.4-0.2 0.3-0.2 0.9-0.3 0.5-0.2 0.2-0.6 0.3-0.4 0.4-0.1 0.2-0.1 0.3-0.2 0.2-0.3 0-0.5 0.4-0.3 0.7 0.1 0.6-0.4 0.2-0.2 0.5-0.3 0.6 0 0.6 0.1 0.6 0.7 1.3 0.1 0.3 0.1 0.5 0 1.6 0.1 0.5 0.1 0.3 0.2 0.3 0.2 0.2 0 0.2-0.1 0.1 0.1 0.2 0 0.2 0 2 0.3 0.7 0.7 0.7 0.6 0.3 0.2 0.1 0.2 0.4 0.3 0.3 0.1 0.5 0.1 0.7-0.1 0.4-0.2 0.4-0.2 0.4-0.2 0.2-0.2 0.3-0.1 0.5 0.1 1.1-0.2 1.9 0 1.1 0.3 0.8-0.4 0.6-0.2 0.7-0.1 1.5 0.2 1.6-0.1 0.7-0.7 0.4-0.2 0.2-0.1 0.4 0.1 0.5 0 0.4-1.1 1.8-0.1 0.4 0.1 0.2 0.2 0.4 0 0.1 0 0.5-0.2 0.7 0 0.4 0 0.8-1.3-0.6-0.4-0.2-0.2-0.3-0.8-1-0.4-0.4-2.3-0.7-0.6 0-0.1 0-1.4 0.3-0.2 0-0.3-0.1-0.5-0.1-0.3-0.1-0.1-0.1-0.4-0.8-0.3-0.3-0.4-0.3-0.3-0.3-0.3-0.8-0.1-0.2-0.2-0.2-0.6-0.5-0.1-0.2-0.1-0.2 0-0.2 0.1-0.5 0.1-0.5 0-0.5-0.1-0.2-0.3-0.8-0.3-0.3-0.3-0.3-1.6-1-0.9-0.8-0.2-0.2-0.2-0.1-0.2 0-0.3-0.2-0.1-0.1-0.1-0.1-0.1-0.6 0-0.2 0.1-0.3 0.1-0.4 0.1-0.1 0.3-0.3 0.2 0 0.3 0 0.3-0.1 0.2-0.1 0-0.1 0.1-0.2 0.2-0.7 0.1-0.3 0.2-0.1 0.4-0.5 0.3-0.2 0.2-0.2 0.1-0.2-0.1-0.3-0.1-0.3-0.1-0.3-0.3-0.2-0.2 0-0.4-0.2-1.8-0.7-2-1-0.8-0.7-0.4-0.4-0.4-0.9-0.1-0.3 0-0.6 0.1-0.9 0-0.3-0.4-1.2 0-0.2-0.9-1.3-0.1-0.2-1.2-0.7-0.1-0.1-0.2 0-0.3 0-1 0-0.3 0-0.3 0-0.4-0.2-0.4-0.3-0.1-0.2-0.1-0.2 0.1-0.2 0-0.2 0.2-0.5 0.2-0.2 0.5-0.5 0.3-0.3 0.3-0.3 0.3-0.3 0.1-0.2 0.2-0.3 0.2-0.1 0.7-0.6 0.3-0.1 0.4-0.4 0.2-0.2 0.1-0.2 0-0.3-0.4-1.5 0-0.3 0.4-0.7 0-0.2 0.1-0.5 0.1-0.4 0-0.5 0.3-1.1 0.3-0.8 0.2-0.2 0.2-0.7 0.1-0.3 0.1-0.2 0.3-0.3 0.7-0.7 0.1-0.1 1.6-0.6 1.3-0.2 0.1 0 0.6 0 0.1 0 0.6 0 2.1 0 0.2-0.1 0.1-0.1-0.1-0.2-0.4-0.3-0.1-0.1-0.2-0.4-0.3-0.4-0.1-0.2 0.1-0.3 0.4-0.2 0.1 0 0.1-0.2 0.1-0.2 0.1-0.8 0-0.2 0.3-0.6 0-0.1 0-0.3-0.2-0.2-0.1-0.2 0-0.2 0.2-0.4 0.2-0.6 0-0.4 0.1-0.2 0.3-0.3 0-0.2 0-0.3-0.2-0.4 0-0.3-0.2-1 0-0.2-0.1-0.2-1.3-0.5-0.2-0.3-0.3-0.4-0.1-0.1-0.2-0.1-0.2-0.1-0.3 0-0.1 0.1-0.2 0.1-0.3 0.1-0.3 0-1.5 0.1-0.7 0.2-0.2 0.1-0.1 0.2-0.2 0.1-0.2 0.1-1.1 0.2-0.4 0-0.6 0.1-0.2 0.1-0.2 0.2-0.1 0.1-0.3 0-0.1 0-0.3 0.3-0.4 0.2-0.1 0.2-0.2 0.4-0.2 0.1-0.4 0.2-0.5 0.1-0.2 0-0.2-0.1-0.2-0.2-0.1-0.3-0.1-0.3-0.1-0.2-0.2-0.2-0.4-0.1-0.2-0.1-0.1-0.3-0.2-0.5-0.1-0.2-1.2-1.8-0.2-0.1-0.4-0.2-0.3-0.2-0.3-0.4-0.4-0.9-0.2-0.4-0.2-0.2-0.3-0.1-0.2 0-0.3-0.2-0.1-0.1 0.1-0.6-0.1-0.1-0.3-0.2-0.1-0.2 0.1-0.2 0-0.1 0-0.1-0.4-0.5-0.2-0.1-0.1 0.1 0 0.3 0 0.2-0.2 0-0.2-0.1-0.1-0.1 0.1-0.3-0.1-0.2-0.3-0.8-0.1-0.2-0.1-0.1-0.1 0-0.4-0.1-0.2-0.1 0-0.1 0-0.2 0-0.2 0-0.3-0.1-0.1-0.1-0.1-0.4 0-0.2 0-0.1 0.1-0.3 0.1-0.2-0.2-0.2-0.2-0.3-0.6 0-0.2-0.1-0.5-0.1-0.3-0.2-0.1-0.2 0-0.5 0-0.8 0.2-0.4-0.2 0.7-0.6 0.9-0.4 0.7-0.4 0.3-1-0.2-0.8-0.6-0.5-0.8-0.2-0.9-0.1-0.4 0.3-0.5 0.4-0.4 0.2-0.3-1-0.4-0.4-0.9-0.4-0.5-0.8 0.3-0.7 0.9-0.3 1 0.2 1.2-2 1.6-1.3 0.3-0.6 0-0.4 0.3-1.3 0.1-0.2 0-0.2-0.2-0.5-0.1-0.3 0.1-1.4 0.1-0.6 0.3-0.7-0.3-0.8 0.2-0.8 0.6-1.5 0-0.8 0.1-0.4 0.1-0.3 0.6-0.8 0.2-0.3-0.3-0.5 0-0.5 0.5-1.2-0.2-0.7 0.7-1.7 0.1-0.9-0.2-0.5-0.6-0.7-0.1-0.5-0.1-0.4-0.2-0.9 0-2.9 0.3-1.4 0-0.9-0.1-0.2-0.2-0.3-0.1-0.4-0.2-0.3-0.1-0.5 0-0.2-0.2-0.4-0.6-0.4-0.1-0.2 0.3-3.4-0.6-1.4-0.4-0.7-0.5-0.4-0.4-0.1-0.8-0.1-0.4-0.2-0.4-0.3-2.1-1.2-0.4-0.2-0.5 0-0.8 0.1-0.5 0-0.4-0.1-0.3-0.4-0.1-0.4-0.1-1-0.1-0.5-0.3-0.4-0.5-0.3-0.9-0.2-0.8-0.2-0.5 0-0.4 0.1-0.6 0.5-0.5 0.2-1-0.1-0.9-0.2-3.6-1.6-0.4-0.3-0.2-0.2-1.7 0.1-1 0.2-0.8 0.3-0.8 0.4-0.2 0.2-0.3 0.4-0.6 1.5-0.1 0.2-0.3 0.3-0.2 0.1-0.1 0-0.2-0.4-0.4-0.1-0.9 0.1-0.2 0.1-0.8 0.9-0.4 0 0.2-0.3 10.7-8.7 10.1-8 0.4 0.1 0.2 0 0.3 0 0.3-0.2 0.2 0 0.1 0 0.1 0.1 0.1 0.2 0.5 0.1 0.1 0.1 0.6-0.1 0.3 0 0.1-0.1 1.6-1.3 0.5-0.6 0.1-0.1 0.2-0.4 0-0.1 0.4-0.4 0.1-0.1 0.1-0.3 0.1-0.2 0.6-0.5 0.1-0.2 0.1-0.4 0.3-0.6 0.1-0.2 0.1-0.3 0-0.2 0.1-0.2 0.5-0.6 0.4-0.2 0.7-0.5 0.2-0.2 0.2-0.2 0-0.2-0.1-0.2 0-0.3 0.3-0.5 0.3-0.4 0.2-0.4-0.3-0.5 0.3 0 0-0.4 0-0.5 0.2-0.5 0.3-0.3 0.1 0.1 0.3 0.2 0.1-0.3 0.1-0.3 0.2-0.2 0.2 0.2 1.4-1.2 0.5-0.7 0.5-0.6 0.3-0.3 0.7-0.4 0.3-0.2 0.5-0.6 0.2-0.8 0.3-2 0.2-0.7 0-0.3 0-0.2-0.1-0.4 0-0.1 0-0.2 0.2-0.3 0.1-0.1 0-0.6 0-0.1 0.2-0.3 0.1-0.1-0.1-0.2-0.1-0.1 0.1-0.2-0.1-0.2 0.2-0.2 0.1 0 0.5-0.1 0-0.3 0.2-0.1 0.2-0.1 0.2-0.1 0.1-0.3-0.1-0.3 0-0.1 0.3-0.1 0-0.2 0-0.3 0.3-0.6-0.1-0.1 0-0.2 0-0.5 0-0.2 0.4-0.2 0-0.2 0.1 0 0.3-0.2 0.3-0.4 0.4-0.3 0.3-0.2 0.1 0 0.1 0 0.3 0 0.3 0 0.1-0.1 0.2-0.2 0.1-0.4 0-0.3 0.2-0.2 0.4-0.2 0.2-0.2 0-0.1 0-0.3 0.1-0.1 0.2 0 0-0.1 0.2-0.2-0.3 0-0.1-0.2 0.1-0.2 0.1-0.2 0.5-0.1 0.4-0.4 0.1-0.3-0.4-0.1 0-0.2 0.3-0.1 0.1-0.1 0.1 0 0.2 0.1 0.1 0.1 0.1-0.3 0.7-0.9 0.2-1.6 0.1-0.2 0.2-0.1 0.1-0.1 0-0.2 0-0.2-0.3-1.6 0.1-0.5 0.6 0.2-0.1-0.3 0-0.2 0.1-0.1 0.2-0.2 0.2-0.1 0.3-0.2 0.3-0.1 0-0.1-0.2-0.1-0.2 0-0.1-0.1-0.1-0.3 0-0.3-0.1-0.2-0.3 0.2-1-1.5 0.1-0.5 0.9-0.8 0.2-0.6 0.2 0.2 0.1 0 0.1-0.1 0.6-0.4 0.1 0 0.3 0 0.1 0 0.4-0.2 0.2-0.2 0.2-0.2 0.3-0.8 0.1-0.1-0.1-0.1 0-0.2 0.1-0.2 0.1-0.1 0.5-0.1 0.3 0 0.2-0.1 0.2-0.3 0.1-0.3 0-0.9-0.1-0.9 0-0.5 0.2-0.2 0.1 0 0.1-0.2 0.1-0.1 0.1-0.2-0.1-0.4-0.1 0.1-0.2 0.1-0.3 0.1-0.3 0.1-0.1-0.1 0.1-0.3 0.8-0.8-0.1-0.3 0.1-0.5 0.1-0.5-0.4-0.3 0-0.2 0.4-0.1 0.2 0.1 0.2 0.1 0.3 0.1 0.2-0.1 0.4-0.4 0-0.1 0.6-0.4 0.5-0.7 0.5-0.8 0.5-1.9 0.7-1.8 0.3-1 0-0.9-0.2-0.4 0-0.1 0.1-0.2 0.2-0.2 0-0.1 0-0.5-0.2-0.4-0.3-0.2-0.4-0.1-0.9 0.3-0.3-0.1-0.2-0.4-0.1-0.9 0-0.2 0.2-0.1 0.5 0 0.9-0.1 0.4-0.2 0.2-0.5 0.3-0.2 0-0.1 0-1 0-0.3 0-0.2 0-0.3 0.2-0.2 0.2-0.2 0.1-0.2-0.2-0.6-0.3-1.4 0.2-0.3 0.5-0.8 0.1-0.5 0.2-0.4 0.7-0.6 0-0.5-0.1-0.2-0.6-0.4-0.2-0.3 0.1-0.3 0.1-0.1 0.2-0.1 0.1-0.1 0-0.3 0-0.3 0.1-0.2 0.2-0.2 0.2-0.2 0.8-0.3 0.3-0.2 0.2-0.3 0.3-0.6 0.2 0.3 0 0.3-0.1 0.2-0.1 0.3 0.4-0.2 0.1-0.4-0.1-0.4-0.1-0.4 0.1-0.2 0.2-0.2 0.2-0.4 0-0.4 0.1 0 0 0.1 0.2 0.2 0.2-0.1 0-0.5 0-0.3 0.3-0.3 0.3 0.2 0 0.2 0.1 0.3-0.2 0.1-0.1 0.1 0.3 0.3-0.2 0.1-0.1 0.2-0.2 0.5 0.3-0.1 0.2-0.1 0.1 0.1 0.2 0.1-0.3 0.1-0.8 0.1-0.1 0.9 0.1 0.2 0.2 0.1 0.3 0 0.3 0.1 0.1 0.2 0 0.5 0.2 0.2 0.2-0.1 0.1-0.1 0-0.2-0.1-0.2 0.1 0 0.2-0.1-0.1-0.4 0.1-0.6 0.3-0.7 0.5-1.2 0.5-0.6 0.3 0.1 0 0.8-0.7 0.9-0.1 0.3-0.2 0.3-0.2 0.1 0 0.5 0 0.3 0.2-0.6 0.2-0.2 0.2-0.3 0 0.4-0.1 0.1 0.3 0.4-0.2 0.4-0.3 0.4-0.1 0.5 0.6-0.5 0.2-0.1 0 0.1-0.1 0.2 0.1 0.1 0 0.2-0.2 0.1-0.2 0.3-0.1 0.2 0.5-0.3 0.4-0.3 0.1-0.6 0-0.7 0.3 0.4 0.1 0.5 0 0.5-0.1 0.2-0.3 0.2 0.1 0.3 0.3 0.5 0.3 0.2-0.2-0.7 0.2-0.4 0.3-0.2 0.3 0.2 0.2-0.3 0.1-0.8 0.1-0.4 0.4-0.1 0.6-1.6 0.4 0 0.1 0.6-0.7 1.5-0.1 0.5 0.1 0 0.2-0.3 0.4-0.3 0.3-0.5 0.2 0.2 0.1 0.8 0 0.3 0.2 0.2 0.3 0.1-0.2 0.5 0.2 0.1 0 0.4-0.1 0.4-0.2 0.3-0.1 0.1-0.1 0.3 0.8 0.1 0.1-0.1 0.3-0.2 0.1-0.2 0.1-0.3 0-0.3-0.1-0.3-0.1-0.3 0-0.2 0.2-0.2 0.3-0.1 0.3 0 0.1 0.2-0.1 0.2-0.3 0 0.3 0.2-0.1 0.2 0 0.1 0 0.2 0.1 0.1 0.6-1 0.3-0.2 0.3 0.3-0.2 0-0.2 0.1-0.1 0.2 0.1 0.3 0.4-0.2-0.1 0.3-0.2 0.2-0.1 0.3 0 0.3 0.3-0.2 0-0.2 0.2-0.2 0.1-0.3 0.2 0 0 0.9 0 0.2-0.2 0.5-0.2 0.4 0 0.3 0.4-0.3 0.9-1.2 0.1-0.1 0-0.5 0.2-0.2 0.1-0.1 0.8-0.4-0.6 0 0.4-0.1 0.3 0 0.1 0.2 0.1 0.5 0 0.2-0.1 0.4-0.1 0.1-0.1 0.1-0.4 0-0.1 0.1-0.5 0.2-0.1 0-0.1 0.2 0 0.6-0.3 0.6 0 0.4 0.1 0.4-0.5-0.1-0.3 0.1-0.6 0.6 0.3 0 0.2-0.2 0.1-0.2 0.1-0.2 0.3 0.1 0.1 0.3-0.1 0.2-0.2 0.3 0.2 0 0.2 0 0.1-0.1 0.1-0.2 0.4 0.2 0.1 0.3-0.1 0.4 0.1 0.3 0.2-0.4 0.1-0.5-0.2-1 0.1-0.2 0.2-0.2 0.2-0.2 0.2-0.1 0.1 0.1 0 0.3-0.2 0.2 0.1 0.1 0.3-0.3 0.2-0.1 0-0.1 0.3-0.6 0.2-0.4 0.5-1 0-0.3-0.1-0.3 0.3-0.2 0.5 0 0.3 0.3 0.1 0.2 0.2 1.8-0.3-0.2-0.2 0.7-0.5 0.3-0.5 0.3-0.6 0.4 0.1 0.2 0.2-0.3 0.2-0.1 0.2 0 0.2 0.1-0.1 0.2-0.2 0.4-0.1 0.3 0 0.4-0.2 0.1-0.2 0.1 0.8 0.3 0.3 0.5-0.1 0.7-0.3 0.9-0.1 0.3-0.1 0.4 0 0.4 0.1 0.4 0.2 0.2 0.3 0.2 0.3 0.1 0.9-0.2 0.3-0.3-0.1-0.4 0.3-0.1 0.8-0.3 0.1-0.3-0.1-0.3-0.5-0.7-0.1-0.4 0.1-0.6 0.5-0.8 0.5-0.5 0.6 0.1 0-0.6 0.3-0.4 0.3 0 0.3 0.5 0.1 0 0.1-0.4 0.3-0.2 0.3-0.1 0.1-0.2 0.1 0 0.2 0.1 0 0.3 0.1 0 0.2-0.3 0-0.4 0.2-0.5 0 0.8 0.1 0.3 0.2 0.1 0.2 0.1 0.3 0.1 0.1-0.1 0.3 0.1 0.2 0.4 0 0.3-0.5-0.1 0.2 0.3 0.4 0.1 0.3 0 0.3 0.2 0 0.2-0.4 0.1-0.5 0.2-0.3 0.2 0 0.5 0.1 0 0.2-0.4 0.3 0 0.6 0.3-0.1-0.3 0.1-0.4 0.2-0.3 0.1-0.4 0-0.7 0.1-0.2 0.5 0 0-0.2-0.2 0 0-0.1 0.4-0.2 0.5-0.3 0.4-0.3 0.1-0.4 0.1-0.1 0.2 0.1 0.1 0.3 0.1 0.2 0 0.7 0 0.1-0.1 0.1-0.5 0.2-0.2 0.2-0.1 0.2-0.1 0.3-0.4 0.5-0.1 0.3 0 0.4 0.1 0.4-0.3 0-0.4 0-0.2 0 0.3 0.3 0.4 0.4 0.2 0.4-0.5 0.2 0.4 0 0.1-0.1 0.2-0.6 0-0.2 0.1-0.2 0.3-0.2 0.3 0.3 0.3 0.4 0.3 0.2 0.4-0.1-0.4-0.1-0.1-0.3 0.1-0.4 0.2-0.3-0.2 0 0.2-0.3 0-0.1 0.3 0.2 0.2 0.3 0.1 0.4 0 0.4 0.1-0.4 0.1-0.2 0.2 0.4-0.1 0.3-0.2 0.2-0.1 0.3 0.1 0.1 0.4 0.3 0.1 0.3-0.4 0.4 0.1 0.2 0.4 0.2 0.1 0.1-0.3 0.3-0.2 0.1-0.1 0.2-0.2-0.1-0.3 0.1 0 0.2 0.2 0.1 0.9-0.5 0.1-0.3-0.1-0.6 0.7 0.4 0.4 0.1 0.4-0.2-0.3 0.8-0.7 0.5-1.3 0.7 0 0.2 0.3-0.1 0.9-0.2 0.3-0.1 0.3-0.2 0.1 0.1 0.2 0.3 0.2 0.2 0.6-0.1 0.4-0.5 0.2-0.8 0-0.8 1.2 0.6-0.3 0.2-0.3 0.3-0.1 0.2-0.2 0.4 0 0.4 0 0.3-0.1 0.2-0.3 0 0 0.2 0.2-0.1 0.4-0.2 0.2 0 0.2 0 0.2 0.4 0.1 0 0.2-0.1 0-0.3 0.1-0.2 0.3-0.1 0.2 0.1 0 0.3-0.1 0.3-0.2 0.2 0.2 0.1 0.1-0.2 0.4-0.3 0.1-0.2 0.3 0.1 0.1 0.3-0.3 0.4-0.9 0.5-0.3 0.4 0.4-0.1 0.8-0.2 0.3 0.1 0.2 0.2 0.2 0.4 0.1 0.4 0 0.3 0 0.2 0.2 0.4 0.1 0.2-0.1 0.1-0.2 0.2 0 0.1-0.2 0.2-0.4 0-0.5 0-0.3-0.1-0.2 0.3-0.3 0.1-0.7 0.2 0.3 0.1 0.1 0.1 0.4-0.3 0.5-0.1 0.4 0 0.4 0.1 0.4 0 0.2 0 0 0.3-0.1 0.2-0.8 0.5-0.4 0.2-0.5 0.8-0.7 0.7-0.7-0.1-0.1 0.1 0.3 0.1 0.3 0 0.4-0.1 0.2 0.2-0.1 0.2-0.5 0.4-0.8 0.9-0.5 0.2-0.7 0 0.1 0.1 0.1 0.1 0.1 0.4-0.9-0.3-0.4 0-0.4 0.2-0.3 0.3-0.4 0.2-0.5-0.1 0.4 0.3 1-0.4 1-0.2 0.2 0.7 0.1 0 0.2-0.3 0.3-0.2 0.3-0.1 0.2 0.3-0.1 0.3-0.1 0.2-0.2 0.1-0.1 0.2-0.2 0.5-0.1 0.1-0.2 0.3-0.2 0.2-0.1 0.5-0.1 0.2 0.1 0.2 0.1-0.3 0.1-0.2 0.1-0.1 0.6-0.5 0.3-0.1 0.1 0.2-0.2 0.9 0.1 0.4 0.2 0.1 0-0.2-0.1-0.2 0.1-0.3 0.2-0.5 0-0.2-0.1-0.1-0.1-0.2 0-0.5 0.1-0.4 0.1-0.5 0.3-0.4 1-0.9 0.3-0.1 0.2-0.1 0.2-0.1 0.2-0.3 0.1-0.3 0-0.1 1-0.8 0.8-0.1 0.8 0.4 0.6 0.8 0.2 0.4 0.1 0.5 0 0.8 0.1 0.1 0.2 0.3 0.1 0.1 0.1 0.3 0 0.5-0.2 1-0.2 0.4-0.3 0.1-0.8 0.1-0.5 0.1-0.5-0.2-0.1-0.1-0.3-0.3-0.1 0-0.2-0.2-0.1-0.1-0.2 0.1-0.4 0.1-0.3 0.3-0.3 0.3-0.1 0.3 1-0.7 0.4 0.1 0.1 0.6-0.2 1.2-0.3 0.6-0.3 0.4-0.2 0.1-0.2 0-0.2 0-0.3 0.3-0.2 0.6-0.2 0.1-0.4 0.1-0.5 0.2-0.5 0.3 0 0.3 0.3-0.3 1-0.4 0.4-0.3 0.2-0.2 0.1-0.2 0.2-0.2 0.3 0 0.1 0.1-0.1 0.3-0.2 0.3-1.2 2.3-0.5 0.6 0.1 0.2 0 0.3-0.3 0.6-0.1 0.5-0.1 0.4 0.1 1-0.1 0.6-0.8 1.3-0.1 0.2 0.1 0.7-0.1 0.2-0.1 0.5 0 0.2 0.2 0.4 0.5 0.1 0.5 0 0.3 0.2 0.1 0.5-0.4 0.4-0.5 0.4-0.2 0.3-0.1 0.3-0.2 0.2-0.3 0.2-0.2 0.1-0.1 0.2-0.1 0.6-0.1 0.2-0.4 0.2-0.5 0.1-0.5 0.1-0.1 0.4 0 0.4 0.1 0.4 0.2 0.4 0.3 0.4-0.8 0.3 0.8 0.1 0.2-0.3-0.2-1.2 0.1-0.4 0.3-0.3 0.4-0.1 1-0.2 0.5-0.2 0.3-0.3 0.3-0.5 0.4-0.8 0.3-0.2 0.6 0 1-1.6 1-0.5 0.2-0.2 0.1-0.3 0.8-0.8 0.2-0.4 0.2-0.4 0.2-0.5 0-0.5 0-1 0.1-0.5 0.2-0.2-0.1-0.3-0.2 0 0.8-2.5 0.1-0.9 0.2 0.4 0 0.1 0 0.3 0.2 0-0.4-2.6 0.2-0.3 0.1-0.1 0.2-0.1 0.4 0 0.3 0.1 0.2 0.4 0.3 0.7 0.1-0.6-0.1-0.3-0.3-0.1 0.1-0.3 0-0.3 0-0.3 0.2-0.3 0.3-0.1 1.3-0.1 2.4-1.3 0.6 0.1 0.3-0.4 0.4 0 0.4 0.3 0.1 0.7-0.3-0.1-0.6-0.1-0.5 0.2-0.1 0.3 0.6 0.1 0.2 0 0 0.2 0 0.5 0.1 0.2 0.1-0.4 0.1-0.3 0.2 0 0.1 0.5 0.1 0.4-0.1 0.4-0.3 0.5-0.4 0-0.4 0.2-0.3 0.4-0.1 0.1-0.3 0.1-0.2 0.1 0.4 0.2-0.1 0.5-0.6 1-0.3 0.3-0.3 0.1-0.3 0.1-0.3-0.1-0.1 0-0.4-0.4 0.1 0.4 0.1 0.1 0.1 0.1-0.3 0.3-0.6 0.1-0.2 0.2-0.7 0.6-0.1 0.1-0.6 0.2-0.6 0.5-0.2 0.6 0.4 0.3 0.1-0.5 0.1-0.4 0.2-0.1 0.4 0.3-0.2 0.4-0.1 0 0 0.2 0.3 0.3 0.1-0.6 0.1 0 0.3 0 0.1-0.1 0-0.3 0.1-0.2 0-0.2 0.2-0.1 0.2 0.2 0.6 0.4-0.2-0.4 0.2-0.2 0.7-0.2 0 0.4 0.3 0.7-0.2 0.4-0.2 0.1-0.3 0.1-0.2 0.1-0.1 0.2 0.1 0.1 0.2-0.1 0.1 0.3 0 0.2 0.8-0.7 0.1-0.3 0.2 0.2 0.2-0.3 0.2-0.4 0.2-0.4 0-0.4 0.2-0.2 0.2-0.2 0.2 0-0.1 0.2 0 0.2 0.2-0.1 0.2-0.2 0.2 0.1-0.1 0.2 0.1 0.1 0.1-0.1 0.1 0.3-0.1 0.2-0.3 0.4 0.4-0.3 0.1-0.4 0-0.9 0-0.4 0.2-0.4 0.4-0.5 0.3-0.6 0.2-0.4 0.8-0.5 0.7 0.4 0-0.2-0.3-0.2 0-0.2 0.3-0.6 0.3-0.4 0.2-0.2 0.1 0 0.6 1.2 0.3 0.7 0.1-0.2-0.1-0.3-0.1-0.3 0-0.3 0.1-0.3 0.7-0.3 0.2 0 0.2-0.1 0.3 0 0.2-0.1 0.6-0.3 0.3-0.2 0.3 0 0.1 0.1 0.2-0.3 0-0.7 0.3-0.2 0.3 0.3 0.1 0.5 0 0.6-0.3 0.3 0 0.2 0.2 0 0-0.2 0.1 0 0 0.2 0.2 0 0-0.2 0.1-0.3 0.4 0.1 0.4 0.1-0.5-0.4 0-0.6 0.3-0.4 0.5-0.2-0.1 0.2-0.2 0.2-0.2 0.4 0.3-0.2 0.4-0.1 0.3 0.1 0.1 0.5 0.5-0.2 0.9 0.3 0.3-0.1-0.1-0.2-0.3 0.1-0.1-0.3 0.1-0.3 0.3-0.2 0 0.4 0.2-0.3 0-0.3-0.1-0.2-0.3-0.2 0.4-0.5 0.3 0.1 0.2 0.5-0.1 0.6 0.3 0 0.2 0.8 0.2 0.2-0.1 0.3 0.2-0.1 0.2-0.1 0.1-0.2 0.1-0.3 0.2 0.4 0.1 0.4 0.2-0.2 0-0.3-0.1-0.3-0.4-0.7 0.3 0 0.8 0.1 0-0.1-0.4-0.1-0.3-0.2-0.2-0.3-0.1-0.3 0.2 0 0.1 0.2 0.2 0.1 0.3 0 0.3 0-0.3-0.4-1.1-0.5-0.3-0.5 0.1-0.4 0.4-0.5 0-0.2 0.3-0.1 0.3-0.1 0.3 0 0.4 0 1 0.1 0.5 0.1 0.7 0 1.3 0.5 1.2 0.2 1.8 0.9 2.3 0.9 1.6 0.5 0.6 0.3 0.7 0.4 0.6 0.2 0.9 0.6 0.1 0 0.8 0.3 0.2 0 1.3 0 0.2 0 0.3 0.4 0.1 0 0.2 0.2 1 1.2 1.1 0.7 0.3 0.1 0.2 0 0.4 0.1 0.3 0 0.2 0 0.7-0.3 0 0.4-0.1 0.3-0.2 0.1-0.3-0.2 0.1 0.6 0.3 0.2 0.4 0.1 0.5 0.4 0.2-0.2 0.4-0.2 0.2-0.1 0.1 0.2 0.1 0.2 0.7 0.2 2.5 0 0.3 0.2 0 0.4-0.2 0.4-0.1 0.2 0.6-0.2 0.1 0.2-0.1 0.5 0.1 0 0.1-0.3 0.2-0.2 0.2-0.2 0.1-0.1 0.3 0.2 0.4 0.1 0.4-0.1 0.2-0.1 1.5-0.1 0 0.1-0.2 0.1 0.2 0.3 0 0.1 0.3-0.1 0.5 0 0.4 0.1 0.2 0 0.1-0.3 0.2 0 0.8 0.5 0.3 0.1 0.3 0 0.1-0.3 0.1-0.8-0.1-0.4-0.3 0.2-0.1 0-0.3-0.3-0.7-0.4-0.3-0.2 0.1-0.3 0.3-0.1 2.2 0.1 1.3 0.1 0.4 0-0.5 0.8z m-79.1-27.3l-0.1 0.1-0.2 0.2 0.2 0.5 0.1-0.4 0.1-0.2-0.1-0.2z" id="BRA593" name="Maranhão">
                         </path></a>
-                        <a xlink:title="Pará" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Para">
+                        <a xlink:title="Pará" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/para/superintendencia-regional-do-para" target="blanck">
                         <path d="M545 160.1l-0.3 0 0-0.4 0.2-0.6 0.5-0.3 0.6-0.1 0.7 0 0.5 0.1 0.2 0.2-0.1 0.4-0.5 0.1-0.7 0.2-0.5 0-0.6 0.4z m6.5 0.8l-0.1 0.2-0.4-0.2-1-0.2-0.3-0.2-0.3-0.4 0.2-0.3 0.5-0.5 0.1-0.2 0.1-0.5 0.1-0.2 0.2-0.1 0.6-0.4 0.5-0.6 0.3-0.3 0.4 0.1 0.1 0.3 0.1 0.3 0.3 0.3 0.2 0.1 0.3 0.1-0.1 0.5-0.3 0.4-0.2 0.2-0.2 0.1-0.5 0.8-0.6 0.7z m-2.3-5.2l0.6 0.3 0.3 0.2 0 0.2 0 0.3-0.2 0.2-0.8 0.3-0.3 0.2-0.3 0.3-0.3 0.1-0.3-0.3-0.2-0.4 0.1-0.3 0-0.4 0-0.3 0.3-0.2 0.3-0.1 0.2 0.1 0.3-0.1 0.3-0.1z m25.6-10.4l-0.4 0.4-0.3 0.1-0.3 0-0.4 0.2-0.2-0.2-0.1-0.1 0-0.2 0-0.2-0.2 0.3-0.3-0.1-0.4-0.4-0.4-0.2-0.2-0.1-0.1-0.2 0.2-0.3 0.5-0.4 0.1-0.2 0.2-0.8 0.3-0.3 0.5 0 1 0 0.3 0.2 0.3 0.8 0.3 0.4-0.4 0.6 0 0.1 0 0.5 0 0.1z m2.1-3.6l-0.3 0-1.1 0-0.5-0.1-0.2-0.3 0-0.3 0-0.5 0.1-0.4 0.6-0.7 0.3-0.6 0.4-0.7 0.1-0.3 0.1-0.2 1.1-0.5 0.8 0.7 0.1 0.3-0.6 0 0 0.2 0.6 0.3-0.1 0.7-0.8 1.5-0.1 0.6-0.1 0.1-0.4 0.2z m6.1-8.7l0 0.1 0.3-0.1 0.5 0.1 0.4 0.3 0.2 0.3-0.2 0.5-0.4 0.4-1.1 0.5 0-0.3-0.3-0.6-0.1-0.3 0.2-0.3 0.1-0.1-0.2-0.2 0-0.1 0.2-0.3 0.3 0 0.1 0.1z m-64.3-1.2l0.2 0.8 0.2 0.8 0 0.3-0.2 0.7-0.5 0.4-0.6 0.1-0.8 0-0.6 0.2-1 0.9-0.5 0.2-0.6 0.1-0.6 0.3-0.5 0.3-0.4 0.3-0.1 0-0.2-0.4-0.1-0.5 0.1-0.6 0.2-0.6 0.4-0.7 0.2-0.1 0.1-0.4 0.2 0 0.3 0.1 0.1 0 0.5-0.3 0.9-0.9 0.5-0.5 1-0.5 1.1-0.4-0.4 0.8 0 0.3 0.1 0 0.8-1.2 0.1 0.1 0 0.2 0.1 0.2z m69.8-0.1l0.4 0.1 0.6-0.1 0.2 0.3 0.2 0.4 0 0.4-0.1 0.5 0.1 0.2 0 0.4-0.1 0.4 0 0.2-0.3 0.1-0.6 0-0.4 0 0.1-0.3-0.1-0.4-0.3-0.9-0.8-0.3 0-0.4-0.2-0.7 0.1-0.2 0.3-0.1 0-0.3 0.2-0.1 0.4 0.1 0.2 0.3 0.1 0.4z m-78.6-0.5l0.5 1.1 0.4 0.2 0.5 0.1 0.2 0.4 0.1 0.5-0.2 0.5-1.4 2.7-0.2 0.8-0.5 2.8-0.4 1.2-0.1 0.2-0.3 0.1-0.5-0.6-0.5 0.1-1.7 3.2-0.6 0.8-2.7 2.3-0.9 0.5-0.3 0.1-0.2 0.1-0.2 0.2-0.2 0.2-0.6 0.2-0.1 0.1-0.2 0.5-0.1 0-0.3 0.1-0.1 0.1-0.9 0.8-1 0.7-0.5 0.1-1 0.2-0.9 0.4-0.5 0-0.4-0.3-0.3-0.3-0.2-0.8 0.3-0.6 0.8-1.2 0.2-0.3 0.1-0.5 0.1-0.8 0.1-0.3 0.2-0.3 1.5-1.1 0.2-0.1 0.1-0.1 0.1-0.5 0.2-0.1 0.2-0.1 0.4-0.1 0.8-0.4 0.7-0.7 0.4-0.9-0.5-0.9 0.1-3 0.2-0.8 1.2-1.3 0.9-2 0.5-0.8 0.6-0.6 0.6-0.7 1.2-0.7 0.3-0.3 0.3-0.2 1.2-0.4 0.4 0 0.2 0-0.3 0.2-0.1 0.4-0.1 0.5 0 0.3 0.1 0.3-0.1 0.2-0.1 0.2-0.3 0.4-0.1 0.2 0.2 0 0.2-0.2 0.4-0.4 0.2-0.3-0.1-0.3-0.1-0.3 0-0.2 0.3-0.1 0 0.4 0.2 0 0-0.4 0.1 0.1 0.2 0.2 0.2 0.1 0.2 0-0.5-0.7-0.1-0.2 0-0.3 0-0.1 0.1-0.1 0.1-0.2 0.2 0 1.2 0.3 0.4 0.1 0.3 0.4z m-3.4-2.1l-0.4 0.1-0.2-0.2 0-0.5 0.3-0.2 0.3-0.2 0.3-0.2 0.2-0.4 0.1-0.1 0.3-0.2 0.1-0.2 1.5-3.3 0.5-0.5 0.2-0.4 0.1-0.1 0.7-0.1 0.2-0.1 0.1-0.1 0.4-0.4 0-0.1 1 0 0 0.1-0.2 0.1-0.1 0.3 0 0.4 0 0.4 0.1 0.1-0.3 0.2-0.1 0.4 0 0.8-0.4 0.9-0.8 0.9-1.7 1.2-1.4 0.8-0.8 0.6z m28.6-7.4l1.3 0.5 0.7 0 4.7 1 3.2 1 3-0.2 0.8-0.2 0.5 0 0.2 0 0.6 0.1 0.1 0.1 0.5 0.4 0.2 0.1 0-0.1-0.2-0.3-0.3-0.5 0.1-0.4 0.4-0.3 1.4-0.7 0.2 0.2 0.1 0 0.3-0.2 0.3 0 0.2 0 0.3-0.1 0.6 0 0.4-0.2 0.3 0 0.2 0 0.3 0.2 0.3 0.1 0.2 0 0.3 0 0.3 0 0.3 0.2 0.6-0.2 1.5 0.2 0.3 0 0.4 0.2 0.3 0.3 0.4 0 0.8-0.6 0.7-0.1 0.3 0.2 0 0.7-0.2 0.3 0 0.2 0.7-0.1 1-0.1 2.5 0.7 0.4 0 0.9-0.3 0.5 0 0.5 0 1.2 0.4 2.6 0.4 0.6 0.2 0.2 0 0.2 0.3 0.2 0.1 0.1 0.2 0.1 0.4-0.1 1 0 0.3-0.2 0.3-0.2 0.2-0.2 0.2-0.3 0.1-0.2 0.1-0.2 0.8-0.6 0.8-0.1 0.7 0 1.3-0.1 0.4-0.4 0.8 0 0.6-0.1 0.2-0.2 0.3 0.2 0.2 0 0.4-0.2 0.4 0 0.5-0.5-0.2-0.4-0.4-0.8-0.8 0.3 0.7 0.5 0.7 0.3 0.7-0.3 0.5 0.2 0.5 0.1 0.6-0.1 0.6-0.2 0.5-0.5 0.4-1.2 0.4-0.5 0.4 0.2 0.2-0.1 0.2-0.4 0.5-0.2 0.2-0.2 0.1 0.3 0.2 0.2 0 0.2-0.1 0.1 0 0.1 0.4-0.1 0.1-0.5 0.3 0 0.2 0.6-0.1-0.1 0.3-0.3 0.5-0.3 0.2-0.3 0.2-1 0.7-0.5 0.2-0.4 0.2-0.9 0.9-0.5 0.2-0.7-0.1-0.6-0.3-0.5-0.6-0.3-0.5-0.2 0.2 0.2 0.4 0.4 0.5 0.4 0.3 0.5 0.1 0.3 0.3 0.1 0.4-0.2 0.4-0.5-0.1 0 0.1 0.3 0.1 0.7 0 0.3 0.1 0.3 0.2 0.1 0.3-0.2 1.3-0.7 1.7-0.2 0-0.4-0.4-1.9-2.3-0.4-0.3-0.6 0.2 0.7 0.1 0.3 0.3-0.2 0.4-0.7 0.1 0 0.2 0.2 0.2 0 0.2-0.1 0.2-0.2 0.2 0.3-0.1 0.5-0.5 0.2-0.1 0.2 0.2 0.1 0.2 0.1 0.3 0.1 0.3 0.5 0.1 0.2 0.1 0.1 0.3 0.1 0.1 0.2 0.1 0.7 0.5 0 0.2-0.3 0-0.4 0.2-0.3 0.1-0.3 0.3-0.1 0.1-0.1 0.2 0 0.2-0.2 0.1-0.4-0.3-0.2 0-0.1 0.2-0.2 0.2-0.4 0.1-1.1 0.2-0.3 0.1-0.2 0.1-0.4 0-0.2-0.1 0-0.3-0.2-0.1-0.3 0-0.2-0.1-0.2-0.2-0.2-0.7-0.1-0.3-0.5-0.9 0-0.2-0.7 0-0.1-0.1-0.1-0.1-0.2-0.1-0.2 0.1 0.4 0.3 0.1 0.5 0 0.5-0.4 1.7 0.1 0.6 0.4 0.3-0.3 0.1-0.1-0.1-0.1-0.2-0.1 0.1-0.1 0.1-0.4 0.1 0.2 0.2 0.2 0.1 0.3 0 0.1 0.3 0.1-0.1 0.2-0.1 0.3-0.1-0.4 0.5-0.8 0.3-0.8 0-0.4 0-0.4-0.1-0.4-0.3-0.5-0.3-0.4-0.4-0.8-0.8-0.1-0.2 0-0.3 0.1-0.2 0.1-0.2-0.1-0.3-0.1 0.3-0.3 0.5-0.2 0.5 0.1 0.5 0.8 0.5 0.4 0.6 0 0.6-0.4 0.2-1.1-0.4-0.4 0.1-0.6-0.3-0.3-0.4-0.1-0.8-0.1-0.3-0.1-1.3-0.2 0.1-0.2 0-0.2 0-0.1 0.1 0.2 0.2 0.2 0.2 0.1 0.3 0 1.1-0.1-0.1-0.3 0 0.2 0.2 0 0.4-0.2 0.3-0.3 0.1-0.3 0.2-0.2 0.2 0.1 0.4 0.2 0.3-0.3 0 0 0.2 0.3 0.1 0 0.2-0.2 0.5-0.1 0.1-1-0.2-0.5 0.2-0.6 0.8-0.4 0.3-0.4-0.1-0.4-0.4-0.3-0.6-0.2-1-0.4-0.6-0.1-0.3 0-0.3 0.2-0.7-0.1-0.3 0 0.4-0.3 0.7-0.1 0.3 0.1 0.6 0.7 1.3 0 0.3 0 0.2-0.1 0.3-0.1 0.2-0.1 0.1-0.8 0.6-0.5 0.3-0.2 0-0.3 0-0.2-0.2-0.2-0.2-0.3-0.2-0.2-0.1-0.5 0-0.2 0-0.3-0.2-0.2-0.2-0.2-0.2-0.5-0.1-0.5-0.2-0.2-0.1-0.5 0.1-0.1-0.1-0.5-0.5-0.1-0.1 0-0.1 0.2-1.1-0.1-0.1-0.5 0-0.1 0.2 0.1 0.3 0 0.5-0.2 0.3-0.6 0.5-0.1 0.2-1.4 0.7-0.4-0.2-0.1-0.2-0.2-0.3-0.9-0.2-0.2-0.3-0.1-0.4 0.1-1.6-0.1-0.3-0.2-0.1-0.3-0.1-0.3 0-0.1-0.3 0.1-0.2 0.2-0.1 0.2-0.1 0.2-0.4-0.1-0.4-0.2-0.4-0.1-0.2 0-0.2 0.1-0.4 0.1-0.2-0.4 0.3 0 0.4 0.3 0.8 0.1 0.1-0.1 0.2-0.2 0 0 0.1-0.4 0.4-0.1 0.3 0.3 0.3 0.4 0.3 0.4 0.3-0.1 0.4-0.2 0.4-0.1 1.1-0.1 0.4-0.1 0-0.1-0.4-0.5-1.5-0.2 0 0.4 1.6 0.1 0.6-0.2 0.4-0.5 0.1-0.6 0-0.6-0.1 0.6 0.2 0.7 0.2 0.3 0.3-0.5 0.3-0.7 0.2-0.6 0.1-0.6 0-3.5-0.7-0.3-0.2-0.5-0.4-0.1 0-0.1-0.2 0.1-0.4 0.3-0.3 0.5-0.1-0.5-1-3.4-3.4-0.4-0.5-0.1-0.5-0.1-0.2-0.6-0.7-0.2-0.3 0-0.2 0.1-0.5 0.2-0.2 0-0.1-0.2-0.2-0.3-0.7 0-0.3 0-0.5 0.7-2.7 0.1-0.4-0.2-0.5-0.3-0.6-0.2-0.5 0.3-0.4 0.3 0.1 1 0.5 1.3 0.7 1.1 0.2 0.3 0.1 1.2 0.6-0.2-0.5-1-0.9 0.6-0.2 0.3-0.2 0.1 0 0.6 0.1 0.1 0 0.4-0.2 0-0.3-0.3-0.1-0.4-0.1 0.2-0.5 0.3-0.3 0.3-0.1 0.4 0.1 0.5 0-0.4-0.2-0.4-0.2-0.4 0.1-0.3 0.2-0.3 0.4-0.4 0.2-0.5 0.2-0.5 0.1-0.1 0-0.5 0.3-0.2 0.1-0.2 0-1.6-0.1-0.4-0.2-0.2-0.2-0.1-0.2-0.4-0.6-0.2-0.4-0.1-0.7 0-1.7 0.1-0.8 0.2-0.4 0.1-0.3 0.1-0.3 0-0.2 0.2-0.3 0.2 0 0.3 0.2 0.2 0.2-0.1-0.5-0.3-0.2-0.4-0.2-0.3-0.3 0-0.2 0-0.6 0-0.1 0.2-0.2 0.1-0.1-0.1-0.1-0.2-0.1 0-0.1 0.1-1 1-2.4 0.3 0.3 0.3 0.5 0.2 0.5 0.1 0.5 0.3 0.2 1.7 0.8 0.4 0.1 0.2 0 0.6 0 0.1-0.1-0.1-0.3-0.2-0.1-1.2-0.4-1.3-0.2-0.2-0.2-0.1-0.3-0.1-0.5-0.6-1.5-0.1-0.4 0-0.5 0-0.3 0.4-1.3 0.1-0.8 0.1-0.3 0.1-0.1 0.3-0.3 0-0.1 0.1-0.4 0.1-0.4 0.3-0.8 0.2-0.2 0.7-0.6 0.4-0.2 0.3-0.6 0.2-0.1 0.3 0 0.3 0 0.2 0 0.4-0.2 0.3-0.2 0.4-0.3 0.5-0.1 0.5 0.1 0.4 0.1 0.3 0.1 0.4-0.3 0.2-0.3 0.2-0.4 0.2-0.4 0.4-0.1 0.5 0 1.3 0.3 3.9 0.4z m-17.8 3.9l-0.7 0.6-0.2-0.1-0.2-0.1-0.5-0.2-0.1-0.2 0-0.2-0.1-0.1-0.9-0.4-0.5-0.8-0.1-0.8 0.8-0.3 0-0.1-0.2-0.1-0.4-0.3 1.1-1.8 0.2-1 0.6-0.6 0.5-0.2 0.8-0.1 1.6-0.8 1.1-0.3 0.6 0.3 0.3 0.6 0.6 0.2 0.5 0.2 0.3 0.1 0.2 0.2 0.2 0.2 0.1 0.3 0 0.1 0 0.3 0.3 0.4 0 0.1 0 0.4-0.2 0.4-0.9 0.7-0.4 0.3-1.4 0.6-0.5 0.4-1.3 1.3-0.4 0.3-0.8 0.5z m31.4-8.4l0.1 0.2 0.3-0.2 0.3-0.1 0.3 0 0.3 0.1 0.8 0.4 0.2 0.2 0.3 0.4 0 0.2 0 0.2 0 0.2 0.2 0.2 0.3 0 0 0.2 0 0.3-0.3 0.3 0 0.3-0.5-0.2-0.1 0.4-0.7 0.6-0.2 0.3-0.2 0.3-0.6 0.1-0.6 0.1-4.4 0.1-0.6 0.3-2.6-1 0.2-0.7 0.5-0.6 1.3-1 1.5-0.6 1-0.7 2.3-0.4 0.7-0.2 0 0.1 0.2 0.2z m-21.2 1.6l-0.3 0.3-0.9 0.1-0.4-0.1-0.1-0.1-0.2-0.1-0.9 0-0.2-0.2-0.4-0.2-0.3-0.3-0.1-0.2-0.1-0.4-0.1-0.1-0.2-0.1-0.2-0.2-0.1-0.2 0.1-0.4 0-0.2-0.1-0.2-0.2-0.5 0-0.3 0.2-0.3 0.6-0.4 0.6 0 0.5 0.1 0.4 0.2 0.6 0.1 0.6 0.1 0.4 0.3 0.6 0.5 0 0.3 0 0.7 0.1 0.4 0.2 0.6 0 0.4-0.1 0.4z m6-5.9l-1.2 0.4 0.1-0.4 0.4-0.6 1.3-0.8 0.6-0.3 0.4 0 0.2 0.4-0.1 0.4-0.4 0.2-1.3 0.7z m14.2-0.8l-1.6 0.7-0.9 0.8-1.1 0.6-1.6 1.6-0.5 0.9-0.4 1-0.6 0.8-0.8 0.5-1.5 0.4-0.6 0.1-0.3 0.1-0.3 0.1-0.1 0.2-0.3 0.1-0.2-0.2-0.2-0.5-0.5-0.5-0.5-0.4-0.6-0.3-0.7-0.1-1.1 0.1-0.1-0.1-0.2-0.1-0.4 0-0.3 0.1-0.1 0.1-0.5 0.1-0.6 0.3-0.5 0-0.6-0.3-0.5-0.5-0.1-0.2-0.1-0.5 0.3-0.8 0-0.4-0.2 0.2-0.1 0.2-0.3 0.5-0.3-0.4 0-0.4 0-1.5 0.1-0.3 0.2-0.1 1.4-0.1 0.6-0.2 0.6 0 0.4 0.1 0.8 0 1.6 0 0.4 0 1-0.9 0.6-0.8 0.7-0.2 1 0 0.9 0.3 1.4-0.1 0.7-0.5 1.8-0.7 2.1-0.7 2.1 0 0.6 0.7 0 1.2z m-18.2-5.1l-0.2 2.6 0 0.2 0.1 0.3 0.3 0.5 0.3 0.6 0.2 0.7-0.2 0.5-0.3 0.3-0.3 0.4-0.3 0.1-0.7 0.2-0.4 0.3-0.2 0.6 0.1 0.3 0.1 0.2-0.1 0.2-0.2 0-0.5-0.2-0.2-0.1-0.5 0-0.3-0.1-0.2-0.1-0.3-0.4 0-0.1 0-0.7 0.1-0.2 0.1-0.3 0.3 0 0.2 0 0.2 0.1 0.1-0.1 0-0.1 0.7-2.8 0.2-0.4 0.4-0.1 0.1 0 0-0.2 0-0.2-0.2-0.1-0.1-0.1-0.1-0.4-0.1-0.3 0-0.6 0-0.6 0-0.4 0.2-0.3 1-1.1 0.2-0.2 0 0.1 0.2 0.2 0.3 0.8 0 1z m7-1.3l0 0.5 0.2 0.4 0 0.1-0.1 0.1-0.2 0.2-0.1 0.4-2.8 2.1-0.7 0.5-0.7 0.4-0.4 0.3-0.8 0.1-0.4-0.4-0.2-0.9-0.2-0.9 0.1-0.9 0.3-0.8 0.5-0.6 0.5-0.2 0.1-0.2-0.1-0.2 0.3-0.2 1.3 0.1 0.2-0.1 0.2-0.2 0.4 0.1 0.6 0.6 0.2-0.3-0.5-0.3 0-0.3 0.3-0.3 0.4-0.3 0.5-0.2 0.4 0 0.6 0.9 0.1 0.3 0 0.2z m-105.9-41.8l0.7 0.6 0.2 0.3 0.1 0.6 0 0.5 0.3 1.6 0.1 0.4-0.1 0.3-0.2 0.3-0.1 0.2-0.3 1-0.2 0.2-0.2 0.1-0.3 0-0.1 0.2-0.1 0.2-0.1 0.4 0 0.3 0.1 0.1 0.2 0.3 0.2 0.2 0.2 0.3 0.1 0.3 0 0.3-0.2 0.3-0.5 0.4-0.2 0.2-0.1 0.2 0 0.1 0.1 0.1 0.3 0.1 0.2 0.1 0.1 0.2 0.1 0.3 0 0.2-0.1 1.6 0 0.2 0.1 0.3 0.2 1.6 0.1 0.2 0.1 0.2 0.2 0.3 0.1 0.1 0.1 0 0.3-0.1 0.2 0 0.2 0.2 0.2 0 0.6-0.1 0.4-0.2 0.3-0.1 0.8-0.1 0.2 0 0.1 0.1 0.4 0.2 0.3 0.1 0.6 0.1 0.2 0.1 0.2 0.2 0.2 0 0.2 0 0.4-0.1 0.3-0.1 0.4 0 0.1 0 0.2-0.1 0.2 0 0.5 0.2 0.2 0.1 0.3-0.2 0-0.1 0.3 0.1 0.2 0.2 0.4 0.1 0.2 0.2 0.3 0.1 0.3 0.1 0.3 0.4 0.4 0.1 0.1 0.2 0.2 0.2 0.2 0 0.2 0.1 0.3 0.3 0.3 0.3 0.2 0.1 0.1 0 0.1-0.2 0.1 0 0.2 0 0.4 0.3 0.2 0.2 0.1 0.2 0.1 0.2 0.1 0.1 0.1 0.1 0.4 0 0.1 0 0 0.1-0.1 0.2-0.1 0.3 0.1 0.2 0.1 0.2 0.3 0.3 0.1 0.1 0 0.2 0 0.4 0 0.2 0.1 0.1 0.1 0.1 0.8 0 0.3-0.1 0.3-0.2 0.2-0.1 0.2 0 0.2 0.1 0.1 0.1 0.2 0.4 0.1 0.1 0.4 0.1 0.1 0.2 0.1 0.1 0.2 0.1 0.2 0.1 0.1 0.4 0.1 0.1 0.1 0.1 0.3 0.2 0.2 0.1 0 0.1 0 0.3 0.2 0.1 0.4 0 0.1 0 0.1 0.1-0.1 0.2 0.1 0.1 0.4 0 0.2-0.1 0.1-0.1-0.1-0.3 0-0.2 0.1 0 0.1 0 0.4 0.1 0.4 0.1 0.2 0.1 0.3 0.2 0.2-0.1 0.2-0.3 0-0.1 0-0.4 0.1-0.1 0.1 0 0.3 0 0.1 0.2-0.2 0.1 0.1 0.1 0.3 0.1 0.2 0.1 0.2-0.1 0.2-0.3 0.1 0 0.2 0 0.1 0.2 0 0.3 0 0.2 0 0.4 0 0.2 0.1 0.1 0.1 0.1 0.2-0.1 0.2-0.1 0.3-0.1 0.4 0 0.2 0 0.3 0.2 0.1 0 0.3 0 0.2 0 0.1 0.2 0 0.2-0.1 0.1-0.2 0.2-0.1 0.2 0.2 0.3 0.3 0.4 0.1 0.2 0 0.2-0.2 0.3 0 0.1 0 0.2 0.1 0.1 0.2 0 0.2 0 0.8-0.3 0.6-0.1 0.3 0 0.3 0 0.1 0.2 0.2 0.6 0.1 0.1 0.2 0.5 0.1 0.1-0.1 0.3-0.1 0.1-0.5 0.1-0.4 0-0.2 0.2-0.1 0.2 0 0.3 0 0.3 0.1 0.5 0.1 0.1 0.6 1.2 0 0.2-0.1 0.2 0 0.3 0.2 0.4 0.1 0 0 0.7 0.1 0.3 0.1 0.3 0.1 0.1 0.3 0.4 0.9 0.6 0.3 0.3 0.2 0.4 0.1 0.3 0.3 0.5 0.4 0.4 0.4 0.3 0.4 0.2 0.9 0.3 2 0.4 0.2 0.1 0.1 0.1 0.1 0.2 0.1 0.3 0 0.6-0.1 0.3-0.3 1.3-0.1 0.5 0 0.5 0 0.1-0.2 0.8 0 0.2 0 0.3 0.2 0.5 0 0.2 0.1 0.6-0.1 1.3 0.1 0.2 1 2.2 0.2 0.3 0.6 0.4 0.1 0.3 0.1 0.1 0 0.5 0.2 0.5 0.3 0.9 0.2 0.4 0 0.3 0 0.3 0 0.4-0.2 0.8 0.1 0.4 0.5 0.9 0.3 0.3 1.2 3.6 0.1 0.4 0.5 0.1 0.2 0.1 0.3 0 0.2-0.1 0.8-0.4 0.1 0 0.2 0 0.1 0.1 0.3 0.3 0.1 0.2 0.1 0.3 2 1.9 0 0.1 0.3 0.6 0.1 0.3 0.1 0.1 0.8 0.6 0.2 0.2 0.1 0.2 0 1.7 0 0.3-0.2 0.4 0 0.3 0 0.3 0 0.3 0.1 0.2 0.4 0.9 0.2 0.3 0.1 0.1 0.2 0.1 0.4 0 0.2 0 0.2 0.1 0.4 0.2 0.1 0.2 0.1 0.1 0.1 0.3 0 0.7 0 0.1 0.3 0.8 0.1 0.3 0 0.3-0.1 0.2-0.2 0.6 0 0.2 0.2 0.5 0 0.1-0.1 0.2-0.1 0.2 0 0.3 0 0.3 0.2 0.2 0.2 0 1.4-0.5 0.4 0 0.3 0.1 0.2 0.1 0.4 0.4 0.2 0.3 0 0.2 0 0.3 0 0.2-0.4 0.4 0 0.1 0 0.2 0 0.2 0.3 0.6 0 0.1 0 0.5 0 0.1 0.2 0.7 0.1 0.1 0.1 0.1 0.3 0.1 0.5 0.1 0.3 0.3 0.7 0.8 0.2 0.1 0.5 0.2 0.1 0 2.5 0.2 0.3 0.1 0.2 0.2 0.3 0.3 0.3 0.7 0.1 0.1 0.1 0.1 0.2 0 0.1-0.1 0.1-0.3 0-0.4 0-0.1 0.1-0.2 0.2-0.1 0.3 0 0.5 0.1 0.2-0.1 0.1-0.2 0.1-0.3 0.1-0.1 0.2 0.1 0.3 0.2 0.2 0.1 0.3-0.2 0.2 0 0.5 0.2-0.1 0-0.4 0.5-0.1 1 0.4 1.9-0.2 0.4-0.3 0.3-0.6 0.5-0.7 0.8-0.3 0.1-1.3 0.1-0.5-0.1-1.4-0.5-0.3-0.2-0.3-0.3-0.4-0.3-0.4-0.1-0.5 0.1-0.3 0.2-0.6 0.7-0.2 0.1-0.5 0.1-0.6 0.3-1.5 0.3-0.4 0.2-0.5 0.3-0.3 0.3-0.2 0.4-0.2 0.2-1.9 0.8-0.4 0.1-0.9 0.1-1.4 0.4-0.4 0.2-0.2 0.1-0.1 0.2 0 0.2 0 0.3 0.1 0.2 0.1 0 0.3-0.1 0.2 0 0.5-0.1 1.4-0.4 3.8-0.1 1.8-0.3 0.4-0.2 0.8-0.5 0.2-0.1 0.4 0.2 0.3 0.3 0.2 0.5 0.1 0.5 0.1 0.4 0 0.2-0.1 0.3-0.4 0.4-0.1 0.3-0.1 0.4 0.1 0.4 0.2 0.2 0.6-0.2 0.3 0 0.1-0.1 0.1-0.1 0-0.2 0.1-0.1 0.7-0.8 0.5-0.3 0.4-0.1 1.1 0.1 0.1 0 0.3-0.2 0.2-0.1 0.3 0 0.4 0 0.3 0 1-0.3 1-0.5 5.5-3.8 1.6-0.3 0.4-0.3 0.4-0.2 1.7-0.6 0.5-0.2 0.5-0.4 0.5-0.5 0.2-0.5 0.2-0.4 0.5-0.2 1.1-0.2 0 0.1-0.2 0.1-0.1 0.1-0.1 0.3 0.4-0.1 0.5-0.2 0.5-0.3 0.3-0.3 0.4-0.4 0.5-0.9 0.3-0.3 0.6-0.6 0.6-0.4 2.9-1.4 0.6-0.6 0.3-0.6-0.1-0.3-0.2-0.4-0.1-0.4 0.3-0.3 0.4-0.1 0.5 0.7 0.4 0.1 0-0.1-0.2-0.2-0.2-0.2 0.1-0.3 0.2-0.2 0.3-0.1 1.1 0.2 0.6-0.1 0.3 0.1 0.3 0.2 0.1 0.3 0 0.3-0.1 0.8 0 1 0 0.3-0.2 0.3-0.2 0.2-0.3 0.1-0.2 0.2-0.6 0.7-0.2 0.2-0.2 0.1-0.3 0.1-0.7 0 2.4 1.5 0.4 0.4 0.2 0.4 0.1 0.5-0.3 1.3 0.1 1.3 0 0.1 0.4 0.3 0 0.3-0.1 0.3-0.1 0.2-0.1 0.3 0.3 0.4 0.6 1 0.3 0.9 0.3 0.4 1.4 1.2 0.3 0.4 0.2 1.5 0.1 0.5 0.2 0.4-0.4 0.6-0.4 0-1-0.6 0.2 0.5 0.2 0.2 0.2 0.5-0.2 0.7-0.5 0.2-0.4 0.3-0.2 0.4 0 0.4-0.5 0.4-0.6-0.1-0.4-0.3-0.5-0.4-0.5-0.3-0.2 0.4-0.1 0.3 0.3 0 0.2 0.4 0.4 0.2 0 0.6 0.2 0.5 0.3 0.1 0.3 0.2-0.1-0.6-0.1-0.3 0.2-0.1 0.6 0 1.2-0.1 0.5-0.2 0.3-0.1 0.1-0.4-0.1-0.4 0-0.4 0.2-0.3 0.3-0.2 0.2-0.5 0.2-0.1 0.6 0.1 0.5 0.1 0.4 0.6 0.6 1.1 0.4 0.4 0.5 0.3 0.5 0.2 0.3 0 0.3-0.1 0.2 0 0.1 0.3-0.1 0.2-0.3 0.4-0.1 0.3 0.3-0.2 0.3-0.6 0.3-0.2 0.1 0.3-0.1 0.2 0 0.2-0.2 0.2-0.1 0.2 0.1 0.2 0.2 0.4 0.2 0.8 0.2 0.4 0.3 0.2 0.1-0.6 0.1-0.2 0.2-0.3 0.3-0.2 0.1-0.2 0-0.2 0.1-0.2 0-0.3 0.2-0.3 0.5-0.6 0.7-0.6 0.7-0.3 0.6 0.2 0.5-0.2 0.5 0.1 0.6 0.1 0.4 0.3 0.2-0.8 0.4-0.4 0.6-0.3 1.9-0.5 0.5-0.1 0.5 0.1 0.6 0.1 0.4 0.2 1.3 0.9 0.2 0.2 0 0.3-0.1 0.3-0.5 1 0.4-0.4 0.4-0.5 0.1 0.5 0.1 0.4 0 0.5-0.1 0.5-0.2 0.4-0.4 0.9-0.2 0.5 0.2 0 0.5-0.9 0.1 0 0.1 0.3 0.3 0.5 0.2 0.3 0.3 0.3-0.3-1.2-0.3-1.1 0.1-1.8-0.2-0.4 0-0.1 0.2 0 0.1 0.3 0 0.7 0.2-0.5 0.1-0.3 0.2-0.3 0.5-0.1 0.6 0 0.3 0.2 0.2 0.3 0.3 0.3-0.1-0.4 0.2-0.2 0.2 0.1 0.2 0.3 0.2-0.3 0.4 0 0.5 0.3 0.7 0.6 0.4 0.4 0.2 0.5 0 0.5 0.3-0.4-0.3-0.7-0.9-1.2-0.3 0.2 0-0.2-0.2-0.3 0.6-0.6 0.7-0.6 0.8-0.1 0.6 0.5 0.3-1.4 0.3-0.4 0.5-0.3 0.4 0 0.2 0.3-0.1 0.6 0.2-0.1 0.4-0.4 0.3-0.1-0.1 0.5-0.5 0.5-0.1 0.3 0 0.3 0 0.1 0.2 0.3 0.3 0.3 0.4 0.2 0.8 0.1 0.2 0.2 0.1 0.5-0.1 0.3-0.1 0.4-0.2 0.3-0.2 0.3 0 0.2 0.2 0-0.1 0.3-0.6 0.5-0.2 0.2 0 0.3-0.1 1.8-0.1 0.2-0.2 0.4-0.1 0.6-0.2 0.1-0.2 0.1-0.1 0.2-0.8 1.2 0 1.2 0 0.2-0.3 0.3-0.1 0.2-0.1 0.2-0.1 0.4 0 0.3-0.4 0.5-0.1 0.2 0.1 0.2 0.1 0.4 0.1 1.3-0.1 0.4-1.4 2-0.2 0.2-0.5 0.1-0.5 0.3-0.4 0.4-0.2 0.4 0.5 0.2 1-0.2 1.7-0.6 0.4-0.3 0.1-0.3 0-0.3 0.1-0.5 0.1-0.1 0.7-0.4 0.1-0.4 0-0.1 0.6-0.6 0.2-0.3 0.1-0.5 0.1-0.5-0.1-0.8 0-0.4 0.2-0.6 2.2-3.7 0.3-1 0.2-0.8 0.1-0.4 0-0.3 1.6-3.2 0.6-0.9 0.6-0.6 0.4-0.1 0.3-0.4 0.1-0.4 0.3-0.9 0.1-0.7 0.8-0.5 0.8-0.6 1-0.9 0.3-1 0.6-0.8 0.9-0.1 0.5-0.2 0.6-0.3 0.3-0.3 0.2 0-0.1 0.2-0.4 0.4-0.3 0.3-0.1 0.5-0.2 0.4-0.2 0.7-0.4 0.3-0.3 0.3 0 0.2 0 0.3 0 0.5-0.3 0.5-0.2 0.5-0.6 0.1-0.4 0.3-0.2 0.5-0.3 0.3 0 0.1 0.4 0 0.3-0.1 0.2-0.2 0.2-0.4 0.6-0.2 0.6-0.4 0.3-0.6 0.2-0.4 0.2-0.2 0.1-0.2 0.3-0.2-0.2-0.5 0-0.2 0.2-0.1 0.4-0.2 0.2-0.1 0.2-0.4 0-0.2 0.2 0.1 0.2-0.1 0.2 0 0.1-0.1 0.1-0.3 1.6-2.5 0.1-0.2 0.1-0.2 0.3 0 0.3-0.3 0.1-0.1 0.1-0.2 0.4-1.1 0.4-0.7 0.3 0 0.6 1 0.2 0.6 0.7 1.3 0.3 0.3 0.3 0.4 0.1 0.4 0.2 0.4 0.3 0 0.5 0.7 0.2 0.1 0.6 0.1 0.3 0.1 0.2 0.2 0.2 0.3 0.1 0.3 0.2-0.4-0.1-0.4-0.1-0.4-0.1-0.4-0.2-0.5-0.8-0.7-0.1-0.6 0.4 0.3 0.4 0.1 0.4-0.1 1.2-0.3 0.4-0.2 0.4-0.3 0.3-0.4-0.2 0-0.7 0-0.2 0-0.3-0.1-0.2-0.1-0.2-0.1-0.2 0.2-0.4 0.1-0.5 0.1-0.4-0.1-0.5-0.2-0.2-0.3 0.1-0.4 0.1-0.5 0.1-1.8 0.2-1 0.6-0.8 0.5-0.6 0.2 0.3-0.1 0.7 0.1 0.8 0.3 0.1 1.6 0.3 0.1-0.1 0.1-0.4 0.1-0.3 0.1-1.2 0.4-0.9 0.5-0.5 0.7 0.5-0.2-0.3-0.2-0.3-0.2-0.2 0.1-0.4-0.1-0.1 0.1-0.2 0.3 0.1 0.2 0 0.3-0.2 0.3-0.1-0.3-0.1-0.2 0.1-0.6 0-0.1-0.1-0.3-0.6-0.1-0.5 0.1-0.3 0.3-0.1 1 0 0.4-0.1 0.4-0.1 0.2-0.3 0-0.2 0.1-0.4 0.4-0.6 0.1-0.1 0-0.5 0.1-0.5 0.3-0.2 0.1-0.1-0.2-0.3 0-0.1 0.1-0.6 0.1-0.3-0.1-0.2-0.3-0.3-0.1-0.1 0-0.4 0.1-0.4 1-1.2 1.6-1.4 0.3 0.3 0.1 0.1 0.1 0.3 0 0.2-0.1 0.3 0 0.1 0.2 0.2 0.2 0.4 0.8 0.7 0.1 0 0.4-0.9 1.5-1 0.3-0.5 0.3 0 0.7 0.2 0.4 0.2-0.1-0.3-0.3-0.3-0.1-0.5 0-0.8 0.2-0.4 0.1-0.3 0-0.2 0.5 0.4 0.3 0.4 0.1 0.4 0 0.4 0.5-0.1 0.5 0.3 0.2 0.5 0 1-0.1 0.3-0.3 0.2-0.2 0.2 0.2 0.3 0.1 0 1.7-0.8 0.6-0.3 0.4-0.3 0.3-0.4 0.2-0.8 0.2-0.1-0.2-0.5 0.1-0.8 0.2 0.1 0.3 0.2 0.5 0.4-0.1 0.4 0.2 0.2 0.1 0.2 0 0.3 0.1 0.2 0.1 0.2 0.2 0.2 0.4 0.6 0.1 0.3 0 0.4-0.2 0.5 1.6 0 0.4 0.1 0 0.7 0.3 0.2 0-0.2 0.1-0.3 0.1-0.2 0.1-0.2-0.2-0.2 0-0.1-0.1-0.2-0.4-0.3-0.6-0.7-0.2-0.2-0.1 0.3 0 0.2-0.2 0.2-0.2 0.1 0-2.4 0.1-0.3 0.4-0.1-0.3-0.3 0.3-0.2 0.4-0.1 0.4 0.1 0.3 0.2-0.2 0.4-0.1 0.1 0.1 0.3-0.1 0.7 0.1 0.2 0-0.2 0.1-0.1 0.2-0.1 0.1 0.3 0.1 0.2 0.2 0.2 0.2 0 0-0.1-0.1-0.1-0.2-0.3 0-0.3 0.2-0.3 0.3 0 0.3 0.1 0.5 0.4-0.1-0.3-0.1-0.3-0.2-0.2-0.1-0.3 0.4 0.2 0.2-0.1 0.3-0.3 0.2-0.1 0.4 0.2 0 0.3 0 0.4 0 0.4 0.2 0 0.3-0.2 0.1 0.1 0 0.3-0.1 0.4 0.4-0.3 0.1-0.3-0.1-0.3-0.1-0.4 1 0.7 0.1 0.3-0.2 0.3-0.1 0.1-0.2-0.3-0.2 0 0 0.3-0.1 0.1-0.2 0.1-0.2 0.1 0 0.2 0.2 0.3 0.2 0 0.1-0.3 0.4-0.1 0.3 0.1 0.4 0.1 0-0.2 0.1-0.2 0.2-0.2 0.2 0.4 0 0.3-0.1 0.4-0.2 0.3-0.2 0.1-0.4 0.2 0 0.1 0 0.2 0.2 0 0.2-0.2 0.2-0.1 0.2 0.1 0.2 0.3 0.1 0.2 0.1 0.3 0.1-0.4-0.1-0.5 0-0.4 0.3-0.2 0 0.2 0.1 0.1 0.1-0.1-0.1-0.4 0.1-0.2 0.3-0.4 0-0.4 0.1-0.3 0.2 0 0.3 0 0.1 0.3 0 0.2-0.1 0.2 0.1 0.1 0 0.1-0.2 0.1 0 0.6-0.1 0.3 0.2 0.2 0.1-0.3 0.1 0.3 0.1 0.4 0.1 0.3 0.3 0.1-0.2 0.2-0.4 0.3-0.1 0.2 0 0.3 0.3 0.4 0.1 0.2 0.1-0.2 0.1-0.8 0-0.2 0.2-0.2 0.1-0.2 0.1-0.2 0.3 0.2 0-0.5 0.1-0.2 0.1-0.1 0.4 0 0.2-0.2 0.1-0.4 0.2-0.8 0.3 0.3 0 0.6-0.3 1.1 0.2 0 0.1-0.3 0.2 0.1 0.1 0.2 0 0.1-0.1 0.2 0.4 0-0.1 0.2-0.1 0.3 0.1 0.1 0.1-0.1 0.1 0.3-0.1 0.2-0.3 0.1-0.3 0.1-0.2 0.3-0.1 0.3 0.1 0.3 0.4 0.2 0-0.4-0.1-0.3 0-0.2 0.4-0.2 0.5 0.2 0.2-0.1 0-0.4 0.2 0.2 0-0.3 0-1.1 0.2 0.1 0.1 0.2 0.1 0.1 0 0.2 0.2 0 0.2-0.2 0.3-0.1-0.1-0.1-0.2-0.2-0.1-0.1-0.3 0 0.4-0.3 0.5-0.8 0.4-0.2-0.1-0.2 0.3 0.1 0.1 0.2 0.2 0.2-0.3 0.1-0.1 0.2 0.1 0.2 0.3 0.2-0.4 0.1-0.1 0 0 0.2 0.1 0.1 0 0.1-0.2 0.2-0.2 0 0 0.2 0.2 0 0.1 0.2-0.1 0.2-0.1 0.2 0.3-0.1 0.2-0.1 0.1-0.2 0.1-0.2 0.1 0-0.2 1.2 0 0.1 0.1 0.2 0.2 0.4 0.1 0.2 0.1-0.3-0.2-0.3 0-0.3 0.2-0.3 0.1 0 0 0.4 0.3-0.1 0.1-0.2 0-0.7 0.2 0.2 0.6 0.8 0.1 0.3-0.1 0.4-0.7 1 0.4-0.2 0.5-0.9 0.3-0.2-0.1-0.3 0.1-0.6 0.2-0.4 0.4 0.2 0.2 0.2 0 0.3 0.1 0.2 0.3 0 0.2 0 0-0.3-0.5-0.8 0-0.3 0.4 0 0.5 0.2 0.4 1.2-0.6 0.7-0.1 0.3 0.2 0 0.2-0.1 0 0.1 0 0.3-0.2 0.3-0.3 0.2-0.3 0-0.2-0.1-0.1-0.4-0.2 0-0.1 0.3-0.2 0.2-0.9 0.6-0.3 0.3-0.2 0.3-0.1 0.4 0.3-0.4 0.3-0.3 0.5-0.4 0.4-0.1 0.1 0 0.5 0.1 0.7-0.1 0.4-0.2 0.6 0.4 0.3-0.5 0.1-0.5 0.3-0.3 0.7-0.3 0.3-0.4 0.4-0.1 0.2 0.1 0.2-0.1 0.9-0.2 0.2 0.2-0.1 0.4-0.3 0.1-0.6 0.1-0.4 0.3 0.2 0.4-0.1 0.4-0.3 0.2 0 0.3 0.4 0.2-0.1 0.5-0.1 0.3 0.3 0 0.1 0.2-0.3 0.3 0.3 0 0.2 0 0.2-0.1 0.1-0.3 0.1-0.1 0.2 0.2 0.3 0.1 0.2 0.1 0.3-0.3 0.2-0.4 0.4 0-0.1 0.4 0.1 0.4 0.1 0.5 0.1 0.2 0.1-0.1 0-0.5 0.1-0.3 0.3-0.3 0.2 0 0.2 0.3 0 0.9-0.1 0.1-0.1 0.4 0 0.2 0.3-0.2 0.2-0.4 0.1-0.5 0-0.6 0.2 0 0.2 0.4 0.5 0.6 0.1 0-0.4-0.5-0.1-0.3-0.2-0.2 0-0.2 0.4-0.1-0.3-0.4 0-0.3 0.3-0.3 0.1-0.5 0.2-0.4 0.4-0.3 0.8-0.2 0.6 0.2 0 0.8-0.2 0-0.2 0.1-0.3 0.4-0.3 0.5-0.1 0.3 0.3-0.1 0.2 0-0.1 0.2-0.3 0.2 0.1 0.2 0.1 0.1-0.1 0.1-0.2 0.3 0.2 0.4-1.1 2.4 0.7-0.8 0.2-0.1 0.3 0 0.3 0.1 0.3 0.1 0.3-0.1 0.3-0.5 0.2-0.2 0.1-0.1 0.1 0.3-0.2 0.8 0 0.4 0.3-0.3 0.1-0.4 0-1 0.1-0.2 0.2-0.2 0.1-0.2 0.2 0 0.1 0 0.1 0.2 0.1 0.2 0 0.2 0.4 0.6 0.1 0.4-0.2 0.2-0.3 0.1-0.2 0.4 0 0.4 0.2 0.3-0.8 0.3-0.2 0.2-0.2 0.2-0.1 0.2 0 0.3 0 0.3-0.1 0.1-0.2 0.1-0.1 0.1-0.1 0.3 0.2 0.3 0.6 0.4 0.1 0.2 0 0.5-0.7 0.6-0.2 0.4-0.1 0.5-0.5 0.8-0.2 0.3 0.3 1.4 0.2 0.6-0.1 0.2-0.2 0.2-0.2 0.2 0 0.3 0 0.2 0 0.3 0 1 0 0.1-0.3 0.2-0.2 0.5-0.4 0.2-0.9 0.1-0.5 0-0.2 0.1 0 0.2 0.1 0.9 0.2 0.4 0.3 0.1 0.9-0.3 0.4 0.1 0.3 0.2 0.2 0.4 0 0.5 0 0.1-0.2 0.2-0.1 0.2 0 0.1 0.2 0.4 0 0.9-0.3 1-0.7 1.8-0.5 1.9-0.5 0.8-0.5 0.7-0.6 0.4 0 0.1-0.4 0.4-0.2 0.1-0.3-0.1-0.2-0.1-0.2-0.1-0.4 0.1 0 0.2 0.4 0.3-0.1 0.5-0.1 0.5 0.1 0.3-0.8 0.8-0.1 0.3 0.1 0.1 0.3-0.1 0.3-0.1 0.2-0.1 0.1-0.1 0.1 0.4-0.1 0.2-0.1 0.1-0.1 0.2-0.1 0-0.2 0.2 0 0.5 0.1 0.9 0 0.9-0.1 0.3-0.2 0.3-0.2 0.1-0.3 0-0.5 0.1-0.1 0.1-0.1 0.2 0 0.2 0.1 0.1-0.1 0.1-0.3 0.8-0.2 0.2-0.2 0.2-0.4 0.2-0.1 0-0.3 0-0.1 0-0.6 0.4-0.1 0.1-0.1 0-0.2-0.2-0.2 0.6-0.9 0.8-0.1 0.5 1 1.5 0.3-0.2 0.1 0.2 0 0.3 0.1 0.3 0.1 0.1 0.2 0 0.2 0.1 0 0.1-0.3 0.1-0.3 0.2-0.2 0.1-0.2 0.2-0.1 0.1 0 0.2 0.1 0.3-0.6-0.2-0.1 0.5 0.3 1.6 0 0.2 0 0.2-0.1 0.1-0.2 0.1-0.1 0.2-0.2 1.6-0.7 0.9-0.1 0.3-0.1-0.1-0.2-0.1-0.1 0-0.1 0.1-0.3 0.1 0 0.2 0.4 0.1-0.1 0.3-0.4 0.4-0.5 0.1-0.1 0.2-0.1 0.2 0.1 0.2 0.3 0-0.2 0.2 0 0.1-0.2 0-0.1 0.1 0 0.3 0 0.1-0.2 0.2-0.4 0.2-0.2 0.2 0 0.3-0.1 0.4-0.2 0.2-0.1 0.1-0.3 0-0.3 0-0.1 0-0.1 0-0.3 0.2-0.4 0.3-0.3 0.4-0.3 0.2-0.1 0 0 0.2-0.4 0.2 0 0.2 0 0.5 0 0.2 0.1 0.1-0.3 0.6 0 0.3 0 0.2-0.3 0.1 0 0.1 0.1 0.3-0.1 0.3-0.2 0.1-0.2 0.1-0.2 0.1 0 0.3-0.5 0.1-0.1 0-0.2 0.2 0.1 0.2-0.1 0.2 0.1 0.1 0.1 0.2-0.1 0.1-0.2 0.3 0 0.1 0 0.6-0.1 0.1-0.2 0.3 0 0.2 0 0.1 0.1 0.4 0 0.2 0 0.3-0.2 0.7-0.3 2-0.2 0.8-0.5 0.6-0.3 0.2-0.7 0.4-0.3 0.3-0.5 0.6-0.5 0.7-1.4 1.2-0.2-0.2-0.2 0.2-0.1 0.3-0.1 0.3-0.3-0.2-0.1-0.1-0.3 0.3-0.2 0.5 0 0.5 0 0.4-0.3 0 0.3 0.5-0.2 0.4-0.3 0.4-0.3 0.5 0 0.3 0.1 0.2 0 0.2-0.2 0.2-0.2 0.2-0.7 0.5-0.4 0.2-0.5 0.6-0.1 0.2 0 0.2-0.1 0.3-0.1 0.2-0.3 0.6-0.1 0.4-0.1 0.2-0.6 0.5-0.1 0.2-0.1 0.3-0.1 0.1-0.4 0.4 0 0.1-0.2 0.4-0.1 0.1-0.5 0.6-1.6 1.3-0.1 0.1-0.3 0-0.6 0.1-0.1-0.1-0.5-0.1-0.1-0.2-0.1-0.1-0.1 0-0.2 0-0.3 0.2-0.3 0-0.2 0-0.4-0.1-10.1 8-10.7 8.7-0.2 0.3 0.4 0 0.8 0.1 1.2 0.7 1 0.3 0.4 0.1 0.4 0.1 0.6-0.2 2.9-0.3 0.5 0.1 0.2 0.2 1.1 1.9 0.4 0.7 0.6 0.4 0.5 0 0.5 0 0.4 0.1 0.2 0.2 0.1 0.3 0.2 0.3 0.6 0.4 0.3 0.4 0.1 0.3 0 0.5-0.3 0.5-0.7 0.7-0.3 0.2-0.6 0.2-0.9 0-0.5 0.2-0.2 0.5 0.1 1.3 0.1 0.5 0.3 0.4 1 1 0.2 0.5-0.1 0.4-0.3 0.3-1.4 0.2-0.4 0.2-0.3 0.3-0.1 0.4 0.1 0.6 0.4 0.2 0.3 0.1 0.4 0.4 0 1-0.9 0.5-2 0.5-0.2 0.3-0.1 0.4 0.1 1.6 0.2 1 0.2 0.2 0.2 0.2 0.3 0.2 0.2 0.3 0 0.2-0.1 0.5-0.2 0-1.6-0.4-0.9 0.2-0.6 0.4-1.1 1.1-0.7 0.4 0 0.1-0.2 0.5-0.7 0.9-0.3 0.4-0.1 0.5 0.2 0.1 0 0.3 0.1 1-0.1 0.6-0.2 0.4-0.4 0.3-3 1.3-0.6 0.4-0.5 0-0.6 0.1-2.6 0.9-0.4 0.2-0.4 0.4-3.4 2.1-0.4 0.5-0.1 0.9 0.7 2.6 0.1 3.3-0.1 0.4-0.6 1.4-3.5 4.3-0.2 0.5-0.2 0.6 0 1.1 0.4 1 0.6 0.9 0.8 0.7 2 1.4 0.9 0.3 0.3 0.2 0.1 0.2 0 0.1-0.1 0.4 0 0.3 0 0.8 0 0.5-0.1 0.5-0.4 0.9-0.1 0.5 0 1.4-0.1 0.3-0.2 0.2-0.2 0.2-0.1 0.2-0.1 0.2-0.1 0.7-1.6 5 0 0.5-0.2 0.3-0.3 0.3-0.6 0.4-0.6 0.6-0.4 0.7-0.7 1.8-0.9 1.4-0.2 0.2-0.6 1.2 0.2 0.3-0.1 0.2-0.1 0.3-1.1 1.5-0.3 0.8-0.3 0.5-0.5 0.3-0.4 0.3-1.4 0.3-0.3 0.2-1.3 0.9-0.4 0.4-0.1 0.4-0.1 0.1-0.1 0.2-0.1 0.2-0.4 0.4-0.1 0.2-0.1 0.5-0.3 0.5-0.8 0.8-1.3 1.9-0.5 0.5-0.7 0.6-0.3 0.3-0.1 0.5-0.1 0.2-0.7 0.6-0.5 0.7-0.1 0.3-0.1 0.4 0 0.6-0.1 0.2-0.2 0.4-0.5 1.8-0.2 1.9-0.1 0.5-0.4 1-0.3 0.6-0.1 0.4 0 0.3 0 0.2-0.2 0.3-0.2 0.3-0.3 0.2-0.2 0.2-0.1 0.2-0.2 0.7-0.4 0.8-0.3 0.6-23.7-1.3-84.8-5-30.5-2.3-0.2 0.2-0.5-0.1-1.3-0.6-0.7-0.6-0.3-0.2-1.1-0.2-0.2-0.2-0.3-0.1-0.3-0.2-0.2 0-0.3 0-0.2 0.1-0.5 0.3-0.3 0.1-0.5 0-0.3-0.1-0.2-0.2-0.1-0.2-0.3-0.7 0-0.7-0.1-0.3-0.1-0.2-0.2-0.2-0.2-0.2-0.4-0.3-1.6-0.4-0.5-0.1-0.4 0-0.5 0.1-0.3 0-0.3 0-0.7-0.3-0.3-0.3-0.2-0.2-0.1-0.2 0-0.3 0-1.4-0.2-1.1-0.1-0.2-0.1-0.2-0.3-0.2-1.6-0.7-0.2-0.1-0.3-0.3-0.6-0.3-1.6-0.7-0.2-0.1-1.2-0.9-0.1-0.2-0.1-0.5-0.1-0.2-0.2-0.1-1-0.6-0.4-0.4-0.8-0.7-0.4-0.3-0.3-0.1-1.5-0.4-0.2-0.3-0.2-0.3 0.1-0.5-0.1-0.2-0.1-0.6-0.1-0.5-0.2-0.2-0.1-0.2-0.2-0.2-0.2-0.3-0.1-0.2-0.1-0.3 0.1-0.5 0-0.2-0.2-0.7 0-0.2 0-0.4-0.1-0.4-0.4-0.6-0.1-0.2 0-0.3 0.1-0.4 0.1-0.3 0-0.2 0-1 0-0.5 0.1-0.2 0.2-0.5 0-0.2 0.1-0.6 0.3-0.7-0.1-0.3-0.3-0.4-1-0.9-0.2-0.3-0.1-0.2-0.1-0.5-0.2-0.2-0.1-0.3-1.1-1-0.1-0.3-0.2-0.2 0-0.2-0.1-0.8-0.4-0.6-0.2-0.5-0.1-0.5-0.1-0.7-0.1-0.3-0.5-1.1-0.4-1.1-0.3-1.7-0.2-0.3-0.2-0.4-0.4-0.4-0.2-0.3-0.2-0.3-0.3-1-0.4-1-1.8-2.7-1.7-1.6-0.4-0.4-0.4-0.5-0.1-0.3 0-0.3 0-0.3 0-0.4 0-0.5-0.2-1.2-0.1-0.3-0.6-0.9-0.4-0.4-0.6-0.5-1.3-1.4-0.4-0.4-0.9-0.5-0.3-0.3-0.4-0.6-0.3-0.4-0.2-0.5-0.8-2.4-0.1-0.4 0-0.5 0-0.5 0.1-0.4 0.3-0.7 0.4-0.5 0.3-0.3 1.8-1.5 0.2-0.2 0.9-1.4 34.3-74.2 8.2-17.8 0.2-0.7 0-0.5-0.3-0.2-0.1-0.3-0.1-0.1 0.1-0.2 0.1-0.2 0.1-0.1 0.2-0.1 0.8-0.5 0.5-0.3 0.1-0.1 0.1-0.2-1.3 0.4-0.2 0.1-0.4 0.3-0.6-0.1-0.5 0-0.5-0.1-0.2-0.1-0.2-0.2 0-0.2 0-0.2 0.2-0.6 0-0.3-0.1-0.4-0.2-0.2-0.2 0-0.2 0-0.3 0-1.1 0.4-0.1 0.1-1 0.7-0.3 0.1-0.2 0-0.4-0.2-0.5-0.1-0.4-0.2-0.4-0.2-0.4-0.2-0.2-0.1-0.2-0.2-0.1-0.3 0-0.3 0-0.3 0.3-1.2 0.1-0.2 0-0.2-0.1-0.3-0.1-0.1-0.3-0.1-0.3 0-0.5 0.1-0.3 0-0.2-0.1-0.5-0.1-0.2-0.1-1.4-1.1-0.4-0.2-0.9-0.3-0.4-0.2-0.3-0.2-1-1.1-0.4-0.7-0.3-0.7-0.1-0.3-0.3-0.1-0.5-0.2-0.3-0.1-0.7-0.5-0.3-0.1-0.3 0-0.8 0.1-0.3-0.1-0.1-0.1-0.1-0.3 0.1-0.5-0.1-0.2-0.2 0-0.2 0-0.5 0.1-0.5 0.2-0.2 0-0.3 0-0.2-0.1-0.4-0.2-0.2 0-0.5-0.1-0.2-0.1-0.9-0.4-0.3-0.1-0.6-0.4-0.6-0.3-0.6-0.4-0.5-0.3-2.1-0.7-0.2-0.1-0.3-0.3-0.2-0.4-0.2-0.3-0.2-0.1-0.2-0.1-0.5 0-0.3-0.3-0.3-0.3-0.7-0.8-0.4-0.4-0.3-0.2-1.7-0.4-0.3-0.2-0.3-0.4-0.5-0.6-0.4-0.3-0.2-0.2-0.6-0.2-1.7-0.9-0.3-0.2-0.2-0.3-0.2-0.5-0.2-0.2-0.2-0.2-0.4 0-0.3 0-0.2-0.1-0.3-0.3-0.3-0.3-0.8-1.3-0.2-0.3-0.3-0.1-0.2 0-0.5 0-0.2 0-0.2-0.1-0.3-0.2-1.6-1.5-0.2-0.2-0.1-0.3-0.1-0.3-0.1-0.5 0-0.6 0-0.2-0.1-0.4-0.2-0.4-0.1-0.4-0.2-0.9-0.2-0.3-0.3-0.3-0.3-0.1-0.4-0.2-0.1-0.1-1.1-0.9-0.3-0.2-0.2 0-0.3 0-0.5 0.1-0.2 0-0.3-0.1-1.7-1.6-0.8-0.9-0.1-0.4-0.1-0.3 0-0.6 0.1-1.1 0-1 0.1-0.3 0.2-0.4 0-0.2 0-0.3-0.2-0.4-0.2-0.2-0.3-0.2-1.2-0.4-0.2-0.2-0.2-0.1-0.2-0.2-0.1-0.2-0.1-0.3-0.2-0.6-0.1-0.8 0-2.5 0.2-1.3 0.1-0.2 0.1-0.6-0.5-6.8-2.3-24.3 0.1 0 0.5 0.3 0.4 0.3 0.4 0.5 0.1 0.5 0.2 0.5 0.6 0.4 0.4 0.2 0.4 0.1 0.4 0 0.5-0.1 0.5-0.2 0.4-0.3 0.4-0.4 0.6-0.9 0.2-0.2 0.4-0.1 2.3 0.3 0.1-0.1 0.3-0.2 0.1-0.1 0.1 0.1 0.2 0.2 0.4 0.2 0.1 0 0.7-1.1 0.2-0.4 0-0.5-0.2-0.5-0.4-0.9-0.1-0.5 0.3-0.4 1.9-0.3 0.6-0.4 0-0.2-0.1-0.5 0-0.2 0.2-0.1 0.5-0.3 0.2-0.1 0.1-0.3 0.2-0.3 0.1-0.3 0.3-0.2 0.1 0.1 0.2 0.3 0.1 0.2 0.4 0.2 0.5 0.1 0.5 0.1 0.4 0 0.3-0.1 0.2-0.1 0.2 0 0.4 0.2 0.2 0.2 0.2 0.5 0.1 0.2 0.7 0.1 1.1 0.1 0.9-0.2 0.4-0.4 0.4-0.7 0.1-0.5 0.1-0.3-0.1-0.7-0.1-0.4 0.2-0.1 0.3 0 0.7 0.3 0.4 0 0.3-0.1 0.8-0.5 1.8-0.8 0.7-0.2 0.8 0.1 1.9 0.3 0.7 0 1-0.3 0.7-0.5 1.5-1.9 0.2-0.4 0.6-1.5 0.2-0.2 0.3-0.1 0.5-0.2 0.3-0.3 0.3-0.4 0.3-0.3 0.5-0.2 0.6 0.1 0.8 0.5 0.4 0.1 1.9-1.2 1.1-0.5 0.7 0.6 0.1 0.6 0.3 0.5 0.4 0.3 0.6 0.3 0.4 0.1 0.4 0 0.7-0.1 0.5 0 0.2 0.2 0.1 0.2 0.4 0.3 0.3 0.1 1.6 0.2 0.3 0 0.2-0.1 1-0.7 0.3-0.1 0.5 0.1 0.4 0 0.3-0.2 0.3-0.2 0.4-0.2 0.4 0.1 0.4 0.2 0.3 0.3 0.3 0.1 0.4 0 0.7-0.4 1-0.4 1.2 0.4 0.3 0.1 0.4 0 0.7-0.2 0.4 0.1 0.4 0.1 0.8 0.5 0.5 0.2 0.3 0.1 1.1-0.1 1.4 0.4 1.4 0.5 1.4 0.3 1.5-0.4 0.7-0.7 0.1-0.8-0.1-0.9 0-1 0.1-0.3 0-0.2 0.1-0.2-0.1-0.3-0.2-0.3-0.7-0.6-0.8-1.1-0.2-0.1-0.6-0.4-0.3-0.5-0.2-0.9-0.5-0.4-0.4-0.1-0.9 0-0.3-0.2 0.1-0.4 0.2-0.7 0.4-0.6 0.3-0.4 0.2 0 0.4 0.2 0.3 0 0.3-0.1 0.1-0.2 0.7-1 0.1-0.4 0-1 0.2-0.9 0.2-0.4 0.2-0.2 0.2 0 0.6 0 0.5 0.3 1.2 1 0.3 0.2 1.6 0.4 0.2 0.1 0.2 0.2 0.3 0.5 0.2 0.2 0.4 0 1.8-0.4 0.8-0.4 0.5 0 0.4 0.1 1.3-0.1 0.8 0 0.9 0.1 0.8 0 0.6-0.3 0.2-0.3 0.1-0.4 0.1-0.4 0.4-0.4 0.3-0.2 0.4 0 0.4 0.1 0.3 0.4 0.5 0 1.8-1.4 0.7 0 0.1 0.2 0 0.4 0.1 0.2 0.2 0 0.2-0.1 0.8-0.4 0.9-0.7 0.4-0.3 0.9-0.3 0.4-0.1 0.1 0.2-0.1 0.3-0.4 0.5-0.1 0.3 0.1 0.2 2.2 2.1 0.8 0.3 1.1-0.3 0.4-0.2z" id="BRA594" name="Pará">
                         </path></a>
-                        <a xlink:title="Rondônia" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Rondonia">
+                        <a xlink:title="Rondônia" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/rondonia/superintendencia-regional-de-rondonia" target="blanck">
                         <path d="M278 315.4l0.7 0.5 0.8 0.5 0.8 0.7 0.2 0.4 0.2 0.4 0.1 0.3 0 0.2 0 0.2-1 1.9-0.6 2 0 0.3 0 0.4 0 0.3 0.6 1.6 0 0.3 0 0.3-0.2 0.1-0.2 0-0.5 0.1-0.3 0-0.2 0.2-0.1 0.2 0 0.2 0.1 0.4-0.3 0.6-0.1 0.3 0 0.3 0.1 0.3 0.3 0.2 0.5 0.3 0.2 0.2 0.2 0.3 0.1 0.4 0 0.4-0.1 0.8 0.7 2.3 0.1 0.3 0.2 0.2 0.1 0.3 0.2 0.3 0.2 0.2 0.1 0.2 0 0.2-0.1 0.2-0.2 0.2-0.2 0.3-0.3 0.7-0.1 0.2-0.2 0.1-0.5 0.1-0.2 0.1 0 0.1 0.1 0.2 0.1 0.2 0.2 0.3 0.1 0.4 0.1 0.8 0 0.3 0.3 0.9 0.1 0.3-0.1 0.2-0.2 0.8-0.1 0.4 0 0.4 0.1 0.4 0 0.3-0.1 0.2-0.5 0.9-0.3 0.6-0.1 0.4 0 0.4-0.1 0.8 0.1 0.4 0.2 0.3 0.1 0.2 0.2 0.3 0 0.3-0.3 0.8 0 0.4 0.1 0.3 0.9 2.1 0.2 0.2 0.4 0.5 0.2 0.2 0.2 0.3 0.1 0.3 0 0.3 0 0.4-0.2 1.1-0.1 1.5-0.2 1.2 0 0.8-0.2 0.7 0.1 0.2 0.1 0.1 0.4 0.1 0.2 0.1 0.1 0.3-0.1 0.3-0.1 0.6-0.2 0.2-0.1 0.2-0.5-0.1-0.2 0.1-0.1 0.3 0.1 0.3 0.2 0.9 0 0.4 0 0.4-0.3 1.7 0 0.3 0.3 0.5 0.8 0.2 23 0.1 0.2 0.1-0.1 0.2 0 0.3-0.1 0.3 0.2 0.3 1.1 1 0.3 0.2 0.2 0 0.3-0.1 0.6-0.5 0.3-0.1 0.2 0 0.2 0 0.3 0.1 0.7 0.5 0.3 0.1 0.9 0.2 0.3 0 0.2-0.1 0.3-0.1 0.2 0 0.3-0.1 0.7 0.3 0.2 0 0.3-0.1 0.2 0 0.2 0.1 0.5 0.3 0.5 0.2 0.3 0.1 0.2 0.3 0.4 1 0.1 0.3 0 0.3 0.1 0.5 0.2 0.6 0.9 2 0.2 0.5-0.1 0.2-0.1 0.3-0.2 0.2-0.2 0.2-0.3 0.1-0.2 0.2-0.2 0.2-0.1 0.2-0.2 0.5-0.1 0.2-0.3 0.4-0.3 0.5-0.3 0.2-1.4 1.1-0.2 0.2-0.1 0.2 0 0.3-0.1 1 0.1 2 0.1 0.3 0.2 0.6 0 0.2 0 1.1 0.1 0.3 0.1 0.5 0.2 0.4 0.2 0.3 0.3 0.1 0.2 0 0.5-0.2 0.2 0 0.2 0 0.1 0.1 0.2 0.2 0.4 1.2 0.5 1 0.3 0.9 0.8 1.1 0.1 0.4 0.1 0.3-0.1 2.6 0.1 0.3 0.1 0.5 0.5 1.1 0.5 0.8 0.3 0.6 0 0.2 0 0.2-0.4 0.9-1.5 4-1.8 2-0.2 0.2-0.1 0.3-0.2 1-0.3 1-0.1 0.6-0.1 0.4-0.2 0.3-0.6 1-0.3 0.3-0.2 0.1-0.3 0.1-1 0.2-0.3 0.1-0.3 0.1-0.4 0.4-0.2 0.2-0.3 0.5-0.8 0.8-0.3 0.4-0.1 0.3 0 0.2 0.1 0.7 0 0.2-0.2 0.5-1.4 2.5-0.3 0.5-0.1 0.5-0.1 0.7-0.2 0.7-0.1 0.7 0 0.4-0.2 0.4-0.2 0.3-0.3 0.3-1.8 0.9-3.9 2.7-0.8 0.7-0.6 0.7-1.7-1.3-1.6-0.7-0.1-0.1-0.4-0.4-0.8-0.2-1.1 0-0.9-0.2-0.5-0.5 0-0.9-0.1-0.2-0.3 0-0.3 0.2 0 0.1-1 0.1-0.3 0.2-0.2 0.5-0.2 0.1-1.5 0-0.5 0.1-0.2 0-0.3-0.1-0.4-0.3-0.8-0.1-0.4-0.2-0.3 0-1.5 0.8-1 0.4-1 0.1-1-0.3-0.3-0.1-0.6-0.6-0.2 0-1.6 0.2-0.5 0.1-0.5 0.2-0.5 0.2-0.4-0.1-0.4 0-0.5 0.2-0.4 0.1-0.5-0.1-0.3-0.2-0.4-1.6-0.1-0.1-0.2-0.2-0.4-0.2-0.3-0.2-1-1.1-0.4-0.2-0.5-0.3-0.2 0-0.3-0.6 0-0.1-0.3-0.1-1-1.1-0.5-0.4-0.2-0.3-0.1-0.4 0-1.5 0-0.4-0.2 0-0.2 0.1-0.2-0.1-0.5-0.6-0.2-0.1-0.1 0.5-0.6-0.4-0.2 0-0.2 0-0.9 0.2-0.3 0.2-0.4 0.1-0.4-0.2-0.3 0.2-0.3 0-1-0.1-0.2-0.1-0.4-0.2-0.3 0-0.1-0.1 0-0.2-0.1-0.1-0.6-0.7-0.3-0.2-0.5-0.1-1.4 0-1.9-0.8-0.1-0.1 0-0.6-0.1-0.2-0.2-0.2-0.2-0.1-0.4-0.3-0.3 0-0.2 0.2-0.3 0.2-0.4 0.1-0.4 0-0.2 0.1-0.1 0.4-0.4-0.2-0.4-0.3-0.3-0.3-0.1-0.4 0-0.2-0.1-0.1-0.2 0-0.5-0.1-0.1-0.1-0.1-0.1-1.1-1.6-0.1-0.2-0.1-0.1-0.2 0-0.2 0.2-0.2 0-0.2 0-0.3-0.1-0.2-0.2-0.3-0.3-0.2-0.5 0-0.5-0.1-0.2-0.3-0.3-0.5-0.4 0-0.1 0-0.3 0.1-0.2-0.1-0.2-0.1-0.1-0.1-0.1-0.1-0.9-0.3-0.3-0.7-0.1-0.4-0.2-0.3-0.1-0.6 0.3-0.1 0.1-0.1 0.3-0.1 0.1-0.1 0-0.3 0-0.1 0-0.5 0.3-0.2 0.2-0.1 0.2-0.2 0.1-1.6 0-0.3-0.1-0.6-0.6-0.3-0.1-0.5-0.1-0.8-0.6-0.1-0.2-0.1-0.2-0.1-0.1-0.2-0.1-0.2-0.1-0.1-0.3-0.1-0.4-0.1-0.3-0.2-0.1-0.3-0.1-0.2-0.1-0.3 0-0.5-0.1-0.4-0.1-0.9-0.8-1.2-0.6-0.1-0.1-3.2-0.5-0.3 0.1-0.7 0.2-0.4 0 0 0.2-0.7 0.9-0.2 0.2-0.1 0.2-0.3 0.3-0.4 0-0.2-0.2-0.2-0.2-0.3-0.1-0.7 0.3-0.4 0-0.5-0.6-1.4-0.1-0.3-0.4-0.3 0.5-0.3 0.2-0.2-0.1-0.6-0.6-0.3-0.2-0.4-0.2-0.5 0.1-0.2 0.1-0.3 0.2-0.2 0.2-0.2 0-0.2 0-0.3-0.7-0.3-0.1-0.9 0.1-0.5 0-0.5-0.2-0.3-0.3-0.3-0.3-0.2-0.3-0.2-0.4-0.2-0.3-0.2-0.1-0.5-0.2-0.2 0 0-0.4 0.4-0.9 0.1-0.5 0-0.6 0-0.2-0.1-0.2-0.4-0.3-0.4-0.1 0 0.2-0.5-0.3-0.4-0.3-0.1 0-0.6 0-0.3 0-1-0.5-0.6-0.3-0.2-0.3 0-0.1-0.2-0.1-0.1-0.2 0-0.1 0.2-0.3 0-0.2-0.2-0.4 0-0.1-0.4 0-0.1 0.2-0.1 0.6 0 0.2-0.3 0-0.2-0.1-0.1-0.2 0.1-0.3-0.7-0.8-0.3-0.4-0.1-0.5-0.1-0.3-0.4-0.2-0.4-0.1-0.3-0.1-0.5 0.2-0.5-0.1-0.4-0.2-0.5-0.1-0.9 0-0.4-0.1-0.3-0.2-0.3-0.2-0.1-0.4 0-0.4 0.3-0.5 0.1-0.2 0-0.3-0.2-0.2-0.3-0.1-0.2-0.1-0.1-0.2-0.1-0.5 0-0.2 0-0.5 0-0.2-0.1-0.3-0.3-0.5-0.2-0.7-0.4-0.2-0.4-0.2-0.3-0.3 0.1-0.5-0.1-0.2-0.3 0.1-0.1 0.1-0.1 0.3-0.2 1.1-0.1 0.2-0.3 0-0.4-0.3-0.3-0.4-0.2-0.3 0-0.8 0.1-0.2 0.2-0.4 0-0.2-0.1-0.6 0.1-0.2 0.5-0.1-0.1-0.3-0.5-0.3-0.3-0.1-0.1 0-0.1-0.1-0.1-0.3 0-0.3 0.1-0.4 0-0.2-0.1-0.3-0.3-0.2-0.5-0.3-0.8 0.2-0.6-0.6-0.7-2-0.1-0.2 0-0.2 0.2-0.3 0.4-0.4 0.1-0.3-0.2-0.2-0.5-0.2-0.4-0.3-0.3-0.4 0-0.6 0.2-0.3 0.3-0.1 0.1-0.4-0.2-0.3-0.4-0.3-0.2-0.3 0-0.6 0.4-0.4 0.8-0.6 0.2-0.5-0.1-0.4-0.1-0.4 0-0.4 0.4-0.6 0.5-0.4 0.1-0.2 0-0.3-0.2-0.1-0.1-0.2 0-0.1-0.2-1.9-0.2-0.4-0.3-0.3-0.4-0.3-0.9-0.2-0.1-0.3 0.3-1.1 0.2-0.8 0-0.4-0.1-0.7-0.3-0.3-0.4-0.2-0.4-0.5 0-0.3 0.2-1.1-0.1-0.3-0.1-0.1-0.1-0.2 0-0.4 0-0.1 0.1-0.2 0-0.1 0-0.2-0.3-0.4 0-0.2 0.5-0.1 0.4-0.3 0.5-0.9-0.1-0.1-0.1-0.3 0.1-0.4 0.3-0.5 0.3-0.4 0.8-0.4 0.3-0.6 0.2-1.1 0.4-0.6 0.1-0.2-0.1-0.2-0.2-0.5 0-0.3-0.1-1-0.1-0.4-0.4-1.2-0.2-0.9-0.1-0.9 0.1-0.9 0.2-0.5 0.5-0.9 0.1-0.6-0.2-0.3-0.2-0.3-0.3-0.3-0.2-0.2-0.4-1.1-0.3-0.7-0.6-0.6-0.4-0.1-0.6 0-0.2 0-0.3 0.3-1.1 0.9-0.1 0.2-0.1 0.4-0.1 0.2-0.2 0.3-0.3 0.3-0.1 0-0.2 0.1-0.1 0-0.1 0.1 0 0.2-0.1 0.3-0.1 0.1-0.1 0.1-0.3 0.1-0.4-0.1-0.3-0.2-0.7-0.4-0.1-0.1-0.2-0.3-0.1-0.1-0.1 0.1-0.3 0.1-0.2-0.1-0.2 0.1-0.1-0.1 0.1-0.3 0.1-0.5-0.4 0-0.8 0.4-0.2-0.1-0.1-0.1-0.1-0.4-0.2-0.3-0.1 0.1-0.2 0.4 0 0.2 0 0.2-0.1 0.2-0.2 0.1-0.1-0.1-0.1-0.2-0.2-0.4-0.3 0.4-0.3 0.2-0.3 0-0.9-0.3-0.3 0-0.4 0-0.4 0.2-1 0.6-0.4 0.1-0.3-0.1-0.6-0.3-0.4-0.2-0.4 0.1 0 0.1-0.2 0.2-0.1 0.1-0.1 0-0.2-0.2-0.1 0-1.2 0.1-0.4 0.2-0.7 0.4-0.4 0.2-2.2 0.3-0.4 0.2-0.9 0.5-0.4 0.1-0.5 0.1-1.4-0.1-2.6 0.5-0.2 0-0.2 0.2-4-1.7 1.2-1 0.2-0.3 0.2-0.3 0.2-0.2 0.1-0.3 0.2 0 0.6 0.1 0.3-0.1 1.4-1.3 0.8-0.6 0.2-0.1 1.3-0.3 0.6-0.2 0.2-0.3 0.4-0.6 1.6-1.7 0.2-0.3 0.1-0.2 0-0.5 0-0.2-0.2-0.9 0-0.3 0.1-0.2 0.2-0.2 0.2 0.1 0.4 0.1 0.3 0 0.4 0 0.7 0.1 0.5-0.1 0.3 0 0.3 0 0.5 0.1 0.6 0.1 1 0.1 1.1 0 2.3-0.4 0.4-0.1 0.7 0.1 0.2 0.1 0.3 0.2 0.3 0.2 0.4 0.5 0.5 0.6 0.2 0.2 0.7 0.3 0.1 0.1 0.1 0.3 0.2 0.2 0.5 0.2 0.2 0.2 0.2 0.4 0.2 0.2 0.3 0.1 0.3-0.1 0.3-0.1 0.3-0.2 0.6-0.3 0.2-0.2 0.2-0.2 0.1-0.2 0.1-0.7 0.1-0.3 0.2-0.2 0.3-0.3 1.6-0.8 0.3 0 0.3 0 0.2 0 0.2 0.1 0.2 0.2 0.2 0.1 0.2 0.4 0.2 0.1 0.4 0.1 0.3 0 0.2-0.2 0-0.2 0.1-0.5 0.1-0.2 0.1-0.2 0.2-0.2 0.7-0.4 0.2-0.2 0.2-0.2 0.3-0.3 0.4-0.4 1.5-0.7 0.4-0.3 0.3-0.2 0.4-0.3 0.2-0.1 0.2 0.1 0.1 0.2 0 0.5 0.1 0.2 0.1 0.2 0.2 0.2 0.2 0.2 0 0.2-0.1 0.5 0.1 0.2 0 0.2 0.1 0.3 0.1 0.2 0.2 0.3 0.2 0.2 0.3 0.2 0.3 0.1 0.3 0.1 0.3 0 0.3-0.1 0.3-0.1 0.4-0.4 0.2-0.2 0.2-0.2 0.2-0.2 0.3-0.7 0.2-0.3 0.4-0.2 0.2-0.2 0.1-0.2 0-0.5 0.1-0.2 0.2-0.2 0.7-0.6 0.2-0.2 0.1-0.2 0.1-0.3 0-0.2-0.1-0.2-0.4-1.2 0-0.2 0-0.3 0.1-0.3 0.4-0.4 0.1-0.2 0.1-0.3 0.2-0.2 0.4-0.4 0.6-0.4 1.4-0.8 0.3-0.1 0.3 0 0.2 0.1 0.2 0.2 0.3 0.3 0.2 0.1 0.2 0.1 0.3 0 2 0.2 0.4-0.1 0.3-0.1 0.2-0.2 0.4-0.5 0.3-0.2 0.4-0.4 0.4-0.1 0.4-0.1 0.2 0 0.5 0.3 0.3 0.1 0.2 0 0.2-0.1 0.4-0.4 0.2-0.2 0.2-0.1 0.3 0 1.3 0.1 0.7-0.1 0.4 0.1 0.6 0.3 0.2 0 0.7-0.4 0.2 0 0.3 0.1 0.5 0.4 0.3 0.1 0.2-0.1 0.1-0.2 0-0.2-0.4-1.4 0-0.3 0-0.2 0.1-0.2 0.2-0.5 0-0.2-0.1-0.2-0.1-0.3-0.1-0.2 0-0.2 0.1-0.5-0.1-0.2-0.1-0.7 0-0.2 0.1-0.2 0.1-0.2 0.2-0.1 0.2 0.1 0.3 0.4 0.2 0.1 0.3 0.1 0.4-0.1 0.4-0.2 0.5-0.2 0.3-0.1 0.1-0.2 0.1-0.1 0.5-0.9 0.2-0.2 0.2-0.2 0.1-0.3 0.2-0.2 0.1-0.4 0.2-0.5 0.1-0.2 0-0.2 0-0.2-0.2-0.2-0.1-0.2-0.2-0.2-0.5-0.3-0.2-0.2-0.2-0.2-0.1-0.2-0.1-0.2 0-0.3 0.1-0.2 0.2-0.3 0.8-0.8 0.2-0.3 0.4-0.8 0.2-0.2 0.2-0.1 0.2-0.1 0.3-0.1 1.1-0.1 0.9-0.3 0.8-0.2 0.3-0.1 0-0.2 0-0.3-0.2-0.6 0-0.3 0.1-0.2 0.2-0.2 0.2-0.2 0.2-0.1 0.3 0 0.8-0.1 0.7-0.3 0.3 0 0.3 0 0.4-0.1 0.2-0.1 0.1-0.2-0.1-0.2-0.2-0.9 0-0.3 0-0.2 0.1-0.2 0.6-1 0.5-0.6 14.1 0.2 1.7 0.2 0.2 0.1 0.3 0.1 1.1 0.4 0.3 0.1 0.2 0.2 0.3 0.1 1 1.2 0.2 0.2 0 0.2 0 0.5 0.1 0.2 0.6 1.3 0.3 0.2 0.3 0.3 0.6 0.4 0.4 0.3 0.2 0.3 0.1 0.2 0.1 0.2 0 0.9 0.1 0.2 0.1 0.2 0.2 0 0.4 0 0.2-0.1 0.3-0.2 0.3 0 0.5 0 0.8 0.2 0.5 0.1 0.3 0.2 0.2 0.3 0.1 0.2 0.1 0.2 0 0.4 0.1 0.3 0.3 0.4 0.1 0.3 0.2 0.8 0.4 0.9 0.1 0.5 0.1 0.2 0.1 0.2 0.2 0.1 0.3 0.1 0.4 0 0.8 0 0.3 0 0.6 0.1 0.2 0.2 0.1 0.2-0.1 0.4 0 0.3 0.1 0.2 0.4 0.7 0.1 0.5 0.2 1 0 0.2 0.1 0.3 0.3 0.2 0.2 0.1 0.2 0 0.3 0 0.2 0 1.5 0.4 0.2 0.1 0.2 0.1 0.2 0.5 0.2 0.2 0.4 0.3 0.5 0.3 0.4 0.1 0.3 0 0.3-0.1 0.2-0.1 0.2-0.2 0.1-0.1 0.1-0.3 0.1-0.2 0-0.5 0.1-0.5 0.1-0.5 0.2-0.2 0.1-0.2 0.2-0.1 0.3-0.1 0.7 0 0.3 0 0.2-0.2 0.2-0.2 0.3-0.4 0.2-0.2 0.3-0.1 0.3 0.1 0.4 0.1 1.2 0.2 0.3 0.2 0.2 0.2 0.1 0.2-0.1 0.9z" id="BRA595" name="Rondônia">
                         </path></a>
-                        <a xlink:title="Tocantins" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Tocantins">
+                        <a xlink:title="Tocantins" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/tocantins/superintendencia-regional-do-tocantins" target="blanck">
                         <path d="M627.7 350.4l2.7 0.4 1.5-0.1-0.2 0.1-0.2 0.1-0.1 0.2-0.2 0.2-0.2 0.4 0 0.2-0.1 0.5-0.1 0.4-0.2 0.3-0.6 0.5-0.3 0.2-0.3 0.2-0.4 0.2-0.6 0.3-0.3 0.1-0.6 0.5-1.1 0.5-0.7 0.6-0.2 0-0.5 0.1-0.4 0.2-0.9 1-0.2 0.1-1.2 0.6-0.3 0.2-0.8 0.9-0.4 0.4-0.3 0.2-0.7 0.5-0.2 0.3 0 0.3 0.1 0.2 0.1 0.1 0.2 0 0.3 0.1 0.1 0.2 0 0.1 0.1 0.4 0.1 0.2 0.7 1 0.1 0.2 0 0.1-0.1 0.2-0.3 0.2-0.4 0.2-0.4 0.1-0.8 0.2-0.6 0.3-0.4 0.3-0.1 0.1-0.3 0.5-1.2 2.4-0.6 1.9-0.3 0.4-0.6 0.4-0.3 0.2-0.3 0.3-0.6 1-0.1 0.2-0.2 0.6 0 0.3 0.1 0.4 0.1 0.4 0.2 0.3 0.2 0.2 0.8 0.4 0.2 0.1 0.2 0.2 0.1 0.3 0.2 0.4 0.3 0.7 0.1 0.1 0.4 0.3 0.3 0.1 3.3 0.5 2 0.5 1.7 0.9 0.3 0.2 0.3 0.1 0 0.1 0.1 0.2-0.1 0.3-0.1 0.6-0.2 0.2-0.1 0.2-0.3 0.2-0.2 0.1-1.5 0.5-1.1 0.6-0.2 0.1-0.3 0.3-0.1 0.2-0.1 0.3 0 0.2 0.1 1 0.1 0.3 0.1 0.2 0.3 0.1 0.2-0.1 0.5-0.1 0.5-0.1 0.3 0 0.3 0 0.2 0.1 0.5 0.2 0.4 0.2 0.3 0.3 0.3 0.2 0.4 0.8 0 0.2-0.1 0.2-0.3 0.2-0.3 0.2-0.5 0.4-0.2 0.1-1.4 0.5-0.3 0.2-0.8 1.2-0.2 0.1-0.3 0.2-1.2 0.6-0.2 0.2-0.1 0.2 0 0.5-0.2 4.8 0.1 0.3 0.3 1 0.3 0.6 0.1 0.2 0.2 0.1 0.8 0.4 1.5 0.4 0.2 0 0.4 0.3 0.2 0.2 0.1 0.2 0.1 2-0.1 0.3-1.7 2.5-0.1 0.4-0.1 0.4 0 0.3 0 0.4 0.2 0.4-1.5 0.9-1 0.2-2 0.1-0.2 0-0.2 0.1-0.8 0.4-0.8 0.3-1.5 0.3-0.6 0.2-0.3 0.2-0.3 0.3-2.3 2.5-0.3 0.2-0.3 0.3-0.5 0.1-0.6 0.2-1.1 0.1-1.1 0-0.5-0.1-0.4 0-0.2 0-1.7 0.3-0.9 0.3-4.1 2.1-0.3 0.2-0.2 0-0.3 0-0.2 0-0.3 0-1.5 0.7-0.4 0.3-0.6 0.2-1.4 0.2-0.1 0.2-0.1 0.2-0.2 0.2-0.1 0.3-0.2 0-0.1-0.1-0.2-0.6 0-0.3-0.1-0.2-0.7-0.8 0-0.2-0.1-0.4-0.1-0.2-0.7-0.6-0.1-0.4-0.2-0.4-0.1-0.2-0.2-0.1-0.3 0.1-1 0.8-0.2 0.3-0.1 0.2 0 0.1 0 0.2 0.2 0.5 1.3 2.9 0.1 0.2 0 0.3-0.1 0.2-0.2 0.1-0.3-0.1-3.9-1.4-0.9-0.5-0.6-0.5-0.3-0.1-0.2-0.1-0.1 0.1-0.4 0.4-0.4-0.1-0.4-0.2-0.8-0.7-0.8-0.5-0.5-0.2-0.6-0.2-0.5 0-0.5 0-0.1-0.2 0.2-0.5 0.4-1.2 0.1-0.3 0-0.2-0.1-0.2-0.4 0-0.8 0.3-0.5 0.4-2.3 1.7-0.5 0.3-0.4 0.1-0.4 0.1-0.5 0-1.7 0.1-0.7-0.2-1.3-0.6-0.3-0.1-0.3-0.1-0.5 0-0.3 0.1-0.2 0.1-0.2 0.2-0.1 0.2-0.1 0.2-0.1 0.6-0.1 1.2-0.1 1.1-0.1 0.4-0.1 0.1-0.2 0.3-0.2 0.2-0.8 0.6-0.2 0-0.2 0-0.2-0.2-0.1-0.3-0.1-0.2-0.1-0.6 0-0.2 0-0.3 0-0.4 0.4-1.8-0.2-2.6-0.1-0.4-0.5-1-0.1-0.3 0-0.3 0-0.3 0.1-0.9 0-0.3 0-0.3-0.3-0.7-0.3-0.6-0.4-0.5-0.4-0.4-1.5-1.1-1.6-0.8-0.2-0.3-0.2-0.3 0.1-0.4 0.2-1.1 0-0.1-0.2 0-0.1 0-1 0.6-1.7 1.2-3.6 6.2-1.3 3-0.2 0.7-0.1 0.5 0 0.7-0.1 0.3-0.2 0.4-0.3 0-0.5-0.1-2.2-1-1.1-0.3-2.6-0.3-5.1-2.4-1.3-1-0.3-0.1-0.2-0.1-0.2 0.1-1.1 0-4.2-2-0.4-0.3-0.2-0.3-0.1-0.4-0.1-2.4 0-0.3 0.2-0.3 0.1-0.4 1.2-1.7 0.2-0.3 0-0.4 0.1-0.5-0.2-1 0-0.3 0-0.2 0.2-0.2 0.1-0.2 1.2-1.3 0.1-0.2 0.1-0.2 0.1-0.5-0.1-0.2-0.1-0.2-0.2-0.2-0.2-0.2-1.9 1.1-0.5 0.4-0.5 0.3-0.4 0.3-0.2 0.3-0.3 0.1-0.1 0.3-0.2 0.2-0.4 0.2-0.1 0.3 0 0.2-0.1 0.2-0.2 0.2-0.7 0.8-0.2 0.3-0.1 0.3 0.1 0.2-0.1 0.3-0.1 0.3-0.2 0.2-0.3 0.2-0.1 0.1-0.2 0.5 0 0.3 0 0.2-0.1 0.4 0 0.3 0 0.2-0.2 0.6-0.4 0.8-0.3-0.1-0.7 0-0.3 0-0.3-0.1-0.2-0.2-0.1-0.2 0-0.1 0.1-0.2-0.1 0-0.2 0-0.4 0.1-0.1-0.2 0-0.3-0.2-0.4 0.1-0.4 0-0.3-0.1-0.4-0.1-0.4-0.2-0.4 0-0.1-0.1-0.5-0.1-0.2-0.4-0.2-0.3-0.3-0.2-0.1 0-0.2 0-0.2 0-0.1 0.2-0.1 0.2 0.2 0.1-0.1 0.1-0.3-0.1-0.5 0-0.1 0-0.3 0.2-0.4 0.1-0.4 0.1-0.4 0-0.3 0-0.4 0-0.2 0-0.2 0.3 0 0.1-0.1 0.1-0.2 0-0.1-0.4-2.8 0.1-0.4 0-0.2 0-0.3-0.3-0.8-0.1-0.1-0.4-0.3-0.2-0.4-0.1-0.2-0.2-3.4 0-0.5 0-0.5 0.1-0.2 0.3-0.2 0.1-0.2 0.1-0.3-0.1-0.2-0.1-0.2 0-0.3 0.1-0.2 0.2-0.1 0.1-0.1 0-0.2 0-0.3-0.1-0.2-0.1-0.1-0.4-0.1-0.1-0.2 0-0.2-0.1-0.6-0.2-0.7-0.1-0.4-0.1-0.3-0.3-0.4 0-0.2 0-0.4 0.1-0.3 0.3-0.2 0.3-0.3 0.2-0.2 0.2-0.2 0.1-0.2 0.1-0.2 0.1-1 0-0.3-0.3-0.3-0.9-0.5-0.2-0.1-0.2-0.3-0.2-0.3-0.2-0.4 0-0.2 0-0.7 0.1-0.4 0.1-0.4 0.1-0.3 0-0.5 0.7-2.2 0.2-0.3 0.1-0.2 0.2-0.5 0.1-0.1 0.1-0.7 0-1.9 0.1-0.2 0.3-0.6 0.2-0.2 0.4-0.3 0-0.1 0.1-0.1 0.1-0.4-0.1-0.7-0.1-0.4-0.2-1.1-0.1-0.6-0.1-0.2 0.1-0.1 0.3-0.4 0.1-0.3 0-0.2 0-0.3-0.2-0.5-0.1-0.3 0-0.3 0.2-0.3 0.4-0.4 0-0.1 0.2-0.4 0.1-0.4 0-0.9 0-0.2-0.3-0.6 0-0.3 0.1-0.2 0.2-0.4 0.1-0.1 0.1-0.3 0.1-0.2 0.2-0.1 0.2 0 0.2-0.1 0.3-0.8 0.1-0.1 0.2-0.1 0-0.3-0.1-0.5 0.1-0.3 0.4-0.4 0.1-0.2 0-0.3 0-0.8 0.1-0.4 0.3-0.4 0.7-0.6 0.5-0.7 0.5-1 0.3-1 0.1-0.9-0.2-0.9 0-0.5 0.1-0.4 0.1-0.2 0.2-0.5 0.2-0.2 1.2-1.3 0.2-0.4 0.2-0.4 0-0.4 0.4-1.5 0.4-0.9 0.6-0.8 0.3-0.6 0.4-0.8 0.2-0.7 0.1-0.2 0.2-0.2 0.3-0.2 0.2-0.3 0.2-0.3 0-0.2 0-0.3 0.1-0.4 0.3-0.6 0.4-1 0.1-0.5 0.2-1.9 0.5-1.8 0.2-0.4 0.1-0.2 0-0.6 0.1-0.4 0.1-0.3 0.5-0.7 0.7-0.6 0.1-0.2 0.1-0.5 0.3-0.3 0.7-0.6 0.5-0.5 1.3-1.9 0.8-0.8 0.3-0.5 0.1-0.5 0.1-0.2 0.4-0.4 0.1-0.2 0.1-0.2 0.1-0.1 0.1-0.4 0.4-0.4 1.3-0.9 0.3-0.2 1.4-0.3 0.4-0.3 0.5-0.3 0.3-0.5 0.3-0.8 1.1-1.5 0.1-0.3 0.1-0.2-0.2-0.3 0.6-1.2 0.2-0.2 0.9-1.4 0.7-1.8 0.4-0.7 0.6-0.6 0.6-0.4 0.3-0.3 0.2-0.3 0-0.5 1.6-5 0.1-0.7 0.1-0.2 0.1-0.2 0.2-0.2 0.2-0.2 0.1-0.3 0-1.4 0.1-0.5 0.4-0.9 0.1-0.5 0-0.5 0-0.8 0-0.3 0.1-0.4 0-0.1-0.1-0.2-0.3-0.2-0.9-0.3-2-1.4-0.8-0.7-0.6-0.9-0.4-1 0-1.1 0.2-0.6 0.2-0.5 3.5-4.3 0.6-1.4 0.1-0.4-0.1-3.3-0.7-2.6 0.1-0.9 0.4-0.5 3.4-2.1 0.4-0.4 0.4-0.2 2.6-0.9 0.6-0.1 0.5 0 0.6-0.4 3-1.3 0.4-0.3 0.2-0.4 0.1-0.6-0.1-1 0-0.3-0.2-0.1 0.1-0.5 0.3-0.4 0.7-0.9 0.2-0.5 0-0.1 0.7-0.4 1.1-1.1 0.6-0.4 0.9-0.2 1.6 0.4 0.2 0 0.1-0.5 0-0.2-0.2-0.3-0.3-0.2-0.2-0.2-0.2-0.2-0.2-1-0.1-1.6 0.1-0.4 0.2-0.3 2-0.5 0.9-0.5 0-1-0.4-0.4-0.3-0.1-0.4-0.2-0.1-0.6 0.1-0.4 0.3-0.3 0.4-0.2 1.4-0.2 0.3-0.3 0.1-0.4-0.2-0.5-1-1-0.3-0.4-0.1-0.5-0.1-1.3 0.2-0.5 0.5-0.2 0.9 0 0.6-0.2 0.3-0.2 0.7-0.7 0.3-0.5 0-0.5-0.1-0.3-0.3-0.4-0.6-0.4-0.2-0.3-0.1-0.3-0.2-0.2-0.4-0.1-0.5 0-0.5 0-0.6-0.4-0.4-0.7-1.1-1.9-0.2-0.2-0.5-0.1-2.9 0.3-0.6 0.2-0.4-0.1-0.4-0.1-1-0.3-1.2-0.7-0.8-0.1 0.8-0.9 0.2-0.1 0.9-0.1 0.4 0.1 0.2 0.4 0.1 0 0.2-0.1 0.3-0.3 0.1-0.2 0.6-1.5 0.3-0.4 0.2-0.2 0.8-0.4 0.8-0.3 1-0.2 1.7-0.1 0.2 0.2 0.4 0.3 3.6 1.6 0.9 0.2 1 0.1 0.5-0.2 0.6-0.5 0.4-0.1 0.5 0 0.8 0.2 0.9 0.2 0.5 0.3 0.3 0.4 0.1 0.5 0.1 1 0.1 0.4 0.3 0.4 0.4 0.1 0.5 0 0.8-0.1 0.5 0 0.4 0.2 2.1 1.2 0.4 0.3 0.4 0.2 0.8 0.1 0.4 0.1 0.5 0.4 0.4 0.7 0.6 1.4-0.3 3.4 0.1 0.2 0.6 0.4 0.2 0.4 0 0.2 0.1 0.5 0.2 0.3 0.1 0.4 0.2 0.3 0.1 0.2 0 0.9-0.3 1.4 0 2.9 0.2 0.9 0.1 0.4 0.1 0.5 0.6 0.7 0.2 0.5-0.1 0.9-0.7 1.7 0.2 0.7-0.5 1.2 0 0.5 0.3 0.5-0.2 0.3-0.6 0.8-0.1 0.3-0.1 0.4 0 0.8-0.6 1.5-0.2 0.8 0.3 0.8-0.3 0.7-0.1 0.6-0.1 1.4 0.1 0.3 0.2 0.5 0 0.2-0.1 0.2-0.3 1.3 0 0.4-0.3 0.6-1.6 1.3-1.2 2-1-0.2-0.9 0.3-0.3 0.7 0.5 0.8 0.9 0.4 0.4 0.4 0.3 1 0.4-0.2 0.5-0.4 0.4-0.3 0.9 0.1 0.8 0.2 0.6 0.5 0.2 0.8-0.3 1-0.7 0.4-0.9 0.4-0.7 0.6 0.4 0.2 0.8-0.2 0.5 0 0.2 0 0.2 0.1 0.1 0.3 0.1 0.5 0 0.2 0.3 0.6 0.2 0.2 0.2 0.2 0.3-0.1 0.1-0.1 0.2 0 0.4 0 0.1 0.1 0.1 0.1 0 0.3 0 0.2 0 0.2 0 0.1 0.2 0.1 0.4 0.1 0.1 0 0.1 0.1 0.1 0.2 0.3 0.8 0.1 0.2-0.1 0.3 0.1 0.1 0.2 0.1 0.2 0 0-0.2 0-0.3 0.1-0.1 0.2 0.1 0.4 0.5 0 0.1 0 0.1-0.1 0.2 0.1 0.2 0.3 0.2 0.1 0.1-0.1 0.6 0.1 0.1 0.3 0.2 0.2 0 0.3 0.1 0.2 0.2 0.2 0.4 0.4 0.9 0.3 0.4 0.3 0.2 0.4 0.2 0.2 0.1 1.2 1.8 0.1 0.2 0.2 0.5 0.1 0.3 0.2 0.1 0.4 0.1 0.2 0.2 0.1 0.2 0.1 0.3 0.1 0.3 0.2 0.2 0.2 0.1 0.2 0 0.5-0.1 0.4-0.2 0.2-0.1 0.2-0.4 0.1-0.2 0.4-0.2 0.3-0.3 0.1 0 0.3 0 0.1-0.1 0.2-0.2 0.2-0.1 0.6-0.1 0.4 0 1.1-0.2 0.2-0.1 0.2-0.1 0.1-0.2 0.2-0.1 0.7-0.2 1.5-0.1 0.3 0 0.3-0.1 0.2-0.1 0.1-0.1 0.3 0 0.2 0.1 0.2 0.1 0.1 0.1 0.3 0.4 0.2 0.3 1.3 0.5 0.1 0.2 0 0.2 0.2 1 0 0.3 0.2 0.4 0 0.3 0 0.2-0.3 0.3-0.1 0.2 0 0.4-0.2 0.6-0.2 0.4 0 0.2 0.1 0.2 0.2 0.2 0 0.3 0 0.1-0.3 0.6 0 0.2-0.1 0.8-0.1 0.2-0.1 0.2-0.1 0-0.4 0.2-0.1 0.3 0.1 0.2 0.3 0.4 0.2 0.4 0.1 0.1 0.4 0.3 0.1 0.2-0.1 0.1-0.2 0.1-2.1 0-0.6 0-0.1 0-0.6 0-0.1 0-1.3 0.2-1.6 0.6-0.1 0.1-0.7 0.7-0.3 0.3-0.1 0.2-0.1 0.3-0.2 0.7-0.2 0.2-0.3 0.8-0.3 1.1 0 0.5-0.1 0.4-0.1 0.5 0 0.2-0.4 0.7 0 0.3 0.4 1.5 0 0.3-0.1 0.2-0.2 0.2-0.4 0.4-0.3 0.1-0.7 0.6-0.2 0.1-0.2 0.3-0.1 0.2-0.3 0.3-0.3 0.3-0.3 0.3-0.5 0.5-0.2 0.2-0.2 0.5 0 0.2-0.1 0.2 0.1 0.2 0.1 0.2 0.4 0.3 0.4 0.2 0.3 0 0.3 0 1 0 0.3 0 0.2 0 0.1 0.1 1.2 0.7 0.1 0.2 0.9 1.3 0 0.2 0.4 1.2 0 0.3-0.1 0.9 0 0.6 0.1 0.3 0.4 0.9 0.4 0.4 0.8 0.7 2 1 1.8 0.7 0.4 0.2 0.2 0 0.3 0.2 0.1 0.3 0.1 0.3 0.1 0.3-0.1 0.2-0.2 0.2-0.3 0.2-0.4 0.5-0.2 0.1-0.1 0.3-0.2 0.7-0.1 0.2 0 0.1-0.2 0.1-0.3 0.1-0.3 0-0.2 0-0.3 0.3-0.1 0.1-0.1 0.4-0.1 0.3 0 0.2 0.1 0.6 0.1 0.1 0.1 0.1 0.3 0.2 0.2 0 0.2 0.1 0.2 0.2 0.9 0.8 1.6 1 0.3 0.3 0.3 0.3 0.3 0.8 0.1 0.2 0 0.5-0.1 0.5-0.1 0.5 0 0.2 0.1 0.2 0.1 0.2 0.6 0.5 0.2 0.2 0.1 0.2 0.3 0.8 0.3 0.3 0.4 0.3 0.3 0.3 0.4 0.8 0.1 0.1 0.3 0.1 0.5 0.1 0.3 0.1 0.2 0 1.4-0.3 0.1 0 0.6 0 2.3 0.7 0.4 0.4 0.8 1 0.2 0.3 0.4 0.2 1.3 0.6z" id="BRA596" name="Tocantins">
                         </path></a>
-                        <a xlink:title="Distrito Federal" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#DistritoFederal">
+                        <a xlink:title="Distrito Federal" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/distrito-federal/superintendencia-regional-do-distrito-federal" target="blanck"">
                         <path d="M597.5 481.7l-6.8 0.1-5.6 0-7.3-0.1-1.5-0.2-0.1-0.2 0.1-0.5 0.2-0.3 0.1-0.5 0.1-0.2-0.2-0.3-0.3-0.1-0.2-0.2 0-0.7-0.3-1.4 0-0.3 0.1-0.1 0.1-0.1 0.3-0.1 0.2-0.1 0.3-0.3 0.2-0.2 0.2-0.5 0.3-0.8-0.3-0.3-0.4-0.2-0.1-0.2-0.1-0.2 0.1-0.9 0.1-0.2 0.2-0.2 0.2-0.1 0.1-0.4 0.3-2.1 0.1-0.5 0.3-0.3 3.3 0 5.9 0 7.7 0.2 0 0.5 0.1 0.2 0.1 0.1 0.2 0.2 0.3 0.2 0.1 0 0.5 0.3 0.7 0.3 0.4 0.2 0.2 0.1 0 0.1-0.2 0.4 0 0.3-0.1 0.9 0.1 0.4 0.1 0.5 0 0.2-0.1 1-0.3 0.9-0.1 0.3-0.4 0.6-0.1 0.5-0.1 0.8 0.1 0.1 0 0.3 0.1 0.3-0.1 0.4-0.1 0.6 0 0.3 0 0.2 0 0.1 0.2 0.3 0.2 0.1 0.6 0.4 0.1 0.1 0.2 0.3z" id="BRA599" name="Distrito Federal">
                         </path></a>
-                        <a xlink:title="Mato Grosso do Sul" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#MatoGrossoDoSul">
+                        <a xlink:title="Mato Grosso do Sul" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/mato-grosso-do-sul/superintendencia-regional-do-mato-grosso-do-sul" target="blanck">
                         <path d="M469.1 527.9l0.1 0.7 0.1 0.5 0 0.6-0.3 4.7 0 0.5 0.1 0.3 0.2 0.4 0.2 0.3 0.5 0.5 0.3 0.2 0.2 0 0.2-0.1 0.3-0.1 0.9-0.6 0.2-0.1 0.2-0.1 0.3 0.1 0.5 0.1 2 0.9 0.2 0.2 0.1 0.3-0.1 0.5-0.1 0.4-0.2 0.3-1.3 1.7-0.2 0.5-0.9 1.9 0 0.4 0 0.2 0.6 0.4 2.4 0.7 1.6 0 1 0.2 0.6 0.1 2.7-0.4 0.3 0 0.3 0.2 0.6 0.4 1.7 1.7 0.2 0.2 0.3 0.1 0.5 0 1.2-0.1 0.2 0.1 0.6 0.1 1.3 0.7 1.7 1.1 0.3 0.3 0.1 0.2 0.2 0.4 0.2 0.2 0.5 0.2 0.8 0.3 1.2 0.3 0.8 0.3 0.8 0.6 0.6 0.6 0.2 0.2 4.4 1.9 0.3 0.1 1.1 0.1 0.9 0 0.3 0 1.3 0.4 0.9 0.1 0.2 0.1 0.3 0.1 1.5 1.3 0.5 0.6 0.2 0.1 0.3 0.2 0.3 0.1 0.3 0.1 0.9 0 0.3 0.1 0.6 0.3 0.3 0 0.5 0 0.3 0 0.3 0 0.3 0.2 0.3 0.2 0.3 0.3 1.1 1.3 1.7 2.4-0.1 0.6 0.2 0.4 0.3 0.4 0.1 0.4-0.3 0.5-0.2 0.1-0.4 0-0.1 0.1-0.1 0.1-0.1 0.2 0 1.3-0.1 0.5-0.6 0.8-0.1 0.6 0 0.7 0.4 3.6 0.1 2.9 0.2 1.8-0.7 2-0.6 1-0.7 0.8-0.6 0.5-0.6 0.3-2.9 0.9-1.3 0.7-0.4 0.3-0.8 1-0.3 0.5-1 1.2-0.5 0.8-1.2 1.2-1 0.3-0.4 0.2-0.2 0.5-0.2 1.1-0.5 0.9-0.1 0.5 0 1.1-0.2 2.6-0.2 0.5-1.6 1.7-0.5 0.4 0 0.1-0.2 0.2-0.6 1.4-0.4 0.7-0.1 0.1-0.1 0.1-0.4 0.2-0.6 0.5-0.4 0.2-0.2 0.3-0.1 0.7 0.4 2 0.1 1-0.4 1.1-1.3 1.4-0.2 0.5-0.6 1.1-0.4 0.3-0.4 0.1-0.3 0-0.4-0.1-0.4-0.1-0.3 0-0.2 0.1-0.2 0.1-0.1 0.3 0 0.3-0.2 0.2-0.2 0.1-0.1 0.7 1 1.6 0.2 0.1 0.2 0.3 0.1 0.2-0.1 0.5-0.4 0.5-0.4 0.4-0.5 0.3-0.8 0.4-0.3 0.2-0.7 1.2-0.1 0.3-0.1 0.4-0.1 0.3-0.1 0.3-0.2 0.3-0.2 0.2-0.2 0.1-0.4 0.2-0.2 0.1-1.1 1.1-0.2 0.3-0.1 0.4-0.1 0.7-0.1 0.4-0.7 1.3 0 0.2-0.2 0.7-0.1 0.2-1.5 1.3-0.4 0.5-0.1 0.2-0.6 0.3-0.2 0.1-0.5 0.6-0.2 0.1-0.2 0.1-0.5 0.1-0.2 0-0.5 0.3-0.7 0.6-1.2 0.5-0.4 0.2-0.7 0.6-2.1 1.2-0.1 0.2-0.1 0.1-0.2 0.6-0.1 0.1-1.7 0.9-0.4 0.1-0.4 0-0.2-0.2-0.1 0.1-0.5 0.7-0.3 0.8-0.2 0.2-0.2 0.1-0.3 0.1-0.3 0.1-0.1 0.1-1.3 2.5-0.6 0.7-0.7 0.6-7 3.1-1.6 1.1-0.7 0.7-0.3 0.4-0.5 1.5-0.3 0.9-0.2 2.1-0.3 1-0.4 0.9-0.7 1.8-0.4 0.9-0.7 0.8-2.4 1.6-1.9 0.8-0.5 0.4-0.1 0.3 0.1 0.8-1.1 3.6-0.2 1.5-0.7 1.9-0.2 1 0 2.2-0.2 1.1-0.5 0.4-1.7 0.9-0.2 0.3-0.4 0.3-1 0.5-0.6-0.3-2.1-1.3-1.2-1.7-0.5-0.3-3.7-2.2-0.6-0.2-0.4 0.2-0.5 0.6-0.4 0.2-2.9 1-1.5 0.9-0.3 0.3-0.5 0.6-0.3 0.2-0.4 0.1-0.8 0-0.4 0.2-0.6 0.2-1.5 0-1.3 0.7-0.8 0.1-0.8-0.2-0.8-0.3-0.7-0.1-1.4-0.2-0.7-0.3-0.5-0.5-0.2-0.6-0.3-4.8-0.5-1.5-1-1-0.4-0.7-0.1-0.8 0-0.9-0.2-0.8 0-0.8 0.6-1.4 0-0.7-0.2-0.5-0.7-0.7-0.1-0.6 0-0.4 0.5-1.1 0.1-0.4-0.5-1.8-0.1-0.2-0.6-0.4-0.3-0.3 0-0.4 0.1-0.9-0.1-0.5-0.2-0.3-0.6-0.7-0.1-0.4 0.1-0.9 0-0.4-0.5-1.9 0-0.9 0.3-0.7 0.4-0.7 0.2-0.8 0-0.2-0.2-0.4 0-0.2 0-0.2 0.1-0.4 0.1-0.2-0.1-0.5-0.2-0.3-0.3-0.2-0.4-0.1-0.8-0.4-0.6-0.7-0.3-0.8-0.2-0.8-0.1-2.1-0.2-0.6-0.2-0.2-0.9-0.7-1.1-1.5-0.3 0.5 0 0.1-0.4-0.2-1.4-0.2-0.4-0.1-0.3-0.3-0.3-0.1-0.3 0.1-0.3 0.1-3.8-0.2-0.4-0.1-0.4-0.2-0.7-0.7-1.2-0.7-0.7-0.7-0.5-0.8-0.6-1.4-0.2-0.3-0.3 0-1.6 0.3-0.4 0.1-0.3 0.2-0.2 0.2-0.3 0.5-0.1 0.2-0.1 0.3-0.1 0.1-0.2 0.2-0.4 0.7-0.2 0.2-0.8 0.6-0.1 0.1-0.3 0.1-0.1 0.1 0.2 0.4-0.1 0.2-0.4-0.1-0.7-0.8-0.4-0.2-0.1 0.1-0.2 0.4-0.1 0.2-0.2 0.1-0.1-0.1-0.2-0.1-0.7 0.2-0.2 0.1-0.3-0.1-0.1 0.2-0.1 0.2-0.5 0.5-0.3 0.1-0.6 0 0-0.3-0.2-0.6-0.3-0.4-0.2 0.6-0.3 0-0.4-0.2-0.2 0-0.2 0-0.1-0.1 0-0.4-0.2 0.2-0.2 0-0.6-0.2-0.4 0-0.7 0-0.4 0.1-0.7-0.1-0.1-0.1 0-0.2-0.2-0.1-0.7-0.2-0.4-0.1-0.1 0.1-0.3 0.1-0.2 0-0.2-0.1 0-0.4-0.1-0.1-0.3 0.1-0.6 0.5-0.4 0-1-0.2-0.4 0 0 0.2-0.1 0.1-0.3 0-0.3-0.2-0.2 0-0.1 0.1-0.1 0-0.8-0.5-0.3-0.1-0.2 0-0.5-0.2-0.2 0-0.9 0.2-0.5-0.3-0.2-0.1-0.2 0-0.4 0.2-0.6 0-0.4-0.1-0.3-0.2-0.2-0.5-0.4-1-0.2-0.1-0.1 0-0.2 0.1-0.2 0.1-0.5 0-0.3-0.1-0.3 0-0.4 0.1-0.1 0-0.2 0-0.1 0-0.1 0.2 0 0.2-0.2 0.1-0.2 0-0.2 0-0.3 0-0.3 0.3-0.3 0-0.1 0-0.3-0.4-0.2-0.1-0.2 0-0.3 0.2-0.3 0-0.7-0.3-0.3-0.3-0.2-0.4-0.3-0.2-0.3-0.1 0-0.3 0-0.3 0-0.4 0.5-1.4 0.1-0.2 0.2-0.2 0.5-1 0.1-0.3-0.2-0.6-0.3-0.4-0.2-0.3 0.2-0.4 0.3-0.5 0-0.5-0.1-0.4 0-0.5 1-1.6-0.2-0.2-0.2-0.2-0.3-0.3-0.2-0.5-0.1-0.4 0.1-0.4 0.3-0.5 0.2-0.5-0.2-0.2-0.4-0.2-0.2-0.4 0-0.5 0-0.6 0.4-0.8 1.5-2.3 0.2-0.6-0.3-0.2-0.3-0.1-0.2-0.3-0.1-0.1-0.1-0.2-0.2-0.1 0.1-0.3 0.1-0.2 0.6-0.5 0.5-0.7 0.3-1.1 0.1-1.1-0.1-1.1-0.4-0.7 0-0.3 0.6-1 0.2-0.5 0-0.5-0.4-0.4-0.1 0.4-0.2 0-0.5-0.5-0.5-0.5-0.1 0-0.2-0.1-0.2-0.1 0-0.2 0.2-0.4 0.9-0.5 0.2-0.2 0-0.4-0.3-0.4-0.4-0.3-0.4-0.1-0.6 0-0.1-0.2 0.1-0.2 0.4-0.2 0.2-0.3 0.2-0.1 0.5-0.1 0.2-0.2 0.2-0.1-0.1-0.3-0.1-0.2-0.4-0.2-0.1-0.1-0.1-0.2-0.1-0.3-0.1-0.2-0.3-0.2-0.4-0.1-0.3 0.2-0.2 0.8-0.2 0.1-0.2-0.2-0.1-0.3-0.1-0.2 0.2-0.5 0-0.3-0.1-0.2-0.3-0.5 0-0.3 0-0.5 0-0.3-0.3-0.6-0.1-0.6 0-0.6 0-0.4 0.4-0.7 0.1-0.5-0.4-0.1-0.4-0.2-0.5-0.2-0.5-0.4-0.3-0.4-0.2-0.4-0.2-0.6 0-0.6 0.2-0.7-0.1-0.2-0.2-0.2-0.1-0.1-0.3 0.1-0.2 0.2-0.1 0.1-0.5-0.3-0.1-0.5 0.2-0.4 0.8-0.3-0.1-0.2-0.2-0.3-0.1-0.2-0.2 0-0.2 0-0.1-0.1 0-0.3 0.9-0.4 0.3-0.1 0.1-0.2 0.3-0.4 0.1-0.1 0.6-0.2 0.7-1 0.6-0.3 0.2 0 0.3-0.1 0.1-0.2 0.1-0.2 0.1-0.1 0.4 0 0.6 0.1 0.5-0.2 0.3-0.3 0.2-0.4 0.3-0.3-2.3-2.1-3.5-3.2-0.2-0.7 1.1-2.2 1.5-3.2 2.2-4.7 2.7-5.8 0.4-0.2 1.3-0.1-0.2-1-0.1-1.4-0.1-0.5-0.2-0.2-0.9-0.1 1.3-4.1 2.1-6.8 1.4-4.5 0.3-0.3 0.4 0 1.5-0.1 0.1-0.5-0.2-0.2-0.4-0.1-0.5 0-0.9-0.5-0.7-1.4-1.2-2.9-2-3.6 0.7-0.1 0-0.4-0.3-0.6-0.4-0.5-0.1-0.2 0.2-0.8 0.2-0.1 0.7 0.2 0.2 0 0.6 0 0.3 0 0.5 0.6 0.1 0.3 0 0.1 0 0.4 0 0.3 0.1 0.1 0.2 0.1 0.4 0.1 0.1 0.1 0.3 0.2 0.3 0.2 0.3 0.3 0.2 0.1 0.5 0 0.2 0.1 0.2 0.3 0.2 0.3 0.1 0.2-0.1 0.2-0.1 0.4 0 0.3 0.1 0.1 0 0.1 0.1-0.3 0.2-0.4 0.4-0.8 0.1-0.2 0.1-0.1 0.3-0.2 3.7-1 0.7-0.4 0.4-0.2 1.6-0.2 0.2-0.1 0.6-0.2 0.3-0.3 2.3-2.5 0.1-0.1 0-0.4-0.1-0.8 0-0.1 0.1-0.2 0.2-0.2 0.5-0.3 0.3-0.2 0.2-0.2 0.4-0.2 0.3-0.3 0.3-0.4 0.3-0.4 0.3-0.2 0.1-0.2 0.1-0.7 0-0.1-0.1-0.6 0-0.2 0.2-0.2 0.2-0.2 0.5-0.2 0.2-0.1 0.1-0.1 0.1-0.3 0-0.2 0-0.2 0.2-0.1 0.5-0.5 0.2 0 1.8 0.1 3.1-0.2 0.3-0.1 0.2-0.1 0.2 0 0.2 0 0.8 0.3 0.3 0 0.5 0 0.3-0.1 0.4-0.3 0.5-0.4 0.2-0.1 0.3 0.1 0.2 0.1 0.3-0.1 0.3-0.2 0.1-0.1 0.8-0.9 0.3-0.3 0.5-0.2 0.5-0.2 1.1-0.1 0.5-0.2 0.3 0 0.4 0 0.9 0.1 0.4 0.1 0.4 0.3 0.2 0.3 0.2 0.5 0.1 0.1 0.2 0.3 0.3 0.1 1.6 0.4 0.7 0.4 0.7 0.1 0.3 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.3 0.1 1.3 0.3 0.5-0.1 0.7 0.2 0.6 0.1 0.4 0.2 0.5 0.3 0.3 0.3 0.2 0.3 0.1 0.4 0.2 0.4 0.6 0.7 0.2 0.4 0.6 0.4 1.5 0.7 0.9 0.2 0.3 0.3 0.3 0.1 0.6 0.1 0.2 0.2 0.4 0.3 0.3 0.2 0.4 0.5 2.5 1.3 1.4-0.2 0.3 0.1 0.6 0 2.3-0.6 0.3 0 0.7 0.1 0.3-0.1 0.4-0.1 1.9-1.1 0.2-0.2 0.2-0.3 0.2-0.4 0.1-0.2 0.3-0.2 0.3-0.2 1.3-0.5 2-0.3 0.5 0.1 0.8-0.1 0.2 0.1 0.3 0.1 0.4 0.3 0.5 0.4 1.2 0.7 0.2 0.2 0.2 0.2 0 0.2 0 0.2 0.1 0.5 0 0.2 0.1 0.4 0.1 0.2 0.2 0.2 0.2 0.1 0.7 0.1 0.3-0.1 0.4-0.1 1.9-0.8 1-0.3 0.5 0 0.5 0.1 0.4-0.1 0.3-0.2 0.7-0.7 0.2-0.4 0.2-0.4 0-0.2 0.1-0.3 0.2-0.2 0.3-0.3 1.3-0.7 0.6-0.5 2.1-2.2 0.3-0.6 0.1-0.2 0.2-0.3 0.2-0.3 1.1-0.9 0.3-0.1 0.3-0.2 1.3-0.1 0.1 0.2 0 0.2 0.1 0.5-0.1 0.5-0.7 2.9-0.1 1.6 0 0.2-0.3 0.7-0.4 2.4-0.1 0.2-0.1 0.2-0.2 0.1-0.9 0.2-0.9 0.3-0.2 0.1-0.2 0.2-0.2 0.2-0.1 0.2-0.1 0.7-0.2 0.3-0.5 0.6-0.2 0.7-0.2 0.2-0.7 0.8-0.3 0.4-0.2 0.5 0 0.2 0 0.2 0 0.2 0.2 0.3 0.8-0.1 1.7 0.5 2.2 1.2 0.9 0.2 2.8-0.4 0.5 0 1.9 0.5 0.7 0 0.7-0.1 0.2-0.2 0.5 0.1 2.1-0.2 0.4 0.1 1.7 0.4 0.6 0.2 0.9 0.1 1.8-0.2 0.3-0.1z" id="BRA600" name="Mato Grosso do Sul">
                         </path></a>
-                        <a xlink:title="Minas Gerais" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#MinasGerais">
+                        <a xlink:title="Minas Gerais" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/minas-gerais/superintendencia-regional-de-minas-gerais" target="blanck">
                         <path d="M755.9 527l-0.3-0.2-0.4-0.1-0.2-0.1-0.2-0.3-0.2-0.1-0.3 0-0.3 0-0.3 0-0.2-0.1-0.3-0.3-0.2-0.2-0.4 0-0.1 0-0.3-0.2-1-0.3-0.2-0.1-0.1-0.1-0.2-0.3-0.1-0.1-0.1 0.1-0.1 0.2 0 0.3 0 0.4 0 0.1-0.1 0.2-0.2 0.1-0.3-0.1-0.3-0.2-0.4-0.4-0.2 0-0.3 0-0.8 0.2-0.3 0.1-0.3 0.1-1 0.6-0.3 0.2-0.3 0.1-0.3 0-0.3-0.1-0.6-0.2-0.1 0-0.2 0-0.2 0.1-0.3 0.3-0.4 0.1-0.3 0.2-0.2 0-0.3-0.1-0.2-0.2-0.2-0.1-0.2 0.1-0.4 0.1-0.3 0-0.3 0-0.2-0.1-0.2-0.3-0.1 0-0.1 0-0.1 0.1-0.1 0.2 0.2 0.2 2.9 2.9 0.2 0.3 0.1 0.3 0 0.5-0.1 0.1-0.1 0.1-0.2 0.1-0.2 0-0.3-0.1-0.6 0-0.1 0-0.2-0.1-0.3-0.2-0.3-0.2-0.2-0.1-0.2-0.3-0.2-0.1-0.3-0.1-0.3 0-0.1 0.1-0.4 0.2-1.5 1.4-0.2 0.1-0.5 0-0.3 0-0.1 0.2-0.3 0.4-0.4 0.9-0.4 0.6-0.5 0.4-0.1 0.1 0 0.2 0 0.3 0.1 0.2 0.2 0.4 0 0.4-0.5 0.8 0.2 0.1 0.1 0 0.4-0.2 0.7-0.6 0.1 0.1 0.2 0.2 0.2 0.1 0.3 0.2 0.2 0.1 0.3 0.2 0.2 0.2 0.2 0.4 0.2 0.3 0 0.4 0 0.4-0.1 0.6 0 1.1-0.3 1.2-0.2 1.1 0 0.3 0.1 0.1 0.1 0.2 0.4 0.1 1.1 0 0.2 0.1 0.2 0.1 0.1 0.2 0.1 0.2 0.2 1.6 0 0.3 0 0.3-0.1 0.3-0.2 0.2-0.3 0.2-0.3 0.2-0.5 0-2.5 0.1-0.2 0-0.1-0.1 0-0.3-0.1-0.1-0.3 0-0.4 0-0.6 0-0.6 0-0.3 0.1-0.2 0.1-0.2 0.1-0.1 0.2-0.2 0.2 0 0.1 0.1 0.3 0.3 0.2 0.2 0.5 0.2 0.1 0.4 0.2 0.5 0.3 0.2-0.1 0.3-0.2 0.3-0.2 0.3 0 0.2 0 0.2 0.1 0.1 0.1 0.3 0.4 0 0.1 0.2 0.1 0.3 0.1 0.1 0.1 0 0.1-0.1 0.2 0 0.2 0.1 0.2 0.1 0.1 0.4 0.1 0.1 0.1 0 0.2-0.2 0.4-0.4 0.9 0 0.2 0.1 0.2 0.2 0.1 0.4 0.1 0.1 0.1 1.1 1.1 0.2 0.2 0.3 0.5 0 0.1 0.2 0.6 0.1 0.9-0.1 0.6-0.1 0.5 0 0.3 0.1 0.1 0.2 0.2 0 0.1 0 0.2-0.1 0.6 0 0.7 0 0.3-0.1 0.1-0.5 1.2 0 0.3-0.1 0.2 0.1 0.3 0 0.2 0 0.3-0.1 0.2-0.2 0.1-0.2 0.3-0.2 0.1-0.2 0.1-0.2-0.1-0.2 0-0.4-0.3-0.3 0.1 0 0.3 0 0.2 0.4 0.7 0 0.1 0 0.2-0.2 0.2-0.6 0.7-0.2 0.1-0.2 0-0.2 0.1-0.1 0.3-0.4 0.4-0.7 0.4-0.2 0.3-0.2 0.6-0.4 2.4 0.1 0.2 0 0.3-0.2 1.3-0.1 0.3-0.4 0.2-0.1 0.1-0.5 0.5-0.2 0.2-0.1 0-0.3-0.1-0.2 0.1-0.2 0.2-0.3 0.3-0.2 0.3-0.1 0.2 0 0.3 0 0.5-0.1 0.4-0.5 1.5-0.2 0.8 0 0.3 0 0.3-0.5 1.3-0.2 0.2-0.4 0.1-0.3 0.3-0.6 0-6.3-0.1-0.3 0-0.2 0.1-0.2 0.2-0.2 0.3-0.3 1.1-0.2 0.2-0.1 0.1-0.8 0.4-0.3 0.3-0.2 0.2-0.2 0.3-0.1 0.2 0 0.2 0 0.2 0.1 0.2 0.1 0.2 0.1 0.4 0.2 0.2 0.8 0.4-0.3 1.1 0 0.6 0.1 0.2 0.2 0.4 0 0.2 0 0.1-0.2 0.1-0.2 0.1-0.2 0.3-0.3 0.9-0.1 0.3-0.3 0.4 0 0.2 0.1 0.1 0.2 0 0.3-0.2 0.1 0 0.2 0 0.1 0.1 0 0.2-0.1 0.2-0.4 0.6-0.2 0.3-0.5 1.1-0.1 0.2-0.3 0.2 0 0.2 0 0.1 0 0.2 0.4 0.1-0.2 0.3-0.3 0.2-0.3 0.1-0.2 0-0.3 0.1-0.1 0.5 0 0.3-0.1 0.2-0.3 0.6-0.4 0.9-0.1 0.1-0.2 0.2-0.3 0.2-0.3 0.1-0.2-0.1-0.3-0.2-0.1 0-0.4 0.1-0.2 0-0.3 0-0.3-0.1-0.2-0.1-0.1 0.1-0.2 0.2-0.2 0.3-0.4 0.2-0.1 0.1-0.1 0.2 0 0.3 0.1 0.2 0.1 0.1 0.1 0.1 0.2 0.1 0.3 0 0.2 0.1 0 0.2-0.2 0.4-0.4 1-0.2 0.3-0.3 0.4-0.1 0.2-0.2 0.5-0.2 0.4-0.2 0.1-0.1 0.4 0 0.4 0.1 0.3-0.1 0.2 0 0.3-0.6 1.2-0.1 0.5-0.2 1.2-1.2 0.9-0.2 0.2-0.3 0.6 0 0.4 0 0.8 0 0.4-0.1 0.3-1 1.7-0.4 0.9-0.1 0.7 0 0.3 0.2 0 0.2 0 0.4 0.2 0.3 0 0.3-0.1 0.3 0 0.2 0.1 0.2 0.2 0.1 0.1 0.2 0.4-0.1 0.4-0.3 0.6-0.3 0.1-0.4 0.4-0.3 0.1-0.2 0-0.4-0.1-0.3 0-0.2 0.1-0.3 0.3-0.4 0.3-1.2 0.3-2.2 1.3-2.7 1-1.7 0.9-3 1.2-0.3 0.3-0.7 0.6-0.4 0.2-1.4 0.2-0.5 0.3-0.2 0.3-0.1 0.4-0.2 0.4-0.2 0.1-0.5-0.2-0.3 0-0.2 0.2-0.3 0.4-0.3 0.1-0.1-0.4-0.1-0.2 0.1-0.2 0.2-0.3 0.1-0.3 0-0.3-0.2-0.1-0.6 0-0.5 0.1-0.3 0-0.4-0.1-0.3-0.1-0.3-0.2-0.1-0.1-0.2 0-0.8 0.1-0.2 0-0.5-0.2-0.3 0-0.6 0.2-1.8 0.9-0.3 0.2-0.2 0.1-0.3 0-0.6 0-0.4 0.1-0.3 0.1-0.3 0-0.2 0-0.2-0.2-0.2-0.3-0.1 0-0.1 0-0.3 0.3-0.2 0-0.2 0-0.2-0.1-0.2 0-0.1 0-0.2 0.2-0.2 0.2-0.1 0-0.2 0-0.2-0.2-0.1 0-0.3 0-0.3 0.2-0.3 0.1-0.3 0-0.3-0.1-0.2-0.3-0.1-0.1-0.3 0-0.7 0.2-1.2 0.5-0.3 0.3-0.3 0.2-0.3 0.2-0.8 0.1-2.7 1.1-0.4 0.1-0.2 0.1-0.5 0.6-0.2 0.2-2.1 1.1-0.5 0.2-0.4 0-0.2-0.3-0.3-0.1-0.2 0-1 0.1-0.3 0-1.2 0.2-0.3 0-0.1-0.1-0.2 0-0.3 0.1-1.7 1.1-0.3 0.1-0.3 0.1-0.5 0.1-0.7 0-0.2 0.1-0.2 0.1-0.3 0.3-0.3 0.6-0.2 0.2-0.2 0.1-0.5-0.2-0.5-0.1-0.3 0-0.2 0-1 0.4-0.4 0.2-0.9 0.6-1.4 0.8-0.6 0.2-0.2 0.1-0.3-0.1-0.6 0-0.2 0.1-0.3 0.1-0.3 0.2-0.3 0-0.2 0-0.4 0-0.2 0-1.3 0.6-0.3 0.2-1.2 0.7-0.1 0.1-0.4 0.4-0.4 0.3-0.1 0.1-0.2 0-0.2-0.1-0.1 0.1-0.1 0.1 0.1 0.3 0 0.1-0.2 0.3-0.3 0.2-1.7 0.5-0.9 0.5-0.2 0.1-0.2 0-0.1-0.1-0.1-0.3 0-0.3-0.1-0.2-0.2-0.3-0.3-0.1-0.1 0-0.3 0.1-0.3 0.5-0.1 0.1-0.2 0.2-0.5 0.3-0.2 0-0.3 0.1-0.7-0.1-0.2-0.2 0-0.4-0.1-0.1-0.2 0-0.2 0.1-0.4 0.3-0.6 0.3-0.2 0.1-0.2 0-0.3 0-0.2-0.2 0-0.1 0-0.2 0.1-0.3 0.2-0.2 0.2-0.2 0.2-0.3-0.2-0.1-0.3-0.1-0.9 0.1-0.3 0.1-0.2 0.1 0 0.3 0.1 0.1 0.3 0.3 0.1 0.2 0 0.2 0 0.1-0.2 0.2-1.9 1.2-0.1 0.1 0 0.2 0.1 0.2 0.1 0.1 0.3 0 0.6 0 0.4 0 0.2 0.1 0.1 0.2 0.1 0.3-0.1 0.3 0 0.3-0.1 0.2-0.1 0.2-0.2 0.1-0.3-0.2-0.1 0-0.2 0.2 0 0.2 0.1 0.4 0 0.3-0.1 0.1-0.2 0.2-0.1 0.1-0.1 0-0.2-0.1-0.1-0.3-0.1-0.1-0.1-0.1-0.2 0-0.3 0.2-0.3 0.5-0.2 0.2-0.1 0-0.1 0-0.2-0.2-0.4-0.3-0.2-0.2-0.1-0.3-0.2-0.1-0.2 0.2-0.1 0.2-0.1 0.1-0.1 0-0.3-0.1-0.2 0-0.2 0.1-0.1 0.1-0.2 0.3-0.4 0.4-0.4 0.1-0.5 0.1-1.8 0.3-0.5 0-0.1-0.2 0-0.1 0.2-0.4 0-0.1-0.1-0.2-0.3 0-0.6 0.1-0.3 0.1-0.3 0.2-0.1 0.1-0.3 0.1-0.1 0-0.3-0.1-0.3 0-0.2 0.2-0.2 0.1-0.2 0-0.2-0.2-0.3-0.1-0.4 0-0.4-0.1-0.2-0.2-0.1-0.3-0.1-0.6 0-0.3 0-0.4 0.1-0.3 0.2-0.4-0.1-0.1-0.3-0.3-1.3-0.7-0.4-0.3-0.6-0.5-0.1-0.3 0-0.2 0.2-0.1 0.2-0.2 1.1-0.4 0.1 0 0.2-0.2 0-0.3-0.3-0.5-0.1-0.3-0.1-0.3 0.1-0.3 0.3-0.2 0.2-0.2 0.1-0.2-0.1-0.1-0.3 0-0.4 0-0.5-0.2-0.2 0-0.9-0.7-0.5-0.2-0.4-0.1-0.2 0 0-0.2 0-0.4-0.1-0.3-0.1-0.1-0.1 0-0.8-0.2-1.1-0.4-0.2-0.2-0.2-0.1 0-0.2 0-0.4 0-0.2-0.1-0.2-0.7-0.8-0.2-0.2 0-0.2 0.1-0.6 0.8-1.9 0.4-0.6 0.3-0.3 0.6-0.5 0.1-0.2 0-0.1-0.5-0.8-0.2-0.2-0.1 0-0.8 0-0.1-0.1-0.3-0.2-0.1-0.2-0.1-0.1 0.1-0.1 0.1-0.1 0.4 0 0.2-0.1 0.1-0.1 0-0.1-0.2-0.2-0.1-0.2 0.1-0.2 0.3-0.3 0.2-0.1 0.3 0 0.1 0 0.2-0.2 0.1-0.2-0.1-0.1-0.4-0.6-0.5-1.3-0.1-0.3 0.1-0.1 0.2-0.2 0.1-0.2 0-0.2-0.1-0.2-0.2-0.2-0.1-0.1-0.1-0.4 0-0.2 0-0.1 0.1-0.2 0.2-0.2 0.4-0.3 0.1-0.1 0.1-0.2 0.4-2 0.1-0.2 0.1 0 0.6 0.1 0.1 0 0.1-0.1 0.1-0.2 0.4-1.1 0.2-0.3 0.4-0.3 0-0.1-0.1-0.1 0-0.7 0.1-0.3 0.1-0.2 0.1-0.2 0.3-0.1 0-0.1 0-0.1-0.1-0.3-0.1-0.2-0.1-1 0-0.1-0.2-0.3-0.1-0.1-0.3-0.1-0.2-0.1-0.3-0.1-0.3 0-0.4 0.2-0.2 0-0.1-0.1-0.1-0.4-0.1-0.1-0.5-0.2-0.1-0.1-0.1-0.2 0-0.4-0.1-0.1-0.2 0.1-0.3 0.2-0.2 0.3-0.2 0.1-0.2-0.1-0.4-0.3-0.6-0.3-0.5-0.2-0.3 0-0.2 0-0.6 0-0.2 0-0.1 0.1-0.1 0.3-0.2 0.2-0.2 0.1-0.3 0-0.2 0.1-0.3 0.2-0.2 0.1-1.9 0.1-0.3 0-0.1-0.1-0.1-0.1 0-0.2 0.2-0.6 0-0.3-0.1-0.3-0.4-0.7-0.1-0.2-0.1-0.5-0.1-0.3-0.4-1-0.1-0.7-0.1-0.1-0.3-0.2-0.2-0.1-1.1-1.3-0.1-0.2 0-0.2 0-0.6 0-0.2-0.5-1.5 0-0.4 0.1-0.3 0.1-0.2-0.1-0.1-0.2-0.2-0.2-0.2-0.3-0.4-0.1-0.2-0.2-0.1-0.3-0.1-0.1-0.1-0.2-0.2-0.1-0.1 0-0.2 0.1-0.5 0.2-1.7 0.2-0.5 0.3-0.2 0.1-0.1 0.1-0.2 0.3-0.4 0.1-0.3 0-0.2 0.1-0.6 0.1-0.1 0.1-0.1 0.3 0 0.1-0.1 0.1-0.1 0.2-0.3 0.1-0.2 0.1-0.2 0-0.4 0-0.2-0.6-2-0.1-0.2-0.1-0.2-0.2-0.2-2.2-1.1-0.2-0.1-0.6-0.7-0.1-0.2 0-0.1 0-0.2 0.1-0.2 0-0.3 0.1-0.6 0.1-1.4 0.1-0.5 0-0.1 0.1-0.2 0.4-0.3 0.1-0.3 0.1-0.2 0.1-0.3 0-0.4 0.1-0.4-0.3-0.5-0.2-0.4-0.9-0.7-0.2-0.4-1.6-1.1-0.3 0-0.2 0-0.3-0.3-0.6-0.6 0.1-0.2 0-0.4 0.1-0.3-0.1-0.3-0.1-0.1-0.4-0.3-0.3-0.2-0.4 0.2-0.5 0.2-0.5 0.2-0.5 0-0.5 0.1-0.3 0.4-0.1 0.3-0.4 0.3-0.5 0.2-0.4-0.3-0.5-0.7-0.5-0.4-0.4-0.2-2.8 0.1-0.2 0.1-0.2 0.2-0.2 0.2-0.2 0.2 0.1 0.2 0.2 0.4-0.1 0.5-0.1 0.6-0.2 0.5-0.3 0.2-0.3 0.1-0.2 0.1-0.2-0.1-0.2-0.1-0.2-0.3 0-0.3 0-0.2-0.1-0.3-0.1-0.3-0.2-0.2-0.3-0.2-0.3-0.1 0 1.1-0.1 0.5-0.3 0.4-0.1 0.1-0.3 0.1-0.1 0.1-0.4 0.4-0.2 0.2-0.3 0-0.3 0-0.6-0.4-0.9-0.4-0.4-0.3-0.2-0.6-0.2-0.6-0.3-0.5-0.5-0.4-0.4 0.7 0.5 1.6-0.5 0.6-0.5 0-0.6-0.5-0.6-0.2-1.9 0-0.9 0.2-0.5 0.1-0.2 0.2-0.3 0-1.7-0.1-0.5 0.2-0.8 0.5-0.3 0.1-0.5-0.1-1.3-0.2-0.3 0-0.9 0.1-1.1 0-0.6 0.3-0.2 0.6-0.2 0.7-0.3 0.6-0.3 0.4 0.1 0.3 0.1 0.2 0 0.4 0 1.3 0.1 0.3 0.2 0.7 0 0.3-0.1 0.2-0.6 0.6-0.4-0.2-1-0.5-0.2-0.2-0.1-1.9 0.1-2.2-0.2-1.1-0.5-0.8-0.9-0.2-0.6 0.7-0.7 1.6-0.4 0.7-0.7 0.7-0.7 0.3-0.8-0.4-0.2-0.3-0.3-0.8-0.6-0.8-0.6-1.1-0.1-0.5-0.2-1.1 0-0.6 0.2-0.6 0-0.3 0.1-0.3 0.2-0.1 0.8-0.3 0.1-0.4-0.2-0.3-0.4-0.2-0.5-0.1-0.5 0.1-1.5 0.3-0.5-0.4-2.1-0.6-1-0.2-7.5 0-3-0.4-7.2-1.1-0.6-0.2-0.8-1.1-0.6-0.5-0.7-0.3-0.7 0.1-0.8 0.2-0.7 0.4-0.5 0.9-1.7 1.6-0.4 0.3-0.6 0.2-3.8 1.4-0.5 0.3-1.3 1.1-1 1.2-0.2-1.8-0.1-2.9-0.4-3.6 0-0.7 0.1-0.6 0.6-0.8 0.1-0.5 0-1.3 0.1-0.2 0.1-0.1 0.1-0.1 0.4 0 0.2-0.1 0.3-0.5-0.1-0.4-0.3-0.4-0.2-0.4 0.1-0.6 0.2-0.3 0.3-0.1 0.5 0.1 0.2 0.1 0.3 0.3 0.2 0.1 0.2 0.1 0.1 0 0.1 0 0.2-0.2 0.1-0.1 0.3-0.2-0.3-0.5-0.6-0.7 0-0.4 0.5-0.8 0.1-0.5 0-0.6 0.2-0.5 0.3-0.4 0.4-0.4 0.7-0.5 0.5-0.4 0.2-0.3 0.1-0.6 0.2-0.3 0.4-0.2 0.5-0.3 0.5-0.7 0.4-0.2 1 0.3 0.5 0 0.6-0.2 0.4-0.2 0.2-0.3 0.5-0.9 0.2-0.2 0.2-0.1 0-0.1 0.1-0.5 0.1-0.1 0-0.3-0.1-0.4-0.1-0.4-0.2-0.3 0-0.3 0-0.3 0.1-0.1 0.5-0.4 0.6-0.6 2.8-4 0.6-0.3 0.7-0.3 3.4-0.6 0.6-0.2 0.6-0.4 0.5-0.3 0.5-0.2 0.5-0.1 2.1 0.1 1.4 0.3 0.8-0.2 4.6-1.8 0.5-0.2 0.4-0.1 0.3-0.3 0.4-0.5 0.2 0 0.4 0 0.1 0 0.2 0.2 0 0.1 0.3 0.9 0.3 0.5 0.7 0.9 0.4 0.3 0.3 0.3 0.3 0 0.4-0.2 3.7-3.7 0.5-0.8 0.4-0.3 0.5-0.3 2.6-1 1.4-0.9 0.9 0 1.3 0.4 0.8 0.2 4.6-0.3 5.5 0.3 1.5-0.2 0.9 0.1 1 0.3 1 0.4 0.6 0.4 0.2 0.2 0.1 0.1 0.2 0.1 0.2 0 0.6 0 0.2-0.1 0.3-0.1 0.1 0 0.3 0.4 0.2 0.2 0.4 0.1 0.2 0 0.8 0.1 0.6 0.2 0.2 0.1 0.2 0.1 0.3-0.1 0.3 0 5.6-3.1 0.3-0.2 0.4-0.5 0.3-0.8 0.2-0.4 0.4-0.3 0.6-0.4 2.6-1 0.2-0.1 0.2-0.4 0.1-0.1 0.3 0 0.1 0 0.1-0.2 0.1-0.1 0.2-0.2 0.3-0.1 0.3-0.2 0.1-0.3 0.2-0.2 0.3-0.3 0.3-0.1 0.3-0.1 0.4-0.1-0.5-1.2-0.2-0.5 0.1-0.4-0.1-0.3-0.3-0.3-0.1-0.1-0.1-0.4 0-0.3-0.1-0.2-0.2-0.3 0-0.2-0.1-0.6-0.1-0.3 0-0.3 0-0.1 0.1-0.3 0.1-0.2 0-0.3 0.1-0.2 0.2-0.3 0.1-0.2 0-0.4 0.1-0.3 0.1-0.2 0.3-0.4 0.2-0.4 0.3-0.2 0.3-0.2 0.1-0.3 0-0.9-0.1-0.6 0-0.3-0.3-0.6-0.1-0.2-0.4-0.3-0.8-0.4-0.2-0.1-0.4 0-0.3-0.1-0.4-0.2-0.2-0.1-0.2 0.1-0.3 0.1-0.3 0.2-0.2 0.3-0.1 0-0.2 0.1-0.3-0.1-0.2-0.2-0.8-1 0-0.2-0.1-0.3 0-0.6 0-0.3 0.1-0.2 0-0.4 0.1-0.3 0.2-0.4 0-0.2 0.2-0.5 0.2-0.1 0.1 0 0.3 0.3 0.5 0.2 0.1 0 0.2-0.2 0-0.1 0-0.2 0.1-0.2 0.2-0.1 0.1-0.1 0.1-0.4-0.1-0.5 0.1-0.1 0.2-0.3 0.1-0.2 0.2-0.1 0-0.1 0.3 0.1 0.1-0.1 0.2-0.4 0.3-0.2 0.2-0.3 0-0.1 0-0.3 0-0.1 0.2 0 0.1 0-0.1-0.3 0.1-0.1 0.2-0.1 0.2-0.3 0.2 0 0.2 0.1 0.1 0 0.2-0.1 0.2-0.2 0-0.1 0.2-0.4 0.1-0.3 0.4-0.3 0.1 0 0.2-0.2 0.4 0 0-0.1 0-0.2-0.4-0.5-0.1-0.2 0-0.2 0.1-0.1 0.1-0.2 0.5-0.5 0.2-0.1 0.2 0 0.2 0.1 0.2 0 0.2-0.1 0.1-0.2 0-0.3 0-0.3-0.2-0.8-0.2-0.5-0.1-0.2-0.1-0.2-0.2-0.9-0.2-0.3-0.2-0.4-0.2-0.3-0.3-1.5-0.4-0.8-0.1-0.2-0.3-0.7-0.2-0.1-0.2-0.2-0.1-0.1-0.2-0.3-0.2-0.2-0.4-0.1-0.2-0.2-0.2-0.3-0.1-0.1-0.3-0.1-0.4-0.1-0.4-0.2-0.2-0.2-0.7-0.8-0.2-0.2-0.2-0.6 0-0.1 0.4-1.8 0-0.2 0.8-0.7 0.2-0.2 0.3-0.6 0.2-0.3 0.4-0.7 0.5-1.2 0.1-0.3 0-0.2-0.3-1.9 0-0.2 0.1-0.3 0.6-1.2 0.1-0.8 0.7-0.3 0.1 0 0.5 0.1 0.3 0.1 0.2-0.1 0.3-0.2 0.1-0.2 0.2-0.3 0.2-0.2 0.3-0.1 0.1-0.2 0.5-1 0.2-0.2 0.1-0.1 0.2 0 0.1 0.2 0.3 0.1 0.3 0.1 0.3-0.1 0.3-0.1 0.2-0.1 0.3-0.2 0.2-0.1 0.3 0 1 0 0.3 0 0.3-0.2 0.2-0.1 0.4 0 0.4-0.1 0.4-0.3 0.1 0 0.4-0.1 0.5-0.3 0.1-0.1 0-0.2 0.1-0.2-0.2-1 0.1-0.6 0-0.2-0.1-0.2-0.3-0.7 0-0.2-0.3-3-0.1-0.2-0.2-0.1-0.5-0.1-0.1 0-0.3-0.3-0.1-0.1-0.1-0.2-0.2-2.7 0-0.2 0.2-0.2 0.2-0.2 0.4-0.4 0.3-0.3 0.3-0.6 0.2-0.2 0.3-0.4 0-0.1-0.1-0.3-0.1-0.3-0.3-0.6-0.1-0.4-0.2-0.3-0.1 0-0.3 0-0.4 0.1-0.1 0 0-0.3 0.7-3.7 0.1-0.2 0-0.2 0.2-0.2 0.3-0.3 0.2-0.2 0.4-0.1 0.2-0.1 0.9-0.1 0.6 0 0.5 0.2 0.2 0.1 2.2 1.1 0.5 0.2 0.1 0 0.2 0 0.2-0.1 0.6-0.4 0.4-0.4 0-0.2-0.1-0.5-0.1-0.7 0-0.5 0-0.2-0.1-0.2-0.2-0.2-0.1-0.2-0.1-0.1 0.1-0.3 0-0.1 0.3-0.5 0.1-0.2 0-0.1-0.1-0.2-0.3-0.5-0.1-0.2-0.1-0.4 0.1-0.3 0-0.1 0.2-0.4 1.2-1.4 0.1 0 0.2 0 0.3 0.1 0.5 0.4 1.8 0.9 0.4 0.2 0.4 0.4 0.6 0.8 0.2 0.3 0.4 1.3 0 0.1 0.2 0.1 0.3 0 0.6 0 0.6 0.1 0.2 0.1 0.4 0.3 0.3 0 0.9-0.2 0.3 0 0.2 0 0.4 0.1 0.1 0.1 0.2-0.1 0.2-0.2 0.2-0.3 0.2-0.3 0.2-0.3 0.6-0.3 0 0.2 0.1 0.3 0.3 0.5 0 0.6 0.1 0.2 0.5 0.8 0.1 0.3-0.1 0.2-0.2 0.4-0.2 0.2-0.3 0.9-0.2 0.8-0.4 1-0.5 0.9-0.2 0.3-0.3 0.6 0 0.2 0.1 0.2 0.1 0.1 0.2 0 0.2-0.1 0.2-0.3 0.3-0.3 1.2-0.5 0.2-0.1 0.3-0.5 0.3-0.3 0.2-0.4 0.2-0.2 0.2-0.1 0.3 0 1.2 0.2 0.3 0.1 1.6 0.2 0.4 0 0.7-0.5 0.8-0.7 0.2-0.3 0.2-0.5 0-0.3 0.1-0.1 0.4-0.3 0.3-0.1 0.4-0.4 0.1-0.2 0.2-0.3 0.2-0.3 0.2-0.2 0.2-0.3 0.2-0.3 0.1-0.1 0.5 0 0.3 0 0.4 0.2 0.2 0 0.6-0.1 0.5-0.1 0.8-0.5 0.6-0.5 0.4-0.4 0.2-0.2 0.4-0.1 0.3-0.1 0.2-0.3 0.5-0.5 0.2-0.5 0.1-0.1 0.8-0.7 0-0.1 0.2-0.3 0.2-0.2 0.3-0.1 0.2-0.1 0.5 0 0.5-0.1 0.2-0.1 0.4 0.1 0.1 0 0.5-0.2 4.9-2.8 0.5-0.4 0-0.1 0.1-0.2 0-0.1 0.3-0.6 0.1-0.4 0.1-0.1 0.3-0.1 0.3-0.1 2.2-1.4 0.4-0.4 0.4-0.3 0.2-0.3 0.2-0.1 0.3-0.1 0.6-0.4 0.6-0.4 0.2-0.1 0.3-0.2 2.2-0.7 1.3-0.7 0.8-0.2 0.2 0 0.2-0.2 0.4-0.3 0.3-0.2 0.2 0 0.4 0.2 0.1 0 0.3-0.1 0.3 0 0.3 0.2 0.2 0 0.1 0 0.2-0.3 0.2-0.1 0.1 0 0.2 0.2 0.2 0.1 0.4 0.3 0.2 0.1 0.2 0 0.3 0 0.2 0 0.1 0.1 0.2 0.1 0.1-0.1 0.2-0.1 0.1 0 0.4 0 0.2 0.1 0.4 0.1 0.4 0.1 0.2 0.1 0.2 0 0.4-0.3 0.1 0 0.3 0 0.3 0.2 0.5 0.4 0.2 0.1 0.5 0 0.4-0.1 0.3 0 0.2 0.1 0.4 0.2 0.2 0.1 0.4-0.1 0.2 0.1 0.2 0.1 0.2 0.2 0.4 0.2 0 0.1-0.7 1.1-0.3 0.8-0.2 0.9-0.5 0.8 0 0.3-0.1 0.3-0.2 0.8 0.1 0.3 0.2 0.4 0.1 0.3 0 0.4-0.1 0.4 0 0.2 0.1 0.3 0.1 0.2 0.3 0.3 0.3 0.2 0.2 0 1.9 0.4 0.2 0.1 0.3 0.2 0.2 0.3 4.8 1.2 1-0.2 0.2-0.1 0.2-0.4 0.2-0.2 0.3-0.2 0.1-0.2 0.1-0.3 0.1-0.2 0.2-0.2 2.3-1.1 0.8-0.2 0.4-0.2 0.4 0 0.8-0.1 0.3 0.1 0.6 0.2 0.6 0.2 1 0.2 0.4 0 0.2 0 1 0.4 0.2 0 0.4 0 0.3 0 0.3 0.2 0.3 0.3 0.3 0.3 0.2 0.6 0.2 0.2 1.8 1.3 0.4 0.4 1 0.8 0.3 0.3 1.1 0.7 0.1 0.1 0.2 0.3 0.1 0.1 0.5 0.3 0.2 0.1 0.2 0 0.3 0 0.8-0.2 0.2 0.1 0.3 0.3 0.8 0.3 0.6 0.4 0.2 0.2 0.2 0.3 0.3 0.2 0.7 0.6 2.8 1.2 0.5 0.3 0.5 0.2 1.2 0.3 0.2 0 0.1-0.1 0.4-0.2 0.1 0 0.1 0 0.2 0.2 0.1 0.2 0.3 0.3 0.5 0.2 0.1 0.1 0.3 0.3 0.2 0.4 0.1 0 0.2 0 0.2 0 0.4-0.2 0.4 0 0.2 0 0.6-0.1 0.3 0 0.7 0.1 0.3 0 0.4-0.2 0.8-0.4 0.4-0.2 0.3-0.3 0.1-0.1 0.5 0 0.3-0.1 0.3-0.1 6.7 6 3.1 2.9 0.7 5.1 0.2 0.6 0.6-0.1 1 0.3 1.1 0.2 0.3 0.1 0.6 0.4 0.4 0 1.1-0.6 0.8-0.2 0.6-0.3 0.8-0.7 0.1-0.2 0.2-0.2 0.4-0.1 0.2-0.1 0.2-0.1 0.2 0 0.2 0.1 0.6 0.4 0.2 0.1 0.4-0.1 0.3 0 0.4-0.2 0.2-0.1 0.4 0.1 0.4 0.2 0.3 0.3 0.5 0.7 0.2 0.1 0.3 0 0.3-0.1 0.4-0.2 0.2-0.1 0.6-0.2 0.2 0 0.3 0.1 0.3 0.1 1.2 0.6 0.2 0.2 0.4 0.8 0.2 0.1 0.2 0 0.4-0.2 0.1 0 0.4-0.1 0.5-0.2 0.2 0 1.8 0.8 0.7 0.2 0.5 0.1 0.5 0 0.3-0.1 0.2 0 1.1 0 0.3 0 0.2 0.2 0.2 0.2 0 0.2-0.1 0.2 0 0.1 0.3 0.2 0.3 0.1 0.2 0 0 0.2 0 0.2 0 0.1 0.1 0.1 0.3 0 0.3-0.1 0.3 0 0.3 0.1 0.3 0.2 0.7 0.5 0.2 0.3 0.2 0.2 0.1 0.3 0.1 0.2 0.3 0.2 0.6 0.4 0.1 0 0.3 0 0.3 0 0.3 0 0.5 0.1 0.2 0.2 0.1 0.4 0.2 0.3 0.2 0.2 0.3 0.3 0.2 0.2 0.1 0.5 0.3 0.5 0.1 0.2 0 0.3-0.1 0.3-0.2 0.1-0.2 0.1-0.1 0.1-0.2 0.3-0.3 0.7-0.1 0.3-0.1 1 0 0.3-0.2 0.6-0.3 0.4-0.1 0.1-0.5 0.5-0.4 0.3-1.6 1-1.7 2.5-0.1 0.3 0.1 0.4-0.1 0.3-0.1 0.1-0.1 0-0.3 0-0.3-0.1-0.2-0.1-0.3 0.1-1.2 0.5-0.2 0.1-0.1 0.2-0.2 0.4 0 0.4 0.1 0.7-0.1 0.9-0.2 1.4 0 0.3 0.1 0.2 0.4 0.4 0.1 0.2 0.2 0.5 0 0.2 0.1 0.3-0.1 0.1-0.2 0.2-0.3 0.2-0.3 0.2-0.2 0.3-0.1 0.1-0.3 0-0.5 0.1-1.7 0-0.8-0.1-0.6-0.3-0.1 0-0.2 0.2-0.2 0.4-0.5 0.5-0.1 0.1-0.1 0.3-0.6 3-0.4 0.9-0.1 0.5 0 0.3 0.2 1 0.1 0.5-0.1 0.4 0 0.2 0.1 0.5-0.1 0.4-0.1 0.2-0.1 0.1-0.3 0.1-0.2 0.2-0.1 0.3-0.1 0.3 0 1.1-0.1 0.6 0 0.1 0 0.2 0.1 0.1 0.3 0.2 0.2 0 0.1-0.1 0.1-0.1 0.2-0.5 0.1-0.2 0.2-0.1 0.3 0 0.2-0.2 0.1 0 0.1 0.1 0.1 0.2-0.1 0.3-0.3 0.4-0.1 0.3 0 0.2 0.1 0.1 0.1 0.1 0.3-0.1 0.2-0.2 0.2 0 0.1 0.1 0.1 0.1 0.1 0.3 0.1 0.4 0 0.2-0.3 0.8-0.1 0.1 0 0.5 0.1 0.5 0.1 0.1 0.1 0.1 0.3 0.1 0.2 0 0.2-0.1 0.3 0 0.3 0 0.3 0 0.1 0.1 0.1 0.2 0.2 0.3 0.2 0.8 0.1 0.2 0.3 0.3 0.9 0.6 0.3 0.2 0.1 0.3 0.1 0.2 0.1 0.3 0.1 0.1 0.3 0.2 0.9 0.4 0.2 0.2 0.6 0.5 0.3 0.6 0.1 0.4 0.1 0.2-0.1 0.5-0.1 0.5-0.2 0.4-0.4 0.4-0.1 0.2-0.1 0.4 0 0.4 0.5 1z" id="BRA601" name="Minas Gerais">
                         </path></a>
-                        <a xlink:title="Mato Grosso" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#MatoGrosso">
+                        <a xlink:title="Mato Grosso" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/mato-grosso/superintendencia-regional-de-mato-grosso" target="blanck">
                         <path d="M532 339.7l-0.6 0.8-0.4 0.9-0.4 1.5 0 0.4-0.2 0.4-0.2 0.4-1.2 1.3-0.2 0.2-0.2 0.5-0.1 0.2-0.1 0.4 0 0.5 0.2 0.9-0.1 0.9-0.3 1-0.5 1-0.5 0.7-0.7 0.6-0.3 0.4-0.1 0.4 0 0.8 0 0.3-0.1 0.2-0.4 0.4-0.1 0.3 0.1 0.5 0 0.3-0.2 0.1-0.1 0.1-0.3 0.8-0.2 0.1-0.2 0-0.2 0.1-0.1 0.2-0.1 0.3-0.1 0.1-0.2 0.4-0.1 0.2 0 0.3 0.3 0.6 0 0.2 0 0.9-0.1 0.4-0.2 0.4 0 0.1-0.4 0.4-0.2 0.3 0 0.3 0.1 0.3 0.2 0.5 0 0.3 0 0.2-0.1 0.3-0.3 0.4-0.1 0.1 0.1 0.2 0.1 0.6 0.2 1.1 0.1 0.4 0.1 0.7-0.1 0.4-0.1 0.1 0 0.1-0.4 0.3-0.2 0.2-0.3 0.6-0.1 0.2 0 1.9-0.1 0.7-0.1 0.1-0.2 0.5-0.1 0.2-0.2 0.3-0.7 2.2 0 0.5-0.1 0.3-0.1 0.4-0.1 0.4 0 0.7 0 0.2 0.2 0.4 0.2 0.3 0.2 0.3 0.2 0.1 0.9 0.5 0.3 0.3 0 0.3-0.1 1-0.1 0.2-0.1 0.2-0.2 0.2-0.2 0.2-0.3 0.3-0.3 0.2-0.1 0.3 0 0.4 0 0.2 0.3 0.4 0.1 0.3 0.1 0.4 0.2 0.7 0.1 0.6 0 0.2 0.1 0.2 0.4 0.1 0.1 0.1 0.1 0.2 0 0.3 0 0.2-0.1 0.1-0.2 0.1-0.1 0.2 0 0.3 0.1 0.2 0.1 0.2-0.1 0.3-0.1 0.2-0.3 0.2-0.1 0.2 0 0.5 0 0.5 0.2 3.4 0.1 0.2 0.2 0.4 0.4 0.3 0.1 0.1 0.3 0.8 0 0.3 0 0.2-0.1 0.4 0.4 2.8 0 0.1-0.1 0.2-0.1 0.1-0.3 0 0 0.2 0 0.2 0 0.4 0 0.3-0.1 0.4-0.1 0.4-0.2 0.4 0 0.3 0 0.1 0.1 0.5-0.1 0.3-0.1 0.1-0.2-0.2-0.2 0.1 0 0.1 0 0.2 0 0.2 0.2 0.1 0.3 0.3 0.4 0.2 0.1 0.2 0.1 0.5 0 0.1 0.2 0.4 0.1 0.4 0.1 0.4 0 0.3-0.1 0.4 0.2 0.4 0 0.3 0.1 0.2 0.4-0.1 0.2 0 0.1 0-0.1 0.2 0 0.1 0.1 0.2 0.2 0.2 0.3 0.1 0.3 0 0.7 0 0.3 0.1 0.1 0.2 0.1 0.3 0 0.3-0.4 1.7-0.1 0.1-0.1 0.3-0.2 0.2-0.1 0.1-0.8 0.5-0.2 0.1-0.1 0.2 0.1 0.2 0.2 0.1 0.1 0.2-0.1 0.2-0.2 0.2-0.3 0.2-0.2 0.1-0.1 0.2 0 0.2 0.2 0.3 0.1 0.2 0 0.3-0.1 0.9 0 0.3 0 0.4 0 0.2 0.2 0.4 0 0.2-0.1 0.4-0.6 1.3-0.3 0.7-0.3 0.4-0.3 0.3-0.3 0.4-0.1 0.3-0.1 0.7-0.1 0.3-0.2 0.2-0.3 0.3-0.1 0.3-0.4 0.6-0.1 0.1-0.3 0.1-0.2 0.2-0.3 0.4-0.1 0.2-0.2 1.4-0.5 1.4-0.1 0.3-0.3 0.2-0.3 0.3-0.1 0.1-0.4 0.1-0.4 0.1-0.1 0.3 0 0.2 0.1 0.4 0.1 0.2 0 1.3 0 0.2 0.1 0.4 0.1 0.4 0.1 0.5-0.2 0.9-0.2 0.8-0.1 0.2 0 0.3 0.1 0.2 0.1 0.4-0.1 0.6 0.1 0.3 0 0.2 0.2 0.3 0.1 0.1 0 0.4-0.1 0.3-0.2 0.1-0.2 0.2-0.7 0.2-0.5-0.1-0.1 0.2 0 0.2 0.1 0.3 0 0.2-0.1 0.3-0.8 1.6-0.3 1.2 0 0.3 0 0.3 0 0.2-0.1 0.3-0.2 0.5-0.1 0.4 0 0.2-0.1 0.4 0 0.2 0.1 0.2 0.1 0.4 0 0.2 0.4 1 0 0.3 0 0.4-0.1 0.3-0.2 0.3-0.1 0.2 0.1 0.3-0.2 0.2-0.1 0.3-0.2 0.5 0 0.2-0.1 0.2-0.5 0.5-0.2 0.2 0 0.6-0.4 0.9-0.2 0.5 0.1 1-0.1 0.4-0.4 0.2-0.2 0.2-0.1 1.5-0.2 0.2-0.5 0.2-0.2 0.2-0.1 0.2-0.1 0.5-0.1 0.2 0 0.1-0.2 0.2-0.3 0.3-0.8 0.3-0.6 0.4-0.4 0.2-0.4 0-0.5-0.1-0.2-0.5-0.1-0.4-0.2-0.4-0.7 0.6-0.4 0.2-0.5 0-0.5 0.1-0.3 0.3-0.6 0.6-0.5 0.3-0.9 0.4-0.4 0.4-0.9 1.4-0.4 0.2-0.4 0.1-0.3 0.3-0.4 0.3-0.2 0.2-0.2 0.5 0.1 0.3 0.1 0.4 0 0.5-0.1 0.2-0.4 0.2-0.1 0.2 0 0.2-0.1 0.3 0 0.3 0 0.2 0.1 0.5 0 0.3-0.1 0.3-0.3 0.4-0.1 0.3-0.1 1.1-0.2 0.4-0.3 0.5-0.5 0.8-0.3 0.2-0.5-0.3-0.2 0.3 0.2 0.5 0.2 0.6 0 0.6-0.2 0.4-0.3 0.5-0.6 1.5-0.8 1-0.3 0.8-0.2 0.3-0.3 0.1-0.4 0-0.3 0-0.3-0.2-0.3-0.1-0.3 0.1 0 0.1 0 0.2-0.1 0.2-0.8 0.7-0.5 0.3-0.5 0.2-2.4 0.1-1 0.2-0.6 0.2-0.2 0.2-0.2 0.2-0.1 0.1-0.2 0.5-1 1.1-0.5 1.2-0.1 0.2-0.2 0-0.4 0.1-0.6 0.4-0.9 0.3-0.3 0.3-0.1 0.4-0.3 0.2-1.2 0.4-0.2 0.2-0.2 0.1-0.1 0.2-0.1 0.2 0.1 1.1 0 0.3-0.1 0.1-0.1 0.2-0.2 0.1-0.3 0.1-1.2 0.4-0.5 0.2-0.4 0.3-0.2 0.1-0.1 0.2-0.1 0.3 0 0.6-0.1 0.5 0.1 0.2 0.1 0.3 0.2 0.3 0.3 0.2 0.4 0.2 0.1 0.1 0.3 0.2-0.2 0.9 0 1-0.1 0.5-0.3 0.3-0.6 0.4-0.3 0.3-0.3 0.4-0.1 0.5 0 0.5-0.2 0.4-0.4 0.5-1 0.8-0.8 0.9-0.4 0.3-0.4 0.3-0.2 0.1-0.9 0.3-1.5 0.8-0.6 0.4-0.7 0.7 0.1 0.4-0.3 1.5-0.2 0.5 0 0.3 0 0.2 0.1 0.4 0 0.2-0.1 0.5-0.2 0.4-0.2 0.4-0.3 0.2-0.2 0.2-0.8 1.2-0.4 0.4-0.1 0.1-0.1 0.6-0.2 0.3-0.2 0.5-0.2 0.3-0.5 0.5-0.2 0.2-0.1 0.4 0.1 1.1 0.1 0.3 0.1 0.2 0 0.3-0.1 0.2-0.1 0.2-0.1 0.2-0.2 0.4-0.2 1 0 0.9 0 0.3-0.2 0.3-0.3 1.2 0 0.6 0.1 0.7 0.2 0.7 1.2 2.2 0.6 0.8 0.2 0.5 0.2 0.7 0.5 1.6 0.9 1.8 0.4 1-0.3 0.1-1.8 0.2-0.9-0.1-0.6-0.2-1.7-0.4-0.4-0.1-2.1 0.2-0.5-0.1-0.2 0.2-0.7 0.1-0.7 0-1.9-0.5-0.5 0-2.8 0.4-0.9-0.2-2.2-1.2-1.7-0.5-0.8 0.1-0.2-0.3 0-0.2 0-0.2 0-0.2 0.2-0.5 0.3-0.4 0.7-0.8 0.2-0.2 0.2-0.7 0.5-0.6 0.2-0.3 0.1-0.7 0.1-0.2 0.2-0.2 0.2-0.2 0.2-0.1 0.9-0.3 0.9-0.2 0.2-0.1 0.1-0.2 0.1-0.2 0.4-2.4 0.3-0.7 0-0.2 0.1-1.6 0.7-2.9 0.1-0.5-0.1-0.5 0-0.2-0.1-0.2-1.3 0.1-0.3 0.2-0.3 0.1-1.1 0.9-0.2 0.3-0.2 0.3-0.1 0.2-0.3 0.6-2.1 2.2-0.6 0.5-1.3 0.7-0.3 0.3-0.2 0.2-0.1 0.3 0 0.2-0.2 0.4-0.2 0.4-0.7 0.7-0.3 0.2-0.4 0.1-0.5-0.1-0.5 0-1 0.3-1.9 0.8-0.4 0.1-0.3 0.1-0.7-0.1-0.2-0.1-0.2-0.2-0.1-0.2-0.1-0.4 0-0.2-0.1-0.5 0-0.2 0-0.2-0.2-0.2-0.2-0.2-1.2-0.7-0.5-0.4-0.4-0.3-0.3-0.1-0.2-0.1-0.8 0.1-0.5-0.1-2 0.3-1.3 0.5-0.3 0.2-0.3 0.2-0.1 0.2-0.2 0.4-0.2 0.3-0.2 0.2-1.9 1.1-0.4 0.1-0.3 0.1-0.7-0.1-0.3 0-2.3 0.6-0.6 0-0.3-0.1-1.4 0.2-2.5-1.3-0.4-0.5-0.3-0.2-0.4-0.3-0.2-0.2-0.6-0.1-0.3-0.1-0.3-0.3-0.9-0.2-1.5-0.7-0.6-0.4-0.2-0.4-0.6-0.7-0.2-0.4-0.1-0.4-0.2-0.3-0.3-0.3-0.5-0.3-0.4-0.2-0.6-0.1-0.7-0.2-0.5 0.1-1.3-0.3-0.3-0.1-0.3-0.2-0.2-0.4-0.2-0.2-0.3-0.2-0.7-0.1-0.7-0.4-1.6-0.4-0.3-0.1-0.2-0.3-0.1-0.1-0.2-0.5-0.2-0.3-0.4-0.3-0.4-0.1-0.9-0.1-0.4 0-0.3 0-0.5 0.2-1.1 0.1-0.5 0.2-0.5 0.2-0.3 0.3-0.8 0.9-0.1 0.1-0.3 0.2-0.3 0.1-0.2-0.1-0.3-0.1-0.2 0.1-0.5 0.4-0.4 0.3-0.3 0.1-0.5 0-0.3 0-0.8-0.3-0.2 0-0.2 0-0.2 0.1-0.3 0.1-3.1 0.2-1.8-0.1-0.2 0-0.5 0.5-0.2 0.1 0 0.2 0 0.2-0.1 0.3-0.1 0.1-0.2 0.1-0.5 0.2-0.2 0.2-0.2 0.2 0 0.2 0.1 0.6 0 0.1-0.1 0.7-0.1 0.2-0.3 0.2-0.3 0.4-0.3 0.4-0.3 0.3-0.4 0.2-0.2 0.2-0.3 0.2-0.5 0.3-0.2 0.2-0.1 0.2 0 0.1 0.1 0.8 0 0.4-0.1 0.1-2.3 2.5-0.3 0.3-0.6 0.2-0.2 0.1-1.6 0.2-0.4 0.2-0.7 0.4-3.7 1-0.3 0.2-0.1 0.1-0.1 0.2-0.4 0.8-0.2 0.4-0.1 0.3 0-0.1-0.1-0.1 0-0.3 0.1-0.4 0.1-0.2-0.1-0.2-0.2-0.3-0.2-0.3-0.2-0.1-0.5 0-0.2-0.1-0.3-0.3-0.3-0.2-0.3-0.2-0.1-0.1-0.4-0.1-0.2-0.1-0.1-0.1 0-0.3 0-0.4 0-0.1-0.1-0.3-0.5-0.6-0.3 0-0.6 0-0.2 0-0.7-0.2-0.2 0.1-0.4-0.1-0.3-0.3-0.3-0.2-0.2-0.3-0.2-0.5 0-0.4 0-0.9-0.1-0.4 0.1-0.5-0.1-0.6-0.2-0.5-0.3-0.4-0.5-0.2-0.4 0-0.5 0.1-0.7 0.2-0.8-0.1-0.9-0.2-0.6-0.3-1-0.8-0.2-0.2-0.8-0.3-0.3-0.2-0.6-0.7-0.3-0.1-0.2-0.1-0.3 0-0.3-0.1-0.3-0.3-0.4-0.8-0.2-0.3-0.2-0.1-0.4-0.1-0.2 0-0.2-0.2-0.4-0.3-0.2-0.1-0.2-0.1-0.7-0.1-0.9-0.5-0.4-0.7-0.1-0.9 0-2-0.1-0.6-0.3-0.4-0.1-0.3-0.1-1.7-0.2-0.4-0.4-0.7-0.2-1.1 0-0.3 0.1-0.2 0.2-0.5 0-0.1-0.1-0.9-0.4-1.8-0.1-1 0.2-0.8 0.3-0.7 2.3-2.6 0.3-0.8-0.5-0.8 0-0.5 0.6-0.4 0.1-0.3-0.2-2.3-0.2-0.2-0.9 0-0.2 0.1-0.3 0.6-0.2 0.2-0.4 0.2-0.5 0.1-5.9-0.2-8.5-0.3-4.3-0.2-4.2-0.1-8.5-0.3-4.3-0.2-1.5-0.1-0.7-0.1-0.4-1-0.4-5.2-0.2-3.4-0.7-8.1-0.2-0.6-0.3-0.5-2.1-2.5-3.9-4.8-1.2-1 6.8-0.1 0.2-0.2-0.2-3.4-0.1-1.9-0.2-5.2-0.3-0.5-1.1-0.8-0.4-0.7 0.7-0.3-0.1-0.9-0.7-1.7-0.4-1.4-0.2-0.4-1.2-1-0.2-0.4 0-0.7 0.1-0.6 0-0.6-0.3-0.5-0.1-0.3 0-0.5 0.1-0.5 0.1-0.4 0.2-0.1 0.5-0.1 0.4-0.4 0.2-0.5 0.3-1 0.2-0.5 0-0.1 0-0.2-0.4-0.2-0.1-0.1 0.1-0.3 0-0.1-0.5-0.4-0.2-0.2-0.2-0.5-0.2-0.6-0.2-0.6 0-0.7-0.2-0.4-0.4-0.2-1.7-0.4-0.2-0.1-0.1-0.1-0.1-0.3-0.1-0.1-0.1-0.1-0.5-0.1-0.8-0.4-1.6-1.3 0.6-0.7 0.8-0.7 3.9-2.7 1.8-0.9 0.3-0.3 0.2-0.3 0.2-0.4 0-0.4 0.1-0.7 0.2-0.7 0.1-0.7 0.1-0.5 0.3-0.5 1.4-2.5 0.2-0.5 0-0.2-0.1-0.7 0-0.2 0.1-0.3 0.3-0.4 0.8-0.8 0.3-0.5 0.2-0.2 0.4-0.4 0.3-0.1 0.3-0.1 1-0.2 0.3-0.1 0.2-0.1 0.3-0.3 0.6-1 0.2-0.3 0.1-0.4 0.1-0.6 0.3-1 0.2-1 0.1-0.3 0.2-0.2 1.8-2 1.5-4 0.4-0.9 0-0.2 0-0.2-0.3-0.6-0.5-0.8-0.5-1.1-0.1-0.5-0.1-0.3 0.1-2.6-0.1-0.3-0.1-0.4-0.8-1.1-0.3-0.9-0.5-1-0.4-1.2-0.2-0.2-0.1-0.1-0.2 0-0.2 0-0.5 0.2-0.2 0-0.3-0.1-0.2-0.3-0.2-0.4-0.1-0.5-0.1-0.3 0-1.1 0-0.2-0.2-0.6-0.1-0.3-0.1-2 0.1-1 0-0.3 0.1-0.2 0.2-0.2 1.4-1.1 0.3-0.2 0.3-0.5 0.3-0.4 0.1-0.2 0.2-0.5 0.1-0.2 0.2-0.2 0.2-0.2 0.3-0.1 0.2-0.2 0.2-0.2 0.1-0.3 0.1-0.2-0.2-0.5-0.9-2-0.2-0.6-0.1-0.5 0-0.3-0.1-0.3-0.4-1-0.2-0.3-0.3-0.1-0.5-0.2-0.5-0.3-0.2-0.1-0.2 0-0.3 0.1-0.2 0-0.7-0.3-0.3 0.1-0.2 0-0.3 0.1-0.2 0.1-0.3 0-0.9-0.2-0.3-0.1-0.7-0.5-0.3-0.1-0.2 0-0.2 0-0.3 0.1-0.6 0.5-0.3 0.1-0.2 0-0.3-0.2-1.1-1-0.2-0.3 0.1-0.3 0-0.3 0.1-0.2-0.2-0.1-23-0.1-0.8-0.2-0.3-0.5 0-0.3 0.3-1.7 0-0.4 0-0.4-0.2-0.9-0.1-0.3 0.1-0.3 0.2-0.1 0.5 0.1 0.1-0.2 0.2-0.2 0.1-0.6 0.1-0.3-0.1-0.3-0.2-0.1-0.4-0.1-0.1-0.1-0.1-0.2 0.2-0.7 0-0.8 0.2-1.2 0.1-1.5 0.2-1.1 0-0.4 0-0.3-0.1-0.3-0.2-0.3-0.2-0.2-0.4-0.5-0.2-0.2-0.9-2.1-0.1-0.3 0-0.4 0.3-0.8 0-0.3-0.2-0.3-0.1-0.2-0.2-0.3-0.1-0.4 0.1-0.8 0-0.4 0.1-0.4 0.3-0.6 0.5-0.9 0.1-0.2 0-0.3-0.1-0.4 0-0.4 0.1-0.4 0.2-0.8 0.1-0.2-0.1-0.3-0.3-0.9 0-0.3-0.1-0.8-0.1-0.4-0.2-0.3-0.1-0.2-0.1-0.2 0-0.1 0.2-0.1 0.5-0.1 0.2-0.1 0.1-0.2 0.3-0.7 0.2-0.3 0.2-0.2 0.1-0.2 0-0.2-0.1-0.2-0.2-0.2-0.2-0.3-0.1-0.3-0.2-0.2-0.1-0.3-0.7-2.3 0.1-0.8 0-0.4-0.1-0.4-0.2-0.3-0.2-0.2-0.5-0.3-0.3-0.2-0.1-0.3 0-0.3 0.1-0.3 0.3-0.6-0.1-0.4 0-0.2 0.1-0.2 0.2-0.2 0.3 0 0.5-0.1 0.2 0 0.2-0.1 0-0.3 0-0.3-0.6-1.6 0-0.3 0-0.4 0-0.3 0.6-2 1-1.9 0-0.2 0-0.2-0.1-0.3-0.2-0.4-0.2-0.4-0.8-0.7-0.8-0.5-0.7-0.5 68.5-0.5 1-0.7 0.4-0.3 0.2-0.3 0.4-1.6 0.2-0.6 0.5-0.7 0.1-0.3 0-0.2-0.1-0.2-0.1-0.4-0.1-0.3-0.2-1.5 0-0.3 0.1-0.2 0.1-0.2 0.6-0.5 0.2-0.2 0.1-0.2 0.2-0.4 0.2-0.9 0.1-0.2 0.3-0.5 0.3-0.4 0.1-0.2 0-0.3-0.1-0.4 0-0.3 0.8-2 0-0.2 0-0.3 0-0.2-0.4-1.8-0.4-1.1-0.6-1.1-0.1-0.2-0.1-0.4-0.1-0.5 0-0.4 0.1-0.5 0.1-0.2 0.1-0.2 0.3-0.5 0.5-0.4 0.6-0.4 0.2-0.2 0.6-1.2 0.1-0.2 0.6-0.7 0.2-0.2 0.1-0.2 0.3-0.7 0.1-0.5 0-0.2 0-0.3-0.3-0.4-0.1-0.4-0.1-0.3 0.1-0.4 0-0.5 0.1-0.2 0.1-0.4 0.2-0.3 0.6-0.5 0.2-0.2 0.4-0.7 0.4-0.4 1.7 1.6 1.8 2.7 0.4 1 0.3 1 0.2 0.3 0.2 0.3 0.4 0.4 0.2 0.4 0.2 0.3 0.3 1.7 0.4 1.1 0.5 1.1 0.1 0.3 0.1 0.7 0.1 0.5 0.2 0.5 0.4 0.6 0.1 0.8 0 0.2 0.2 0.2 0.1 0.3 1.1 1 0.1 0.3 0.2 0.2 0.1 0.5 0.1 0.2 0.2 0.3 1 0.9 0.3 0.4 0.1 0.3-0.3 0.7-0.1 0.6 0 0.2-0.2 0.5-0.1 0.2 0 0.5 0 1 0 0.2-0.1 0.3-0.1 0.4 0 0.3 0.1 0.2 0.4 0.6 0.1 0.4 0 0.4 0 0.2 0.2 0.7 0 0.2-0.1 0.5 0.1 0.3 0.1 0.2 0.2 0.3 0.2 0.2 0.1 0.2 0.2 0.2 0.1 0.5 0.1 0.6 0.1 0.2-0.1 0.5 0.2 0.3 0.2 0.3 1.5 0.4 0.3 0.1 0.4 0.3 0.8 0.7 0.4 0.4 1 0.6 0.2 0.1 0.1 0.2 0.1 0.5 0.1 0.2 1.2 0.9 0.2 0.1 1.6 0.7 0.6 0.3 0.3 0.3 0.2 0.1 1.6 0.7 0.3 0.2 0.1 0.2 0.1 0.2 0.2 1.1 0 1.4 0 0.3 0.1 0.2 0.2 0.2 0.3 0.3 0.7 0.3 0.3 0 0.3 0 0.5-0.1 0.4 0 0.5 0.1 1.6 0.4 0.4 0.3 0.2 0.2 0.2 0.2 0.1 0.2 0.1 0.3 0 0.7 0.3 0.7 0.1 0.2 0.2 0.2 0.3 0.1 0.5 0 0.3-0.1 0.5-0.3 0.2-0.1 0.3 0 0.2 0 0.3 0.2 0.3 0.1 0.2 0.2 1.1 0.2 0.3 0.2 0.7 0.6 1.3 0.6 0.5 0.1 0.2-0.2 30.5 2.3 84.8 5 23.7 1.3z" id="BRA602" name="Mato Grosso">
                         </path></a>
-                        <a xlink:title="Rio Grande do Sul" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#RioGrandeDoSul">
+                        <a xlink:title="Rio Grande do Sul" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/rio-grande-do-sul/superintendencia-regional-do-rio-grande-do-sul" target="blanck">
                         <path d="M543.6 804.2l-2.1 3.1-1.1 2.1-1.7 2.8-1.4 3.3-1.1 1.3-3.6 10-1 3.1-1.4 3.6-6.1 10.1-0.1 0.5-0.2 0.3-2.7 4.2-2.4 2.6-1.2 2-3.4 4.2-2.6 2.7-3.8 3.2-5.4 4.5-6.7 4.1-0.5 0.6-3.2 4-0.9 1.5-0.1 0.1-0.2-0.6 0.2-0.6 0.5-0.9 0.1-0.4 0.2-0.6 0.1-0.6-0.2-0.5-0.3-0.5 0.3-0.3 0.4-0.3 0.3-0.4-0.3-0.8-1.4-1.6 0-0.9 0.9-0.5 1 0.4 1.8 1.2 1 0.1 0.9-0.4 0.5-0.7-0.4-0.8 1.1-0.2 0.9 0.1 0.9-0.1 0.8-0.6 2.4-2.7 0.3-0.7 0.8-0.6 0.1-0.5 0.2-0.6 0.3 0.2 0.6 0.9 0.2-0.1-0.1-0.5-0.2-1 0.1-0.4 0.2-0.6 0.3-0.5 0.3-0.3 0.2 0.8 0.8 0.3 0.9-0.3 0.7-0.4 0.4-0.3 0.7-0.5 0.2-0.2 0.8-1.2 0.7-1.5 0.5-1.9 0.1-2-0.5-1.6 0.1-0.4 0.2-1.1 0-0.4 0.2-0.3 0.4 0.1 0.8 0.3 0.5-0.1 0.6-0.3 0.4-0.1 0.4 0 0.2 0.2 0 1.4 0 0.3 0.2 0 0.3 0 0.1-0.1 0.1-0.2 0.1-0.3 0.1-0.3 0.3-0.1 0.2-0.1 0.1-0.1-0.1-0.3-0.1-0.1-0.3 0.1-0.2-0.1-0.4-0.7 0.2-1 0.4-1.1 0.1-1.1-0.4-0.5-0.1-0.3 0.1-0.1 0.2 0 0.3 0.2 0.3 0 0.5-0.1 0.4-0.2 1.7-1.4 0.9-0.2 0.5-0.2 0.3-0.3 0.3-0.3 0.9-1.7 0.3-2.2-0.3-4.6-0.1-0.5-0.4-1-0.2-0.7-0.1-0.3 0-0.2 0.4-0.2 0.3-0.1 0.1 0.1 0.3 0.4 0.7 0.6 0.1 0.2-0.2 0.3-0.1 0.2 0.1 0.5 0.3 0.5 0.3 0.4 0.4 0.3 0.8-0.6 0.1-0.3 0-0.4-0.2-0.7 0.1-0.3 0.3-0.4 0.4-1.6 0-0.6 0-0.7-0.1-0.4-0.9-0.5-0.1-0.2-0.2-0.6-0.1-0.2-0.3-0.2-0.2-0.1-0.3 0-0.2 0.2-0.6 0.7-0.1 0 0 0.3 0.2 0.1 0.2 0.2 0.1 0.3 0 0.2-0.2 0.4-0.2 0.3-0.5 0.2-1.5-0.1-0.4 0-0.3 0.3-0.1 0.5-1.3-0.1-0.4 0-0.5-0.2-0.4 0.1-0.2 0.5-0.1 0.5-0.1 0.7 0.1 0.5 0.3 0.9-0.5-0.1-1-0.9-0.5-0.2-0.4-0.1-0.3-0.2-0.1-0.5 0-0.4 0.2-0.4 0.1-0.2 0.3-0.4 0-0.2 0-0.4-0.2-0.4-0.3-0.2-0.2 0.2-0.2 0-0.1-0.6-0.5-0.1-0.5 0.1-0.3 0.2-0.1 0.2-0.4-0.2-0.8-0.6 0.1-0.4-0.2-0.3-0.7-0.2-0.2-0.1-0.3 0.1-0.1-0.2 0-0.1 0.4-0.4 0.1-0.2-0.1-0.5-0.3-0.3-0.2-0.2-0.2-0.2 0-0.5 0.3-0.8 0-0.5-0.5 0.2-0.1-0.4 0.1-0.5-0.3-0.2-0.2 0.1-0.1 0.1 0.1 0.2-0.1 0.3-0.4 0.8 0 0.2 0 0.1 0.2 0.2 0.1 0 0 0.2-0.2 0.2 0 0.2 0 0.5-0.1 0.3-0.1 0.2-0.1 0.3 0 0.2 0.1 0.3 0.1 0.3-0.1 0.3-0.4 0.7 0.2-0.1 0.4-0.1 0.3 0 0.1 0.1 0.4 0.6-0.6 0.7 0.2 0.4 0.8 0.3 0.2 0.4 0.2-0.2 0.4-0.5 0.1-0.1 0.2 0.3 0 0.3 0 0.8 0.2 0.6 0.5 0 1.1-0.4 0.5 0 0.1 0.2-0.1 0.3-0.1 0.5-0.1 0.2-0.3 0.2-0.2 0.2-0.2 0-0.1 0-0.3-0.2-0.2-0.1-0.9 0.1-0.6 0.7-0.5 0.9-0.6 2-0.2 1.1-0.1 1.1 0.1 1.2 0.4 1.7 0.1 0.5-0.1 0.7-0.3 0.4-0.3 0-0.4-0.6 0.5-0.2 0-0.7-0.5-1.4-0.2-1.1-0.2-0.2-0.6 0-0.4 0.2-0.2 0.4 0.1 3.1 0.1 0.4 0.2 1 0.1 0.6 0 0.6-0.2 0.2-0.9-0.1-0.6 0.1-0.4 0.1-0.3 0.3-0.2 0.6-0.1 1.1 0 1.2 0.3 1.1 0.6 0.7-2.8 1-0.5 0.1-0.7 0.3-0.4 0.8-0.2 1 0 0.9 0.3 0.3 0 0.2-0.4 0-0.2 0-0.2-0.1-0.3 0-0.2 0.1-0.4 0.2-0.5 0.1-1-0.1-0.4 0.1-0.5 0.1-0.4 0.2-0.4 0.8-0.5 0-0.5-0.1-0.5 0-0.1 0.1-0.1 0.2-0.2 0.2-0.3 0-0.2 0.2 0 0.2 0.1 0.3 0.3 0.1 0.1 0.1-0.2 0.2-0.8 0.6-0.2 0.2-0.1 0.3-0.1 0.5 0.1 1.7 0 0.3-0.1 0.6 0 0.3 0.1 0.3 0.2 0.4 0.1 0.2-0.4 1.3 0 0.4-0.1 0.2-0.2-0.3-0.2-0.5-0.1-0.7 0-0.2-0.2-0.3-0.1-0.1-0.2-0.1-0.2-0.2-0.3 0-0.2 0.1-0.2 0.2 0 0.3 0.1 0.7 0.2 0.1 0.4-0.1 0.3 0.1 0.2 0.4-0.2 0.5-0.3 0.6-0.3 0.4-0.5 0.3-2.4 0.9-0.3 0.4-0.1 0.5 0 0.3 0.2 0.6 0.1 0.1-0.1 0.3-0.1 0.2-0.1 0.3 0 0.3-0.5 0-0.1 0.5 0.3 0.5 0.6-0.3 0.5 0.7 0.1 0.1 0.1 0.1 0.5 0.1 0.1 0.1 0.2 0.2 0.1 0.1 0.1 0.3-0.1 0.2-0.2 0-0.5-0.1-0.2 0.1-0.4 0.3-0.5 0.1-0.4 0.3-0.2 0.4-0.1 1 0 0.5-0.2 0.4 0.7-0.1 0.4 0.2 0 0.3-0.6 0.3 0.5 0.1 0.7-0.1 0.6-0.4 0.3-0.4 0.1-0.3 0.3-0.2 0.4-0.2 0.3 0.1 0.3 0.1 0 0.2-0.4 0.3-1.1 0.7-0.5 0.6 0.3 0.6 0.4-0.1 0.8-1 0.3-0.4-0.3 1.1 0 0.4 0.2 0.8 0 0.4-0.8 0.3-2.2 1.9-0.6 0.8-2.7 5.7-1.5 5-0.6 3.1-3.4 8-0.5 0.9-2.2 3-1.7 2-2.3 2.1-3.8 3.3-2.3 2.5-1.6 1.5-2.5 1.8-0.7 0-0.3-0.3-0.2-0.5-0.2-0.4-0.3-0.3-0.4 0-0.4 0.1-0.5 0-0.6-1.1 0.1-2.4 0 0.8 0.3 0 0.2-0.2 0.1-0.4 0.1-0.4 0.2-0.5 0.3 0 0.2 0.2-0.3 0.2 0.6 0.1 0.3-0.8 0.3-2.1 0-0.5 0-0.6-0.1-0.5-0.2-0.2 0-0.3-0.4-1.7-0.1-0.5 0.1-0.6 0-0.7 0.2-0.2 0.2-0.3 0.3-1.1 0.2-0.5 0.3-0.1 0.5-0.2 0.4-0.2 0.2-0.3 0.1-0.4 0.8-1.3 0.2 0.7 0.2 0.3 0.4 0.1 0.3-0.1 0.3-0.1 0.3-0.5 0.2-0.1 0.3-0.2 0.1-0.1 0.1-0.2 0-0.3 0.1-0.2 0.5-0.6 0.4-0.7 0.2-0.7 0.2-1.6 0-0.7 0.1-0.4 0.3-0.9 0.1-0.4 0.1-0.3 0.2 0.1 0.4 0.3 0.3 0.2 0.1 0 0.3 0 0.6-0.6 0.6-0.8 0.3-0.3 0.3 0.1-0.1 0.4-0.1 0.7 0 0.6 0.4 0.3 1.3 1.6 0.5 0.4 0.4 0.3 0.3 0 0.6 0 0.5 0 0.4-0.2 0.3-0.3 1.1-1.2 0.2-0.5 0.2-1 0.6-1.5 1.5-2.4 0.5-1 0.2-1 0-1.2 0-1.1-0.2-0.9-0.6-0.9-1.5-1.6-0.4-1 0.1-1.1 0.3-1 0.8-1.9-0.3 0-0.8 0.5-0.5 0.1-0.2 0.9-0.2 0.2-0.4 0.1-0.2 0-0.7 1.6-0.3 0.3-0.2 0.1-0.1 0.3 0 0.3 0.1 0.2 0.2 0.1 0.5 0 0.2 0 0.3 0.8-0.8 0.7-2.6 1.1-0.8 0.5-0.5 0.7-0.3 1.1-0.1 0.7 0 0.4-0.2 0.3-0.4 0.4-0.4 0.3-1 0.4-1.5 0.3-0.3 0.3 0 0.1-0.3-0.3-0.3-0.3-0.8-0.3-0.7-0.5-0.7 0-0.4-0.1-1-0.6-1.2-0.4-1.3-1.5-1.4-1-0.6-0.6-0.4-0.6-0.4-0.7-0.2-0.3-0.6-0.5-0.2-0.3-0.1-0.5-0.1-1.3-0.1-0.9-0.3-0.8-1.2-1.6-0.6-1.6 0-0.9-0.2-0.4-0.3-0.2-1.3-0.3-0.6-0.4-0.3-0.2-0.2-0.3-0.2-0.3 0-0.2-0.1-0.3-0.3-0.3-0.6-0.4-0.3-0.2-0.4-0.1-0.7-0.1-0.3-0.1-0.2-0.1-0.2-0.4-0.1-0.2-0.4-0.3-0.4-0.2-0.4 0-0.5 0.1-0.4 0.4-0.2 0.3-0.2 0-0.6-0.4-1.1-1-1.2-0.9-1.5-1.4-0.7-0.8-0.7-0.6-0.7-0.6-0.6-0.5-0.3-0.8-0.1-1.1-0.1-0.5-0.2-0.4-0.3-0.4-1.2-0.9-0.3-0.4-0.4-0.8-0.3-0.3-0.3-0.1-0.8 0-3.7-0.5-0.6-0.3-0.3-0.2-0.3-0.3-0.3-0.3-0.3-0.3-0.9-0.5-0.6-0.6-0.6-0.8-0.4-0.6-0.4-0.5-0.2 0.1-0.5 0.8-0.3 0.5-0.2 0.1-0.4-0.1-0.4-0.2-1.1-1-0.4-0.3-0.9-0.3-0.4-0.2-0.3-0.4-0.2-0.5-0.3-1.1-0.3-0.4-0.7-0.5-0.2-0.2-0.2-0.5-0.1-0.9-0.1-0.4-0.3-0.5-1.7-1.9-1-0.9-0.5-0.7-0.4-0.3-0.8-0.4-0.6-0.8-0.5-0.1-0.5 0.1-0.3 0.4-0.1 0.4 0.1 1.1-0.1 0.5-0.3 0.3-0.5-0.1-0.5-0.1-0.4 0.1-0.3 0.3-0.3 0.9-0.1 0.4-0.4 0.3-1.2 0.8-0.1 0.2-0.2 0.3-0.2 0.1-0.2 0.1-0.5 0-0.7 0.1-1.5-0.1-0.6 0.1-0.2-0.4 0-0.5 0.1-1.2 0-1.7 0.1-0.6 0.4-0.7 0.1-0.8-0.1-0.7-0.4-0.8-1.4-1.2-0.4-0.4-0.7-1.4-0.2-0.2-0.2-0.2-0.4-0.3-0.2-0.2-0.1-0.3-0.1-0.3-0.1-0.2-0.7-0.9-0.5-0.4-0.7-0.4-1.3-1.1-1-0.6-0.3-0.2-0.4-0.5-0.5-0.9-0.4-0.4-1.2-0.7-0.3-0.4-0.3-0.2-0.8-1-0.2-0.3-0.2-0.1-0.2-0.2-0.2 0-0.2 0-0.3-0.1-0.3-0.2 0-0.1 0-0.3 0-0.5-0.3-0.4-0.3-0.3-0.4-0.3-0.7-0.3-1.3-1-0.3-0.2-0.4-0.7-0.8-0.6-0.8 0-0.9 0.2-1-0.3-0.5 0-0.8 0.1-0.2 0.1-0.4 0.2-0.2 0-0.4-0.2-0.3 0-0.5 0.4-0.6 0.7-0.5 0.9-0.2 0.6-0.1 0.8-0.5 0.8-0.6 0.5-0.7 0.1-0.1 0-0.3-0.3-0.2-0.1-0.1 0-0.3 0.4-0.2 0-0.3-0.1-0.2-0.2-0.3-0.2-0.4 0-0.3 0.1-0.5 0.5-0.3 0.1-0.3-0.1-0.3-0.5-0.3-0.2-0.6 0-1 0.2-0.5 0-0.7-0.5-0.5-1.4-0.5-0.5 1-0.2 0.4-0.1 1-0.7 2.1-2.7 1.9-1.5 0.1-0.4 0.3-3 0.3-0.9 0.7-0.6 0.9-0.3 1-0.2 1 0 0.4-0.2 0.4-0.3 1.7-1.8 0.1-0.2 0.2-0.3 0.6-0.7 0.3-0.9 0.3-0.4 0.9-0.7 0.2-0.2 0.1-0.4 1.8-1.5 0.1-0.2 0-0.3 0.1-0.3 0.2-0.3 0.4-0.2 0-0.2 0-0.3 0-0.3 0.2-0.2 0.1-0.2 0.1-0.2 0.3-0.1 0.7-0.4 0.3-0.2 0.4-0.4 0.3-0.4 0.3-1.1 0.3-0.5-0.2-0.3 0-0.4 0.2-0.3 0.1-0.4 0.6-0.9 0.7-0.7 0.8-0.6 0.8-0.4 1.6-0.4 0.3-0.2 0.3-0.5 0.1-0.5 0-1 0.4-1 1.6-0.9 0.5-0.9 0.1-2.2 0.2-0.4 0.5-0.2 1-0.2 0.8-0.5 1.8-2.5 1.4-1 0.4-0.5 0-1 0-0.5 0-0.5 0.2-0.3 0.7-0.2 0.7-0.3 0.7-0.1 0.2-0.1 0.2-0.1 0.1-0.1 0-0.2 0-1.2-0.1-0.2-0.1-0.5 0.4-0.4 1-0.4 0.7 0.2 0.9 0.1 0.8 0.2 0.4 0.4 0 0.6 0.2 0 0.3-0.2 0.2-0.3 0.2-0.3 0.3-1.2-0.3-0.7-0.2-0.3-0.4-0.1-0.3-0.1-0.8-0.4-0.3-0.2-0.1-0.6 0.5-0.4 1.4-0.5 1-0.9 0.2-0.2 0.2-0.2 0.1-0.4 0.3-0.3 0.5 0.1 0.1 0.1 0 0.3 0 0.2 0.3 0 0.2 0 0.1-0.2 0.1-0.2 0.1-0.2 0.1-0.1 0.4-0.3 0.2-0.6 0.1-0.1 0.3-0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.2 0 0.6-0.2 0.1-0.2 1-1.2 0.1-0.2 0.1-0.2 0-0.5 0-0.2 0.1-0.2 0.2 0 0.2 0 0.5-0.2 0.1-0.4 0-0.5 0.4-0.3 0.3-0.1 0.4 0.2 0.3 0 0.2 0 0.8-0.7 0.3-0.4 0.3-0.4 0.4-0.2 0.4 0.1 0.5 0.5 0.4 0.1 0.2-0.7 0.1-0.2 0.2 0 0.5-0.1 0.2-0.1 0.5 0.3 0.3 0 0.1-0.2-0.3-0.6-0.7-0.6-0.2-0.4 0.4-0.2 0.4 0.1 0.4 0.2 0.4 0.2 0.5-0.1 1.2-1.1 0.4-0.1 0.2-0.3 0.1-0.6 0.1-1.1 0-0.9 0.2-0.1 0.5 0 0.5-0.2 0.1-0.5 0.1-0.7 0.2-0.5 0.1-0.2 0.4-0.2 0.2-0.1 0.2 0.2-0.2 0.4 0.1 0.1 0.2 0.3 0.2 0 0.9-0.3 0.2 0 0.5 0 0.2 0 0.2-0.1 0.1-0.2 0-0.5 0.1-0.3 0.1-0.1 0.2 0 0.1 0.1 0.1 0.4 0.3 0.1 0.3-0.3 0.2-0.5 0.1-0.5 0.1-0.2 0.2-0.2 0.2-0.2 0.1 0 0.3 0.1 0.1 0.1 0.2 0.4 0.1 0.2 0.2 0.1 0.2 0 1.5-0.5 0.4-0.2 0-0.4-0.3-0.5 0-0.3 0.4-0.1 0.9 0 0.3 0.1 0.3 0.2 0.1 0.6 0 0.2 0.2 0 0.2-0.2 0.2-0.2 0-0.3 0-0.8 0.3 0.3 0.3 0.4 0.3 0.2 0.4 0 0.1-0.1 0.2-0.2 0.1-0.3 0.1-0.2 0.1-0.2 0.2-0.1 0.3 0 0.2-0.1 0-0.2 0-0.5 0-0.3 0.2-0.1 0.1-0.2 0.6-1.7 0.3-0.5 0.3 0.2 0.1 0.2 0 0.5 0.7 0.3 0.8-0.1 1.6-1.8 0.2-0.5 0.1-0.2 0.2 0 0.2 0.2 0.1 0 0.5-0.1 0-0.2-0.1-0.4 0-0.3 0.3-0.2 0.3 0.2 0.3 0.3 0.3 0 0.3-0.2 0.2-0.8 0.2-0.2 0.3 0.2 0.2 0.4 0.2 0.4 0.2 0.1 0 0.1 0.2 0 0.3-0.2 0.2-0.1 0.5-0.2 0.2 0.1 0.2 0.2 0.1 0.2 0 0.2 0.1 0.1 0.2 0.1 0.3 0 0.2-0.1 0.5-0.3 0.3-0.2 0.1-0.1 0.2 0 0.4 0.3 0.1 0.5 0.1 0.7 0.5-0.1 0.5-0.7 0.4-0.2 0.5 0.1 1.1 0.4 0.3-0.1 0.1-0.4 0-0.6 0-0.6 0.3-0.3 0.3 0 0.1 0.3 0.2 0.2 0.1 0.1 0.2 0 0.3-0.2 0.3-0.1 0.4-0.2 0.3-0.4 0.4-0.8 0.9 0.7 0.4 0.1 0.6 0.1 0.2 0.3-0.3 0.8-0.6 1.1 0.6 0.1 1-0.7 0.6-0.2 0.3 0.1 0.4 0.3 0.2 0.1 0.3-0.2 0.1-0.3 0.2-0.7 0.6 0.6 0.3 0.1 0.5 0 0.4-0.3 0.2-0.4 0-0.4 0.2-0.5 0.3-0.3 0.5-0.1 0.3 0.1 0 0.2-0.3 0.5-0.2 0.2 0 0.3 0.1 0.3 0.2 0 0.3-0.2 0.3 0.3 0 0.4-0.1 0.4-0.3 0.4 0 0.2 0 0.2 0.2 0.2 0.2 0 0.2-0.1 0.1-0.2 0.1-0.3 0.1-0.3 0.4-0.6 0.1 0.2 0 0.5 0.3 0.3 0.4-0.1 0.3-0.4 0.3-0.3 0.3-0.2 0.5 0 0.2 0.5 0.2 0.4 0.4 0.3 0.5 0.1 0.4 0.2 0.7 0.7 0.2-0.3 0.3 0 0.2 0.2 0.1 0.4 0.1 0.3 0.2-0.1 0.2-0.3 0.1-0.2 0.3 0 0.5 0.2 0.4 0 0.3-0.1 0.6-0.2 0.3-0.1 0.4-0.1 0.2 0 0.2 0.2 0.1 0.1 0.6 0.2 0.3 0 0.2-0.3 0-0.2 0.2-0.2 0.1-0.2 0.2-0.2 0.2 0 0 0.3 0.1 0.1 0.1 0.3 0.2 0.5 0.3 0.2 0.1-0.2 0-0.1-0.1-0.3 0.1-0.2 0.1 0 0.2 0.1 0 0.1 0.1 0.3 0.2 0.5 0 0.3 0.2-0.2 0.3-0.1 0.4 0 0.2 0 0.2 0.2 0.1 0.2 0.2 0.1 0.3-0.2-0.2-0.5 0-0.4 0.2-0.2 0.6-0.1 0.5 0.2 0.2 0.2-0.1 0.2-0.5 0.1 0 0.2 0.2 0.5 0.3 0.4 0.3 0.1 0.7-0.8 0.5-0.4 0.2 0.1 0.2 0.5 0.5 0.1 0.5-0.1 0.2 0.2-0.1 0.5 0 0.2 0.3 0.1 1.6-0.1 0.2 0 0 0.3 0.2 0.4 1 0.3 0.3 0.5-0.7-0.1-0.4 0.1-0.3 0.1 1.3 0.8 0.5 0.5-0.6 0.4 0.3 0.1 0.3 0 0.2-0.2 0.2-0.2 0.1 0.4 0.2 0.8 0.2 0.4 0.3 0.2 0.2-0.3 0.2-0.8 0.1 0.1 0.2 0.1 0 0.2-0.2 0.4 0 0.1 0.6 0.2 0.4 0.1 0.7 0-0.2-0.6 0.2-0.3 0.4 0 0.5 0 0.1 0.1 0.2 0.3 0.2 0.2 0.2-0.1 0.3-0.5 0.2-0.2 0.2-0.1 0.3 0.1 0 0.2 0.1 0.2 0.1 0.2 0.3 0.2 0.1 0 0.1-0.2 0.2-0.3 0.2-0.1 0.2 0.3 0.1 0.5 0 0.3 0.1 0.1 0.7-0.3 0.1 0.1-0.1 0.5 0 0.3 0.3 0.3 0.4-0.1 0.4-0.1 0.5-0.1 0.6 0 0.2 0.3 0.1 0.3 0.2 0.6 0.2 0.2 0.4 0.1 0.3 0.1 0.1 0.2 0.1 0.4 0.1 0.2 0.6-0.6 0.4-0.1 0.1 0.4 0.1 0.6 0.4 0.2 0.4 0 0.3 0.2 0.1 0.2-0.1 0.3-0.1 0.3 0.1 0.1 0.4 0.2 0.2 0.2 0.7 0.8 0.3 0.1 0.2 0 0.2-0.1 0.2 0 0.3 0.2 0.6 0.5 0.6 0.2 0.4 0.4 0.5 0.1 0.1 0.1 0 0.2 0.1 0.1 0.5 0.8 0.8 1.7 0.7 0.5 0.4-0.2 0.4 0.3 0.7 0.9 0.6 0.7 0.2 0.4 0 0.5-0.3 0.4 0 0.2 0.3 0.1 0.2 0.1 0 0.3 0 0.4 0.1 0.2 0.3 0.2 0.2-0.1 0.1-0.1 0.2-0.1 0.2 0.1 0.2 0.2 0.2 0.1 0.2-0.1 0.4 0.6 0.5 1.5 0.2 0.5 0.3 0.2 0.6 0.3 0.2 0.2 0.1 0.2 0.3 0.7 0.8 1 0.4 0.7 0.1 0.2 0.2 0.1 0.7 0.2 0.9 0.7 0.3-0.2 0.3-0.1 0.3 0 0.3 0 0.3 0.1 0.4 0.3 0.2 0.1 1.3 0.1 0.6 0.2 0.3 0.4 0.3-0.2 0.3-0.1 2.3 0.3 0.4 0.2 0.5 0.5 0.3 0.2 0.4 0 0-0.3 0-0.5 0.2-0.3 0.3 0 0.1 0.3 0.1 0.3 0.1 0.1 0.2 0 0.4 0.2 0.6 0 0.2 0.1 0.2 0 0.3-0.1 0.5-0.4 0.6-0.3 0.2 0 0.3 0.3 0.2 0.3 0.1 0 0.2-0.2 0.2 0 0.8-0.4 0.3 0 0.2 0.2 0.2 0.4 0.2 0.3 0.2 0.2 0.4 0.1 0.8 0 0.2-0.1 0-0.3 0.1-0.2 0.3-0.1 0.1 0.2 0.2 0.6 0.1 0.3 0.6 0.4 0.1 0.1-0.3 0.3 0 0.1 0 0.4 0.4 0.8-0.1 0.3-0.2 0.2-0.3 0.1-0.3-0.1-0.2-0.2-0.3 0-0.1 0-0.3 0.1-0.2 0.2-0.1 0.1-0.7 1.4-0.2 0.3-0.2 0.2-0.3 0.1-0.4 0.1-0.1 0.1-0.3 0.5-0.1 0.1-0.1 0-0.1-0.1 0-0.3-0.1-0.1-0.2 0.1-0.1 0.3 0 0.3 0.1 0.3 0 0.2-0.1 0.2-0.5 0.3-0.1 0.2 0 0.2-0.2 0.9 0 0.7 0.3 2.4 0 0.2-0.1 0.3-0.3 0.9-0.2 0.6-0.1 0.3-0.5 0.4-0.1 0.3 0.1 0.2 0 0.4 0 0.1-0.1 0.1-0.2 0.1-0.2-0.1-0.1 0.1-0.2 0.2-0.1 0.1-0.1 0-0.1-0.1-0.1-0.3-0.2-0.2-0.1 0-0.1 0.1-0.1 0.2-0.2 0.4-0.1 0.3-0.3 0.4-0.8 0.7-0.4 0.3-0.1 0.1-0.1 0.1 0 0.3 0.1 0.4 0 0.5-0.1 0.7 0 0.4 0 0.1 0.1 0.2 0.3 0.2 0.2 0.1 1.1 0.3 0.2 0.2 0.2 0.1 0.3 0.4 0.2 0.2 0.1 0 0.2-0.1 0.1-0.4 0-0.2 0-0.2-0.1-0.4-0.2-0.2-0.1-0.2-0.8-0.6-0.2-0.2 0-0.1 0.2-0.2 0.2-0.1 1-0.2 0.2-0.1 0.5-0.3 0.2 0 0.4 0 0.1-0.1 0.1-0.4 0.2-0.1 0.6 0 1.3 0.6 0.4 0.3 0.9 1.1 0.4 0.2 0.7 0.2 0.3 0.1 0.2 0.1 0.1 0.2 0 0.3 0.2 0.2 0.3 0z" id="BRA612" name="Rio Grande do Sul">
                         </path></a>
-                        <a xlink:title="Paraná" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Parana">
+                        <a xlink:title="Paraná" oxlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/parana/Superintendencia-Regional-do-Parana" target="blanck">
                         <path d="M575.1 708.6l0.1 0.4 0.3 0-0.5 0.7-0.2-0.2 0.1-0.3 0-0.2-0.3-0.2-0.5-0.1-0.4-0.1-0.4-0.3 0.1-0.4 0.4 0 0.6 0.1 0.5 0.2 0.2 0.4z m0.8-1.2l-0.5 0.3-0.4-0.1-0.3-0.4 0.1-0.4-0.1-0.3-0.4-0.4 0-0.4 0.4-0.6 0.5-0.4 0.7-0.5 0.3 0 0.1 0.4-0.1 0.6-0.3 1 0 0.5 0.3 0.4-0.3 0.3z m4.2-4.2l-0.3 0.5-1.7 1-0.1 0.3-0.5 0.9-0.3 1-0.3 0.1-0.4-0.3-0.2-0.5 0.1-0.4 0.5-1.5 0-0.3 0.1-0.1 0.2-0.3 0.2-0.1 0.4-0.3 1-0.4 0.2-0.3-0.2-0.2-0.3 0.3-0.5 0.2-0.6 0.1-0.4 0.1-0.2 0-0.3 0.4-0.2 0.1-0.2-0.1-0.3-0.4-0.3-0.2 0.1 0.4 0 0.2-0.1 0.2-0.3 0.5-0.2 0.2-0.2 0.2-0.3 0 0.3-0.9-0.2 0-0.2 0.2 0-0.3 0.1-1.2 0.1-0.7 0-0.3-0.3 0.2-0.3 0.3-0.2 0.3 0 0.2-0.2 0 0 0.1 0.1 0.2 0.2 0.1 0.1 0.1 0 0.2-0.1 0-0.1 0-0.1 0.2-0.4-0.2-0.5-0.4-0.2-0.2-0.2-0.5-0.2-0.3 0 0.5-0.2 0-0.1-0.1-0.2-0.2 0.1 0.4 0.5 1.4-0.4 0-0.7 0.2-0.4 0 0 0.2 0.8 0.1 0.3 0.1 0.3 0.3-0.4 0.2-0.1 0.3 0.1 0.2 0.4-0.2 0.1 0.2 0.3 0.4 0 0.2 0 0.4-0.2 0.1-0.3 0-0.2 0-0.2 0.3 0 0.4-0.1 0.3-0.3 0.1-0.3-0.1-0.2-0.1-0.5-0.5-0.2 0.1-0.2 0.1-0.3-0.1-0.2-0.1-0.1 0.3-0.3 0-1-0.3-0.3-0.1-1.1-0.8-0.2-0.2-0.8-1.1-0.3-0.2 0.1 0.4 0.3 1 0.1 0.4 0.1 0.1 0.1 0.1 0.4 0.2 0.2 0.6-0.1 0.2-0.4 0-0.5-0.1 0.4 0.7 0.6 0 0.7-0.1 0.7 0.1 0 0.2-0.1 0.1-0.2-0.1-0.2-0.1-0.1 0.2-0.1 0.2 0.2 0.1 0.4 0.1 0.2 0.1 0.2 0.4 0.3-0.4 0.4-0.1 0.4 0.1 0.8-0.4 0.4 0.3 0.4 0.3 0.4 0.2-0.5 0.5-0.3 0.2 0.5 0.2 0.3-0.2 0.1-0.3 0.2-0.3 0.4 0 0.3 0.1 0.4 0 0.5-0.2 0.5 0.6-0.6 0.6-1 0.7-1.9 3.7 0 0.6-0.4 1.1-0.1 0.1-0.4-0.1-0.3-0.5-0.3-0.1 0.2-0.5-0.3 0.1-0.3 0.1-0.2 0.1-0.2 0.2 0.3 0.1 0.2 0.1 0.2 0.1 0.1 0.3 0.1 0.3 0 0.1-1.6-0.3-2 0.2-0.2 0.1-0.2 0.1-0.2 0.2 0 0.3 0.1 0.2 0.1-0.1 0.2-0.2 0.2-0.1 3.7 0 0.1-0.1 0.1-0.1 0.1 0 0.1 0.4 0.1 0.3-0.1 0.2-0.4 1.5-0.1 0.5-0.6 0.1-0.4-0.1-0.5-0.2-6 0.1-0.2 0.2-0.1 0.3-0.4 0.2-0.4 0.1-0.3-0.1-0.5 0.2-0.5-0.3-0.2 0-0.2 0.3-0.1 0.1-0.1 0-0.4-0.2-0.1 0-0.4 0.2-0.1 0-0.1-0.1-0.1-0.1 0-0.2-0.1-0.2-0.1 0-0.2 0.1-0.2 0.1-0.2 0.1-0.8 0.2-0.4 0.2-0.4 0.2-0.5 0.4-0.4 0.3-0.6 0.9-0.3 0.4-1.8 0.9-1.1 0.4-0.4 0.1-0.3 0.1-0.2 0.2-0.2 0.1-0.1 0.3-0.1 0.5-0.2 0.2-0.5 0.2-0.9 0-0.6-0.1-0.3-0.1-1.6-0.7-1.3-0.8-0.1-0.2-0.1-0.3-0.1-0.2-0.3-0.2-1.5-0.9-0.3-0.3-0.5-0.4-0.3-0.3-0.4-0.3-0.2-0.1-0.2-0.1-0.3 0-0.3 0-0.1-0.1-0.1-0.2-0.1-0.1-0.2 0-0.3 0.1-0.6-0.1-0.3 0.2-0.1 0.1-0.3 0.1-2.1 0.4-0.7 0-0.3 0-0.3 0.2-0.4 0-0.3-0.1-0.4-0.1-0.2-0.1-0.2-0.1-0.6 0-0.3 0-0.3 0.1-0.5 0.3 0 0.1-0.2 0.2 0 0.3 0 0.1 0.1 0.4 0 0.2-0.2 0.1-0.2 0.1-0.3-0.1-0.2-0.2 0-0.1-0.2-0.5-0.1-0.3-0.2-0.1-0.3-0.1-0.7-0.1-0.1 0-0.2-0.2-0.2-0.4-0.1-0.1-0.4-0.1-1.5 0.1-0.2-0.1-0.2-0.1-0.4-0.2-0.2 0-0.1 0 0 0.2 0.1 0.2 0.5 0.2 0.2 0.2 0 0.1-0.2 0.1-0.3 0-1 0.2-0.3 0.1-0.2 0.2-0.4 1.3-0.2 0.6-0.2 0.3-0.4 0.4-0.4 0.6-0.2 0.3-0.1 0.3 0 0.3-0.1 0.1-0.1-0.1-0.2-0.1-0.2-0.1-0.3-0.1-0.1 0-0.3 0.1-0.2 0.1-0.8 0.6-0.1 0-0.2 0.1-0.6-0.2-0.2 0.1-0.2 0.1-0.1 0.3-0.1 0.2-0.1 0.1-0.1-0.1-0.1-0.1 0-0.3-0.1-0.2-0.1-0.2-0.2 0-0.2 0-0.1 0.1-0.3 0.4-0.1 0-0.1 0-0.3-0.4-0.1-0.2-0.2-0.1-0.1 0-0.4 0-0.3 0.2-0.3 0-0.2 0-0.2-0.2-0.2-0.1-0.2 0.1-0.3 0.3-0.2 0.3-0.1 0.2-0.3 0.2-0.3 0.2-1.4 0.4-0.2 0.1-0.2 0.2-0.2 0.3-0.3 0.2-0.3 0.3-0.1 0.3 0 0.6-0.2 0.4-0.4 0.5-0.1 0.1-0.1 0.3 0.1 0.3 0.1 0.2 0.3 0.2 0 0.1 0 0.1 0 0.2-0.2 0.3 0 0.2 0.7 1.3 0.1 0.5 0.1 0.2 0 0.3 0 0.4-0.3 0.6-0.8 0.5-0.3 0.2-0.7 0.1-1.3 0.3-0.2 0.1-0.1 0.1-0.1 0.3-0.1 0.2-0.1 0-0.1-0.1-0.3-0.4-0.1-0.4-0.2-0.3-0.2-0.2-0.3-0.2-0.1 0-0.2-0.2 0-0.2 0-0.3-0.1-0.1-0.1-0.1-0.2-0.1-2.5 0.1-0.2 0-0.1-0.1-0.2-0.3-0.2-0.1-0.2 0-0.2 0.1-0.4 0.2-0.3 0.1-0.3 0.1-3.7-0.1-1.5-0.4-0.5-0.1-0.8 0.1-0.2 0-0.2-0.2-0.4-0.3-1.3-0.9-0.4-0.3-0.2-0.4-0.1-0.2-0.1-0.1-1.1-0.7-0.3-0.1-0.2-0.1-0.1 0-0.5 0.1-0.5-0.1-0.6-0.2-0.6-0.1-0.7 0.1-0.2 0-0.3 0-1-0.3-1.2 0-0.3 0-0.8-0.5-0.9-0.2-1.7 0.1-0.5-0.1 0-0.1-0.2-0.3-0.4-0.2-3.2-1-0.3 0-0.5 0.1-0.2 0-0.4 0.3-0.8 0.2-0.6 0.1-0.3 0-0.1 0-0.3-0.2-0.2-0.1-0.1-0.1-0.2 0-0.1 0.1-1 0.3-1.2 0.1-0.3 0-0.3-0.1-0.1-0.1-0.2-0.2-0.1-0.2-0.2-0.1-0.7-0.3-0.4-0.3-1-0.7-0.2-0.2-0.1-0.1-0.2-0.2-0.3-0.2-1.4-0.4-0.3-0.1-0.3 0-0.2 0.1-1.8 1-0.4 0.1-0.4 0.1-0.5-0.1-0.8-0.4-1.3-0.4-0.2 0-0.3 0-0.3 0.1-0.3-0.1-0.1-1-0.4-0.8-1.1-1.5-0.3-0.8-0.2-0.9-0.2-0.7-0.6-0.7-0.8-0.7-0.2-0.3 0-0.3 0-0.2 0.1-0.2 0-0.3-0.2-1.3 0.1-1.5-0.1-0.4-0.2-0.5-0.2-0.2-0.4-0.4-0.2-0.3 0-0.3 0.1-0.2 0-0.2 0.1-0.2-0.3-0.9-0.2-0.6-0.3-0.2-0.8 0.5-0.5 0.1-0.1-0.7-0.1-0.5-0.1-0.4-0.3-0.4-0.4-0.2-0.3-0.1-0.3 0.2-0.3 0-0.4-0.4-0.2-0.1-0.2 0.2 0 0.3 0.1 0.3 0 0.2-0.1 0.2-0.2 0-0.2-0.2-0.2-0.2-0.1-0.2-0.1-0.5 0.1-0.4 0.2-0.4 0.1-0.5-0.1-0.1-0.1-0.1-0.1 0.1-0.1 0.1-0.6 0.7-0.3 0.1-0.2 0.1-0.5-0.2-0.2 0-0.2 0.1 0.5 0.7 0.1 0.5-0.5 0-0.4-0.1-0.3 0-0.1 0.4-0.2 0.1-0.1-0.2-0.3-0.5-0.2-0.3-0.4-0.1-0.5 0-0.2 0.2-0.4 0.5-0.2 0.1-0.4-0.2-0.2 0-0.2 0.1-0.2 0.2 0 0.3 0 0.2 0 0.2-0.2 0.2-0.4 0.3-0.1 0.2 0 0.2 0.1 0.6-0.1 0.2-0.3 0.1-0.1-0.2-0.1-0.2 0-0.3-0.1-0.5-0.2-0.4-0.4-0.3-0.5-0.2-0.5 0.1-0.1-0.2 0-0.4-0.2-0.3-0.3-0.1-0.9 0.1 0.2-0.6 0-0.6-0.1-0.5-0.3-0.4 0-0.6 0-0.5 0-0.3 1 0.2 0.2 0.1 0-0.2 0-0.5 0-0.2 0.1-0.2 0.2 0 0.4-0.1 0.4 0.1 0.1 0 0.1-0.1 0.2-0.3 0.2-0.1 0.1-0.1 0.2 0.1 0.7 0.2 1.9 0.4-1-0.5-0.5-0.4-0.4-0.4-0.1-0.3-0.3-0.9 0-0.1 0.2-0.3 0.4 0 2.1 0.7 0.4 0.1-0.2-0.2-1-0.7-0.1-0.2 0.1-0.1 0.1-0.1 1.9-0.3 0.4 0 0.5 0.2 0.2 0.1 0.1 0 0.3-0.2 1-0.7-1 0-1-0.1-0.7-0.3-0.2 0-1.4-0.1-0.4-0.1-0.1-0.4-0.1-0.6 0-0.2 0.1-0.5 0-0.1 0.4 0.1 0.3 0.1 0.8 0.1-0.2-0.1-0.6-0.4-0.3-0.4 0.1-0.5 0.2-0.2 0.2-0.1 0.3-0.1 0.3 0 0.6 0.2 0.3 0.1 0.2-0.1 0-0.2-0.1-0.3-0.3-0.2-0.2-0.1-0.3-0.1-0.8-0.1-0.4-0.2-0.5-0.2-0.3-0.4-0.1-0.5 0-0.2-0.1-0.5 0-0.2 0.1-0.3 0.1-0.3 0-0.2 0.7 0.1 0.3 0 0-0.3-0.4-0.6-0.1-0.3 0-0.4 0.2 0 0.1 0.1 0.7 0.4 1 0.9 0.3 0.1 0.2 0.1 0.2 0 0.4-0.1 0.8 0.2 0.3 0-1.1-0.5-0.5-0.3-0.5-0.4-0.6-0.9-0.3-0.5-0.2-0.5 0-0.4 0.1-0.4 0.2-0.3 0.2-0.3 0.3-0.3 0.4-0.2 0.4 0 0.5 0 0.7 0.2 0.3 0 0.5-0.1 0.3-0.1 0.2-0.1-0.4-0.2-1.4-0.6-0.2 0-0.2-0.2-0.4-0.5-0.1-0.1-0.3-1.2 0-0.7 0-1.6 0-0.2 0.2-0.3 0.3-0.4 0.2-0.2 0.1-0.2-0.1-0.9 0-0.3 0.4-0.7 0-0.3-0.1-1 0.2-0.8 0-0.3-0.2-0.1-0.7-0.5-0.2-0.2-0.3-0.5-0.1-0.5-0.1-0.5 0.1-0.6 0.6-1.9 0.1-0.2 0-0.2-0.1-0.1 0.4-0.4 1-0.5 0.4-0.3 0.2-0.3 1.7-0.9 0.5-0.4 0.2-1.1 0-2.2 0.2-1 0.7-1.9 0.2-1.5 1.1-3.6-0.1-0.8 0.1-0.3 0.5-0.4 1.9-0.8 2.4-1.6 0.7-0.8 0.4-0.9 0.7-1.8 0.4-0.9 0.3-1 0.2-2.1 0.3-0.9 0.5-1.5 0.3-0.4 0.7-0.7 1.6-1.1 7-3.1 0.4 0 0.8-0.4 0.2-0.1 1.1-1.1 1.1-0.8 0.3-0.3 0.6-0.3 0.4-0.1 1.2-0.1 0.3 0.1 0.6 0.3 0.4 0.1 1 0 2.2 0.3 0.5-0.1 1.3-0.7 0.7 0.1 0.7 0.6 0.7 0.4 0.9-0.1 0.4-0.1 0.3-0.1 0.9 0 0.5 0.1 1.1 0.3 0.5 0 0.6-0.4 0.2-0.1 0.3 0 0.4 0.3 0.1 0 0.2 0.2 0.1 0.4 0.2 0.2 0.6-0.1 0.4-0.3 0.3-0.6 0.2-0.5 0-0.5 0.3-0.5 0.5-0.3 0.6-0.1 0.5 0 0.9 0.2 0.9 0.4 2.5 1.5 0.4 0.1 0.6 0.1 1.4-0.2 0.5 0.2 0.7 0.7 0.4 0.4 0.3 0 0.5-0.3 0.4 0 0.4 0.2 0.8 0.4 0.4 0.1 0.5 0.1 0.8 0 0.5 0 0.3-0.2 0.2-0.1 0.6-0.3 0.1-0.1 0.1 0 0.3 0 0.4 0 0.5 0 0.2-0.1 0.3 0 0.2 0 0.2 0.1 0.4 0.3 0.7 0.2 0.5 0.3 1.9 1.3 1.5 0.6 2.5 0.6 2.7 0.7 0.2 0.2 0.3 0.2 0.9 1.2 0.2 0.3 0.2 0.6 0.1 0.3 0.2 0.2 0.2 0.1 0.3 0.1 0.3 0.1 0.5-0.1 0.4-0.2 0.3-0.1 0.5-0.4 0.4-0.1 0.6 0 1.9 0.3 0.5 0.1 0.2 0.2 0.2 0.1 1.4-0.2 0.2 0.2 0.5-0.6 0.2-0.2 0.3-0.1 0.4 0.1 0.3 0.2 0.5 0.4 0.2 0.1 0.4 0.2 0.3 0 0.2-0.2 0.1-0.2 0.4 0 0.4 0.1 0.2 0.1 0.6 0.1 1.8-0.2 0.4-0.1 0.2-0.1 1.6-0.5 0.3 0 0.4 0.2 0-0.4 0.2-0.1 0.2 0.1 0.2 0.2 0.1 0.4-0.1 0.6 0.2 0.3 0.7 0.3 0.4 0.2 0.1 0.3-0.1 0.7 0.1 0.2 0.3 0.3 0.3 0.2 0.2 0.1 0.7 0.1 0.2 0.1 0.7 0.4 0.2 0.1 0.5 0.2 0.1 0 0.4 0 0.2 0 0.1 0 0.1 0.2 0 0.3 0 0.2 0.1 0.2 0.1 0.2 0.5 0.4 0.6 0.9 0.7 1.5 0.4 2.2 0.2 1.1-0.1 0.4-0.7 1.9-0.1 0.2-0.1 0.2 0.1 0.2 0.1 0.2 0.2 0.2 0.1 0.1 0.1 0.2 0.1 0.3 0 1 0.1 0.5 0.3 0.6 0.5 0.7 0.2 0.3 0.3 0.3 0.1 0.1 0.1 0.1 0 0.3-0.2 1.2 0 1.1-0.1 0.4 0 0.2-0.2 0.2-0.1 0.2-0.3 0-0.1 0.1-0.1 0.1 0 0.2 0.2 0.4 0.2 0.3 0.1 0 0.3 0.2 0.4 0.6 0.3 0.2 0.2 0 0.2 0 0.1 0.1 0 0.3 0 0.1 0.2 0.3 0.1 0.3 0.1 0.3 0.4 0.5 0.3 0.5 0.3 0.4 0.1 0.1 0.3 0.2 0.2 0.2 0.2 0.3 0.1 0.1 0.2 0.1 0.6 0.2 0.2 0.1 0.3 0.3 0.2 0.3 0.1 0.2 0.1 0.1 0.1 0.3-0.1 0.9 0 0.3-0.1 0.3 0 0.1 0.1 0.2 0.1 0.2 0.4 0.2 0.1 0 0.1 0.3 0.3 1 0.2 0.3 0.2 0.2 0.2 0.1 0.2 0.2 0.4 0.1 0.2 0.2 0.1 0.1 0 0.2-0.1 0.3-0.1 0.2-0.2 0.2-0.2 0.2 0 0.1 0.1 0.2 0.2 0.2 0 0.1-0.1 0.1-0.3 0.3-0.7 0.2-0.2 0.2 0 0.1 0 0.2 0.5 0.4-0.2 0.6 0 0.3 0 0.3-0.1 0.2-0.6 0-0.1 0.2-0.1 0.2 0 0.2 0.1 0.3 0.3 0.6 0.1 0.3-0.1 0.7 0 0.5 0.2 0.3 0.2 0.2 1.5 0.4 0.4 0.1 0.3 0 0.4-0.3 0.5-0.1 1.3 0.3 0.8-0.1 0.6-0.4-0.1-0.9 0.5 0.2 0.7 0.7 0.5 0.1 1.8-0.1 0.6 0-0.1-0.1 0.5-0.1 0.3 0.3 0.4 0.3 0.4 0.2 0.1 0 0.2-0.1 0.5 0.1 0.8-0.1 0.3-0.1 0.1-0.3 0.3 0 0.2 0.7 0.2 0.1 0.2-0.1 0.4-0.3 0.4-0.2 0.3-0.1 0.1 0 0.3 0.1 0.2 0.2 0.3 0.5 0.1 0.2 0.2 0 1.1 0.5 0.2 0 0 0.2-0.1 0.2-0.2 0.6-0.2 0.2-0.1 0.2-0.5 0.2-0.2 0.2 0 0.2 0 0.3 0 0.6 0.1 0.3 0 0.3-0.1 0.1-0.3 0.3-0.1 0.4 0.2 0.8-0.1 0.6-0.1 0.3-0.1 0.1-0.4 0.2-0.1 0.2 0 0.3 0.3 0.8 0.2 0.3 0.6 0.3 0.7 0.3 0.2 0 0.1-0.2 0.2-0.4 0.1-0.2 0.3-0.2 0.2-0.2 0-0.3-0.1-0.4 0-0.1 0-0.2 0.2-0.2 0.2-0.1 0.4-0.3 0.1-0.1 0-0.1 0.2-0.1 0.4 0.3 0.2 0.1 0.4 0 0.2 0.1 0.3 0.2 0.2 0.2 0.1 0.4 0.1 0.1 0.2 0 0.4-0.1 0.3 0 0.2 0.2 0.1 0.4 0.3 0 0.7-0.5 0.5 1.4 0.1 0.5 0 0.1 0.4 1.3 0.1 0.3 0 0.3-0.1 0.3 0 0.1 0.1 0.2 0.1 0.2 0.3 0.2 0.3 0.2 1.3 0.4 0.3 0 0.2-0.1 0.3-0.3 0.2-0.1 0.2 0 0.1 0.1 0.1 0.2-0.2 0.3-0.6 0.8-0.2 0.3-0.1 0.2 0 0.3z" id="BRA613" name="Paraná">
                         </path></a>
-                        <a xlink:title="Santa Catarina" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#SantaCatarina"">
+                        <a xlink:title="Santa Catarina" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/santa-catarina/superintendencia-regional-de-santa-catarina" target="blanck">
                         <path d="M569.8 765.9l-0.2 0-0.3 0 0-0.1 0-1.9 0.1-0.8 0.3-0.6-0.3-0.2 0.2-0.4 0.6-0.6-0.1-0.6-0.3-0.5-0.1-0.4 0.4-0.1 0.3-0.1 0.1-0.1 0.1-0.2 0-0.3 0-0.1-0.2-0.1-0.2-0.1 0-0.2 0.1-0.3 0-0.1 0-0.3-0.4-0.3 0-0.2 0.1-0.3 0.3-0.3 0.2-0.2-0.2-0.4 0.4-0.1 1.2-0.3 0.3-0.2 0.2-0.4 0.4 0.3 0.4 0.5 0.2 0.4 0.1 0.5-0.2 0.5-0.3 0.4-0.1 0.5-0.2 0.3-0.1 0.2 0.1 0.3 0.1 0.6 0 0.3-0.2 0.4-0.3 0.4-0.3 0.4-0.2 0.2-1 1.7 0 0.5 0.3 0.9-0.1 0.4-0.1 0.1-0.5 0.1-0.1 0.2-0.4 0.4-0.1 0.3z m-0.8-35l-0.2-0.1-0.1-0.1-0.5-0.1-0.3-0.6-0.4-0.7-0.3-0.3-0.9-0.7-0.1-0.2 0-0.1 0.4-0.6 0.2-0.2 0.3-0.1 0.4 0 0.1-0.2 0.1-0.3 0.1-0.3 0.5-0.3 0.7-0.2 0.4-0.3-0.1-0.6 0.4-0.4 0.3 0.1 0.4 0.4 0.5 0.8 0 0.2 0.1 0.2-0.1 0.2-0.3 0.4-0.2 0.6-0.6 0.9-0.1 0.6 0 0.2-0.7 0.6 0 0.3-0.1 0.3 0.1 0.6z m-0.1-11l-0.1 0.4-0.4 0.7-0.2 0.4 0.1 0.3 0.2 0.4 0.4 2.2 0 0.4-0.2 0.2-0.6 0.2-0.4 0.1-0.2 0.4-0.2 0.4-0.3 0.2-0.5 0.1-0.5-0.1-0.5-0.2-0.2-0.3-0.1-0.6-0.1-0.4-0.3-0.7-0.1-0.4 0-0.5-0.1-0.2-0.2-0.3-0.1-0.6-0.2 0.1 0 0.5 0.3 0.6-0.2 0.3 0 0.2 0.1 0.3 0.1 0.2 0.4 0.3 0 0.1 0 0.3 0.2 0.5-0.2 0.7 0.1 0.2 0.1 0.3-0.1 0.2-0.2 0.1-0.2 0 0.5 0.7-0.3 0-0.3 0-0.2 0.1-0.1 0.3 0.9 0.1 0.4 0.2 0.2 0.4 0.2 0.3 1.4 0.6 0.2 0.1 0.1 0.3 0.1 0.2 0 0.3 0.1 0.3 0.2 0.2 0.2 0 0.2 0.2-0.1 0.5-1.2 2.5-0.2 1-0.2 1.7 0.1 1.4 0 0.3 0.2 0.2 1 0.8 0.3 0 0.5-0.2 0.2 0.1 0.1 0.2 0 0.3-0.1 0.2-0.4 0.2-0.2 0.4-0.3 0.5-0.1 0.3-0.1 0.3 0.1 0.8 0 0.2 0.2 0.2 0.1 0.2 0 0.1-0.1 0.3-0.1 0.1 0 0.9 0 0.2 0.2 0.3 0.2 0.1 0.3-0.1 0.3 0.5 0 0.5-0.2 0.4-0.2 0.9-0.2 0.2-0.1 0.2 0.5 1.2 0.1 0.2 0.4 0.1 0.3-0.1 0.1-0.2 0.1-0.3 0.2-0.2 0.4-0.2 0.2 0.3 0.2 0.4 0.5 0.1-0.2 0.3-0.1 0.1-0.2 0.1 0.2 0.6 0 0.3-0.1 0.1-0.3 0.1-0.2 0.1-0.2 0-0.2-0.3 0.4-0.1 0-0.2-0.1-0.2-0.3-0.2-0.2 0-0.4 0.3-0.2 0-0.1 0.1-0.8 0.6-0.1 0.2-0.1 0.2-0.1 0.2 0 0.4 0.2 0.9 0.1 0.2 0.8 0.2 0.3 0.3 0.1 0.4 0.1 1.2-0.3-0.4 0-0.1-0.3 0.4 0 0.2 0 0.3-0.1 0.3-0.2 0.1-0.3 0.1-0.2 0.1-0.3 0.2-0.2 0.3-0.2 0.3-0.1 0.5 0.9 2 0.4 0.1 0.3 0.3 0 0.5-0.2 0.4-0.2-0.3-0.4 0.3-0.5 0.5-0.3 0.4 0.2 0.4 0.2 0.4 0.1 0.5 0 0.5 0.1 0.2 0.3 0.4 0 0.2-0.1 0.1-0.2 0.1-0.2 0.2 0.2 0.1 0.1 0.2 0.8 0.9 0.2 0.3 0 0.2-0.4 0.1 0 0.1 0.1 0.3 0.1 0.1 0.2 0 0.2 0.1-0.1 0.4-0.7 1-0.2 0.4-0.2 1.5 0.1 0.5 0.2 0.2 0.1 0.2 0 0.4-0.1 0.2-0.3 0.3-0.1 0.1 0 0.2-0.3 0.8-0.1 1-0.3 1.1 0 0.6 0.4 0.4-0.4 0.5-0.8 0.7-0.1 0.3 0 0.6 0 0.6-0.1 0.2-0.6 0.7-0.1 0.3-0.3 1-0.3 0.6-0.2 0.3 0.1 0.2 0.1 0.3-0.1 0.3-0.2 0.1-0.2-0.1-0.3-0.5-0.3-0.4 0-0.6 0-0.5 0.2-0.4 0.1-0.3-0.1-0.3-0.6-0.6-0.3-0.2-0.3-0.4-0.3-0.1-0.2 0.7 0 0.3 0.2 0.5 0.1 0.3-0.1 0.3-0.2 0.2 0 0.2 0.1 0.2 0.2 0 0.3 0 0.1 0.1 0.1 0.2-0.1 0.2-0.2 0.2-0.1 0.3 0 0.2 0.3 0.4 0.7 0.4 0.3 0.2 0.2 0.2 0.2 0.1 0.2-0.2 0.2-0.1 0.2 0-0.1 0.4-0.2 0.4-0.7 0.9-0.2 0.5-0.2 0.3-0.3 0.1-1 0.1-0.3 0.1-0.6 0.4-0.6 0.2-0.3 0.2-0.5 0.5-1.8 1.1-6.4 5.3-4.7 5.2-3.6 5-0.3 0-0.2-0.2 0-0.3-0.1-0.2-0.2-0.1-0.3-0.1-0.7-0.2-0.4-0.2-0.9-1.1-0.4-0.3-1.3-0.6-0.6 0-0.2 0.1-0.1 0.4-0.1 0.1-0.4 0-0.2 0-0.5 0.3-0.2 0.1-1 0.2-0.2 0.1-0.2 0.2 0 0.1 0.2 0.2 0.8 0.6 0.1 0.2 0.2 0.2 0.1 0.4 0 0.2 0 0.2-0.1 0.4-0.2 0.1-0.1 0-0.2-0.2-0.3-0.4-0.2-0.1-0.2-0.2-1.1-0.3-0.2-0.1-0.3-0.2-0.1-0.2 0-0.1 0-0.4 0.1-0.7 0-0.5-0.1-0.4 0-0.3 0.1-0.1 0.1-0.1 0.4-0.3 0.8-0.7 0.3-0.4 0.1-0.3 0.2-0.4 0.1-0.2 0.1-0.1 0.1 0 0.2 0.2 0.1 0.3 0.1 0.1 0.1 0 0.1-0.1 0.2-0.2 0.1-0.1 0.2 0.1 0.2-0.1 0.1-0.1 0-0.1 0-0.4-0.1-0.2 0.1-0.3 0.5-0.4 0.1-0.3 0.2-0.6 0.3-0.9 0.1-0.3 0-0.2-0.3-2.4 0-0.7 0.2-0.9 0-0.2 0.1-0.2 0.5-0.3 0.1-0.2 0-0.2-0.1-0.3 0-0.3 0.1-0.3 0.2-0.1 0.1 0.1 0 0.3 0.1 0.1 0.1 0 0.1-0.1 0.3-0.5 0.1-0.1 0.4-0.1 0.3-0.1 0.2-0.2 0.2-0.3 0.7-1.4 0.1-0.1 0.2-0.2 0.3-0.1 0.1 0 0.3 0 0.2 0.2 0.3 0.1 0.3-0.1 0.2-0.2 0.1-0.3-0.4-0.8 0-0.4 0-0.1 0.3-0.3-0.1-0.1-0.6-0.4-0.1-0.3-0.2-0.6-0.1-0.2-0.3 0.1-0.1 0.2 0 0.3-0.2 0.1-0.8 0-0.4-0.1-0.2-0.2-0.2-0.3-0.2-0.4-0.2-0.2-0.3 0-0.8 0.4-0.2 0-0.2 0.2-0.1 0-0.2-0.3-0.3-0.3-0.2 0-0.6 0.3-0.5 0.4-0.3 0.1-0.2 0-0.2-0.1-0.6 0-0.4-0.2-0.2 0-0.1-0.1-0.1-0.3-0.1-0.3-0.3 0-0.2 0.3 0 0.5 0 0.3-0.4 0-0.3-0.2-0.5-0.5-0.4-0.2-2.3-0.3-0.3 0.1-0.3 0.2-0.3-0.4-0.6-0.2-1.3-0.1-0.2-0.1-0.4-0.3-0.3-0.1-0.3 0-0.3 0-0.3 0.1-0.3 0.2-0.9-0.7-0.7-0.2-0.2-0.1-0.1-0.2-0.4-0.7-0.8-1-0.3-0.7-0.1-0.2-0.2-0.2-0.6-0.3-0.3-0.2-0.2-0.5-0.5-1.5-0.4-0.6-0.2 0.1-0.2-0.1-0.2-0.2-0.2-0.1-0.2 0.1-0.1 0.1-0.2 0.1-0.3-0.2-0.1-0.2 0-0.4 0-0.3-0.2-0.1-0.3-0.1 0-0.2 0.3-0.4 0-0.5-0.2-0.4-0.6-0.7-0.7-0.9-0.4-0.3-0.4 0.2-0.7-0.5-0.8-1.7-0.5-0.8-0.1-0.1 0-0.2-0.1-0.1-0.5-0.1-0.4-0.4-0.6-0.2-0.6-0.5-0.3-0.2-0.2 0-0.2 0.1-0.2 0-0.3-0.1-0.7-0.8-0.2-0.2-0.4-0.2-0.1-0.1 0.1-0.3 0.1-0.3-0.1-0.2-0.3-0.2-0.4 0-0.4-0.2-0.1-0.6-0.1-0.4-0.4 0.1-0.6 0.6-0.1-0.2-0.1-0.4-0.1-0.2-0.3-0.1-0.4-0.1-0.2-0.2-0.2-0.6-0.1-0.3-0.2-0.3-0.6 0-0.5 0.1-0.4 0.1-0.4 0.1-0.3-0.3 0-0.3 0.1-0.5-0.1-0.1-0.7 0.3-0.1-0.1 0-0.3-0.1-0.5-0.2-0.3-0.2 0.1-0.2 0.3-0.1 0.2-0.1 0-0.3-0.2-0.1-0.2-0.1-0.2 0-0.2-0.3-0.1-0.2 0.1-0.2 0.2-0.3 0.5-0.2 0.1-0.2-0.2-0.2-0.3-0.1-0.1-0.5 0-0.4 0-0.2 0.3 0.2 0.6-0.7 0-0.4-0.1-0.6-0.2 0-0.1 0.2-0.4 0-0.2-0.2-0.1-0.1-0.1-0.2 0.8-0.2 0.3-0.3-0.2-0.2-0.4-0.2-0.8-0.1-0.4-0.2 0.2-0.2 0.2-0.3 0-0.3-0.1 0.6-0.4-0.5-0.5-1.3-0.8 0.3-0.1 0.4-0.1 0.7 0.1-0.3-0.5-1-0.3-0.2-0.4 0-0.3-0.2 0-1.6 0.1-0.3-0.1 0-0.2 0.1-0.5-0.2-0.2-0.5 0.1-0.5-0.1-0.2-0.5-0.2-0.1-0.5 0.4-0.7 0.8-0.3-0.1-0.3-0.4-0.2-0.5 0-0.2 0.5-0.1 0.1-0.2-0.2-0.2-0.5-0.2-0.6 0.1-0.2 0.2 0 0.4 0.2 0.5-0.3 0.2-0.2-0.1-0.1-0.2-0.2-0.2-0.2 0-0.4 0-0.3 0.1-0.2 0.2 0-0.3-0.2-0.5-0.1-0.3 0-0.1-0.2-0.1-0.1 0-0.1 0.2 0.1 0.3 0 0.1-0.1 0.2-0.3-0.2-0.2-0.5-0.1-0.3-0.1-0.1 0-0.3-0.2 0-0.2 0.2-0.1 0.2-0.2 0.2 0 0.2-0.2 0.3-0.3 0-0.6-0.2-0.1-0.1-0.2-0.2-0.2 0-0.4 0.1-0.3 0.1-0.6 0.2-0.3 0.1-0.4 0-0.5-0.2-0.3 0-0.1 0.2-0.2 0.3-0.2 0.1-0.1-0.3-0.1-0.4-0.2-0.2-0.3 0-0.2 0.3-0.7-0.7-0.4-0.2-0.5-0.1-0.4-0.3-0.2-0.4-0.2-0.5-0.5 0-0.3 0.2-0.3 0.3-0.3 0.4-0.4 0.1-0.3-0.3 0-0.5-0.1-0.2-0.4 0.6-0.1 0.3-0.1 0.3-0.1 0.2-0.2 0.1-0.2 0-0.2-0.2 0-0.2 0-0.2 0.3-0.4 0.1-0.4 0-0.4-0.3-0.3-0.3 0.2-0.2 0-0.1-0.3 0-0.3 0.2-0.2 0.3-0.5 0-0.2-0.3-0.1-0.5 0.1-0.3 0.3-0.2 0.5 0 0.4-0.2 0.4-0.4 0.3-0.5 0-0.3-0.1-0.6-0.6-0.2 0.7-0.1 0.3-0.3 0.2-0.2-0.1-0.4-0.3-0.3-0.1-0.6 0.2-1 0.7-0.6-0.1 0.6-1.1 0.3-0.8-0.2-0.3-0.6-0.1-0.4-0.1-0.9-0.7-0.4 0.8-0.3 0.4-0.4 0.2-0.3 0.1-0.3 0.2-0.2 0-0.1-0.1-0.2-0.2-0.1-0.3-0.3 0-0.3 0.3 0 0.6 0 0.6-0.1 0.4-0.3 0.1-1.1-0.4-0.5-0.1-0.4 0.2-0.5 0.7-0.5 0.1-0.1-0.7-0.1-0.5-0.4-0.3-0.2 0-0.1 0.1-0.3 0.2-0.5 0.3-0.2 0.1-0.3 0-0.2-0.1-0.1-0.1 0-0.2-0.1-0.2-0.2-0.2-0.2-0.1-0.5 0.2-0.2 0.1-0.3 0.2-0.2 0 0-0.1 0.2-0.1 0.3-0.5 0-0.2-0.2-0.2 0-0.2 0.1-0.1 0.3-0.2 0.1-0.2 0-0.4 0-0.7 0.1-0.3 0.1-0.1 0.3 0 0.2-0.1 0.1-0.2 1-2.1 0.2-0.9 0.1-0.7-0.3-1.5-0.2-0.9-0.1-0.1-0.3 0-0.1 0 0-0.3 0.2-0.4 0-0.2-0.1-0.1-0.2-0.1-0.2-0.1-0.1-0.3 0-0.3 0.2-0.1 0.2 0 0.2-0.1 0.1-0.5 0.1-0.5-0.1-0.9 0-0.5 0.3-0.8 0-0.4-0.1-0.1-0.1-0.3 0-0.2 0.1-0.2 0.1-0.2 0.3-0.3 0-0.7-0.2-2.4 0.2-0.7 0.9-1.3 0.3-0.9 0.3 0.1 0.3-0.1 0.3 0 0.2 0 1.3 0.4 0.8 0.4 0.5 0.1 0.4-0.1 0.4-0.1 1.8-1 0.2-0.1 0.3 0 0.3 0.1 1.4 0.4 0.3 0.2 0.2 0.2 0.1 0.1 0.2 0.2 1 0.7 0.4 0.3 0.7 0.3 0.2 0.1 0.1 0.2 0.2 0.2 0.1 0.1 0.3 0.1 0.3 0 1.2-0.1 1-0.3 0.1-0.1 0.2 0 0.1 0.1 0.2 0.1 0.3 0.2 0.1 0 0.3 0 0.6-0.1 0.8-0.2 0.4-0.3 0.2 0 0.5-0.1 0.3 0 3.2 1 0.4 0.2 0.2 0.3 0 0.1 0.5 0.1 1.7-0.1 0.9 0.2 0.8 0.5 0.3 0 1.2 0 1 0.3 0.3 0 0.2 0 0.7-0.1 0.6 0.1 0.6 0.2 0.5 0.1 0.5-0.1 0.1 0 0.2 0.1 0.3 0.1 1.1 0.7 0.1 0.1 0.1 0.2 0.2 0.4 0.4 0.3 1.3 0.9 0.4 0.3 0.2 0.2 0.2 0 0.8-0.1 0.5 0.1 1.5 0.4 3.7 0.1 0.3-0.1 0.3-0.1 0.4-0.2 0.2-0.1 0.2 0 0.2 0.1 0.2 0.3 0.1 0.1 0.2 0 2.5-0.1 0.2 0.1 0.1 0.1 0.1 0.1 0 0.3 0 0.2 0.2 0.2 0.1 0 0.3 0.2 0.2 0.2 0.2 0.3 0.1 0.4 0.3 0.4 0.1 0.1 0.1 0 0.1-0.2 0.1-0.3 0.1-0.1 0.2-0.1 1.3-0.3 0.7-0.1 0.3-0.2 0.8-0.5 0.3-0.6 0-0.4 0-0.3-0.1-0.2-0.1-0.5-0.7-1.3 0-0.2 0.2-0.3 0-0.2 0-0.1 0-0.1-0.3-0.2-0.1-0.2-0.1-0.3 0.1-0.3 0.1-0.1 0.4-0.5 0.2-0.4 0-0.6 0.1-0.3 0.3-0.3 0.3-0.2 0.2-0.3 0.2-0.2 0.2-0.1 1.4-0.4 0.3-0.2 0.3-0.2 0.1-0.2 0.2-0.3 0.3-0.3 0.2-0.1 0.2 0.1 0.2 0.2 0.2 0 0.3 0 0.3-0.2 0.4 0 0.1 0 0.2 0.1 0.1 0.2 0.3 0.4 0.1 0 0.1 0 0.3-0.4 0.1-0.1 0.2 0 0.2 0 0.1 0.2 0.1 0.2 0 0.3 0.1 0.1 0.1 0.1 0.1-0.1 0.1-0.2 0.1-0.3 0.2-0.1 0.2-0.1 0.6 0.2 0.2-0.1 0.1 0 0.8-0.6 0.2-0.1 0.3-0.1 0.1 0 0.3 0.1 0.2 0.1 0.2 0.1 0.1 0.1 0.1-0.1 0-0.3 0.1-0.3 0.2-0.3 0.4-0.6 0.4-0.4 0.2-0.3 0.2-0.6 0.4-1.3 0.2-0.2 0.3-0.1 1-0.2 0.3 0 0.2-0.1 0-0.1-0.2-0.2-0.5-0.2-0.1-0.2 0-0.2 0.1 0 0.2 0 0.4 0.2 0.2 0.1 0.2 0.1 1.5-0.1 0.4 0.1 0.1 0.1 0.2 0.4 0.2 0.2 0.1 0 0.7 0.1 0.3 0.1 0.2 0.1 0.1 0.3 0.2 0.5 0 0.1 0.2 0.2 0.3 0.1 0.2-0.1 0.2-0.1 0-0.2-0.1-0.4 0-0.1 0-0.3 0.2-0.2 0-0.1 0.5-0.3 0.3-0.1 0.3 0 0.6 0 0.2 0.1 0.2 0.1 0.4 0.1 0.3 0.1 0.4 0 0.3-0.2 0.3 0 0.7 0 2.1-0.4 0.3-0.1 0.1-0.1 0.3-0.2 0.6 0.1 0.3-0.1 0.2 0 0.1 0.1 0.1 0.2 0.1 0.1 0.3 0 0.3 0 0.2 0.1 0.2 0.1 0.4 0.3 0.3 0.3 0.5 0.4 0.3 0.3 1.5 0.9 0.3 0.2 0.1 0.2 0.1 0.3 0.1 0.2 1.3 0.8 1.6 0.7 0.3 0.1 0.6 0.1 0.9 0 0.5-0.2 0.2-0.2 0.1-0.5 0.1-0.3 0.2-0.1 0.2-0.2 0.3-0.1 0.4-0.1 1.1-0.4 1.8-0.9 0.3-0.4 0.6-0.9 0.4-0.3 0.5-0.4 0.4-0.2 0.4-0.2 0.8-0.2 0.2-0.1 0.2-0.1 0.2-0.1 0.1 0 0.1 0.2 0 0.2 0.1 0.1 0.1 0.1 0.1 0 0.4-0.2 0.1 0 0.4 0.2 0.1 0 0.1-0.1 0.2-0.3 0.2 0 0.5 0.3 0.5-0.2 0.3 0.1 0.4-0.1 0.4-0.2 0.1-0.3 0.2-0.2 6-0.1 0.5 0.2 0.4 0.1 0.6-0.1z" id="BRA614" name="Santa Catarina">
                         </path></a>
-                        <a xlink:title="Ceará" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Ceara">
+                        <a xlink:title="Ceará" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/ceara/superintendencia-regional-do-ceara" target="blanck">
                         <path d="M822.2 226.8l-6.8 2.2-1 0.4-0.2 0.2-2.8 2.4-0.2 0.2-1.6 3.6-2.6 5.2-0.1 0.2-1.7 2-0.4 0.4-0.3 0.2-0.4 0.5-0.7 1.7-0.1 0.4 0 0.1 0.2 0.8-0.1 0.3-0.5 0.7-0.5 0.8-0.1 0.2 0 0.2 0 0.5 0 0.3-0.3 0.3-2.5 2.6-0.2 0.4-0.2 0.3-0.1 0.3-0.2 0.2-0.3 0.3-0.9 0.3-0.4 0.1-0.3 0-0.1-0.1-0.5-0.4-0.2-0.1-0.2-0.1-0.2 0-0.4 0.2-0.4 0.3-0.5 0.6-0.3 0.3-0.2 0.5 0 0.3-0.1 0.3-0.1 0.2-0.6 0.3-0.1 0.3-0.1 0.4 0 0.2-0.2 0.2-0.3 0.2-0.2 0.2-0.1 0.2-0.1 0.3 0.1 0.5-0.1 0.6 0 0.3 0 0.3-0.1 0.2-0.3 0.3-0.1 0.1 0.1 0.2 0.2 0.1 0.1 0.1 0.3 0 0.3 0 0.4-0.2 0.5-0.3-0.1 0.6-0.1 0.2-0.3 0.4-0.3 0.4-0.4 0.6-1.3 4.1-0.2 0.3 0 0.4 0 0.2 0 0.3 0.2 0.2 0.2 0.3 0.2 0.2 0 0.2 0 0.3-0.1 0.2-0.2 0.2-0.4 1.1-0.2 0.2-0.3 0.3-0.5 0.3-0.4 0.2-0.3 0.2-0.3 0.5-0.1 1 0 0.3 0.1 0.4 0.2 0.3 0.1 0.1 0.4 0.1 0.2 0.1 0.2 0.2 0.1 0.1 0.1 0.3 0.2 0.4 0.1 0.5 0 0.3 0 0.3-0.2 0.8 0 0.3 0.2 0.3 0.2 0.1 0.3 0.1 0.2 0 0.2 0.1 0.2 0.1 0.2 0.5 0.1 0.2 0.1 0.1 0.2 0.1 0.3 0.1 0.5 0 0.2 0.1 0.1 0.2 0 0.3 0.3 0.8 0 0.3-0.1 0.3 0 0.3-0.2 0.3-0.1 0.2-0.4 0.5-0.2 0.7-0.2 0.4-0.4 0.4-0.5 0.2-0.2 0.1 0.1 0.2 0.1 0.6 0 0.2-0.1 0.3-0.2 0.4-0.4 0.5-0.3 0.2-0.6 0.4-0.1 0.2-0.1 0.2 0 0.1 0.2 0.3-0.7 0.3-0.2 0.1-0.3 0.5-0.2 0-0.2 0-0.3-0.1-0.5 0.1-0.2 0.1-0.1 0.1-0.2 0.2-0.1 0.2 0 0.5-0.1 0.1-0.2 0.1-0.1-0.2-0.1-0.1-0.2 0-0.2 0.2-0.3 0.4-0.5 0.5-0.2 0.3-0.4 0.7-0.2 0.4-0.3 0.4-0.3 0.4-0.1 0-0.1 0-0.1-0.1-0.2-0.5-0.1 0-0.3 0-0.3 0.2-0.6 0.4-0.3 0.1-0.2 0-0.2-0.2 0-0.2-0.5-1.7-0.1-0.2-0.3-0.3-0.2-0.1-0.7-0.4-1.9-0.8-0.4-0.2-1-1.1-0.1-0.2-0.2-0.7-0.2-0.3-0.2-0.3-0.1-0.1-0.1-0.1-0.5-0.1-0.3-0.1-0.8-0.2-0.9-0.7-0.3-0.1-0.2-0.1-0.8-0.2-0.3-0.1-0.4-0.4-0.6-0.5-1.2-1.1-0.5-0.3-4.3-0.6-1.8 0.2-0.5 0.1-1.2 0.5-0.9 0.4-0.4 0.2-2 0.2-0.5 0-1.9-0.6-0.5 0-0.3 0-5.4 0 0.1-1.5 0-0.2-0.1-0.4-0.2-0.1-0.2-0.3-0.2-0.4-0.3-0.7-0.1-0.5 0-0.3 1.6-4.3 0.1-0.2 1.5-2.1 0.1-0.2 0.4-0.9 0-0.3 0.1-0.3 0-0.2-0.1-0.2-0.1-0.1-0.2-0.1-0.2-0.2-0.1-0.1-0.2-0.4-0.2-0.6-0.2-0.1-0.2-0.1-3.1-0.6-0.3-0.1-0.5-0.4-0.9-0.3-0.4-0.2-0.2-0.3 0-0.2 0.1-1-0.1-0.5-0.4-0.8-0.7-1-0.3-0.6-0.3-1.6 0-0.4 0.1-0.8 0.1-0.4-0.1-0.6 0-0.4-0.2-0.3-0.1-0.3-1.3-4-0.1-0.4-0.5-1 0-0.3 0.2-0.6 0.1-0.2 0-0.3-0.4-1.1-0.3-3-0.3-1.3 0-0.6 0.2-1.5-0.1-0.3-0.5-2.3 0-1.2 0-0.4-0.2-0.3-0.2-0.2-0.7-0.3-0.3-0.4-0.5-0.2-0.3-0.5-0.5-0.5-0.2-0.3 0-0.8 0.2-0.7 0.1-0.8-0.1-0.8-0.4-0.7-0.3-0.6-0.2-0.6-0.3-0.5 0-0.6-0.2-0.7-0.3-0.4-0.7-0.7-0.3-0.4-0.1-0.5 0.1-0.9 0-1.4-0.2-0.5-0.2-0.4-0.6-1.1-0.1-0.8 0.1-0.8-0.2-0.5-0.2-0.3 0.1-0.7 0.1-0.6 0-0.5 0.2-0.4 0.7-1.1 0.6-0.4 0.7-0.6 0.4-0.5 0.6-1 0.4-0.7-0.3-1.6-0.1-0.5-0.6-1.3-0.4-0.3-0.4-0.4-0.6-0.4-0.4-0.7-0.7-1.1-0.4-2.4-0.4-1.4-0.2-0.7-0.2-0.8-0.3-0.5-0.5-0.6-0.8-1.1-0.3-1-0.1-0.8-0.2-0.8-0.1-0.4-0.5-1.2-0.4-0.7-0.2-0.5-0.3-0.7 0-0.7 0.2-0.7 0.1-0.6 0.2-0.7 0.5-0.5 0.6-0.6 2.8-4.3 0-0.2 0.1-1 0-0.2 0.1 0 0.1-0.6-0.1-0.3-0.3-0.5-0.1-0.5-0.4-0.3-0.1-0.3-0.3 0.1-0.1 0-0.3-0.1 0.4-0.1 0.6-0.4 0.3-0.1 1.3 0 0.7 0.1 0.7 0.2 0.6 0.2 0.5 0.4 0.1 0 0-0.2-0.1-0.3-0.3-0.4 0.3 0.2 0.1 0 3.2-0.3 0.3 0 0.4 0.1 0.2 0 0.2 0 0.1-0.2 0.2-0.1 0.6 0 0.2 0.1 0.1 0.4 0.2 0 0.2-0.3 1.1-0.5 0.4-0.2 3.8-0.3 1.2-0.5 0.4-0.1 0.1 0 0.1-0.3 0.2 0 0.3 0.2 1.7 0.3 2.9 0 1.9 0.3 0.3 0.1 0.4 0.4 0.3 0.1 0.2-0.1 0.2-0.2 0.1-0.1 0.3 0.1 0.2-0.1 0.4 0.1 0.3 0.2 0.4 0.1 1.1 0 0.3 0 1.9 1.2 0.6 0.2 0.3 0.1 1.2 1.2 0.2 0.1 0.3 0.1 0.4 0.2 0.5 0.4 0.4 0.4-0.1 0.2 0.1 0.1 0.3 0.1 0.2 0-0.2-0.3 0.3-0.2 0.4 0.1 0.9 0.4 0.1 0 0.4 0 0.1 0 0.1 0.4 0.9 0.7 1.6 0.9 0.3 0.4 2 0.8 0.2 0.1 0.2 0 0.4-0.1 0.1 0.1 0.3 0.3 0.5 0.1 0.7 0.6 0.2 0 0.1 0 0.1 0.1 0.2 0.3 1.5 1 0.6 0.6 0.2 0.1 0.3 0.1 0.4 0 0.2 0.1 0.4 0.3 0.2 0.3 0.2 0.3 0.5 0.2 1 0 0.3 0.1 0.3 0.2 0.6 0.5 0.4 0.5 0.6 1.4 0.4-0.1 0.3 0.2 0.3 0.2 0.3 0.3 1.1 0.3 0.4 0.6 0.6 0.6 0.7 0.5 0.6 0.2 0.2 0.1 0.6 0.8 0.2 0.1 1.5 0.4 1.5 0.6 0.7 0 0.4-0.5 0.2 0.2 0.2 0.3 0.5 0.9 0.6 0.7 0.1 0.4 0.2 0.7 0.2 0.3 0.2 0.4 1.3 1.1 0.2 0.2 1.1 0.5 0.2 0.2 1.4 2 1.9 2.4 1.7 1.8 2.1 1.6 0.3 0.1 1.5 1.4 0.4 0.2 0.5 0.1 0.5 0.1 0.5 0.1 1.3 2.6 0.6 0.8 0.8 0.6 0.9 0.7 1 0.5 0.6 0.2 0.2-0.2 0.3-0.2 0.6 0.2 1.3 0.7 2.3 0.8 0.7 0.5 0.4 0.5 0.9 2z" id="BRA621" name="Ceará">
                         </path></a>
-                        <a xlink:title="Piauí" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Piaui">
+                        <a xlink:title="Piauí" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/piaui/superintendencia-regional-do-piaui" target="blanck">
                         <path d="M732.6 186.1l0 0.2-0.1 1 0 0.2-2.8 4.3-0.6 0.6-0.5 0.5-0.2 0.7-0.1 0.6-0.2 0.7 0 0.7 0.3 0.7 0.2 0.5 0.4 0.7 0.5 1.2 0.1 0.4 0.2 0.8 0.1 0.8 0.3 1 0.8 1.1 0.5 0.6 0.3 0.5 0.2 0.8 0.2 0.7 0.4 1.4 0.4 2.4 0.7 1.1 0.4 0.7 0.6 0.4 0.4 0.4 0.4 0.3 0.6 1.3 0.1 0.5 0.3 1.6-0.4 0.7-0.6 1-0.4 0.5-0.7 0.6-0.6 0.4-0.7 1.1-0.2 0.4 0 0.5-0.1 0.6-0.1 0.7 0.2 0.3 0.2 0.5-0.1 0.8 0.1 0.8 0.6 1.1 0.2 0.4 0.2 0.5 0 1.4-0.1 0.9 0.1 0.5 0.3 0.4 0.7 0.7 0.3 0.4 0.2 0.7 0 0.6 0.3 0.5 0.2 0.6 0.3 0.6 0.4 0.7 0.1 0.8-0.1 0.8-0.2 0.7 0 0.8 0.2 0.3 0.5 0.5 0.3 0.5 0.5 0.2 0.3 0.4 0.7 0.3 0.2 0.2 0.2 0.3 0 0.4 0 1.2 0.5 2.3 0.1 0.3-0.2 1.5 0 0.6 0.3 1.3 0.3 3 0.4 1.1 0 0.3-0.1 0.2-0.2 0.6 0 0.3 0.5 1 0.1 0.4 1.3 4 0.1 0.3 0.2 0.3 0 0.4 0.1 0.6-0.1 0.4-0.1 0.8 0 0.4 0.3 1.6 0.3 0.6 0.7 1 0.4 0.8 0.1 0.5-0.1 1 0 0.2 0.2 0.3 0.4 0.2 0.9 0.3 0.5 0.4 0.3 0.1 3.1 0.6 0.2 0.1 0.2 0.1 0.2 0.6 0.2 0.4 0.1 0.1 0.2 0.2 0.2 0.1 0.1 0.1 0.1 0.2 0 0.2-0.1 0.3 0 0.3-0.4 0.9-0.1 0.2-1.5 2.1-0.1 0.2-1.6 4.3 0 0.3 0.1 0.5 0.3 0.7 0.2 0.4 0.2 0.3 0.2 0.1 0.1 0.4 0 0.2-0.1 1.5-2.5 0.2-0.1 0-0.5 0.3-0.2 0.1-0.1 0.3-0.1 1.1 0 0.1 0.1 0.5 0 0.1 0.9 1.7 0.5 0.6 0.1 0.5 0 0.2 0 0.6-0.1 0.3-0.2 0.3-0.2 0.4-0.3 0.5-0.1 0.3 0 0.2 0.2 0.2 0.1 0.1 1.3 0.6 0.4 0.2 0.5 0.4 0.1 0.1 0.2 0.4 0.1 1.3-0.1 2-0.2 0.8-0.7 1.6-0.2 0.3-0.1 0.2-0.2 0.2-0.3 0.1-0.2 0.1-0.5 0.5-0.4 0.4-0.4 0.5-0.1 0.1-1.4 0.8-0.1 0.2-0.5 1-0.6 0.4-0.2 0.2-0.2 0.5-0.1 0.3-0.1 0.1-0.2 0-0.2-0.1-0.4-0.2-0.2-0.1-0.2 0-0.1 0.1 0 0.1-0.2 0.6 0 0.5-0.1 0.2-0.2 0.3-0.2 0.1-0.1 0.1-0.4-0.2-0.9-0.2-0.4 0-0.4 0.1-0.2 0.1-0.1 0.1-0.1 0.3-0.2 0.3-0.3 0.4-0.2 0.2 0 0.1-0.1 0.4-0.1 0.2-0.2 0.2-0.1 0.1-0.3 0.1-0.5 0.1-0.5 0.1-0.3 0.2-0.4 0.7-0.2 0.4-0.1 0.3-0.2 0.3-0.2 0.2-1.6 0.9-2 0.9-0.3 0.6-0.3 1-0.2 0.3-0.2 0.2-0.2 0.2-0.2 0.4-0.8 0.7-0.1 0.2-0.4 1.1-0.1 0.2-0.1 0.1-0.7 0.4-0.1 0.1-0.3 0.2-0.2 0.2-0.1 0-0.3 0-0.5-0.2-0.2 0-0.3 0-0.9 0.3-0.2 0-0.8-0.1-0.5 0.1-0.1 0.1-0.2 0.1-0.1 0.2 0 0.2 0.2 1.1 0 1.2 0.1 0.3 0 0.3-0.1 0.2-0.1 0.2-0.1 0.1-1 0.3-0.1 0.1-0.2 0.3-0.5 1-0.2 0.2-0.3 0.3-0.3 0.1-0.2-0.1-0.2-0.2-0.1-0.3-0.2-0.2-0.3-0.2-0.2 0-0.3 0-0.3 0.2-0.2 0-0.2 0-0.3-0.1-0.2-0.2-0.2 0-0.2 0.1-0.2 0.2-0.1 0-0.2-0.1-0.1-0.2-0.2 0-0.1 0-0.3 0.1-0.2 0.2-0.2 0.3-0.6 0.8-0.3 0.2-0.6 0.2-0.2 0.2-2.6 0.5-0.1 0-0.3-0.1-0.3-0.1-0.3 0-0.2 0-0.2 0.2-0.2 0.1-0.2 0.3-0.1 0.2-0.2 0.5-0.1 0.1-0.1 0.1-0.4 0.2-0.6 0.3-0.2 0.1-0.2 0.1-0.2 0.3-0.5 0.8-0.1 0.2-0.2 0.1-0.1 0.2 0 0.2-0.1 0.2 0 0.1-0.4 0-1.1-0.2-0.2-0.1-0.3 0-0.2 0-0.1 0.1-0.1 0.2-0.3 0.9-0.2 0.5-0.2 0.1-0.1 0-0.4-0.2-0.1-0.1-0.4-0.4-0.1-0.1-0.2 0-0.9-0.2-0.7 0-0.6 0.1-0.4 0-0.3 0.1-0.2 0.1-0.2 0.1-0.2 0.2-0.2 0-1.1-0.5-0.5-0.2-0.3-0.1-0.1-0.2-0.1-0.2 0.1-0.2 0.1-0.3 0.1-0.3-0.1-0.2-0.2-0.1-0.5-0.1-0.3-0.2-0.2 0-0.2 0-0.4 0.1-0.2 0-0.1-0.1-0.1-0.2 0-0.4-0.2-0.2-0.1-0.1-1-0.2-0.5-0.2-0.4-0.1-0.3 0.1-0.5 0.3-0.1 0.1-0.2 0.4-0.1 0.2-0.3 0-0.1-0.1-0.3-0.2-0.4 0-0.4 0-0.3 0-0.6 0-0.2 0-0.2 0.1-0.3 0.1-0.1 0.2-0.2 0.1-0.3 0-0.3 0-0.2-0.2-0.2-0.2-0.5-1.5-0.1-0.1-0.3-0.2-0.6-0.6-0.2-0.1-0.2 0.1-0.3 0.2-0.2 0.1-0.1 0.2-0.1 0.3-0.1 0.2-0.2 0.2-0.3 0-0.3 0-0.4-0.1-0.4-0.2-0.7-0.2-0.2 0-0.3 0.1-0.4 0.3-0.3 0.2-0.2 0.4-0.1 0.3-0.2 0.8-0.1 0.2-0.2 0.2-0.2 0-0.2 0-0.9-0.3-0.5-0.1-0.8 0-0.3 0.1-0.1 0.3-0.1 0.7 0.1 0.5 0.1 0.1 0.3 0.5 0.1 0.1 0.3 0.4 0.3 0.3 0.1 0.3 0.6 2 0.1 0.5 0.1 0.6 0 0.3 0.1 0.3 0.2 0.2 0.7 0.5 0.2 0.3 0.1 0.4 0.1 1-0.1 0.5-0.1 0.3-0.5 1.1-0.1 0.3 0 0.2 0.2 0.5 0.1 0.3 0 0.4 0 0.3-0.1 0.5-0.1 0.3-0.2 0.3-0.8 0.9 0 0.1-0.1 0.3 0 0.2 0 0.7 0 0.1-0.2 0.3-0.3 0.2-0.3 0.1-0.2 0.3-0.1 0.3-0.1 0.4-0.8 1.2-0.3 0.6-0.1 0.7-0.1 0.2-0.3 0.2-0.4 0.2-0.1 0.1 0 0.2-0.1 0.7-0.1 0.3-0.2 0.2-0.3 0.2-0.2 0-0.2 0-0.2-0.1-0.4 0.1-0.2 0.1-2.5 2.7-0.4 0.4-0.3 0.3-0.2 0.1-1.7 0.5-0.1 0-0.4-0.1-1.5-0.6-2.2-0.2-0.3 0-0.4 0.3-0.6 0.3-0.7 0.2-0.7 0.1-0.2 0-0.3 0.2-0.1 0-0.4 0.6-0.2 0.2-0.2 0.1-0.3 0.1-0.3 0.1-0.2 0.2-0.2 0.5-0.1 0.2-0.2 0.2-0.2 0.1-0.2 0.1-0.6 0.2-0.9 0.3-0.2 0.1-0.2 0.3-0.7 1.7-0.2 0.2-0.2 0.1-0.3 0.1-0.2 0.1-0.3 0-0.4 0-1.8-0.4-0.2 0-0.8 0.2-0.4 0.1-0.3 0.2-0.2 0.2-0.2 0-0.3 0.1-0.3 0-0.2-0.1-1.2-0.5-0.5-0.2-0.9-0.6-0.5-0.3-1-0.2-0.7-0.6-0.3-0.1-0.2 0-0.3 0-0.1-0.1-0.2-0.1-0.2-0.4-0.9-1.6-1.3-1.5-0.1-0.1-0.4-0.9 0-0.2-0.1-0.8 0-0.5-0.2-0.5-0.2-0.5-0.8-1.2-1.4-1.5-0.3-0.2-0.2-0.2-0.7 0-2.8 0-1.5 0.1-2.7-0.4 0-0.8 0-0.4 0.2-0.7 0-0.5 0-0.1-0.2-0.4-0.1-0.2 0.1-0.4 1.1-1.8 0-0.4-0.1-0.5 0.1-0.4 0.2-0.2 0.7-0.4 0.1-0.7-0.2-1.6 0.1-1.5 0.2-0.7 0.4-0.6-0.3-0.8 0-1.1 0.2-1.9-0.1-1.1 0.1-0.5 0.2-0.3 0.2-0.2 0.2-0.4 0.2-0.4 0.1-0.4-0.1-0.7-0.1-0.5-0.3-0.3-0.2-0.4-0.2-0.1-0.6-0.3-0.7-0.7-0.3-0.7 0-2 0-0.2-0.1-0.2 0.1-0.1 0-0.2-0.2-0.2-0.2-0.3-0.1-0.3-0.1-0.5 0-1.6-0.1-0.5-0.1-0.3-0.7-1.3-0.1-0.6 0-0.6 0.3-0.6 0.2-0.5 0.4-0.2-0.1-0.6 0.3-0.7 0.5-0.4 0.3 0 0.2-0.2 0.1-0.3 0.1-0.2 0.4-0.4 0.6-0.3 0.2-0.2 0.3-0.5 0.2-0.9 0.2-0.3 0.6-0.4 0-0.2-0.4-0.2 0-0.1 0.7-0.5 0.3-1 0.1-1.9 0.4-0.8 0.3-0.4 0.2-0.2 0.1-0.2 0.6-1.2 0.1-0.2-0.1-0.5 0-0.2 0.1-0.3 0.1-0.1 0.1-0.1 0.4-0.4 0.3-0.2 0.1-0.1 0.3-0.9 0.3-0.4 0.2-0.2 0.3-1.7 0-1.1 0.1-0.1 0.2-0.2 0.1-0.1 0-0.2-0.2-0.1-0.1-0.2 0.2-0.2 0-0.1-0.2-0.3 0.1-0.3 0.1-0.4 0-0.4 0.1 0.2 0.2-0.8 0-0.1-0.2-0.2 0.1-0.2 0.2-0.1 0-0.1 0.1-0.4 0.4-1.1 0.3-1.6 0.5-0.9 0.8-0.7 1.9-1 1.2-1 0.4-0.1 1.4-0.1 1-0.3 1.6-0.6 1.7-0.3 0.3-0.1 1.5-0.7 0.8-0.3 0.2-0.2 0-0.3 0.1-0.2 0.3 0 0.3 0 0.1-0.3 0.1-0.2 1-0.6 0.3 0.2 0.3 0.1 0.3-0.1 0.2-0.2 0.3 0 0.3 0.2 0.5 0.5 0.4-0.1 0.2-0.2 0.2-0.7 0.2-0.4 0.3-0.3 0.7-0.4 0.2 0.1 0.3-0.3 0.6-1.1 1.1-0.6 0.1-0.2 0.5-0.7 1.1-0.7 1.2-0.5 0.6 0 0.3-0.3 0.4 0 0.8 0 0.2-0.2 0.2-0.4 0.6-1.8 0.2-0.1 0.2 0 0.2-0.1 0.6-0.5 0.1-0.2 0.3-0.6 0.3-0.2 0.1-0.1 0.1-0.2 0-0.5 0.1-0.2 0.4-0.1 0.4-0.5 0.2-0.1 0.2 0 0.3 0 0-0.3-0.2-0.2-0.2-0.1 0.1-0.2 0.2-0.1 0.2-0.1 0.6 0.4 0.1-0.2 0.1-0.7 0.1-0.3 0.2-0.1 0.7-0.1 0.3-0.1 0.2-0.1 0.3-0.4 0.2 0.1 0.1 0.2 0.1 0.2 0.4 0 0.8-0.2 0.5-0.2 0.5-0.2 0.4-0.1 0.2-0.1 0.3-0.3 0.1-0.1 0.2-0.1 0.3 0.1 1.7-0.2 0.8 0.1 0.7 0.2-0.1 0 1.2 0.7 0.1 0.2 0.1 0 0.5-0.1 0.1 0.1 0.1 0.2 0.2 0.5 0.1 0.1 0.4 0.1 0.2 0.1 0.2 0.1 0.4 0.6 0.2 0.1 0.2 0.2 0.2 0 0.9 0.1 0.2-0.1 0.4-0.2 0.2-0.3 0.4-0.3 0.5-0.1 1 0 0.4-0.1 0.5-0.2 0.8-0.6 0.6-0.1 0.5 0.2 0.5 0.3 0.4 0 0.4-0.1 0.5-0.1 0.5-0.2 0.3 0 0.4 0.1 0.5 0.1 0.5-0.2 0.4-0.3 1.2-1.4 0.2-0.4 0.1-0.4 0-0.5 0-0.3 0.1-0.2 0.4-0.3 0.1-0.2 0.1-0.5 0.1-1.3 0-0.1 0.3-0.1 0.1-0.2 0-0.3-0.2-0.5-0.1-0.2 0.3-1.4 0.1-0.2 0.5-0.4 0-0.3-0.3 0-0.1-0.2 0-1.7-0.3-0.3-1-0.3-0.3-0.2-0.4-0.4-0.1-0.1-0.3-0.1-0.2-0.1-0.1-0.2-0.2-0.3-0.2-0.4-0.2-0.4-0.1-0.1-0.2-0.1-0.5-0.1-0.2-0.1-0.3-0.3-0.3-0.7-0.2-0.3 0.3-0.4 0.1-0.4-0.1-0.4-0.6-0.8-0.2-0.4-0.1-0.5 0-0.4 0.1-0.2 0.2-0.5 0-0.2-0.2-0.5-0.2-1.6 0.1-0.4 0.2-0.3 0.1-0.2 0.1-0.1 0.1-0.4-0.1-0.1-0.2-0.3 0-0.2 0.1-0.2 0-0.1-0.1-0.4-0.1-0.3-0.1-0.3 0.3-0.4 0.2 0 0.4 0 0.2-0.1 0.1-0.2 0.3-0.4 0.3-0.2 1-2 0.1-0.1 0.6-0.6 0.1-0.3 0.5-0.7 0.2-0.3 1.4-1.1 0.4-0.6 0-1 0-0.5 0-0.2 0-0.3 0.2-0.2 0.4-0.5 0-0.3 0-0.4-0.6-1-0.1-0.4 0-1.4-0.1-0.4-0.3-0.8-0.1-0.4 0-0.3 0.1-0.4-0.1-0.2-0.1-0.2-0.4-0.2-0.1-0.2-0.2-0.7-0.3-0.9-0.2-0.3-0.4-0.2-0.3-0.2-0.1-0.4 0.1-0.4 0.2-0.3 0.2-0.3-0.1-0.5-0.3-0.7-0.1-0.5 0.5-0.2 0.4-0.2 0.3-0.6 0.5-1 0.2-1 0.1-0.6-0.1-0.3-0.3-0.5-0.2-0.9-0.2-0.4-0.3-0.2-0.3-0.2-0.3-0.1-0.3 0.2-0.3-0.4-0.2-1-0.3-0.5 0.1-0.3-0.2-1.1 0.2-0.5 0.9-1 0.4-0.3 0.4-0.1 0.1-0.1 0.2-0.2 0.4-0.7 0-0.1 0.3-0.4 0.1-0.1 0.1-0.8 0.1-0.2 0.2-0.4 1.1-1.1 0.1-0.2 0.1-0.2 0.1-0.2 0.3-0.1 0.7-0.4 0.1-0.3 0.2-0.4 0.2-0.5 0.1-0.4 0.1-0.5 0.6-0.7 0.2-0.3-0.1-1.7-0.1-0.3 0.2-0.6 0.8-1.2 1.3-1 0.3-0.5 0.5-1 0.4-0.4 0.1-0.1 0.2-0.6 0.1-0.1 0.2 0 0.2 0.2 0.1 0.2 0.2 0.2 0.3 0 0.4-0.2 0.2-0.1 0.3 0 0.4 0 0.3 0 0.2-0.2 0.2-0.1 0.3 0 0.6-0.2 1 0.1 0.4-0.1 0.3-0.1 0.7-0.1 0.9-0.7 1.7-2.2 0.1-0.2-0.1-0.2-0.3-0.2-0.1-0.2 0.3-0.1 2.2-0.7 0.3-0.2 0.3-0.7 0.1-0.1 0.1-0.1 0.4 0 0.1-0.2 0-0.1 0.3-1 0.3-0.4 0.6-0.3 0.3-0.3 0.4-0.6 0.5-0.4 0.1-0.3 0-0.5 0.1-0.4 0.3-0.3 0.1-0.3 0-0.4-0.2-0.2-0.6-0.4-0.2-0.2 0-0.4-0.2-0.7-0.1-0.4 0.3 0.1 0.2-1.2 0.1-0.4 0.3-0.1 0.2-0.1 0.3-0.3 0.7 0.8 1.9 1.2 0.6 0.5 0.2 0.3-0.5-0.3-0.1 0 0.1 0.3-0.4-0.2 0 0.2 0.2 0.1 0.3 0.1 0.2 0 0.3-0.2 0.3 0.3 0.3 0.3 0.5 0.1 1.9 0.1 0.6-0.1 0.6-0.3 0.2 0.2 0.2 0.2-0.1 0.2-0.2 0.3 0.3 0-0.1 0.2 0 0.1 0.2 0 0.2-0.1-0.2-0.5 0.4-0.1 1.8 0.2 0.2 0.1 0.1 0.2 0 0.2 0 0.1-0.3 0.1 0.1 0.1 0.4 0.2 0.1-0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.2 0 0-0.3 0.4 0.4 0.4 0.5 0.2 0.2z" id="BRA622" name="Piauí">
                         </path></a>
-                        <a xlink:title="Alagoas" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Alagoas">
+                        <a xlink:title="Alagoas" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/alagoas/superintendencia-regional-de-alagoas" target="blanck">
                         <path d="M868.8 318.6l-0.9 1.8-1 1.3-0.6 1.5-0.6 0.9-0.4 0.8-1.9 2.6-0.5 0.4 0-0.2-0.6 0.3-0.5 0.4-0.4 0.5-0.2 0.5-0.1 0.3-1.8 2.7-0.2 0.2-1.1 0.7-0.6 0.3-0.4 0.8-0.4 1.4-0.3 0-0.2 0.1-0.6 0.1-0.2 0-0.2 0.1-0.4 0.3 0.4-0.5 0.3-0.4 0.1-0.4-0.5-0.7-0.1-0.2-0.3-0.3-0.3-0.1-0.3 0.3 0 0.2 0.4 0.5 0 0.3 0 0.6 0 0.3-0.2 0.1-0.1 0-1 1-0.1 0.1-0.3-0.4-0.2-0.4 0-0.3-0.7-1.1 0.1-0.3-0.3-0.4-0.5-0.1-0.5 0.2 0.3 0.4 0.6 0.4 0.3 0.3 0.2 0.3 0.5 1.7 0.1 0.2 0.3 0.1 0.1-0.1 0-0.2 0.1-0.1 0.7-0.2 0.3-0.1-0.1 0.3-1.1 1.2-0.5 1.4-0.5 0.5-1 0.8-0.5 1.1-0.2 0.2-0.2 0.2-0.3 0.3-0.7 1.6-0.3 0.3-0.9 0.3-1.2 1.5-2.4 2.1-0.7 0.7-0.2 0.4 0 0.5 0 0.5 0 0.2-2.6 3.4-0.2-0.5-0.2-1-0.2-0.2-0.5-0.4-0.1-0.1-1.3 0.3-0.8 0.1-0.2-0.3 0-0.5 0.1-0.8-0.1-0.4-0.2-0.5-0.3-0.4-0.8-0.9-0.3-0.1-0.4 0.1-0.4 0.4-0.2 0.1-0.1-0.1-0.9-0.3-0.6-0.5-0.3-0.2-0.8-0.2-0.5-0.1-0.2-0.3-0.1-0.3-0.3-0.5-0.4-0.4-0.3-0.2-0.8-0.3-0.3-0.2-0.1-0.4-0.1-1.9-0.2-0.4-0.3-0.5-0.5-0.2-0.4 0.1-0.4 0.2-0.5-0.1-0.4-0.3-1.3-1.1-0.6-0.3-0.8-0.2-0.3 0-0.2 0.1-0.2 0-0.3-0.2-0.1-0.2-0.2-0.4-0.2-0.2-1.1-1.1-0.5-0.3-0.8-0.4-1.8-0.5-0.7-0.4-0.5 0.2-0.6 0-0.6-0.2-0.5-0.2-1.2-0.8-0.6-0.3-0.6-0.7-0.6-0.2-1.5-0.1-0.5 0.1-0.3-0.6-0.7-0.4-0.7-0.2-0.3-0.4-0.3-0.2-2-0.5-0.3-0.2-0.2-0.3-0.1-0.4 0-0.4-0.2-0.1-1.2-0.5-0.3-0.1-0.4-0.2-0.4-0.1-0.8 0-0.2-0.1-0.3-0.1-0.2-0.1-0.2-0.2-0.1-0.4-0.7-1.4 1-0.7 0.8-0.8 0.5-0.9 0.4-0.5 0.3-0.3 0.2-0.1 2.1-0.6 0.7-0.4 0.7-1.1 0.8-0.8 0.8-0.6 0.7-0.5 0.2-0.4 0.2-0.3 0-0.3 0-0.3 0-0.3 0.1-0.6 0-0.4 0.2-0.2 0.7-0.5 0.2-0.1 0.3 0.1 0.4 0.4 0.1 0.2 0.2 0.4 0.4 0.5 0 0.2 0.1 0.2 0 0.3 0.1 0.2 0.1 0.2 0.3 0.1 0.3 0.1 0.4 0 0.3-0.1 0.9-0.7 0.3-0.1 0.3-0.1 0.5 0 0.4 0 0.4 0.5 0.2 0.5 0.2 0.2 0.2 0.2 0.6 0.2 0.2 0.1 1 0.5 4.7 4.6 1.3 0.6 0.2 0.1 1.4 0.2 0.6 0.2 0.6 0.3 0.8 0.8 0.2 0.2 0.3 0.1 0.8-1.4 0.6-0.5 0.5-0.1 0.5 0 4 0.3 0.3 0 0.2 0.1 0.6 0.2 0.3 0.1 0.3-0.1 0.2-0.2 0.2-0.2 0.5-0.3 0.7-0.4 0.8-0.5 0.4-0.2 0.3-0.1 2.1-0.2 1.8-1.3 0.1-0.3 0.2-0.4 0.1-0.4 0.2-0.2 2.6-1.6 0.1-0.2 0.1-0.1 0-0.2-0.2-0.3 0-0.2 0.2-0.1 0.5-0.2 0.5-0.5 1.2-0.9 0.4-0.1 0.3 0.3 0.2 0.1 0.3-0.1 1.1-0.5 0.6-0.1 1.1-0.1 0.4-0.1 0.3 0 0.1 0.2 0 0.2 0.1 0.2 0.2 0.1 0.4 0.1 0.6 0.3 0.4 0.1 0.3-0.1 0.2-0.1 1.6-0.9 0.4-0.2 2.2-0.6 0.5-0.1 0.4 0 0.1 0.4 0.1 0.2 0.2 0.1 0.8 0.2 0.6 0.3 2 0 2.2 0.4 0.6 0 0.2 0 0.4 0.2z" id="BRA623" name="Alagoas">
                         </path></a>
-                        <a xlink:title="Bahia" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Bahia">
+                        <a xlink:title="Bahia" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/bahia/superintendencia-regional-da-bahia" target="blanck">
                         <path d="M784.9 420.5l0.2 1.5 0 0.4-0.4 0.3 0.1 0.3-0.1 0.3-0.2 0.3-0.1 0.3-0.1 0.5 0 0.2 0.4 0.3 0 0.3 0.2 0.2 0 0.1 0 0.4 0.2 0.2 0.1 0.2-0.2 0.7-0.2 0-0.2-0.1 0-0.3-0.4 0-0.3 0.1-0.1-0.6-0.5-0.7-0.2-0.6 0.1-0.4 0.1-0.2 0-0.7 0.1-0.2 0.1-0.2 0-0.1-0.2-0.2-1.1-0.4-0.4-0.3 0.3-0.4-0.2-0.4 0-0.4 0.2-0.3 0.4-0.1 0.3 0 0.4 0.1 0.4 0.1 0.5-0.1 0.6-0.2 0.2 0.1z m6.5-10.6l0.5 0.9 0.1 0.5-0.4 0.2-0.4 0.1-0.4 0.3-0.8 0.7-0.9 0.7-0.4 0.4-0.4 0.5-0.4 0.2-0.1 0.1-0.1 0.2-0.1 0 0-0.4-0.2-1 0.1-0.4 0.1-0.2 0.6-0.3 0.6-0.4 1.4-1.3 0-0.1-0.2-0.1-0.1-0.1 0-0.1 0.1-0.2 0.2 0.2 0-0.4-0.2-0.4-0.3-0.3-0.1-0.3 0.3-0.2 0.9 0.4 0.4 0.3 0.2 0.5z m8.5-81.8l0.7 1.4 0.1 0.4 0.2 0.2 0.2 0.1 0.3 0.1 0.2 0.1 0.8 0 0.4 0.1 0.4 0.2 0.3 0.1 1.2 0.5 0.2 0.1 0 0.4 0.1 0.4 0.2 0.3-0.3 0.2-0.2 0.2 0 0.4-0.1 0.2-0.3 0.4-0.1 0.2-0.1 0.2 0 0.2 0.1 0.3 0.3 0.1 0.2 0.1 0.4 0.1 0.1 0 0.1 0.2 0 0.1-0.3 0.4-0.2 0.7-0.2 0.3-0.1 0.2 0 0.2 0.1 0.3 0.5 0.9 0.8 2 0.2 0.2 0.3 0.3 0.3 0.1 0.5 0.1 0.1 0.1 0 0.2 0 0.2 0 0.3 0.1 0.2 1.1 1.1 0.3 0.2 0.2 0.2 0.1 0.1 0.9 1.4 0.2 0.4 0 0.3 0 1.2 0 1-0.2 2.1-0.2 0.7-0.2 0.3-0.2 0.3-0.1 0.2-0.2 0.5-0.2 0.2-0.1 0.3 0 0.2 0.5 1.5-0.1 0.7-0.1 0.7-0.1 0.2 0.1 0.3 0.1 0.2 0.1 0.2 0.5 0.2 0.1 0.2 0.1 0.2 0 0.3-0.1 0.3-0.1 0.3-0.2 0.2-0.3 0.3-1.3 0.7-2.2 1-0.6 0.2-0.1 0-0.2-0.1-1-0.8-0.5-0.2-0.2 0-0.5-0.1-1-0.1-0.3 0.1-0.3 0-0.2 0.2-0.2 0.2-0.2 0.3-0.2 0.6-0.6 1.3 0 0.2 0 0.3 0 0.6 0.1 0.3 0.1 0.3 0.4 0.4 0.3 0.2 0.3 0.4 0.2 0.6 0.1 0.3 0.5 0.4 0.1 0.1 0.4 0.3 0.3 0.1 0.2 0.2 0.2 0.3 0.2 0.8 0.1 0.6 0.2 0.5 0.2 0.7 0.1 0.2 0.5 0.3 0.7 0.3 0.2 0.1 0.2 0.3 0.1 0.2 0.2 0.4 0 0.3-0.1 0.5-0.2 0.8 0.1 0.4-0.2 0.4-0.1 0.2-0.1 0.2 0.1 0.2 0.1 0.2 0.2 0.2 0.4 0.3 0.7 0.2 0.3 0.1 0.1 0.1 0.1 0 0.2-0.1 0.1-0.1 0.2 0.1 0.2 0.2 0.3 0.2 0.3 0.1 0.2 0.2 0.2 0.2 0.2 0.5 0.3 0.5 0.5 0.7 0.7 0.3 0.5 0.2 1 0.2 0.4 0.3 0.2 0 0.2-0.2 0.2-0.4 0.4-0.5 1.4 0.4 0.6 0 1.4-0.5 0.2 0.1 0.4-0.1 0.5-0.1 0.4-0.2 0.3-0.3 0.3-0.4 0.3-0.3 0.3-0.1-0.2 0.4-1.4 2.2-1.7 3.5-0.1 0.9-0.2 0.3-0.5 0.7-1.3 3.3-0.6 1-0.5 1.3-1.5 1.9-1.5 3-1.9 2.7-1.4 2.1-1.4 2-1.2 1.8-0.3 0.1-0.2 0.2-1.6 1.8-1.5 2-1.8 1.7-0.6 0.9-0.4 0.4-0.5 0.2-0.3 0.1-0.5 0.1-0.2 0-0.3 0.1-0.4 0.4-0.6 0.2-0.5 0.3-0.5 0.2-0.6-0.1-0.1-0.3 0.5-0.9 0.2-0.8 0.2-0.3 0.3 0 0.2 0.4-0.1-0.4-0.1-0.4-0.1-0.4 0.3-0.7-0.1-0.2-0.2-0.3-0.1-0.3-0.2-0.2 0-0.1 0.1-0.2 0-0.1-0.2-1.6-0.4 0.1-0.4-0.1-0.3-0.1-0.4-0.3-0.7 0.2-0.4-0.2-0.3-0.5-0.2-1-0.2-0.1-0.3 0-0.3-0.2-0.3-0.2 0-0.3 0.1-0.3 0-0.4-0.1 0-0.4 0.8-0.2 0.3 0 0.5 0 0.7-0.1 0.1-0.2 0.2-0.3 0.6 0 0.3 0.3 0.3-0.9 1.6-0.3 0.2-0.1 0.1-0.3 0.3-0.1 0.1-0.3 0-0.2-0.2-0.2-0.1-0.3-0.2-0.1-0.5-0.5-1.7 0.1-0.4 0.2-0.3 0.5-0.4-0.3-0.4-0.1 0 0.1 0.3-0.2 0.2-0.3 0.2-0.3 0.2-0.1 0.3-0.1 0.3-0.1 0.2-0.3 0.2 0.2 0.2 0.3 0.6 0.1 0.3 0.2 0.1 0.3 0.1 0.2 0.2-0.1 0.4 0.1 0.3 0.1 0.3 0.2 0.1 0.4 0.2 0.2 0.1 0.3-0.3 0.2-0.1 0.1 0 0.1 0.2 0.1 0.2 0.1 0.2 0.5-0.2 0.2 0 0.4 0.1 0.3 0.1-0.3 0.2-0.1 0.3-0.2 0.4-0.1 0.3 0.1 0.5 0 0.2-0.1 0.2-0.3 0.3-0.4 0.7-0.3 0.3-0.4 0.3-0.4 0.3-0.5 0.3-0.5 0.1-0.2 0.1-0.1 0.3-0.1 0.3 0 0.2 0.2 0.3 0.3 0.2 1.5 0.4-0.1 0.2-0.2 0.1-0.2 0-0.3 0.1-0.2 0.2-0.5 0.6-1.3 0.8-0.3 0.4-0.2 0.4-0.2 0.9-0.1 0.5 0.3 0.7 0 0.3-0.2 0.2-0.6-0.4-0.2 0-0.2 0-0.7 0.1 0.1-0.4-0.1-0.4-0.5 1.6-0.1 0.9 0.2 0.7-0.3 0.2-0.2 0.4-0.1 0.4-0.1 0.5 0.1 1-0.1 0.3-0.6 0.1 0 0.2 0.7 0 0.2-0.4-0.1-1.1 0.1-0.5 0.4-0.6 0.5-0.2 0.6 0.3 0.1 0.2 0 0.4 0.2 0.3 0.1 0.1-0.2 0.3-0.1 0.2 0.1 0.6 0.2 0.4 0.2 0.5 0.3 0.5 0 0.6-0.1 0.4-0.3 0.4-0.1 0.5-0.1 1.4 0.1 0.4 0.2 0.4 0.1 0.2-0.2 0.1-0.3-0.1-0.2-0.1-0.5-0.4-0.1-0.2-0.1-0.3 0-0.2-0.1-0.3-0.2-0.2-0.3-0.3-0.1-0.1-0.2-0.1-0.1 0-0.1-0.6-0.2-0.1-0.3-0.1-0.4 0.1-0.2 0.2-0.2 0.4 0.1 0.2 0.6-0.5 0.2 0.2 0 0.2 0 0.2-0.2 0.2 1 0.5 0.3 0.3 0.4 0.8 0.2 0.3 0.8 0.2 0 0.3-0.1 0.3-0.2 0.1-0.6 0-0.3-0.1-0.4-0.2-0.1 0.6 0 0.2 0.2 0.8 0.1 0 0.4 0.2 0.4 0.2 0.4 0.4 0.2 0.3 0.1 0.3 0 0.3-0.1 0.2 0 0.2 0.3 0.5 0.1 0.3-0.1 0.2-0.1 0-0.9 0.2-0.3-0.1-0.3-0.4-0.4 0.4 0 0.2 0.3 0.4-0.2 0.1-0.1 0.2-0.1 0.3 0.1 0.3 0.1 0.2 0.3 0.1 0.2 0.2 0.1 0.3 0.2 0-0.6-1-0.1-0.5 0.5-0.2 0.4-0.1 0.5-0.2 1-0.5-0.1-0.2 0-0.3 0-0.2-0.2-0.1-0.1-0.1 0.1-0.3 0.1-0.4 0-0.1-0.1-0.2 0-0.1 0.1 0 0.3-0.1 0-0.3-0.1-0.2-0.2 0-0.3-0.1 0.2-0.3-0.4 0.1-0.1-0.2 0.2-0.4 0.2-0.2 0.2-0.2 0.4-0.2 0.3 0 0.1 0.2 0 2 0.1 0.5-0.5 2.2-0.3 0.5-0.1 0.2 0 0.3-0.1 0.6 0 0.2-0.4 0.7-0.1 0.4 0 0.9 0.2 0.8-0.1 0.3-0.1 0.2-0.2 0.3-0.1 0.2 0.1 0.4-0.1 0.2-0.1 0.3 0.1 0.3 0 0.4-0.5 1.1-0.1 1.8-0.4 1.2-0.1 0.7-0.2 0.8-0.1 0.4 0.3 1.8 0.1 0.3 0.3 0.3 0.1 0.3-0.3 0.1-0.2 0.1 0 0.3 0.1 0.1 0.2 0 0.3-0.1 0.1 0.1-0.1 0.9 0.1 1 0.3 1.7 0.2 6 0.5 2.1 0.1 2 0.7 3.6 0.4 3.5 0.4 1 0.3 0.4 0.1 0.2 0.1 0.6 0.1 0.3 0.3 0.5 0.1 0.2-0.1 0.4-0.5 0.8-0.2 0.3 0 0.5-0.6 1.5 0 0.4-0.1 0.4-0.3 0.6-0.1 0.4-0.1 2-0.1 0.4-0.9 1.6-0.2 0.5-0.1 0.6 0.1 0.6 0 0.8-0.3 0.5-0.8 1.2 0.1 0.3 0 0.2-0.2 0.5-0.7 4.2-1 3.3 0 1.1 0 0.2 0.3 0.6 0 0.3 0 0.1-0.6 1.2-0.5 3-0.3 0.9-0.4 0.7-0.1 0.4-0.2 3.1 0.1 2 0.5 1.1 0.1 0.6-0.1 2.9 0.1 0.5 0.4 0.8 0.4 0.6 0.3 0.5-0.3 0.7-2.5 2.6-0.2 0.4 0 0.2-0.1 0.3 0 0.2-0.2 0.1-0.1 0-0.6 0.4-1.5 0.3-0.8 0.4-0.7 0.7-1.1 1.3-2.8 4.4-0.8 1.9-0.3 1.2-11.4-7.4-0.5-0.7-0.5-1 0-0.4 0.1-0.4 0.1-0.2 0.4-0.4 0.2-0.4 0.1-0.5 0.1-0.5-0.1-0.2-0.1-0.4-0.3-0.6-0.6-0.5-0.2-0.2-0.9-0.4-0.3-0.2-0.1-0.1-0.1-0.3-0.1-0.2-0.1-0.3-0.3-0.2-0.9-0.6-0.3-0.3-0.1-0.2-0.2-0.8-0.2-0.3-0.1-0.2-0.1-0.1-0.3 0-0.3 0-0.3 0-0.2 0.1-0.2 0-0.3-0.1-0.1-0.1-0.1-0.1-0.1-0.5 0-0.5 0.1-0.1 0.3-0.8 0-0.2-0.1-0.4-0.1-0.3-0.1-0.1-0.1-0.1-0.2 0-0.2 0.2-0.3 0.1-0.1-0.1-0.1-0.1 0-0.2 0.1-0.3 0.3-0.4 0.1-0.3-0.1-0.2-0.1-0.1-0.1 0-0.2 0.2-0.3 0-0.2 0.1-0.1 0.2-0.2 0.5-0.1 0.1-0.1 0.1-0.2 0-0.3-0.2-0.1-0.1 0-0.2 0-0.1 0.1-0.6 0-1.1 0.1-0.3 0.1-0.3 0.2-0.2 0.3-0.1 0.1-0.1 0.1-0.2 0.1-0.4-0.1-0.5 0-0.2 0.1-0.4-0.1-0.5-0.2-1 0-0.3 0.1-0.5 0.4-0.9 0.6-3 0.1-0.3 0.1-0.1 0.5-0.5 0.2-0.4 0.2-0.2 0.1 0 0.6 0.3 0.8 0.1 1.7 0 0.5-0.1 0.3 0 0.1-0.1 0.2-0.3 0.3-0.2 0.3-0.2 0.2-0.2 0.1-0.1-0.1-0.3 0-0.2-0.2-0.5-0.1-0.2-0.4-0.4-0.1-0.2 0-0.3 0.2-1.4 0.1-0.9-0.1-0.7 0-0.4 0.2-0.4 0.1-0.2 0.2-0.1 1.2-0.5 0.3-0.1 0.2 0.1 0.3 0.1 0.3 0 0.1 0 0.1-0.1 0.1-0.3-0.1-0.4 0.1-0.3 1.7-2.5 1.6-1 0.4-0.3 0.5-0.5 0.1-0.1 0.3-0.4 0.2-0.6 0-0.3 0.1-1 0.1-0.3 0.3-0.7 0.2-0.3 0.1-0.1 0.2-0.1 0.2-0.1 0.1-0.3 0-0.3-0.1-0.2-0.3-0.5-0.1-0.5-0.2-0.2-0.3-0.3-0.2-0.2-0.2-0.3-0.1-0.4-0.2-0.2-0.5-0.1-0.3 0-0.3 0-0.3 0-0.1 0-0.6-0.4-0.3-0.2-0.1-0.2-0.1-0.3-0.2-0.2-0.2-0.3-0.7-0.5-0.3-0.2-0.3-0.1-0.3 0-0.3 0.1-0.3 0-0.1-0.1 0-0.1 0-0.2 0-0.2-0.2 0-0.3-0.1-0.3-0.2 0-0.1 0.1-0.2 0-0.2-0.2-0.2-0.2-0.2-0.3 0-1.1 0-0.2 0-0.3 0.1-0.5 0-0.5-0.1-0.7-0.2-1.8-0.8-0.2 0-0.5 0.2-0.4 0.1-0.1 0-0.4 0.2-0.2 0-0.2-0.1-0.4-0.8-0.2-0.2-1.2-0.6-0.3-0.1-0.3-0.1-0.2 0-0.6 0.2-0.2 0.1-0.4 0.2-0.3 0.1-0.3 0-0.2-0.1-0.5-0.7-0.3-0.3-0.4-0.2-0.4-0.1-0.2 0.1-0.4 0.2-0.3 0-0.4 0.1-0.2-0.1-0.6-0.4-0.2-0.1-0.2 0-0.2 0.1-0.2 0.1-0.4 0.1-0.2 0.2-0.1 0.2-0.8 0.7-0.6 0.3-0.8 0.2-1.1 0.6-0.4 0-0.6-0.4-0.3-0.1-1.1-0.2-1-0.3-0.6 0.1-0.2-0.6-0.7-5.1-3.1-2.9-6.7-6-0.3 0.1-0.3 0.1-0.5 0-0.1 0.1-0.3 0.3-0.4 0.2-0.8 0.4-0.4 0.2-0.3 0-0.7-0.1-0.3 0-0.6 0.1-0.2 0-0.4 0-0.4 0.2-0.2 0-0.2 0-0.1 0-0.2-0.4-0.3-0.3-0.1-0.1-0.5-0.2-0.3-0.3-0.1-0.2-0.2-0.2-0.1 0-0.1 0-0.4 0.2-0.1 0.1-0.2 0-1.2-0.3-0.5-0.2-0.5-0.3-2.8-1.2-0.7-0.6-0.3-0.2-0.2-0.3-0.2-0.2-0.6-0.4-0.8-0.3-0.3-0.3-0.2-0.1-0.8 0.2-0.3 0-0.2 0-0.2-0.1-0.5-0.3-0.1-0.1-0.2-0.3-0.1-0.1-1.1-0.7-0.3-0.3-1-0.8-0.4-0.4-1.8-1.3-0.2-0.2-0.2-0.6-0.3-0.3-0.3-0.3-0.3-0.2-0.3 0-0.4 0-0.2 0-1-0.4-0.2 0-0.4 0-1-0.2-0.6-0.2-0.6-0.2-0.3-0.1-0.8 0.1-0.4 0-0.4 0.2-0.8 0.2-2.3 1.1-0.2 0.2-0.1 0.2-0.1 0.3-0.1 0.2-0.3 0.2-0.2 0.2-0.2 0.4-0.2 0.1-1 0.2-4.8-1.2-0.2-0.3-0.3-0.2-0.2-0.1-1.9-0.4-0.2 0-0.3-0.2-0.3-0.3-0.1-0.2-0.1-0.3 0-0.2 0.1-0.4 0-0.4-0.1-0.3-0.2-0.4-0.1-0.3 0.2-0.8 0.1-0.3 0-0.3 0.5-0.8 0.2-0.9 0.3-0.8 0.7-1.1 0-0.1-0.4-0.2-0.2-0.2-0.2-0.1-0.2-0.1-0.4 0.1-0.2-0.1-0.4-0.2-0.2-0.1-0.3 0-0.4 0.1-0.5 0-0.2-0.1-0.5-0.4-0.3-0.2-0.3 0-0.1 0-0.4 0.3-0.2 0-0.2-0.1-0.4-0.1-0.4-0.1-0.2-0.1-0.4 0-0.1 0-0.2 0.1-0.1 0.1-0.2-0.1-0.1-0.1-0.2 0-0.3 0-0.2 0-0.2-0.1-0.4-0.3-0.2-0.1-0.2-0.2-0.1 0-0.2 0.1-0.2 0.3-0.1 0-0.2 0-0.3-0.2-0.3 0-0.3 0.1-0.1 0-0.4-0.2-0.2 0-0.3 0.2-0.4 0.3-0.2 0.2-0.2 0-0.8 0.2-1.3 0.7-2.2 0.7-0.3 0.2-0.2 0.1-0.6 0.4-0.6 0.4-0.3 0.1-0.2 0.1-0.2 0.3-0.4 0.3-0.4 0.4-2.2 1.4-0.3 0.1-0.3 0.1-0.1 0.1-0.1 0.4-0.3 0.6 0 0.1-0.1 0.2 0 0.1-0.5 0.4-4.9 2.8-0.5 0.2-0.1 0-0.4-0.1-0.2 0.1-0.5 0.1-0.5 0-0.2 0.1-0.3 0.1-0.2 0.2-0.2 0.3 0 0.1-0.8 0.7-0.1 0.1-0.2 0.5-0.5 0.5-0.2 0.3-0.3 0.1-0.4 0.1-0.2 0.2-0.4 0.4-0.6 0.5-0.8 0.5-0.5 0.1-0.6 0.1-0.2 0-0.4-0.2-0.3 0-0.5 0-0.1 0.1-0.2 0.3-0.2 0.3-0.2 0.2-0.2 0.3-0.2 0.3-0.1 0.2-0.4 0.4-0.3 0.1-0.4 0.3-0.1 0.1 0 0.3-0.2 0.5-0.2 0.3-0.8 0.7-0.7 0.5-0.4 0-1.6-0.2-0.3-0.1-1.2-0.2-0.3 0-0.2 0.1-0.2 0.2-0.2 0.4-0.3 0.3-0.3 0.5-0.2 0.1-1.2 0.5-0.3 0.3-0.2 0.3-0.2 0.1-0.2 0-0.1-0.1-0.1-0.2 0-0.2 0.3-0.6 0.2-0.3 0.5-0.9 0.4-1 0.2-0.8 0.3-0.9 0.2-0.2 0.2-0.4 0.1-0.2-0.1-0.3-0.5-0.8-0.1-0.2 0-0.6-0.3-0.5-0.1-0.3 0-0.2 1.1-1.8 0.5-0.5 0.5-0.5 0.1-0.3 0.1-0.2 0.1-0.4 0.1-0.4-0.1-0.7-0.1-0.4-0.1-0.6-0.4-0.9-0.3-0.4 0-0.1-0.2-0.5 0-0.5 0-0.6 0-0.3 0.1-0.2 0.6-1.1 0.3-1.1 0-0.3 0-0.2-0.1-0.1-0.2-0.2-0.6-0.2-1-0.5-0.1-0.1-0.6-1.1-0.5-0.5-0.1-0.2-1.2-0.6-0.2-0.2 0-0.1-1-2.6-0.1-0.2-1-1.5-0.9-3-0.3-2.7 0.1-2.1 0-0.2 0.1-0.3 0.3-1 0.4-1.2 0.5-1.7 0.3-1.1 0.3-0.3 0.8-0.4 0.5-0.3 0.7-0.6 0.2-0.2 0.1-0.1 0-0.2 0.1-0.4 0.1-0.3 0-0.6-0.1-0.3-0.1-0.1-1.6-0.6-0.5-0.3-0.1-0.1 0-0.4 0-0.8 0.4-2.5 0.1-0.3 0.2-0.2 1.3-0.9 0.2-0.1 0.2-0.2 0.2-0.2 0-0.1 0.1-0.2-0.1-0.2-0.1-0.2-0.4-0.4-2.7-1.9-0.3-0.4-0.3-0.5-0.2-0.4 0-0.4 0-0.3 0.1-0.4 0.1-0.4 1.7-2.5 0.1-0.3-0.1-2-0.1-0.2-0.2-0.2-0.4-0.3-0.2 0-1.5-0.4-0.8-0.4-0.2-0.1-0.1-0.2-0.3-0.6-0.3-1-0.1-0.3 0.2-4.8 0-0.5 0.1-0.2 0.2-0.2 1.2-0.6 0.3-0.2 0.2-0.1 0.8-1.2 0.3-0.2 1.4-0.5 0.2-0.1 0.5-0.4 0.3-0.2 0.3-0.2 0.1-0.2 0-0.2-0.4-0.8-0.3-0.2-0.3-0.3-0.4-0.2-0.5-0.2-0.2-0.1-0.3 0-0.3 0-0.5 0.1-0.5 0.1-0.2 0.1-0.3-0.1-0.1-0.2-0.1-0.3-0.1-1 0-0.2 0.1-0.3 0.1-0.2 0.3-0.3 0.2-0.1 1.1-0.6 1.5-0.5 0.2-0.1 0.3-0.2 0.1-0.2 0.2-0.2 0.1-0.6 0.1-0.3-0.1-0.2 0-0.1-0.3-0.1-0.3-0.2-1.7-0.9-2-0.5-3.3-0.5-0.3-0.1-0.4-0.3-0.1-0.1-0.3-0.7-0.2-0.4-0.1-0.3-0.2-0.2-0.2-0.1-0.8-0.4-0.2-0.2-0.2-0.3-0.1-0.4-0.1-0.4 0-0.3 0.2-0.6 0.1-0.2 0.6-1 0.3-0.3 0.3-0.2 0.6-0.4 0.3-0.4 0.6-1.9 1.2-2.4 0.3-0.5 0.1-0.1 0.4-0.3 0.6-0.3 0.8-0.2 0.4-0.1 0.4-0.2 0.3-0.2 0.1-0.2 0-0.1-0.1-0.2-0.7-1-0.1-0.2-0.1-0.4 0-0.1-0.1-0.2-0.3-0.1-0.2 0-0.1-0.1-0.1-0.2 0-0.3 0.2-0.3 0.7-0.5 0.3-0.2 0.4-0.4 0.8-0.9 0.3-0.2 1.2-0.6 0.2-0.1 0.9-1 0.4-0.2 0.5-0.1 0.2 0 0.7-0.6 1.1-0.5 0.6-0.5 0.3-0.1 0.6-0.3 0.4-0.2 0.3-0.2 0.3-0.2 0.6-0.5 0.2-0.3 0.1-0.4 0.1-0.5 0-0.2 0.2-0.4 0.2-0.2 0.1-0.2 0.2-0.1 0.2-0.1 2.8 0 0.7 0 0.2 0.2 0.3 0.2 1.4 1.5 0.8 1.2 0.2 0.5 0.2 0.5 0 0.5 0.1 0.8 0 0.2 0.4 0.9 0.1 0.1 1.3 1.5 0.9 1.6 0.2 0.4 0.2 0.1 0.1 0.1 0.3 0 0.2 0 0.3 0.1 0.7 0.6 1 0.2 0.5 0.3 0.9 0.6 0.5 0.2 1.2 0.5 0.2 0.1 0.3 0 0.3-0.1 0.2 0 0.2-0.2 0.3-0.2 0.4-0.1 0.8-0.2 0.2 0 1.8 0.4 0.4 0 0.3 0 0.2-0.1 0.3-0.1 0.2-0.1 0.2-0.2 0.7-1.7 0.2-0.3 0.2-0.1 0.9-0.3 0.6-0.2 0.2-0.1 0.2-0.1 0.2-0.2 0.1-0.2 0.2-0.5 0.2-0.2 0.3-0.1 0.3-0.1 0.2-0.1 0.2-0.2 0.4-0.6 0.1 0 0.3-0.2 0.2 0 0.7-0.1 0.7-0.2 0.6-0.3 0.4-0.3 0.3 0 2.2 0.2 1.5 0.6 0.4 0.1 0.1 0 1.7-0.5 0.2-0.1 0.3-0.3 0.4-0.4 2.5-2.7 0.2-0.1 0.4-0.1 0.2 0.1 0.2 0 0.2 0 0.3-0.2 0.2-0.2 0.1-0.3 0.1-0.7 0-0.2 0.1-0.1 0.4-0.2 0.3-0.2 0.1-0.2 0.1-0.7 0.3-0.6 0.8-1.2 0.1-0.4 0.1-0.3 0.2-0.3 0.3-0.1 0.3-0.2 0.2-0.3 0-0.1 0-0.7 0-0.2 0.1-0.3 0-0.1 0.8-0.9 0.2-0.3 0.1-0.3 0.1-0.5 0-0.3 0-0.4-0.1-0.3-0.2-0.5 0-0.2 0.1-0.3 0.5-1.1 0.1-0.3 0.1-0.5-0.1-1-0.1-0.4-0.2-0.3-0.7-0.5-0.2-0.2-0.1-0.3 0-0.3-0.1-0.6-0.1-0.5-0.6-2-0.1-0.3-0.3-0.3-0.3-0.4-0.1-0.1-0.3-0.5-0.1-0.1-0.1-0.5 0.1-0.7 0.1-0.3 0.3-0.1 0.8 0 0.5 0.1 0.9 0.3 0.2 0 0.2 0 0.2-0.2 0.1-0.2 0.2-0.8 0.1-0.3 0.2-0.4 0.3-0.2 0.4-0.3 0.3-0.1 0.2 0 0.7 0.2 0.4 0.2 0.4 0.1 0.3 0 0.3 0 0.2-0.2 0.1-0.2 0.1-0.3 0.1-0.2 0.2-0.1 0.3-0.2 0.2-0.1 0.2 0.1 0.6 0.6 0.3 0.2 0.1 0.1 0.5 1.5 0.2 0.2 0.2 0.2 0.3 0 0.3 0 0.2-0.1 0.1-0.2 0.3-0.1 0.2-0.1 0.2 0 0.6 0 0.3 0 0.4 0 0.4 0 0.3 0.2 0.1 0.1 0.3 0 0.1-0.2 0.2-0.4 0.1-0.1 0.5-0.3 0.3-0.1 0.4 0.1 0.5 0.2 1 0.2 0.1 0.1 0.2 0.2 0 0.4 0.1 0.2 0.1 0.1 0.2 0 0.4-0.1 0.2 0 0.2 0 0.3 0.2 0.5 0.1 0.2 0.1 0.1 0.2-0.1 0.3-0.1 0.3-0.1 0.2 0.1 0.2 0.1 0.2 0.3 0.1 0.5 0.2 1.1 0.5 0.2 0 0.2-0.2 0.2-0.1 0.2-0.1 0.3-0.1 0.4 0 0.6-0.1 0.7 0 0.9 0.2 0.2 0 0.1 0.1 0.4 0.4 0.1 0.1 0.4 0.2 0.1 0 0.2-0.1 0.2-0.5 0.3-0.9 0.1-0.2 0.1-0.1 0.2 0 0.3 0 0.2 0.1 1.1 0.2 0.4 0 0-0.1 0.1-0.2 0-0.2 0.1-0.2 0.2-0.1 0.1-0.2 0.5-0.8 0.2-0.3 0.2-0.1 0.2-0.1 0.6-0.3 0.4-0.2 0.1-0.1 0.1-0.1 0.2-0.5 0.1-0.2 0.2-0.3 0.2-0.1 0.2-0.2 0.2 0 0.3 0 0.3 0.1 0.3 0.1 0.1 0 2.6-0.5 0.2-0.2 0.6-0.2 0.3-0.2 0.6-0.8 0.2-0.3 0.2-0.2 0.3-0.1 0.1 0 0.2 0 0.1 0.2 0.2 0.1 0.1 0 0.2-0.2 0.2-0.1 0.2 0 0.2 0.2 0.3 0.1 0.2 0 0.2 0 0.3-0.2 0.3 0 0.2 0 0.3 0.2 0.2 0.2 0.1 0.3 0.2 0.2 0.2 0.1 0.3-0.1 0.3-0.3 0.2-0.2 0.5-1 0.2-0.3 0.1-0.1 1-0.3 0.1-0.1 0.1-0.2 0.1-0.2 0-0.3-0.1-0.3 0-1.2-0.2-1.1 0-0.2 0.1-0.2 0.2-0.1 0.1-0.1 0.5-0.1 0.8 0.1 0.2 0 0.9-0.3 0.3 0 0.2 0 0.5 0.2 0.3 0 0.1 0 0.2-0.2 0.3-0.2 0.1-0.1 0.7-0.4 0.1-0.1 0.1-0.2 0.4-1.1 0.1-0.2 0.8-0.7 0.2-0.4 0.2-0.2 0.2-0.2 0.2-0.3 0.3-1 0.3-0.6 0.6 0.3 0.4 0.2 0.2 0 0.4 0.1 0.4-0.1 0.4 0 0.2-0.1 0.3-0.2 0.5-0.2 1.3-0.1 0.4 0 0.4 0.1 0.3 0.1 0.1 0 0.1 0.2 0.1 0.3-0.1 0.5 0 0.3 0.1 0.1 0.2 0.1 0.1 0.1 0.3 0 0.6-0.1 0.6-0.2 0.2 0 0.2 0 0.2 0.1 0.1 0.2 0 0.4 0.1 0.2 0.2 0.3 0.3 0.1 0.2 0.1 0.1 0 0.1 0 0.2-0.2 0.1-0.1 0.1 0.1 0.2 0.1 0.3 0.3 0.2 0.2 0.1 0.2 0 0.2-0.1 0.4-0.1 1 0 0.3 0.1 0.5 0 0.3-0.1 0.7 0 0.2 0.1 0.3 0.1 0.3 0.5 0.6 0.1 0.1 0.1 0.3-0.1 0.8 0.1 0.4 0 0.1 0.3 0.2 0.2 0 0.2 0.1 1.4 0.8 0.3 0.1 0.5 0 0.3 0.1 0.2 0.2 0 0.2 0 0.4 0 0.5 0.1 0.2 0.1 0.2 0.1 0.3-0.1 0.5 0.1 0.5 0 0.1-0.1 0.2-0.2 0.3-0.1 0.3-0.3 0.4-0.3 0.3-0.2 0.2-0.3 0.7 0.1 0 0.6-0.1 0.1 0 0.3 0.1 0.5 0.4 0.2 0.1 0.3 0.1 0.4 0.2 0.3 0 0.2 0 1.5-0.5 0.3-0.2 0.3-0.9 0.3-0.1 1-0.1 0.4-0.3 0.6-0.7 0.4-0.1 0.2 0 0.5 0.2 0.2 0.1 0.3 0 0.2-0.1 0.2-0.2 0.2-0.2 0-0.8 0.2-0.5 1-4.3 0.5-0.7 0.9-0.2 0.4 0.1 0.3 0.2 0.2 0.1 0.2 0.3 0.1 0.1 0.1 0 0.3 0 0.1 0.1 0.4 0 0.5-0.2 0.9-0.7 0.9-0.3 1-0.1 0.3-0.3 1.3-1.3 0.2-0.3 0.1-0.6 0.2-0.6-0.1-0.2-0.2-0.2-0.1-0.4-0.1-0.5 0-0.4 0.3-0.3 0.5-0.2 1.4-0.1 1-0.3 0.5-0.1 0.5 0 0.4-0.1 0.2-0.3 0.1-0.6-0.3-1.5 0-0.4 0.2-0.2 0.5-0.1 0.9 0 0.3-0.1 4.5-2.4 0.5-0.2 0.4 0 0.9 0.5 0.8 0.3 0.3 0.3 0.5 1.2 0.3 0.3 0.1 0.2 0.2 0.3 0.1 0.3 0.2 0.1 0.3-0.1 0.6 0.1 0.2 0.1 0.2 0.1 0 0.2 0.2 0.1 0.7 0.1 1.9 0.6 0.5 0.2 0.4 0.4 0.2 0.4 0.2 0.2 0.6 0 1-0.1 0.7-0.3 0.2 0 0.2 0 0.5 0.2 0.6 0.1 0.3 0.2 0.2 0.3 0.3 0.2 0.8 0.4 0.5 0.2 0.2 0.3 0.1 0.4 0.8 2.1 0.3 0.3 0.4 0 0.4-0.2 0.1-0.5 0-1.1 0.3-0.9 0.6-0.7 0.8-0.2 0.9 0.4 0.5 0.6-0.2 0.6-0.9 1.3 0.2 0.3 0.5 0.9 0.3 0.2 0.4 0.1 0.4 0.3 0.5 0.2 0.6-0.2 0.5-0.3 0.5-0.4 0.4-0.2 0.2 0.1 0.1 0.3 0.4 0.2 0.1 0.2-0.1 0.3-0.1 0.3-0.2 0.2-0.2 0.2-0.1 0.2 0.2 0.3-0.1 0.2-0.1 0.3 0 0.2 0 0.3 0.2 0.2 0.4 0.5 0.1 0.3 0 0.5 0.8 2.3 0.3 0.7z" id="BRA624" name="Bahia">
                         </path></a>
-                        <a xlink:title="Espírito Santo" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#EspíritoSanto">
+                        <a xlink:title="Espírito Santo" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/espirito-santo/superintendencia-regional-do-espirito-santo" target="blanck">
                         <path d="M998.6 588.5l-0.1 0.1-0.2-0.5 0.1-0.2 0.3 0 0.3 0.4-0.2 0-0.2 0.2z m-245.2-7.2l0.1 0.2 0.1-0.1 0.1 0 0.3 0.1 0 0.3 0 0.1-0.4 0.3-0.4 0.1-0.7-0.1 0-0.1 0.3-0.5 0.2-0.3 0.3-0.1 0.1 0.1z m2.5-54.3l0.5 0.7 11.4 7.4-1.2 4.6-0.4 3.8 0.1 5.2 0.5 4.5 0.4 3.5 0 3.2-0.2 1-1.7 4.4-0.5 0.8-0.6 0.5-2.6 1.1-1.3 1-0.4 0.4-1.3 3.2-0.1 0.4-0.2 0.4-1 0.3-0.3 0.4 0.5 0 0 0.3-0.3 1.2-0.1 0.1-0.2 0-0.2 0.1-0.2 0.3 0 0.3 0.1 0.2 0.2 0.5 0 0.2 0 0.3-0.2 0.4-0.4 1.6-0.1 0.2-0.1 0.2-0.5 1-0.2 0.4-0.3 0.2-0.2-0.3-0.3-0.1-0.1 0.2-0.2 0.2-0.1 0.1-0.3-0.2 0.1-0.6-0.1-0.3-0.4-0.1-0.4-0.1-0.8 0.2 0.3 0.2 0.2 0.3-0.2 0.3-0.4 0 0 0.2 0.3 0.1-0.2 0.5 0.1 0.5 0.4 0.1 0.6 0-0.1 0.3 0.3-0.1 0.3-0.4 0.4-0.1 0.5 0.2-0.4 0.3-0.3 0.4-0.3 0.5-0.2 1.1-0.5 0.9-0.3 1-1.1 1.7-0.4 1.1-0.4 0.3-0.4-0.3-0.5 0.5-0.2 0.3-0.9 1.6-0.2 0.2-0.5 0.4-0.2 0.3-0.4 1.1-0.6 0.2-0.2 0.6-0.2 0.1-0.2-0.2 0-0.3-0.1-0.2-0.3 0-0.2 0.1-0.9 0.6-0.6 0.1-0.4 0.3-0.2 0.2-0.1 0.5-0.3 0.1-0.1 0.3-0.2 0.4-0.3 0.3-0.2 0.8 0.1 0.8-0.2 1-0.4 0.3-0.2 0.4 0 0.3-0.1 0.3-1.7 2.3-0.7 1.2-0.3 0.8-0.3-0.2-0.2-0.3-0.1-0.2-1.1-0.3-0.1-0.1-0.3-0.2-0.2-0.1-0.7 0-1.6 0.4-1.1 0-0.5 0.1-0.2 0-0.2-0.1-0.8-0.3-0.1 0-0.1-0.2-0.1-0.2-0.2 0-0.9-0.2-0.6-0.1-0.4 0-0.3 0.3-0.2 0-0.2 0-0.4-0.2-0.1 0-0.5-0.4-0.4-0.1-0.1 0-0.2 0.1-0.1 0-0.4-0.1-0.4-0.1-0.3-0.1-0.2-0.1-0.4-0.2-0.3-0.2-0.3-0.1-0.5-0.2-0.2 0-0.5-0.4-0.2-0.1-0.3-0.1-0.3 0.1-0.1 0 0.1-0.3-0.1-0.1-0.1-0.1-0.1-0.1 0-0.2 0-0.4-0.1-0.4 0.2-0.3 0-0.5 0-0.2 0.1-0.3 0-0.3-0.1-0.4-0.2-0.5 0-0.2 0-0.2 0.1-0.2 0-0.2 0-0.4 0.1-0.3 0-0.1-0.2-0.1-0.2-0.1-0.1-0.2 0-0.1 0.1-0.4-0.1-0.3-0.2-0.2-0.1 0-1.2-0.4-1.2-0.5-0.4-0.1 0-0.2 0-0.1 0-0.2 0.3-0.2 0.1-0.2 0.5-1.1 0.2-0.3 0.4-0.6 0.1-0.2 0-0.2-0.1-0.1-0.2 0-0.1 0-0.3 0.2-0.2 0-0.1-0.1 0-0.2 0.3-0.4 0.1-0.3 0.3-0.9 0.2-0.3 0.2-0.1 0.2-0.1 0-0.1 0-0.2-0.2-0.4-0.1-0.2 0-0.6 0.3-1.1-0.8-0.4-0.2-0.2-0.1-0.4-0.1-0.2-0.1-0.2 0-0.2 0-0.2 0.1-0.2 0.2-0.3 0.2-0.2 0.3-0.3 0.8-0.4 0.1-0.1 0.2-0.2 0.3-1.1 0.2-0.3 0.2-0.2 0.2-0.1 0.3 0 6.3 0.1 0.6 0 0.3-0.3 0.4-0.1 0.2-0.2 0.5-1.3 0-0.3 0-0.3 0.2-0.8 0.5-1.5 0.1-0.4 0-0.5 0-0.3 0.1-0.2 0.2-0.3 0.3-0.3 0.2-0.2 0.2-0.1 0.3 0.1 0.1 0 0.2-0.2 0.5-0.5 0.1-0.1 0.4-0.2 0.1-0.3 0.2-1.3 0-0.3-0.1-0.2 0.4-2.4 0.2-0.6 0.2-0.3 0.7-0.4 0.4-0.4 0.1-0.3 0.2-0.1 0.2 0 0.2-0.1 0.6-0.7 0.2-0.2 0-0.2 0-0.1-0.4-0.7 0-0.2 0-0.3 0.3-0.1 0.4 0.3 0.2 0 0.2 0.1 0.2-0.1 0.2-0.1 0.2-0.3 0.2-0.1 0.1-0.2 0-0.3 0-0.2-0.1-0.3 0.1-0.2 0-0.3 0.5-1.2 0.1-0.1 0-0.3 0-0.7 0.1-0.6 0-0.2 0-0.1-0.2-0.2-0.1-0.1 0-0.3 0.1-0.5 0.1-0.6-0.1-0.9-0.2-0.6 0-0.1-0.3-0.5-0.2-0.2-1.1-1.1-0.1-0.1-0.4-0.1-0.2-0.1-0.1-0.2 0-0.2 0.4-0.9 0.2-0.4 0-0.2-0.1-0.1-0.4-0.1-0.1-0.1-0.1-0.2 0-0.2 0.1-0.2 0-0.1-0.1-0.1-0.3-0.1-0.2-0.1 0-0.1-0.3-0.4-0.1-0.1-0.2-0.1-0.2 0-0.3 0-0.3 0.2-0.3 0.2-0.2 0.1-0.5-0.3-0.4-0.2-0.2-0.1-0.2-0.5-0.3-0.2-0.1-0.3 0-0.1 0.2-0.2 0.1-0.2 0.2-0.1 0.2-0.1 0.3-0.1 0.6 0 0.6 0 0.4 0 0.3 0 0.1 0.1 0 0.3 0.1 0.1 0.2 0 2.5-0.1 0.5 0 0.3-0.2 0.3-0.2 0.2-0.2 0.1-0.3 0-0.3 0-0.3-0.2-1.6-0.1-0.2-0.1-0.2-0.2-0.1-0.2-0.1-1.1 0-0.4-0.1-0.1-0.2-0.1-0.1 0-0.3 0.2-1.1 0.3-1.2 0-1.1 0.1-0.6 0-0.4 0-0.4-0.2-0.3-0.2-0.4-0.2-0.2-0.3-0.2-0.2-0.1-0.3-0.2-0.2-0.1-0.2-0.2-0.1-0.1-0.7 0.6-0.4 0.2-0.1 0-0.2-0.1 0.5-0.8 0-0.4-0.2-0.4-0.1-0.2 0-0.3 0-0.2 0.1-0.1 0.5-0.4 0.4-0.6 0.4-0.9 0.3-0.4 0.1-0.2 0.3 0 0.5 0 0.2-0.1 1.5-1.4 0.4-0.2 0.1-0.1 0.3 0 0.3 0.1 0.2 0.1 0.2 0.3 0.2 0.1 0.3 0.2 0.3 0.2 0.2 0.1 0.1 0 0.6 0 0.3 0.1 0.2 0 0.2-0.1 0.1-0.1 0.1-0.1 0-0.5-0.1-0.3-0.2-0.3-2.9-2.9-0.2-0.2 0.1-0.2 0.1-0.1 0.1 0 0.1 0 0.2 0.3 0.2 0.1 0.3 0 0.3 0 0.4-0.1 0.2-0.1 0.2 0.1 0.2 0.2 0.3 0.1 0.2 0 0.3-0.2 0.4-0.1 0.3-0.3 0.2-0.1 0.2 0 0.1 0 0.6 0.2 0.3 0.1 0.3 0 0.3-0.1 0.3-0.2 1-0.6 0.3-0.1 0.3-0.1 0.8-0.2 0.3 0 0.2 0 0.4 0.4 0.3 0.2 0.3 0.1 0.2-0.1 0.1-0.2 0-0.1 0-0.4 0-0.3 0.1-0.2 0.1-0.1 0.1 0.1 0.2 0.3 0.1 0.1 0.2 0.1 1 0.3 0.3 0.2 0.1 0 0.4 0 0.2 0.2 0.3 0.3 0.2 0.1 0.3 0 0.3 0 0.3 0 0.2 0.1 0.2 0.3 0.2 0.1 0.4 0.1 0.3 0.2z" id="BRA625" name="Espírito Santo">
                         </path></a>
-                        <a xlink:title="Paraíba" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Paraiba">
+                        <a xlink:title="Paraíba" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/paraiba/superintendencia-regional-da-paraiba" target="blanck">
                         <path d="M872.9 264.3l0.1 0.8 0 1-0.2 0.8 0.2 0.5 0.1 0.2 0.1 0.6 0.1 0.2 0.1 0.2 0.2 0.3 0 0.4-0.1 0.4-0.1 0.5 0.2 0.4 0.4 1.8 0.3 0.5 0.2 0.2 0.6 0.3 0.1 0.2 0 1 0 0.3-0.2 0.2-0.1 0.1-0.1 0.1 0 0.3 0 0.5 0 0.3-0.4 0.9 0.1 0-0.2 0.2-0.1 0.1-0.1 0 0.1 0.2 0 0.3-0.2 0.3 0.4-0.3 0.5-0.5 0.4-0.5 0.1-0.5 0.1-0.4 0.3-0.9-0.1-0.4 0.3 0.2 0 0.5-0.1 0.8 0 1.3 0.1 0.7 0 0.2 0.2 0.1 0.3 0.2 0.1 0.1 0.1 0.4 0 0.4-0.2 0.4 0 0.3 0 3.3-0.2 1.7 0 0.9 0.2 0.7-0.3 0.6 0 0.1-0.2 0-0.2-0.1-0.1 0-0.9 0-0.3 0-0.7-0.4-1.2-0.3-0.1-0.1-0.2-0.5-0.2-0.4-0.9-1-0.5-0.3-0.5-0.2-0.5-0.1-0.2 0-0.5 0.1-0.3 0.1-1.8-0.5-0.5 0-0.3 0-0.3 0-0.1 0.1-0.4 0.2-0.2 0.1-0.7 0.6-0.4 0.5-0.2 0.2-0.3 0.1-0.1 0.1-0.3-0.1-0.3-0.1-0.2-0.1-1.3 0-0.3 0.1-0.2 0.2-0.1 0.4-0.2 1.2-0.5 2.1-0.3 0.5-1.2 0.4-0.4 0.3-0.6 0.4-0.3 0.2-0.3 0.1-0.3-0.2-0.2 0-0.1 0-2 0.8-0.5 0.1-0.2 0-0.6 0.2-0.2 0-0.2-0.1 0.1-0.4-0.1-0.1-0.1 0-0.2 0-0.2 0.1-0.1 0.2 0 0.3 0 0.1 0.2 0.1 0.2 0.2 0.3 0.1 0.1 0.2 0.1 0.2-0.1 0.2-0.1 0.1-0.2 0-0.4-0.1-0.4 0-0.1 0.1-0.1 0.2 0 0.3 0 0.2-0.2 0-0.3-0.3-0.1-0.1-0.3-0.1-0.3-0.1-0.5 0.1-1.2 0.3-0.3 0-0.2-0.1-0.1-0.3 0.1-0.4-0.1-0.3-0.2-0.1-0.1-0.1-0.3 0-0.1 0.1-0.2 0.1-0.5 0.6-0.2 0.2-0.2 0.1-0.1 0-0.5 0-0.2 0-0.2-0.2 0-0.3 0-0.2-0.2-0.2-0.6 0.6-0.3 0.2-0.2 0.2-0.2 0-0.4-0.1-0.5-0.2-0.5 0-1.5 0.1-0.3 0.1-0.2 0.1 0 0.2 0.2 0.4 0.1 0.2 0 0.3-0.1 0.2-0.2 0.2-0.5 0.4-0.2 0.1-0.2 0-0.2 0-0.5 0-1.1 0.1-0.5 0.1-0.2 0.1-0.1 0.1 0.1 0.3 0 0.2-0.1 0-0.4 0-0.3 0-0.3 0.2-0.6 0.8-0.1 0.1 0 0.2 0.1 0.2 0.2 0.4 0.3 0.3 0 0.4 0.1 0.3-0.1 0.2-0.1 0.2-0.4 0.3-0.1 0.2-0.2 0.1-0.3 0-0.3 0.2-0.3 0.2-0.2 0.3-0.2 0.3-0.9 0.9-0.2 0.2-0.2 0-1.1 0.1-0.4 0.1-0.3 0-0.4 0.2-1.2 0.8-0.3 0.2-0.3 0-0.9-0.4-0.5-0.5-0.3-0.1-0.5-0.2-0.3-0.2-0.1-0.1-0.8-0.8-0.2-0.2-0.1-0.2-0.2-1 0-0.6-0.1-0.2-0.2-0.6 0-0.2 0-0.3 0.1-0.2 0.1-0.2 0.1-0.1 0-0.2-0.1-0.3-0.1-0.2-0.1-0.1-0.6-0.2-0.3-0.1-0.2-0.1-0.3 0-0.4 0.1-0.1 0.1-0.3 0.3-0.2 0.1-0.3 0-0.3 0-0.2 0-0.5 0.3-0.2 0.1-0.2 0-0.1-0.1-0.2-0.2 0-0.2 0.2-0.4 0.9-0.6 0.3-0.3 0-0.1 0.9-1.4 0.1-0.1 0.2-0.6 0.2-0.3 0.1-0.1 0.6-0.3 0.3-0.2 0.1-0.1 0.1-0.2 0.1-0.2-0.1-0.3 0-0.2-0.4-0.6-0.1-0.5-0.5-1.1 0-0.2 0-0.3 0.2-0.7 0.1-0.2 0.1-0.2 0.1-0.2 0.4-0.1 0.4-0.2 0.1 0 0.7-0.1 0.1 0 0.5-0.2 0.5-0.2 1.3-0.5 0.1-0.1 0.2-0.1 0.1-0.2 0-0.1 0-0.3-0.4-0.5-0.1-0.2 0-0.3 0-0.4 0-0.2-0.1-0.1-0.2-0.2-0.3 0-0.3 0.1-0.2 0-0.2-0.1-0.7-0.5-1-0.4-1.7-1.4-0.3-0.2-0.3-0.1-0.2 0-0.4 0.2-1.5 0.4-0.2 0.1-0.1 0.1-0.1 0.3-0.1 0.4-0.1 0.2-0.2 0.1-0.2 0.2-0.4 0.1-0.2 0-0.1-0.1-0.1-0.3-0.2 0-0.9 0.4-0.1 0.1-0.1 0.2 0 0.4-0.1 0.1-0.2 0.3-0.2 0.2-0.3 0.3-0.1 0.1-0.2 0.4-0.2 0.3-0.2 0.1-1 0.6-2.4 1-0.1 0.1-0.6 0.6-0.6 0.9-0.3 0.2-0.3 0.2-1.7 0.6-0.2 0.1-0.2 0.2-0.3 0.2-0.1 0.2-0.3 0.7-0.3 0.4-0.2 0.2-0.5 0.4-0.2 0.1-0.2 0-0.9-0.4-0.4-0.1-0.3 0-0.3 0.2-0.1 0.1-0.2 0.3-0.1 0.2 0.1 0.2 0.1 0.3 0 0.1 0 0.1-0.3 0.1-0.6-0.2-0.1-0.2-0.2-0.1-0.1-0.5-0.1-0.2-0.2 0-0.1 0-0.1 0.2-0.1 0.4-0.2 0.2-0.1 0.2-0.2 0.1-0.3 0.1-0.2 0-0.2-0.1-0.2-0.1-0.1-0.1-0.2 0.2 0 0.4 0 0.1-0.2 0.2-0.3 0-0.2-0.1-0.3-0.1-0.4-0.1-0.1-0.1 0-0.3 0.1-0.4 0-0.2 0-0.2-0.2-0.5-0.2-0.5-0.3-0.5-0.1-0.2-0.2-0.1-0.3-0.1-0.6 0.4-0.3 0.4-0.2 0.3-0.2 0.1-0.1 0-0.1-0.1-0.1-0.2-0.1-0.1-0.3 0-0.1 0-0.3 0.3-0.2 0.2-0.3 0.1-0.5 0.1-0.4 0.1-0.2-0.1-0.1-0.2-0.3-0.1-0.4 0-0.2-0.1-0.2-0.1 0-0.5 0.1-0.3-0.1-0.2 0-0.1-0.2-0.1-0.4 0.1-0.2-0.1-0.3-0.1-0.2-0.2 0-0.2-0.1-0.3 0-0.4-0.1-0.2-0.1-0.1-0.1 0-0.2 0-0.2 0-0.3-0.1-0.2-0.3 0-0.1 0.1-0.2 0.1-0.2 0.6-0.4 0.3-0.2 0.4-0.5 0.2-0.4 0.1-0.3 0-0.2-0.1-0.6-0.1-0.2 0.2-0.1 0.5-0.2 0.4-0.4 0.2-0.4 0.2-0.7 0.4-0.5 0.1-0.2 0.2-0.3 0-0.3 0.1-0.3 0-0.3-0.3-0.8 0-0.3-0.1-0.2-0.2-0.1-0.5 0-0.3-0.1-0.2-0.1-0.1-0.1-0.1-0.2-0.2-0.5-0.2-0.1-0.2-0.1-0.2 0-0.3-0.1-0.2-0.1-0.2-0.3 0-0.3 0.2-0.8 0-0.3 0-0.3-0.1-0.5-0.2-0.4-0.1-0.3-0.1-0.1-0.2-0.2-0.2-0.1-0.4-0.1-0.1-0.1-0.2-0.3-0.1-0.4 0-0.3 0.1-1 0.3-0.5 0.3-0.2 0.4-0.2 0.5-0.3 0.3-0.3 0.2-0.2 0.4-1.1 0.2-0.2 0.1-0.2 0-0.3 0-0.2-0.2-0.2-0.2-0.3-0.2-0.2 0-0.3 0-0.2 0-0.4 0.2-0.3 1.3-4.1 0.4-0.6 0.3-0.4 0.3-0.4 0.1-0.2 0.1-0.6 0.3-0.6 0.2-0.1 0.1-0.1 0.1 0.1 0 0.5 0 0.2 0.2 0.3 0.3 0.2 0.4 0.1 0.4 0.1 2.7 1.6 0.5 0.3 0.2 0.2 0.3-0.2 0.3-0.2 0.1-0.1 0.3 0 2.4 0.8 0.2-0.1 0.2-0.1 0.7-1.2 0.2-0.2 0.2-0.1 0.2 0 0.1 0.1 0.2 0.4 0.4 0.2 0.3-0.5 0-0.3 0.2-0.2 0.5-0.2 1.5-1 1.5-0.8 0.2-0.3 0.2-0.3 0-0.3 0.2-0.3 0.1-0.1 0.2 0 0.1 0.1 0.2 0.1 0.1-0.2 0.1-0.4 0.1-0.2 0-0.7 0.1-0.3 0.1-0.3 0.1-0.3 0.1-0.2 0.2-0.2 0.3-0.1 0.7-0.2 1.5-0.7 0.5-0.1 0.8 0 0.2-0.1 0.2-0.2 0.2-0.2 0.2 0 0.3-0.1 0.7 0 0.6-0.2 0.2 0 0.2 0.1 0.5 0.2 0.2 0 0.4-0.1 0.2-0.2 0.5-0.1 0.9-0.6 0.9-0.3 0.7-0.3 0.3-0.1 0.7 0.1 0.3 0.1 0.2 0.1 0.3 0.2 0.1 0.2 0.1 1.4-0.3 0.5-0.6 0.4-0.3 0.3-1.4 2.1-1 0.9-1.1 1.4-0.2 0.4-0.1 0.2-0.2 1.5-0.5 1.3-0.7 0.4-0.5 0.2-0.3 0.1-0.3 0.1-0.1 0.2 0 0.3-0.3 1.2 0 0.5 0.1 0.2 0 0.3 0.2 0.2 0.3 0.1 0.4 0 1.3 0.3 0.2 0 0.5 0 0.3 0 0.2 0 0.5 0 0.3 0 0.2 0.1 0.3 0.1 0.4 0.2 0.4 0.3 0.2 0.3 0.1 0.2 0.1 0.7 0.3 0.7 0.3 0.2 0.3 0 0.2-0.1 0.8-0.5 0.4-0.3 2-0.4 0.2-0.1 0.3-0.1 0.2-0.2 0.2-0.2 0.3-0.4 0.2-0.2 0.1-0.1 0.2 0 0.2 0.1 0.2 0.2 0.4 0.5 0.2 0.1 0.6 0 0.2-0.1 1.5 0.2 0.8 0.2 0.3 0.2 0.2 0.2 0.4 0.5 0.3 0.3 0.2 0.2 0.1 0.3 0 0.2-0.7 1.4 0 0.3 0 0.2 0.1 0.3 0.2 0.3 0.5 0.4 0.3 0.1 0.2-0.1 1.2-1 0.1-0.1 0.4 0 0.7 0.1 0.3 0 0.4-0.1 0.2-0.1 0.1-0.2 0.5-0.7 0.1-0.3 0.3-0.8 0.3-0.5 0.1-0.3 0-0.3-0.1-0.2-0.4-0.5-0.1-0.2-0.1-0.2-0.1-0.5-0.1-0.5 0-0.4 0.1-0.3 0.1-0.5 0.1-0.2 0.1-0.2 0.2-0.1 0.2 0 0.2 0 0.2 0.1 0.4 0.3 0.2 0.1 0.2 0 0.2-0.1 0-0.2-0.2-0.7-0.6-1.2-0.1-0.2-0.5-0.4-0.1-0.3-0.1-0.4 0-0.8 0.2-0.9 0.1-0.4 0.2-0.2 0.2-0.1 0.7-0.2 0.4-0.3 0.7-0.9 0.2-0.1 0.2-0.1 0.5 0.1 0.3 0 0.2-0.1 0.6-0.1 0.5 0.2 0.2 0.2 0.1 0.3 0 0.2-0.1 0.3 0 0.3 0.1 0.5 0.2 0.3 0.4 0.3 2.9 0.4 1.1 0.3 0.3 0 0.3 0 0.5 0 1.3 0.4 0.9 0.1 2-0.2 1-0.2 1.5-0.1 0.3-0.1 0.5-0.2 0.4-0.1 0.2 0 0.3 0 0.6 0.3 1.3 0.3 1.4 0.1 0.7 0.1 0.6 0.3 1.7 0.9 1.3 0.3 0.2-0.1 0.4 0 0.5-0.4 1.6 0.1 1.5 0.3 0.8-0.1 0.5 0.3 0.3 0 0.2 0 0.3-0.3 0.3-0.1 1-0.3z" id="BRA626" name="Paraíba">
                         </path></a>
-                        <a xlink:title="Rio de Janeiro" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#RioDeJaneiro">
+                        <a xlink:title="Rio de Janeiro" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/rio-de-janeiro/superintendencia-regional-do-rio-de-janeiro" target="blanck">
                         <path d="M666.6 649.3l0.4 0.3 0.4-0.2 0.2 0.2 0.1 0.2 0.3 0.1 0.2 0 0.2-0.5 0.3 0.1 0 0.2-0.2 0.2 0.2 0.3 0.6 0.5 0.1 0.2-0.4 0.1-0.1 0.1-0.2 0-0.1-0.2-0.1-0.1-0.3 0-0.2 0-0.1 0.1-0.3-0.1-0.2 0.1-0.2 0.2-0.2 0.2-1 0.1-0.2 0-0.3-0.1-0.2-0.2-0.3-0.1-0.3-0.1-0.2 0.2-0.3 0.3-0.1 0.4-0.1 0.3-0.1 0-0.1-0.2-0.2-0.1 0-0.2 0-0.3 0.1-0.2-0.4 0-0.2 0-0.1-0.2 0-0.1 0.1-0.1 0.9-0.4 0.6-0.7 0.2 0.1 0.3-0.2 0.5-0.5 0.1-0.2 0.1-0.4 0.1 0 0.1 0.1 0.1 0.1 0.2 0 0.2 0.1 0.3 0.1 0.2 0.2 0 0.1-0.1 0-0.3 0.2z m72.3-44.2l0.2 0.4 0 0.3-0.1 0.4-0.1 0.4 0.1 0.7-0.5 0.6-0.7 1.3-0.7 0.6-0.2 0.4-0.3 0.9 0.2 0.9 1 1.2 0.1 1-0.3 1.6 0.4 2.5 0.9 3-0.1 1-0.5 0.6-3.3 2-2.3 1.2-2.3 0.6-2.6 0.8-2 0.7-2.5 1.2-1.7 1.1-0.6 0.6-0.2 0.2 0 0.4-0.1 0.2-0.5 0.4-0.7 0.4-0.3 0.3-0.4 0.9-0.1 0.1-0.2 0.1-0.3 0.1-0.1 0.1-0.1 0.1-0.2 0.4-0.4 0.3-0.8 0.4-0.5 0.7-0.2 1.1 0 1.2 0.1 1 0.2 0.4 0.8 0.9 0.2 0.3 0.1 0 0.2-0.1 0.3-0.4 0.2-0.1 0.5-0.1 0.2-0.1 0 0.4-0.1 0.3-0.2 0.2-0.1 0.3-0.4-0.2-0.3 0.2-0.5 0.6-0.7 0.3-0.2 0.1-0.1 0-0.1 0.2 0 0.2 0 0.4 0 0.3-0.1 0.1-0.1 0.1-0.3 0-0.1 0.1-0.2 0.2-0.1 0.5 0.1 0.5 0.1 0.3 0.2-0.3 0.2 0 0.1 0.4 0 0.3-0.3 0.5-0.3-0.1-0.4-0.5-0.3-0.1-2.5 0-4.6-0.4-3.4 0-2.1 0.1-0.7 0.1-0.3 0.1-0.1 0-0.3 0.4-0.2 0-1.6 0.1-2.1 0.2-1.6-0.1-2.2 0-0.5-0.5-0.4-0.2-0.4 0.2-0.3-0.2-0.4-0.4-0.2-0.2 0.3 0 0.3 0.2 0.3-0.3 0-0.2-0.2-0.1-0.3-0.1-0.4-0.1 0.1-0.3 0.4-0.5 0.1-0.6 0.5-0.6 1-0.9-0.4 0.1-0.2-0.1 0-0.2 0.2-0.3 0.4-0.2 0.2-0.1 0.1-0.2 0-0.5 0-0.2 0-0.6-0.1-0.2-0.3-0.1-0.6 0.1-0.2-0.2-0.2 0.2-0.2 0.4-0.2 0.1-0.3 0.1-0.5-0.1-0.3 0.1-0.5 0.3-0.9 0.6-0.5 0-0.4 0.1-0.3 0.2-0.1 0.5 0.1 0.5 0.6 1.4 0.2 0 0.1-0.2 0.2-0.2 0 0.3 0.1 0.1 0.2 0.3-0.1 0.2 0.8 0.5 0.3 0.2 0 0.3 0 0.5 0 0.3 0.2-0.2 0 0.5-0.4 0.4-0.6 0.4-0.5 0.2-5.1 0.6-1.1 0.3-1 0.4-0.1 0.2-0.2 0.2-0.1 0.1-0.1 0-0.3-0.4 0-0.1-0.9-0.1-5.7 0.6-0.9 0-0.5 0.1-0.3 0.2-0.4 0.3-0.5 0.1-0.3-0.1-0.1-0.6 0.2-0.5 0.3-0.1 0.8 0 0.2 0.1 0.6 0.2 0.2 0 0.1-0.1 0.2-0.7 0.5 0.4 0.8 0.2 1.8 0 1.9-0.3 0.9-0.3 0.5-0.4-0.4 0-0.5-0.2-0.4-0.2-0.2-0.3-0.1 0.1-0.2-0.1-0.5-0.1-0.2-0.2-0.3-0.5-0.1-0.1-0.3-0.1-1-0.2-0.2 0-0.1-0.4-0.4-0.1-0.4 0.1-0.5-0.1 0.3-0.2 0-0.2-0.3 0.1-0.6 0.3-0.2 0.1-1.2 0.2-0.3 0.1-0.6 0.3-0.2 0.1-0.2 0.1-0.2 0.4-0.2 0.3-0.4 0 0.1-0.4 0.1-0.3-0.1-0.2-0.3 0.1-0.1 0.2-0.4 0.9-0.2 0.2-0.6 0.7-0.3 0.1-0.5 0-0.1 0.1-0.4 0.3-0.3 0.1-0.1 0 0-0.2-0.1-0.1-0.2 0.1-0.3 0.2-0.4 0-0.1-0.1 0-0.8 0-0.3-0.2 0-0.5-0.1-0.4 0.4-0.2 0.1-0.1-0.5-0.3 0.2-0.1 0.1-0.2 0.2-0.5-0.4 0-0.3 0.3-0.2 0.4-0.1 0.2-0.1 0-0.2-0.1-0.3-0.2-0.2-0.1-0.1 0.3-0.2-0.2-0.2-0.2 0-0.3 0-0.2 0 0.1 0.4-0.1 0.2-0.1 0.2-0.2 0.2-0.2-0.4-0.1-0.1-0.2 0.1-0.1 0.1-0.3-0.3-0.3 0.3-0.3 0.8 0.1 0.4-0.5 0.3-0.7 0.2-1 0.2-1.6 0.7 0.1-0.4 0-0.1-0.7 0-0.5 0.2-0.4 0.4-0.7 1.2 0.2 0.3 0 0.1-0.2 0.5-0.2 0.7-0.1 0.3 0.2 0.7 0.4-0.1 0.5-0.4 0.5-0.2 0.4 0.2-1 0.8-0.2 0.5 0.2-0.3 0.3-0.2 0.4 0 0.3 0.2-0.3 0.3-0.2 0.3-0.1 0.3 0 0.3 0.1-0.1 0.5-0.6 0.3-0.3 0.3-0.3 0.4-0.1 0.6 0-0.2 0.3-0.1 0.1-0.2 0.1 0.4 0.3 0.6 0.1 0.5 0.2 0.2 0.5-0.5-0.1-0.4 0.3-0.5 0.8-0.4 0.4-0.4 0-0.4-0.2-0.3 0-0.4-0.1-0.6 0-0.6 0.1-0.5 0.2-0.1 0-0.6-0.4-0.3-0.3-0.2-0.4-0.2-0.3-0.1-0.1-0.1 0-0.2 0.2-0.2 0-0.1-0.1-0.3-0.6-0.6-0.8-0.1-0.2 0-0.1 0-0.3 0-0.2 0.4-0.7 0.2-0.1 0.1-0.1 0.2-0.1 0.2-0.2 0.2-0.4 0.1-0.3 0-0.2-0.1-0.2 0-0.3 0-0.5 0.3-1.3 0-0.2-0.1-0.4 0-0.2 0.1-0.2 0.1 0 0.5-0.1 0.2-0.1 0.1-0.1 0.3-0.5 0.3-0.3 0.2-0.2 0.2 0 0.7-0.1 0.2-0.1 0.4-0.2 0.8-0.6 0.6-0.2 0.3-0.1 0.2 0 0.4 0.2 0.2 0 0.2-0.1 1.2-0.7 0.2 0 0.1 0 0.1 0.4 0.2 0.1 0.4-0.1 0.7-0.3 0.1 0 0.4 0.2 0.1 0 0.3-0.1 1.1-0.7 0.8-0.2 0.2-0.3 0.4-0.6 0-0.3-0.1-0.4 0-0.2 0.6-0.6 0.3-0.2 0.1-0.1 0.5-0.1 0.3-0.1 0.1-0.1 0.1-0.1 0-0.2-0.1-0.2 0-0.2-0.5-0.9-0.4-0.5-0.2-0.5-0.2 0-0.2 0.1-0.1 0.1-0.4 0-0.7-0.1-0.6 0-0.3 0-0.3 0.1-0.2 0.1-0.2-0.1-0.2-0.3-0.1 0-0.1 0-0.1 0.2-0.2 0.1-0.2 0-0.4 0-0.3 0.1-0.2 0.2-0.1 0-0.9 0.1-0.1 0-0.2 0.1-0.3 0.1-0.3 0-0.4 0-0.3-0.3-0.1 0-0.7 0.1-0.3 0-0.5-0.2-0.2-0.2-0.1-0.2-0.2-0.7-0.1-0.1-0.3-0.1-0.1-0.1-0.1-0.2-0.4-0.4-0.3-0.3-0.2-0.3-0.6-1.2-0.2-0.2-0.1-0.2-0.3-0.2-0.8-0.3-0.2-0.1-0.4 0 0.9-0.6 0.4-0.2 1-0.4 0.2 0 0.3 0 0.5 0.1 0.5 0.2 0.2-0.1 0.2-0.2 0.3-0.6 0.3-0.3 0.2-0.1 0.2-0.1 0.7 0 0.5-0.1 0.3-0.1 0.3-0.1 1.7-1.1 0.3-0.1 0.2 0 0.1 0.1 0.3 0 1.2-0.2 0.3 0 1-0.1 0.2 0 0.3 0.1 0.2 0.3 0.4 0 0.5-0.2 2.1-1.1 0.2-0.2 0.5-0.6 0.2-0.1 0.4-0.1 2.7-1.1 0.8-0.1 0.3-0.2 0.3-0.2 0.3-0.3 1.2-0.5 0.7-0.2 0.3 0 0.1 0.1 0.2 0.3 0.3 0.1 0.3 0 0.3-0.1 0.3-0.2 0.3 0 0.1 0 0.2 0.2 0.2 0 0.1 0 0.2-0.2 0.2-0.2 0.1 0 0.2 0 0.2 0.1 0.2 0 0.2 0 0.3-0.3 0.1 0 0.1 0 0.2 0.3 0.2 0.2 0.2 0 0.3 0 0.3-0.1 0.4-0.1 0.6 0 0.3 0 0.2-0.1 0.3-0.2 1.8-0.9 0.6-0.2 0.3 0 0.5 0.2 0.2 0 0.8-0.1 0.2 0 0.1 0.1 0.3 0.2 0.3 0.1 0.4 0.1 0.3 0 0.5-0.1 0.6 0 0.2 0.1 0 0.3-0.1 0.3-0.2 0.3-0.1 0.2 0.1 0.2 0.1 0.4 0.3-0.1 0.3-0.4 0.2-0.2 0.3 0 0.5 0.2 0.2-0.1 0.2-0.4 0.1-0.4 0.2-0.3 0.5-0.3 1.4-0.2 0.4-0.2 0.7-0.6 0.3-0.3 3-1.2 1.7-0.9 2.7-1 2.2-1.3 1.2-0.3 0.4-0.3 0.3-0.3 0.2-0.1 0.3 0 0.4 0.1 0.2 0 0.3-0.1 0.4-0.4 0.3-0.1 0.3-0.6 0.1-0.4-0.2-0.4-0.1-0.1-0.2-0.2-0.2-0.1-0.3 0-0.3 0.1-0.3 0-0.4-0.2-0.2 0-0.2 0 0-0.3 0.1-0.7 0.4-0.9 1-1.7 0.1-0.3 0-0.4 0-0.8 0-0.4 0.3-0.6 0.2-0.2 1.2-0.9 0.2-1.2 0.1-0.5 0.6-1.2 0-0.3 0.1-0.2-0.1-0.3 0-0.4 0.1-0.4 0.2-0.1 0.2-0.4 0.2-0.5 0.1-0.2 0.3-0.4 0.2-0.3 0.4-1 0.2-0.4 0-0.2-0.2-0.1-0.3 0-0.2-0.1-0.1-0.1-0.1-0.1-0.1-0.2 0-0.3 0.1-0.2 0.1-0.1 0.4-0.2 0.2-0.3 0.2-0.2 0.1-0.1 0.2 0.1 0.3 0.1 0.3 0 0.2 0 0.4-0.1 0.1 0 0.3 0.2 0.2 0.1 0.3-0.1 0.3-0.2 0.2-0.2 0.1-0.1 0.4-0.9 0.3-0.6 0.1-0.2 0-0.3 0.1-0.5 0.3-0.1 0.2 0 0.3-0.1 0.3-0.2 0.2-0.3 1.2 0.5 1.2 0.4 0.1 0 0.2 0.2 0.1 0.3-0.1 0.4 0 0.1 0.1 0.2 0.2 0.1 0.2 0.1 0 0.1-0.1 0.3 0 0.4 0 0.2-0.1 0.2 0 0.2 0 0.2 0.2 0.5 0.1 0.4 0 0.3-0.1 0.3 0 0.2 0 0.5-0.2 0.3 0.1 0.4 0 0.4 0 0.2 0.1 0.1 0.1 0.1 0.1 0.1-0.1 0.3 0.1 0 0.3-0.1 0.3 0.1 0.2 0.1 0.5 0.4 0.2 0 0.5 0.2 0.3 0.1 0.3 0.2 0.4 0.2 0.2 0.1 0.3 0.1 0.4 0.1 0.4 0.1 0.1 0 0.2-0.1 0.1 0 0.4 0.1 0.5 0.4 0.1 0 0.4 0.2 0.2 0 0.2 0 0.3-0.3 0.4 0 0.6 0.1 0.9 0.2 0.2 0 0.1 0.2 0.1 0.2 0.1 0 0.8 0.3 0.2 0.1 0.2 0 0.5-0.1 1.1 0 1.6-0.4 0.7 0 0.2 0.1 0.3 0.2 0.1 0.1 1.1 0.3 0.1 0.2 0.2 0.3 0.3 0.2z" id="BRA627" name="Rio de Janeiro">
                         </path></a>
-                        <a xlink:title="Rio Grande do Norte" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#RioGrandeDoNorte">
+                        <a xlink:title="Rio Grande do Norte" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/rio-grande-do-norte/superintendencia-regional-do-rio-grande-do-norte" target="blanck">
                         <path d="M872.9 264.3l-1 0.3-0.3 0.1-0.3 0.3-0.2 0-0.3 0-0.5-0.3-0.8 0.1-1.5-0.3-1.6-0.1-0.5 0.4-0.4 0-0.2 0.1-1.3-0.3-1.7-0.9-0.6-0.3-0.7-0.1-1.4-0.1-1.3-0.3-0.6-0.3-0.3 0-0.2 0-0.4 0.1-0.5 0.2-0.3 0.1-1.5 0.1-1 0.2-2 0.2-0.9-0.1-1.3-0.4-0.5 0-0.3 0-0.3 0-1.1-0.3-2.9-0.4-0.4-0.3-0.2-0.3-0.1-0.5 0-0.3 0.1-0.3 0-0.2-0.1-0.3-0.2-0.2-0.5-0.2-0.6 0.1-0.2 0.1-0.3 0-0.5-0.1-0.2 0.1-0.2 0.1-0.7 0.9-0.4 0.3-0.7 0.2-0.2 0.1-0.2 0.2-0.1 0.4-0.2 0.9 0 0.8 0.1 0.4 0.1 0.3 0.5 0.4 0.1 0.2 0.6 1.2 0.2 0.7 0 0.2-0.2 0.1-0.2 0-0.2-0.1-0.4-0.3-0.2-0.1-0.2 0-0.2 0-0.2 0.1-0.1 0.2-0.1 0.2-0.1 0.5-0.1 0.3 0 0.4 0.1 0.5 0.1 0.5 0.1 0.2 0.1 0.2 0.4 0.5 0.1 0.2 0 0.3-0.1 0.3-0.3 0.5-0.3 0.8-0.1 0.3-0.5 0.7-0.1 0.2-0.2 0.1-0.4 0.1-0.3 0-0.7-0.1-0.4 0-0.1 0.1-1.2 1-0.2 0.1-0.3-0.1-0.5-0.4-0.2-0.3-0.1-0.3 0-0.2 0-0.3 0.7-1.4 0-0.2-0.1-0.3-0.2-0.2-0.3-0.3-0.4-0.5-0.2-0.2-0.3-0.2-0.8-0.2-1.5-0.2-0.2 0.1-0.6 0-0.2-0.1-0.4-0.5-0.2-0.2-0.2-0.1-0.2 0-0.1 0.1-0.2 0.2-0.3 0.4-0.2 0.2-0.2 0.2-0.3 0.1-0.2 0.1-2 0.4-0.4 0.3-0.8 0.5-0.2 0.1-0.3 0-0.3-0.2-0.3-0.7-0.1-0.7-0.1-0.2-0.2-0.3-0.4-0.3-0.4-0.2-0.3-0.1-0.2-0.1-0.3 0-0.5 0-0.2 0-0.3 0-0.5 0-0.2 0-1.3-0.3-0.4 0-0.3-0.1-0.2-0.2 0-0.3-0.1-0.2 0-0.5 0.3-1.2 0-0.3 0.1-0.2 0.3-0.1 0.3-0.1 0.5-0.2 0.7-0.4 0.5-1.3 0.2-1.5 0.1-0.2 0.2-0.4 1.1-1.4 1-0.9 1.4-2.1 0.3-0.3 0.6-0.4 0.3-0.5-0.1-1.4-0.1-0.2-0.3-0.2-0.2-0.1-0.3-0.1-0.7-0.1-0.3 0.1-0.7 0.3-0.9 0.3-0.9 0.6-0.5 0.1-0.2 0.2-0.4 0.1-0.2 0-0.5-0.2-0.2-0.1-0.2 0-0.6 0.2-0.7 0-0.3 0.1-0.2 0-0.2 0.2-0.2 0.2-0.2 0.1-0.8 0-0.5 0.1-1.5 0.7-0.7 0.2-0.3 0.1-0.2 0.2-0.1 0.2-0.1 0.3-0.1 0.3-0.1 0.3 0 0.7-0.1 0.2-0.1 0.4-0.1 0.2-0.2-0.1-0.1-0.1-0.2 0-0.1 0.1-0.2 0.3 0 0.3-0.2 0.3-0.2 0.3-1.5 0.8-1.5 1-0.5 0.2-0.2 0.2 0 0.3-0.3 0.5-0.4-0.2-0.2-0.4-0.1-0.1-0.2 0-0.2 0.1-0.2 0.2-0.7 1.2-0.2 0.1-0.2 0.1-2.4-0.8-0.3 0-0.1 0.1-0.3 0.2-0.3 0.2-0.2-0.2-0.5-0.3-2.7-1.6-0.4-0.1-0.4-0.1-0.3-0.2-0.2-0.3 0-0.2 0-0.5-0.1-0.1-0.1 0.1-0.2 0.1-0.3 0.6-0.5 0.3-0.4 0.2-0.3 0-0.3 0-0.1-0.1-0.2-0.1-0.1-0.2 0.1-0.1 0.3-0.3 0.1-0.2 0-0.3 0-0.3 0.1-0.6-0.1-0.5 0.1-0.3 0.1-0.2 0.2-0.2 0.3-0.2 0.2-0.2 0-0.2 0.1-0.4 0.1-0.3 0.6-0.3 0.1-0.2 0.1-0.3 0-0.3 0.2-0.5 0.3-0.3 0.5-0.6 0.4-0.3 0.4-0.2 0.2 0 0.2 0.1 0.2 0.1 0.5 0.4 0.1 0.1 0.3 0 0.4-0.1 0.9-0.3 0.3-0.3 0.2-0.2 0.1-0.3 0.2-0.3 0.2-0.4 2.5-2.6 0.3-0.3 0-0.3 0-0.5 0-0.2 0.1-0.2 0.5-0.8 0.5-0.7 0.1-0.3-0.2-0.8 0-0.1 0.1-0.4 0.7-1.7 0.4-0.5 0.3-0.2 0.4-0.4 1.7-2 0.1-0.2 2.6-5.2 1.6-3.6 0.2-0.2 2.8-2.4 0.2-0.2 1-0.4 6.8-2.2 0.1 0.2 1.1 1.6 1.1 0.4 0.4-0.2 0.4 0 0.3 0.1 0.8 0.3 0.2 0 0.6-0.2 0.6 0 1.9 0.2 0.4 0.2 0.8 0.9 0.1 0.1 0.2 0.1 0.3 0.2 0.2 0.3 0.1 0.2 0.3 0.5 0.8 0.4 0.8 0.2 0.6 0 0 0.3 0.3 0 0.9 0 0.7 0.1 0.4 0.2 0.7 0.4 0.3 0.1 0.3-0.1 0.2-0.4-0.2-0.1-0.8-0.2-0.3-0.2 0.8 0.2 2.8-0.2 1.8 0.2 0.9 0.2 0.4 0.1 0.6 0 0-0.2-0.8 0 0-0.1 3.6 0.1 0.4-0.1 0.7-0.4 0.8-0.2 0.6-0.3 0.5-0.1 1.7 0.3 3.4 0.6 2.4 0.6 1.7 0.1 0.8 0.3 0.8 0.3 0.4 0.3 0.9 0.9 0.3 0.2 0.4 0.1 0.4 0.4 0.3 0.4 0.4 0.7 0.2 0.5 0.2 0.5 0 0.5 0.1 0.2 0.7 0.7 1.3 2.2 0.2 0.9 0.1 0.5 0.3 0.5 0.2 0.3-0.1 0.2 0.1 0.2 0.4 1.6 0 0.2 0.3 0.2 0 1.6 0.1 0.3 0.2 0.2 0.2 0.3 0.1 0.5-0.1 0.4 0 0.2 0.1 0.3 0.4 0.4 0.1 0.3-0.1 0.7 0.1 0.3 0.2 0.3 0 0.2 0.1 0.1 0.4 0.4 0.1 0.2 0.1 0.2-0.1 0.7-0.1 0.5 0 0.2 0.2 0.1 0.1 0.1 0.1 2.7-0.6-0.5-0.1 0.4-0.5 0.6 0 0.2 0.3 0.1 0.3-0.2 0.3-0.3 0.3-0.2 0.2 0.1 0.2 0.6 0.2 0.1 0.4 0 0.2 0.1 0.1 0.1 0 0.5 0.2 0.9 0.1 0.5-0.1 0.3 0.1 0.2 0.1 0.3 0.2 0.2 0.3 0.1 0.2 0.2 0.1 0.3 0.2 0.9 0.2 1.6z m56.3-58.8l-0.2 0.1-0.2-0.1 0.1-0.2 0.3-0.3 0.1-0.2 0.3-0.1 0.3 0 0.2-0.2 0.2 0 0.2 0.1-0.1 0.3-0.2 0.2-0.4 0.1-0.6 0.3z m68.6-105.3l-0.4 0-0.5-0.1-0.2-0.2-0.1-0.3 0-0.3 0.4-0.3 0.6-0.1 0.5 0.2 0.3 0.3-0.1 0.3-0.2 0.3-0.3 0.2z" id="BRA628" name="Rio Grande do Norte">
                         </path></a>
-                        <a xlink:title="Sergipe" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Sergipe">
+                        <a xlink:title="Sergipe" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/sergipe/superintendencia-regional-do-sergipe" target="blanck">
                         <path d="M840.7 354.6l-0.3 0.2-0.8 0.2-0.7 0.1-0.4 0.1-0.3 0.1-0.4 0.3-0.9 0.1-0.1 0.1-0.2 0.3-0.1 0.1-0.3 0.1-3.6 2.2-3 2.3-1.1 1.4-0.2 0.7-0.4 0.5-1.1 1.1-0.2 0.3-0.1 0.3 0 0.5-0.2 0.3-1.6 2.7-0.3 0.2-0.2-0.1 0-0.2 0.1-0.3 0-0.2-0.1-0.1-0.3-0.1-0.1-0.2-0.1 0-0.2 0.3-0.2-0.3-0.3-0.7-0.2-0.1-0.9-0.4-0.2 0-0.1-0.1-0.1 0-0.2 0.2 0 0.2 0 0.2 0.1 0.2 0.2 0.3 0.1 0.2 0.2 0 0.3-0.1 0.2 0.1 0.4 0.3 0.3 0.1 0 0.2-0.4-0.2-0.2 0.1 0.1 0.2 0.3 0.2 0.2-0.1 0.2-0.2 0.1 0 0.2 0.1 0.2 0.1 0 0.2-0.1 0.2 0.1 0.2 0 0.8 0.2 0.4 0.1 0-0.5 0.4-0.6 0.2-0.5 0.4-0.2 0.5-0.1 0.2-0.2 0.1-0.3 0.1-0.1 0.1-0.2 0.2-0.3 0.8-0.7 2-0.3 0.3-1 0.2-0.3 0 0-0.2 0.1-0.2 0-0.2-0.4-0.1 0.6-0.8 0.1-0.3 0.2-0.6 0.1-0.2 0.2-0.3 0.9-0.7 0.4-0.4 0.4-0.1-0.3-0.3-0.1-0.6-0.2-0.3-0.1 0.5 0 0.3 0.1 0.3-0.2 0-0.4-0.8-0.3-0.4-0.1-0.2-0.1 0.5 0.6 1 0 0.5-0.1-0.2-0.5-0.3 0 0.3 0.3 0.2 0 0.2 0 0.2-0.2 0.1-0.2 0-0.2 0.1-0.2 0.2-0.2 0.3-0.4 0.6-0.2 1.1-0.2 0.3-0.3 0-0.2-0.4-0.1-0.9-0.1 0.3-0.1 0.2-0.2-0.1-0.2-0.2 0.2 0.8 0.1 0.2 0.3 0.2 0.9 0.4 0.1 0.2-0.2 0.7-0.6 0.6-0.7 0.3-0.6 0.2 0.2 0-1.4 0.5-0.6 0-1.4-0.4-0.4 0.5-0.2 0.4-0.2 0.2-0.2 0-0.4-0.3-1-0.2-0.5-0.2-0.7-0.3-0.5-0.7-0.3-0.5-0.2-0.5-0.2-0.2-0.2-0.2-0.3-0.1-0.3-0.2-0.2-0.2-0.2-0.1-0.1 0.1-0.2 0.1-0.1 0-0.1-0.1-0.3-0.1-0.7-0.2-0.4-0.3-0.2-0.2-0.1-0.2-0.1-0.2 0.1-0.2 0.1-0.2 0.2-0.4-0.1-0.4 0.2-0.8 0.1-0.5 0-0.3-0.2-0.4-0.1-0.2-0.2-0.3-0.2-0.1-0.7-0.3-0.5-0.3-0.1-0.2-0.2-0.7-0.2-0.5-0.1-0.6-0.2-0.8-0.2-0.3-0.2-0.2-0.3-0.1-0.4-0.3-0.1-0.1-0.5-0.4-0.1-0.3-0.2-0.6-0.3-0.4-0.3-0.2-0.4-0.4-0.1-0.3-0.1-0.3 0-0.6 0-0.3 0-0.2 0.6-1.3 0.2-0.6 0.2-0.3 0.2-0.2 0.2-0.2 0.3 0 0.3-0.1 1 0.1 0.5 0.1 0.2 0 0.5 0.2 1 0.8 0.2 0.1 0.1 0 0.6-0.2 2.2-1 1.3-0.7 0.3-0.3 0.2-0.2 0.1-0.3 0.1-0.3 0-0.3-0.1-0.2-0.1-0.2-0.5-0.2-0.1-0.2-0.1-0.2-0.1-0.3 0.1-0.2 0.1-0.7 0.1-0.7-0.5-1.5 0-0.2 0.1-0.3 0.2-0.2 0.2-0.5 0.1-0.2 0.2-0.3 0.2-0.3 0.2-0.7 0.2-2.1 0-1 0-1.2 0-0.3-0.2-0.4-0.9-1.4-0.1-0.1-0.2-0.2-0.3-0.2-1.1-1.1-0.1-0.2 0-0.3 0-0.2 0-0.2-0.1-0.1-0.5-0.1-0.3-0.1-0.3-0.3-0.2-0.2-0.8-2-0.5-0.9-0.1-0.3 0-0.2 0.1-0.2 0.2-0.3 0.2-0.7 0.3-0.4 0-0.1-0.1-0.2-0.1 0-0.4-0.1-0.2-0.1-0.3-0.1-0.1-0.3 0-0.2 0.1-0.2 0.1-0.2 0.3-0.4 0.1-0.2 0-0.4 0.2-0.2 0.3-0.2 0.3 0.2 2 0.5 0.3 0.2 0.3 0.4 0.7 0.2 0.7 0.4 0.3 0.6 0.5-0.1 1.5 0.1 0.6 0.2 0.6 0.7 0.6 0.3 1.2 0.8 0.5 0.2 0.6 0.2 0.6 0 0.5-0.2 0.7 0.4 1.8 0.5 0.8 0.4 0.5 0.3 1.1 1.1 0.2 0.2 0.2 0.4 0.1 0.2 0.3 0.2 0.2 0 0.2-0.1 0.3 0 0.8 0.2 0.6 0.3 1.3 1.1 0.4 0.3 0.5 0.1 0.4-0.2 0.4-0.1 0.5 0.2 0.3 0.5 0.2 0.4 0.1 1.9 0.1 0.4 0.3 0.2 0.8 0.3 0.3 0.2 0.4 0.4 0.3 0.5 0.1 0.3 0.2 0.3 0.5 0.1 0.8 0.2 0.3 0.2 0.6 0.5 0.9 0.3 0.1 0.1 0.2-0.1 0.4-0.4 0.4-0.1 0.3 0.1 0.8 0.9 0.3 0.4 0.2 0.5 0.1 0.4-0.1 0.8 0 0.5 0.2 0.3 0.8-0.1 1.3-0.3 0.1 0.1 0.5 0.4 0.2 0.2 0.2 1 0.2 0.5z" id="BRA629" name="Sergipe">
                         </path></a>
-                        <a xlink:title="Roraima" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Roraima">
+                        <a xlink:title="Roraima" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/roraima/superintendencia-regional-da-roraima" target="blanck">
                         <path d="M336.9 89.5l2.3 24.3-20.1-0.2-5.7 0.2-0.5 0.2-0.1 0.2 0 0.2-0.1 0.2-0.1 0.3-0.1 0.2-0.3 0.1-0.4 0.3-0.2 0.1-0.3 0.1-0.2 0.2-0.1 0.2-0.1 0.2 0 0.3 0.1 0.2 0 0.2-0.1 0.3-0.7 1.3-0.9 1-0.2 0.2-0.1 0.2-0.1 0.2-0.2 0.5-0.1 0.3-0.1 0.7-0.1 0.2-0.1 0.2-0.7 1.1-0.4 0.4-0.1 0.2-0.1 0.2 0 1.2-0.1 0.4-0.4 0.7-0.1 0.4-0.3 0.7-0.1 0.2-0.2 0.5 0 0.2-0.3 0.4-0.1 0.4-0.2 0.9 0 0.4 0.2 0.4 0.2 0.4 1.3 1.4 0.1 0.2 0.1 0.3 0 0.2 0.1 0.3-0.1 0.2 0 0.2-0.1 0.2-0.2 0.1-0.2 0.1-0.2 0.1-0.8 0.1-0.6 0.3-1.5 0.4-0.2 0.1-0.1 0.2-0.2 0.4-0.1 0.2-0.1 0.2-0.1 0.5-0.1 0.2-0.1 0.2-0.2 0.1-0.3 0-0.6-0.1-0.4 0.1-0.4 0-0.2 0.1-0.3 0.3-0.2 0.1-0.2 0.1-0.2 0-0.6-0.1-1.4-0.1-0.2-0.1-0.2-0.2-0.1-0.3-0.1-0.3 0.1-0.4-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.5-0.6-1.1-0.2-0.3-0.6-0.5-0.5-0.6-0.4-0.2-0.3-0.2-0.2-0.2-0.2-0.2-0.1-0.3-0.2-0.5-0.1-0.2-0.3-0.2-0.3 0-0.9-0.1-0.2 0-1.2-0.3-0.2-0.1-0.2-0.2-0.4-0.4-0.2-0.1-0.3-0.1-0.2 0-0.3 0-0.7 0.1-0.3 0-0.4 0-0.3 0-0.1 0.2-0.2 0.5-0.1 0.2-0.1 0.2-0.1 0.1-0.4 0.3-1.8 0.6-0.8 0.2-0.2 0.1-1.6 0.8-0.2 0.2-0.1 0.1-0.1 0.2-0.2 0.4-0.2 0.4-0.6 0.4-0.1 0.2-0.1 0.2-0.1 0.2-0.2 0.7-0.2 1.3 0 0.2-0.5 1.1-0.1 0.5-0.1 0.3 0.1 0.5 0.4 1.7 0 0.3 0 0.2-0.1 0.2-0.1 0.2-0.1 0.2 0 0.3-0.1 0.2 0.1 0.8 0 0.3-0.4 1.4-0.6 1.5 0 0.3 0 0.2 0.4 2.3 0 0.5-0.9-0.4-0.9-0.1-0.5 0-0.2 0-0.1-0.1-0.2-0.2-0.4-0.4-0.2-0.1-0.1-0.1-0.5 0.2-1 0.4-0.3 0.1-0.3 0-0.3-0.1-0.2-0.2-0.1-0.1-1.3-2.8-0.2-0.2-0.2-0.2-0.2-0.1-0.2 0-0.2-0.2-0.2-0.2-0.4-0.7-0.2-0.4-0.2-0.3-0.2-0.1-1-0.5-1.3-1.1-0.2-0.1-0.2-0.1-0.5 0-0.2 0-0.2-0.1-0.2-0.2-0.8-1.4-0.3-0.2-0.3-0.2-0.3 0-0.4-0.2-0.3-0.3-1.6-1.5-0.5-0.7-0.2-0.3-0.4-0.3-1.1-0.4-0.2-0.1-0.1-0.1-0.1-0.1-0.1-0.3 0-0.3 0-0.4 0.1-0.7 0.1-0.2 0.1-0.1 0.1 0 0.3 0 0.9 0.2 0.2 0.1 0.4 0.2 0.2 0.1 0.3 0 0.2-0.1 0.1-0.2 0.2-0.4 0.2-0.2 0.4-0.2 0.1-0.1 0.5-0.6 0.1-0.2 0-0.2 0-0.3-0.3-2-0.2-0.4-0.1-0.1-0.5-0.3-0.2-0.2-0.2-0.2 0-0.2-0.1-0.4 0.2-1.1 0-0.5-0.1-0.6-0.1-0.3-0.1-0.4-0.5-0.9-0.3-0.3-0.2-0.1-0.7-0.3-0.2-0.1-0.2-0.2-0.3-0.4-0.1-0.4-0.4-1.5-0.2-0.3-0.3-0.5-0.3-0.4-0.5-0.4-0.2-0.4-0.2-0.5 0.1-0.4 0.1-0.2 0.2-0.1 0.2-0.1 0.2-0.2 0.2-0.2 0.4-1.1 0-0.3-0.2-0.3-0.5-0.7-0.1-0.3-0.1-0.2-0.1-1.6 0.1-0.3 0.1-0.2 0.6-1 0.1-0.2 0-0.3 0-0.2-0.2-1.2 0-0.2 0.1-0.3 0.1-0.2 0.2-0.2 0.4-0.3 0.2-0.3 0.1-0.5 0.2-0.5 0-0.2-0.1-0.5-1.2-3-0.1-0.6 0-0.2 0-0.3 0.2-0.2 0.2-0.2 0.2-0.1 0.4-0.2 0.3-0.2 0.5-0.4 0.4-0.5-0.1-0.4-0.2-0.7-1-1.9-0.2-0.5-0.1-2.2-0.1-0.5-0.6-1.1-0.1-0.3-0.1-0.2 0-0.7-1.3-3.9 0-0.3 0-0.3 0-0.3-0.2-0.3-0.5-0.6-0.4-0.2-0.3-0.2-0.2-0.2-0.2-0.1-0.3-0.2-0.3-0.3-0.3-0.5-0.4-0.8-0.7-1.1-0.1-0.3 0.1-0.3 0.4-0.4 0.1-0.2 0.2-0.8 0.1-0.2 0.6-0.4 0.2-0.2 0-0.2-0.1-0.7-0.3-1-0.1-0.2 0.1-0.3 0.1-0.2 0.1-0.3 0.6-0.7 0.1-0.3 0-0.2-0.1-0.3-0.1-0.3-0.2-0.2-0.2-0.2-0.3-0.1-0.7-0.3-1.3-0.7-0.6-0.3-0.3 0-0.8 0-0.3 0-0.4-0.1-0.3-0.1-0.3 0.1-0.4 0.1-0.3 0-0.4 0-0.6-0.3-0.4-0.2-0.5-0.4-0.7-0.9-0.4-0.3-0.2-0.3 0-0.3 0-0.5-0.1-0.2-0.3-0.2-0.5 0-0.4 0.1-0.3 0-0.6 0.3-0.6 0.1-0.2 0-0.6 0-0.3-0.2-0.6-0.3-1.2-1.3 0.3-0.6 0-0.4 0-1.5 0-0.3 0.2-0.8 0-0.3-0.5-0.2-2.8-0.1-1.4-0.2-2.9-0.1-1.4 0.2-1.5 0-2.7-0.7-1.3-0.1-0.5 0.1-0.3-0.2-0.2-0.4 0-0.5 0.1-0.5 0.9-1.6 0.1-0.4 0.1-1.3 0.1-0.6 0-0.2 0-0.2-0.3-0.4-0.4-1.2-1.7-3.4-0.7-0.9-0.8-1.4-0.7-0.8-0.4-0.8-0.1-0.9 0.2-2 0-0.9-0.6-2.8 0.1-0.5 0.2-0.5 0.6-0.8 0.2-0.4 0-0.4 0-0.8-0.2-0.5-0.4-0.5-1-0.8-1.3-1.6-0.5-0.4-1-0.4-0.9-0.5-2.2-1.6-1-1.4-0.4-0.5-1.1-0.8-0.4-0.5-1-2-0.3-0.9-0.2-0.4-0.3-0.3-0.5-0.3-0.4-0.2-0.4-0.2-0.3-0.5 0-0.5 0-0.5 0.2-0.4 0.3-0.3 1 0 1 0.5 0.9 0.8 0.6 0.8 0.3 1 0.3 0.5 0.4 0.1 5-0.7 2.8 0.2 1.5 0.4 0.6 0.3 0.5 0.5 0.4 0.7 0.2 0.7 0.4 1.6 0.3 1 0.6 0.6 1 0.1 0.8-0.5 0.9-0.6 1-0.5 0.9 0 0.9 0.4 0.5 0.1 0.5 0 1.3-0.4 0.4 0 1.1 0.2 1.5 1.4 1 0.4 0.9-0.2 0.3-0.8 0.2-0.9 0.5-0.6 0.8-0.1 0.8 0.3 1.5 0.9 0.8 0.7 1.3 1.8 1.4 1 2.3 2.8 0.4 0.5 0.3 0.4 0.5 0.3 0.5 0.3 0.4 0.2 0.6 0 0.4 0 0.4-0.1 0.4-0.2 0.5-0.4 0.2-0.1 0.3 0 0.2 0 0.3-0.2 0.3-0.4 0.5-0.8 0.2-0.9 0-0.9-0.2-1-0.4-0.8-0.1-0.6-0.2-0.3-0.1-0.3-0.1-0.6 0.1-0.4 0.3-0.5 0.1-0.5 0-0.5-0.1-0.4 0.1-0.4 0.5-0.3 0.4-0.1 1.2-0.1 1.9 0.3 0.6-0.2 0.3-0.8 0-0.5 0-0.4 0.2-0.2 0.5-0.2 0.7-0.1 0.2-0.1 0.1-0.2 0.1-0.4 0.1-0.1 0.8-0.2 0.9 0.2 4.3 1.8 0.9 0.1 0.9-0.4 1.7-1.2 1-0.1 0.5 0.1 0.4 0.2 0.5 0.1 0.5 0 0.4-0.1 0.5-0.1 0.4-0.2 0.4-0.3 1.2-1.2 0.5-0.3 0.4-0.2 0.4 0 0.9 0 0.7 0.2 0.1 0.1 0.3-0.1 0.4-0.1 0.3-0.1 0.3 0 0.2 0.1 0.2 0 0.3-0.1 0.2-0.2 0.2-0.2 0.2-0.3 0.1-0.3 0.1-1.7 0.3-0.6 1-0.4 0.5 0 1.2 0 0.5 0 0.6-0.1 0.6-0.2 0.3-0.3-0.1-0.5-0.6-0.9 0.2-0.3 0.4 0 1.3 0.1 0.4 0.2 0.8 0.3 0.4 0.1 0.4 0 1.2-0.4 1.9-0.2 0.8-0.4 0.6-0.9 0.2-0.4 0.2-1 0.6-1.4 0.2-0.2 0.1 0 0.5 0 0.2-0.1 2.1-0.9 1-0.7 0.9-0.7 1.5-1.9 0.5-1.1-0.2-1-1.5-3.9-0.4-0.4-0.6-0.3-0.6 0 1-0.3 0.4 0 1.4 0.1 0.2 0.1 0.3 0.1 0.2 0.1 0.3 0.1 0.3 0.1 1.3-0.2 0.4 0.1 0.2 0.1 0.3 0.3 0.2 0 0.2-0.2 0.2-0.4 0.2-0.2 0.5 0 0.9 0.4 0.5-0.1 0.5-0.2 0.9-1 0.4-0.2 0.9-0.2 0.3 0.1 0.2 0.5 0.3 0.3 1-0.4 0.2 0.3 0.7 1.6 0.4 0.4 0.4 0.4 1 0.5 0.7 0.4 0 0.6-0.4 1.4 0 0.8-0.1 0.4-0.2 0.4-0.1 0.7-0.1 1.4-0.3 0.9 0.1 1-0.1 0.4-0.1 0.4-0.2 0.4-0.6 0.9-0.1 0.3-0.1 0.2 0 0.3-0.1 0.2-0.2 0.2-0.2 0.1-0.4 0-0.2 0-0.6 0.6-0.1 0.5 0.1 0.4 0.3 0.3 0.3 0.2 0.3 0 0.2 0 0.1-0.1 0.1-0.2 0.1-0.2 0.2 0 0.3 0.1 0.1 0.2 0.1 0.4 0.2 0.1 0.4-0.1 0.4-0.1 0.5 0.2 0.3 0 0.1-0.1 0.1-0.2 0.3-0.1 0.2 0.1 0.2 0 0.2 0.1 0.4 0.5 0.1 0.1 0.2-0.1 0.4-0.2 0.3 0 0.1 0.1-0.1 0.3 0.1 0.1 0.1 0.1 0.4 0 0.5 0.1 0.1 0 0.2-0.2 0.3 0.4 1.3 0.7 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.1 0.3 0 0.1 0.1 0 0.3-0.2 0.6-0.7 0.8-0.3 0.4 0.1 0.1 0.2 0.2 0 0.2 0 0.1-0.2 0.3-0.1 0.1 0 0.4 0 0.2 0 0.3 0.3 0.5 0.3 0.3 1 0.3 0.5 0.4-0.1 0.3-0.2 0.4-0.1 0.5 0.2 0.4 0.8 0.7 0.3 0.5 0.1 0.1 0.1 0.2 0 0.5 0.1 0.1 0.2 0 0.8 0.1 0.2 0.1 0.2 0.2 0 0.2 0 0.2-0.1 0.1-0.3 0.1-0.4 0.1-0.4 0.4-0.3 0.6-0.2 0.4 0.1 0.5 0.1 0.4-0.1 0.3-0.4 0.4-0.9 0.4-0.3 0.2-0.2 0.6 0 0.3 0 0.2 0 0.2-0.1 0.2-0.2 0.2-0.5 0.2-0.9 0.8-1.8 0.6-0.6 0.7 0 0.6 0.4 0.5 0.4 0.5 0.2 0.5-0.4 1-0.1 0.3 0.4-0.1-0.1 1.1 0 0.1 0.2 0.3 0 0.2-0.2 0.1-0.3 0.1-0.3 0.7-0.5 1-0.1 0.2-0.3 1-0.2 0.2-0.2 0.1-0.1 0.2 0 0.3 0.1 0.2 0.2 0.2 0 0.1 0 0.1-0.3 0-0.1 0.1 0.1 0.1 0.1 0.3 0 0.1 0 0.2-0.3 0.1-0.1 0.1-0.6 1-0.2 0.5-0.1 0.6 0 1.2 0 0.5-0.5 1.9-0.1 3.6 0.1 0.4 0.7 1.4-0.1 0.1-0.1 0.4 0.1 0.1 0.3 0.1 0.1 0.1 0.2 0.3 0 0.2 0 0.3 0.1 0.4 0.7 1.5 0 0.2 0 0.5 0.1 0.2 0 0.3-0.3 0.3 0 0.3 0.2 0.4 0.5 0.3 0.9 0.4 0.6 0.6 0.3 0.2 0.2 0 0.5 0 0.2 0.1 0.4 0.5 0.1 0.8-0.1 0.8 0 0.9 0.2 0.6 0 0.3-0.1 0.2-0.2 0.4-0.1 0.2 0 0.3 0.3 0.5 0 0.2 0 0.2-0.1 0.4 0 0.2 0 0.6 0 0.2-0.1 0.2-0.3 0.4-0.1 0.3 0 0.3 0.1 0.5 0.1 0.5 0.2 0.2 0.2 0 0.5-0.1 0.2 0 0.9 0.3 0.3 0.1 0.2 0 0 0.3-0.5 0.9-0.3 0.5 0 0.1 0.5 0.6 0.2 0.1 0.2 0.1 0.3 0.1 0.4 0 0.4-0.1 0.4-0.1 0.5 0.2 0.5 0.3 0.6 1.1 0.3 0.4 0.7 0.6 0.3 0.2 0.4 0.8 0.2 0.2 0.1 0.1 0.3 0 0.1 0.1 0.1 0.1 0.1 0.4 0.1 0.1 0.3 0 0.4-0.1 0.2 0 0.3 0.4 0.1 0.4 0 0.4 0.5 0.2 0.1 0.3 0.5 1 0.3 0.4 0.4 0.2 1.4 0.5 3.8 0.6 0.8 0.4z" id="BRA670" name="Roraima">
                         </path></a>
-                        <a xlink:title="Amapá" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#Amapa">
+                        <a xlink:title="Amapá" xlink:href="https://www.gov.br/pf/pt-br/acesso-a-informacao/institucional/quem-e-quem/superintendencias-e-delegacias/amapa/superintendencia-regional-do-amapa" target="blanck">
                         <path d="M535.3 98.3l0.6 0.3 0.7 0 0.3 0.3-0.2 0.4-0.3 0.4-0.3 0.7-0.4 0.3-0.2 0.2-0.1 0.5-0.5 0.5-0.2 0.1-0.2 0-0.6 0-1.2 0-0.9 0.2-0.7-0.1-0.2-0.5 0.2-0.9 1.1-1.1 1.5-0.6 0.6-0.6 0.4-0.1 0.6 0z m1.2-0.4l-0.7 0.3-0.2-0.2-0.6-0.2 0-0.4 0.6-0.4 0.5-0.2 0.3-0.5 0.1-0.2 0.4-0.2 0.4-0.2 0.7-0.2 0.4-0.5 0.5-0.1 0.2 0.3-0.5 0.7-0.1 0.4-0.2 0.2-0.1 0.3-0.2 0.2-0.7 0.5-0.3 0.3-0.3 0.1-0.2 0z m-8.2-26.4l0.3 0.4 0.5 0.7 0.2 0.2 0 0.5 0.4 0.6 0.3 0.4 0.2 0.5 0.1 0.5-0.2 0.3-0.4 0.5-0.9 0.7-0.4 0.2-0.5 0.2-0.5-0.2-0.4-0.2-0.4-1.4-0.4-0.6-0.1-0.3-0.2-0.3-0.4-0.1 0.1-0.7 0.2-0.5 0-0.6 0.2-0.3 0.3-0.1 0.4 0 0.4-0.3 0.3 0.1 0.7-0.1 0.2-0.1z m-2.5-1.6l0.4 0 0.7 0 0.3 0.3 0.4 0.2 0.3 0.5 0.1 0.4-0.2 0.1-0.4 0.1-0.4-0.1-0.2 0.1-0.1 0.2-0.3 0-0.3 0-0.2 0-0.3-0.2-0.1-0.5-0.2-0.1-0.2-0.1-0.2-0.1 0-0.1 0.2-0.2 0.7-0.5z m-31.1 74.7l-0.5-0.2-0.2 0-0.3 0.2-0.2-0.1-0.3-0.2-0.2-0.1-0.1 0.1-0.1 0.3-0.1 0.2-0.2 0.1-0.5-0.1-0.3 0-0.2 0.1-0.1 0.2 0 0.1 0 0.4-0.1 0.3-0.1 0.1-0.2 0-0.1-0.1-0.1-0.1-0.3-0.7-0.3-0.3-0.2-0.2-0.3-0.1-2.5-0.2-0.1 0-0.5-0.2-0.2-0.1-0.7-0.8-0.3-0.3-0.5-0.1-0.3-0.1-0.1-0.1-0.1-0.1-0.2-0.7 0-0.1 0-0.5 0-0.1-0.3-0.6 0-0.2 0-0.2 0-0.1 0.4-0.4 0-0.2 0-0.3 0-0.2-0.2-0.3-0.4-0.4-0.2-0.1-0.3-0.1-0.4 0-1.4 0.5-0.2 0-0.2-0.2 0-0.3 0-0.3 0.1-0.2 0.1-0.2 0-0.1-0.2-0.5 0-0.2 0.2-0.6 0.1-0.2 0-0.3-0.1-0.3-0.3-0.8 0-0.1 0-0.7-0.1-0.3-0.1-0.1-0.1-0.2-0.4-0.2-0.2-0.1-0.2 0-0.4 0-0.2-0.1-0.1-0.1-0.2-0.3-0.4-0.9-0.1-0.2 0-0.3 0-0.3 0-0.3 0.2-0.4 0-0.3 0-1.7-0.1-0.2-0.2-0.2-0.8-0.6-0.1-0.1-0.1-0.3-0.3-0.6 0-0.1-2-1.9-0.1-0.3-0.1-0.2-0.3-0.3-0.1-0.1-0.2 0-0.1 0-0.8 0.4-0.2 0.1-0.3 0-0.2-0.1-0.5-0.1-0.1-0.4-1.2-3.6-0.3-0.3-0.5-0.9-0.1-0.4 0.2-0.8 0-0.4 0-0.3 0-0.3-0.2-0.4-0.3-0.9-0.2-0.5 0-0.5-0.1-0.1-0.1-0.3-0.6-0.4-0.2-0.3-1-2.2-0.1-0.2 0.1-1.3-0.1-0.6 0-0.2-0.2-0.5 0-0.3 0-0.2 0.2-0.8 0-0.1 0-0.5 0.1-0.5 0.3-1.3 0.1-0.3 0-0.6-0.1-0.3-0.1-0.2-0.1-0.1-0.2-0.1-2-0.4-0.9-0.3-0.4-0.2-0.4-0.3-0.4-0.4-0.3-0.5-0.1-0.3-0.2-0.4-0.3-0.3-0.9-0.6-0.3-0.4-0.1-0.1-0.1-0.3-0.1-0.3 0-0.7-0.1 0-0.2-0.4 0-0.3 0.1-0.2 0-0.2-0.6-1.2-0.1-0.1-0.1-0.5 0-0.3 0-0.3 0.1-0.2 0.2-0.2 0.4 0 0.5-0.1 0.1-0.1 0.1-0.3-0.1-0.1-0.2-0.5-0.1-0.1-0.2-0.6-0.1-0.2-0.3 0-0.3 0-0.6 0.1-0.8 0.3-0.2 0-0.2 0-0.1-0.1 0-0.2 0-0.1 0.2-0.3 0-0.2-0.1-0.2-0.3-0.4-0.2-0.3 0.1-0.2 0.2-0.2 0.1-0.1 0-0.2-0.1-0.2-0.2 0-0.3 0-0.1 0-0.3-0.2-0.2 0-0.4 0-0.3 0.1-0.2 0.1-0.2 0.1-0.1-0.1-0.1-0.1 0-0.2 0-0.4 0-0.2 0-0.3-0.1-0.2-0.2 0-0.1 0-0.2 0.3-0.2 0.1-0.2-0.1-0.3-0.1-0.1-0.1 0.2-0.1-0.1-0.2-0.3 0-0.1 0-0.1 0.1 0 0.4 0 0.1-0.2 0.3-0.2 0.1-0.3-0.2-0.2-0.1-0.4-0.1-0.4-0.1-0.1 0-0.1 0 0 0.2 0.1 0.3-0.1 0.1-0.2 0.1-0.4 0-0.1-0.1 0.1-0.2-0.1-0.1-0.1 0-0.4 0-0.2-0.1 0-0.3 0-0.1-0.2-0.1-0.3-0.2-0.1-0.1-0.1-0.1-0.1-0.4-0.2-0.1-0.2-0.1-0.1-0.1-0.1-0.2-0.4-0.1-0.1-0.1-0.2-0.4-0.1-0.1-0.2-0.1-0.2 0-0.2 0.1-0.3 0.2-0.3 0.1-0.8 0-0.1-0.1-0.1-0.1 0-0.2 0-0.4 0-0.2-0.1-0.1-0.3-0.3-0.1-0.2-0.1-0.2 0.1-0.3 0.1-0.2 0-0.1-0.1 0-0.4 0-0.1-0.1-0.1-0.1-0.1-0.2-0.1-0.2-0.2-0.2-0.4-0.3-0.2 0-0.1 0-0.1 0.2-0.1 0-0.2-0.1-0.3-0.3-0.3-0.3-0.2-0.1-0.2 0-0.2-0.2-0.1-0.2-0.4-0.1-0.3-0.4-0.3-0.1-0.3-0.1-0.2-0.2-0.4-0.1-0.2-0.2-0.3-0.1 0 0.1-0.3 0.2-0.2-0.1-0.5-0.2-0.2 0-0.2 0.1-0.1 0-0.4 0-0.3 0.1-0.4 0.1-0.2 0-0.2 0-0.2-0.2-0.2-0.1-0.6-0.1-0.3-0.1-0.4-0.2-0.1-0.1-0.2 0-0.8 0.1-0.3 0.1-0.4 0.2-0.6 0.1-0.2 0-0.2-0.2-0.2 0-0.3 0.1-0.1 0-0.1-0.1-0.2-0.3-0.1-0.2-0.1-0.2-0.2-1.6-0.1-0.3 0-0.2 0.1-1.6 0-0.2-0.1-0.3-0.1-0.2-0.2-0.1-0.3-0.1-0.1-0.1 0-0.1 0.1-0.2 0.2-0.2 0.5-0.4 0.2-0.3 0-0.3-0.1-0.3-0.2-0.3-0.2-0.2-0.2-0.3-0.1-0.1 0-0.3 0.1-0.4 0.1-0.2 0.1-0.2 0.3 0 0.2-0.1 0.2-0.2 0.3-1 0.1-0.2 0.2-0.3 0.1-0.3-0.1-0.4-0.3-1.6 0-0.5-0.1-0.6-0.2-0.3-0.7-0.6 0.4-0.2 0.3 0 0.5 0.2 0.3 0.2 0.1 0.1 0 0.4 0.2 0.5 0 0.1-0.3 0.1-0.1 0.4 0.2 0.5 0 0.3 0 0.2 0 0.2 0.3 0.1 0.4 0.1 0.4-0.1 0.5 0 0.4-0.2 0.6 0.1 0.5 0.2 0.5 0.3 0.4 0.4-0.5 0.1 0 0.2 0.8 0.6 0.4 0.4 0.4 0.2 0.9 0.1 0.2 0.1 0.3 0.2 0.2 0 0.4 0 0.1 0 0.2 0 0.3 0.2 0.5 0.6 0.3 0.1 0.2 0.1 1.1 0.1 0.4-0.1 0.4-0.1 0.4-0.1 0.4 0 0.1 0 0.7 0.9 0.2 0.2 0.3 0 0.5 0 0.3-0.3 0.3-1 0.2-0.3 0.2-0.1 0.4 0 0.2 0 0.2 0.2 0.1 0 0.2 0 0.2-0.2 0.1-0.1 0.9-0.4 0.4-0.2 0.2-0.5 0-0.5 0.1-0.1 0.3 0.1 0.4 0 0.3-0.2 0.2-0.4 0.3-0.3 0.5 0 0.3-0.1 0.2-0.3 0.2-0.4 0.3-0.3 0.4-0.2 0.4-0.1 0.3 0.1 0.3 0.3 0 0.2-0.2 0.5-0.1 0.1 0.2 0.1 0.6 0 1.5 0.7 0.4 0.1 0.8 0 0.3 0.1 0.7 0.4 0.4 0.1 0.4-0.1 0.9-0.1 0.2-0.1 0.9-0.6 0.7-0.3 0.3-0.2 0.6-0.7 0.1-0.2 0.1 0 0.3 0.1 0.2 0.1 0.5 0.8 1.4 1.2 0 0.2-0.4 0.2-0.4 0.3-0.2 0.3 0.3 0.2 0.3 0 2.7-0.5 0.4 0 0.5 0.2 0.7 0.6 0.9 0 0.9 0.2 0.5 0 0.1-0.1 0.2-0.3 0.1-0.1 0.1 0 0.3 0.1 0.1-0.1 0.2-0.2 0.2-0.2 0.2-0.5 0.2-0.5 0.4-0.3 1-0.4 2.5-1.5 0.4-0.3 0.3-0.4 0.4-0.9 0.9-0.7 0.6-1 0.5-1 0.1-0.2 0.1-0.1 0.1-0.2 0.1-0.3-0.1-0.3-0.4-0.5-0.1-0.2 0.1-0.2 0.5-0.1 0.2-0.1 0-0.2 0.2-0.7 1.7-3.9 0.2-0.2 0.1-0.2 0.2-0.1 0.3-0.1 0.2-0.1 0-0.2-0.1-0.2-0.1-0.3 0.1-0.4 1.4-2.5 0-0.2-0.2-1 0-0.5 0.1-0.4 0.9-0.6 0.4-1.1 0.4-0.4 0.3 0 0.4 0 0.3-0.1 0.2-0.3 3-4.9 0-0.2 0-0.2 0-0.2 0.4-0.2 0.2-0.3 0.3-0.6 0.9-1.4 0.2-0.5 0.2-1 0.1-0.4 0.4-0.4 0.2-0.1 0.3 0 0.2-0.2 0.1-0.1-0.1-0.5 0.1-0.2 0.1-0.2 0.7-0.4 1.5-1.5 0.3-0.6 0.3-0.6 0.2-0.7 0.3-0.7 0.6-0.5 1.7-0.8 0.7-0.2 0.4-0.4 0.8-2 0-1.3 0.2-0.4 0.3-0.1 0.3 0.3 0.2 0.4 0.3 1.2 0.6 1.6 1.3 2.5 0.4 0.9 0.1-0.7-0.1-0.6-0.6-1-0.8-1.7-1.1-3.3-0.3-2.3 0-0.3 0.3-1.2 0.2-0.2 0.5-0.2 0.6 0.3 0.8 0.6 1.4 1 2 2.2 1.7 2.1 0.8 1.9 0.2 1.2 0 2.3 0 2.7-0.4 2.3 0.5 1.2 0-0.6 0.4-1.4 0.2-2 0.3-0.9 0.4-0.9 0.5 0 0.3 0.5-0.2 3.5 0.1 3 0.1 2.3-0.3 0.9 0 1.6 1.3 3.3 0.2 1.1-0.3 0.7 0.2 0.5 0.3 0.8 0.1 0.4-0.1 0.4 0 0.5 0.3 0.3 0.2 0.3 0.2 0.6 0 0.5 0.2 0.4 0.3 0.5 0.3 0.6 0.2 0.4-0.1 0.2-0.1 0.4 0.1 0.2 0 0.3 0.3 0.2 0.2 0.1 0.2 0.2 0.3 0.2 0.2 0.7 0.2 0.3 0.2 0.4 0 0.6 0.2 0.4 0.3 0.4 0.1 0.4 0.1 0.5 0.2 0.8 0.3 0.9 0 0.5-0.2 0.2-0.2 0.1 0 0.2 0 0.2 0.1 0.1 0.2 0.1 0.3-0.3 0.1-0.1 0.4 0.3 0.3 0.6 0.3 0.5 0 0.6 0.2 0.4 0.3 0.5-0.1 0.2 0.1 0.4 0.1 0.8 0.3 0.5 0.1 0.7 0.1 0.5 0.4 0.5 0.2 0.4 0.2 0.6-0.4 0.5-0.2 0.2-0.2 0-0.4 0-0.1 0.1-0.7-0.2-0.2-0.1-0.2-0.3-0.2 0 0.1 0.3 0.1 0.2 0.1 0.1 0.3 0.1 0.1 0.1-0.1 0.2-0.1 0.2-0.1 0.6-0.1 0.2 0.2 0.3 0.1 0.2 0.1 0.1 0.3 0 0.1-0.2 0-0.2 0-0.3 0-0.2 0.2-0.4 0.3-0.4 0.5-0.2 0.5-0.1 0.4 0.1 0.9 0.6 0.4 0.6 0.2 1.1 0.1 0.2 0.6 1.2 0.6 0.8 0.3 0.4 0.1 0.9 0.2 0.3 0.2 0.3 0.2 0.2 0.5 0.4 0.8 0.3 0.8 0.1 0.9-0.1 0.6-0.3 0.5 0.1 0.3 0 0.5 0 0.3 0.1 0.8-0.1 0.3 0 0.5-0.1 0.5 0 0.6 0.4 1 0.4 1.9 0.7 1.2 0.6 0.7 0.7 0.2 0.6 0.2 1.2 0.1 0.8 0 0.4 0.1 0.6 0.1 1.4 0.3 0.8 0.1 0.9 0 0.7-0.3 1.2-0.2 0.4-0.4 0.4-0.6 0.3-0.8 0.3-1.1 0.3-1 0.1-0.7 0.3-0.4-0.1-0.3-0.1-0.2-0.1-0.2 0.1 0 0.4 0.2 0.2 0.4 0.2 0.5-0.2 0.7 0.2 0.9-0.3 0.7 0 0.5 0 0.7-0.4 0.5 0 0.4 0.2 0.3 0.5 0 0.2 0 0.3-0.4 0.7-0.7 0.8-0.9 0.5-0.8 0.1-0.4-0.8-0.2 0.4-0.1 0.8-0.3 0.7-0.8 0.4-0.2 0.2-0.8 1.2-0.3 0.3-0.4 0.2-1.7 0.8-0.3 0.3-0.9 1-0.2 0.1-0.8 1.8-0.2 0.3-0.3 0.2-1.4 0.8-0.5 0.4-0.3 0.3-0.7 2.1-1.4 2.4-1.1 1.6-1.9 2-2.1 2.6-0.3 0-0.4-0.1-0.7 0-1.7 0.4-1.1 0.8-0.9 1.1-1.1 2-0.3 0.3-0.4 0.1-1.4 0.1-0.9 0.2-0.1 0.1-0.1 0.2-0.1 0.1-0.5 0.1-0.6 0.2-1-0.1-0.4 0.1 0 0.1 0.2 0.1 0.5 0.1 0.3 0.2 0.2 0.2 0 0.2 0.2 0.1 0.3 0-1.6 2-0.3 1-0.5 0.7-0.1 0.8-0.2 0.3-0.4 0.7-0.2 0.4-0.7 0.5-0.3 0.3 0 0.3 0 0.4 0 0.3-0.2 0.4-0.7 0.6-0.5 0.4-0.3 0.1-0.4-0.1-0.6-0.2-0.3 0 0 0.2 0.2 0 0.4 0.1 0 0.2-0.4 0.1-0.4 0 0 0.2 0.3 0 0.3 0 0.2-0.1 0.1-0.2 0.3 0.1-1 1.2-1.1 1.6-0.2 0.1-0.3 0.2-0.2 0.1-0.9 1.2 0 0.2-0.3 0.8-0.3 1.9 0.3 2.2 0 0.8-0.1 0.3-0.2 0.3-0.2 0.1-0.4 0.2-0.7 0.7-0.4 0.2-0.4 0.7-0.3 0.2-1.6 0.5z" id="BRA681" name="Amapá">
                         </path></a>
                         <circle cx="571.2" cy="692.4" id="0">
@@ -737,521 +1191,5 @@ function imprimirWhereToGo() {
                         </circle>
                     </svg>
                 </div>
-                <!-- Ventana modal -->
-                <!-- 1 -- Goiás -->
-                <div class="modal fade" id="Goias">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Goiás </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2 -- Tocantins -->
-                <div class="modal fade" id="Tocantins">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Tocantins </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 3 -- Rondônia -->
-                <div class="modal fade" id="Rondonia">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Rondônia </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 4 -- Rio Grande do Norte -->
-                <div class="modal fade" id="RioGrandeDoNorte">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Rio Grande do Norte </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 5 -- Mato Grosso -->
-                <div class="modal fade" id="MatoGrosso">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Mato Grosso </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 6 -- Minas Gerais -->
-                <div class="modal fade" id="MinasGerais">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Minas Gerais </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 7 -- Roraima -->
-                <div class="modal fade" id="Roraima">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Roraima </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 8 --  Santa Catarina -->
-                <div class="modal fade" id="SantaCatarina">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Santa Catarina </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 9 -- Pará -->
-                <div class="modal fade" id="Para">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Pará </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 10 --  Bahía -->
-                <div class="modal fade" id="Bahia">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Bahía </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 11 -- Distrito federal -->
-                <div class="modal fade" id="DistritoFederal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Distrito Federal </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 12 -- Rio de Janeiro -->
-                <div class="modal fade" id="RioDeJaneiro">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Rio de Janeiro </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 13 -- São Paulo -->
-                <div class="modal fade" id="SaoPaulo">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> São Paulo </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 14 -- Amazonas -->
-                <div class="modal fade" id="Amazonas">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Amazonas </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 15 -- Amapá -->
-                    <div class="modal fade" id="Amapa">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exModalLabel"> Amapá </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">
-                                    TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                    TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                    TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- 16 -- Sergipe -->
-                <div class="modal fade" id="Sergipe">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Sergipe </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 17 -- Paraíba -->
-                <div class="modal fade" id="Paraiba">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Paraíba </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 18 -- Rio Grande do Sul -->
-                <div class="modal fade" id="RioGrandeDoSul">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Rio Grande do Sul </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 19 -- Espirito Santo -->
-                <div class="modal fade" id="EspíritoSanto">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Espirito Santo </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 20 -- Alagoas -->
-                <div class="modal fade" id="Alagoas">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Alagoas </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 21 -- Piaui -->
-                <div class="modal fade" id="Piaui">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Piauí</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 22 -- Ceará-->
-                <div class="modal fade" id="Ceara">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Ceará</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 23 -- Mato Grosso do Sul-->
-                <div class="modal fade" id="MatoGrossoDoSul">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Mato Grosso do Sul </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 24 -- Maranhão -->
-                <div class="modal fade" id="Maranhao">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Maranhão </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 25 -- Acre -->
-                <div class="modal fade" id="Acre">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Acre </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 26 -- Pernmbuco -->
-                <div class="modal fade" id="Pernambuco">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Pernambuco </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 27 -- Paraná -->
-                <div class="modal fade" id="Parana">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exModalLabel"> Paraná </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                                TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! TEXTO DEL CUERPO DEL MODAL! 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         `
 }
