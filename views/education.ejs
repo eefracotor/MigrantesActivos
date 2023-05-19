@@ -1,48 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <link rel="stylesheet" href="resources/css/education.css" />
     <title>Inicio</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="all">
-        <div class="top">
-            <div class="logo"><a href="/"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
-            <div class="login">
-                <button class="btn btn-primary">login</button>
-            </div>
-        </div>
-        <div class="menu-top">
-            <div class="pages">
-                <ul>
-                    <li><a href="/"><button class="btn">Home</button></a></li>
-                    <li><a href="info"><button class="btn">General Information</button></a></li>
-                    <li><a href="mr"><button class="btn">Migratory Regularization</button></a></li>
-                    <li><a href="education"><button class="btn">Education</button></a></li>
-                    <li><a href="job"><button class="btn">Job</button></a></li>
-                </ul>
-            </div>
-            <div class="srch-btn">
-                <div class="search">Buscar</div>
-                <div class="gtranslate_wrapper lng-google"></div>
-            </div>
-            
-        </div>
+      <div class="menu-top">
+          <div class="pages">
+              <div class="logo"><a href="#"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
+              <ul>
+                  <li><a href="/"><button class="btn"><img src="resources/img/home.png"></button></a></li>
+                  <!-- <li><a href="info"><button class="btn">General Information</button></a></li> -->
+                  <li><a href="mr"><button class="btn">Migratory Regularization</button></a></li>
+                  <li><a href="education"><button class="btn">Education</button></a></li>
+                  <li><a href="job"><button class="btn">Job</button></a></li>
+              </ul>
+          </div>
+          <div class="srch-btn">
+              <!-- <div class="search">Buscar</div> -->
+              <a href="/login" class="btn btn-primary">login</a >
+              <div class="gtranslate_wrapper lng-google"></div>
+          </div>
+      </div>
     </nav>
 
     <h1>Education</h1>
 
+    <div class="article">
+      <h2>
+        La importancia del aprendizaje del portugués para los extranjeros en
+        Brasil
+      </h2>
+
+      <p>
+        Es importante aprender el idioma portugués para los extranjeros que
+        buscan establecerse en países donde este es el idioma oficial, como es
+        el caso de Brasil. Aprender el idioma no solo es esencial para la
+        comunicación diaria con los locales, sino que también es necesario para
+        encontrar empleo y avanzar en la carrera en el país. Además, el
+        conocimiento del idioma permite una mejor integración en la cultura y
+        sociedad local, lo que a su vez facilita hacer amigos y tener una
+        experiencia más auténtica y significativa en el lugar. Validar los
+        estudios y seguir capacitándose en el idioma también son pasos
+        importantes para demostrar compromiso y mejorar las oportunidades
+        laborales y la calidad de vida.
+      </p>
+    </div>
+
+    <div class="article flex">
+      <h2>
+        Algunas Organizaciones o herramientas que ayudan con la capacitacion del
+        idoma portugues son:
+      </h2>
+      <ul class="flex">
+        <li>Cursos de Youtube</li>
+
+        <button class="button" onclick="toggleInfo()">
+          Mostrar Canales Recomendados
+        </button>
+
+        <div id="info" style="display: none">
+
+          <iframe
+            src="https://www.youtube.com/embed/yIFE2WEmVsI"
+            width="320"
+            height="180"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/rFDuhFzvhpM"
+            width="320"
+            height="180"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/lxzu0m9_B_o"
+            width="320"
+            height="180"
+          ></iframe>
+        </div>
+        <br>
+        <!-- segunda parte interactiva -->
+        <li>Cursos de instituciones</li>
+
+        <button class="button" onclick="toggleInfo1()">
+          Mostrar información
+        </button>
+        <div id="recurso" style="display: none">
+          <a
+            href="https://www.pensarcursos.com.br/curso/basico-de-portugues"
+            target="_blank"
+            ><img width="320" height="180" src="resources/img/portugues.jpg" alt="Curso de Portugues"
+          /></a>
+          <a
+          href="https://www.pensarcursos.com.br/curso/basico-de-portugues"
+          target="_blank"
+          ><img width="320" height="180" src="resources/img/portugues.jpg" alt="Curso de Portugues"
+        /></a>
+        <a
+        href="https://www.pensarcursos.com.br/curso/basico-de-portugues"
+        target="_blank"
+        ><img width="320" height="180" src="resources/img/portugues.jpg" alt="Curso de Portugues"
+      /></a>
+        </div>
+      </ul>
+    </div>
+    <!-- articulos -->
+    <div class="article">
+      <h2>
+        Claves para competir en el mercado laboral brasileño como extranjero
+      </h2>
+      <p>
+        En Brasil, es importante validar los conocimientos adquiridos en otros
+        países para poder competir en el mercado laboral local. Muchos títulos
+        universitarios extranjeros no son reconocidos en Brasil, lo que puede
+        limitar las oportunidades de empleo de los extranjeros. Por lo tanto,
+        obtener nuevas habilidades y certificaciones en áreas relevantes y
+        validar los estudios a través de exámenes oficiales son pasos
+        importantes para aumentar la credibilidad y la competitividad del
+        currículum del extranjero y mejorar sus oportunidades laborales y su
+        calidad de vida. Además, seguir capacitándose y mejorando sus
+        habilidades lingüísticas es esencial para el éxito en la carrera y en la
+        vida en Brasil.
+      </p>
+    </div>
+
+    <!-- Herramientas de educacion gratuitas mas populares -->
+    <div class="article lista" >
+        <h2>Intituciones de capacitacion que brindan apoyo para el extranjero de manera gratuita.
+        </h2>
+        
+        <br>
+        <h4>Toti diversidade:</h4>
+           <div class="container">
+            <img src="resources/img/toti.jpeg"  alt="">
+            <a target="_blank" href="https://totidiversidade.com.br/"></a>
+            <p>Somos a primeira plataforma brasileira de ensino e inclusão de pessoas refugiadas e migrantes no mercado de trabalho de tecnologia.
+              Nosso propósito é inspirar a mudança conectando educação, tecnologia e diversidade.
+              <br>
+              link: <a target="_blank" href="https://totidiversidade.com.br/">Sitio Web</a>
+              
+          </p> 
+          </div> 
+            <br>  
+          <h4>Senai:</h4>
+          <div class="container">
+           <img src="resources/img/senai.png"  alt="">
+           <p>Com mais de 80 anos de atuação, o SENAI-SP supera 1 milhão de matrículas anuais, abrangendo desde cursos para a qualificação básica até a pós-graduação, nas modalidades presencial, semipresencial e online. São 92 unidades de formação profissional distribuídas em todo o estado de São Paulo, além de 78 escolas móveis, que levam soluções customizadas para a indústria. <br>
+             link: <a target="_blank" href="https://www.sp.senai.br/o-senai">Sitio web</a>-<a href="https://suzano.sp.senai.br/cursos/11/4312/bolsas-de-estudo?bolsa=true">Bolsas de Estudio</a>
+          
+         </p> 
+         </div> 
+         <h4>Senac:</h4>
+         <div class="container">
+          <img src="resources/img/senac.webp"  alt="">
+          <p>Desde 1946, trabalhamos para transformar vidas. Aqui, pessoas de todas as idades são incentivadas a desenvolver seu potencial para expandir suas possibilidades de futuro. É assim que formamos profissionais que sabem fazer grandes ideias virarem realidade. <br> link: <a target="_blank" href="https://www.sp.senac.br/sobre-o-senac">Sitio web</a>-<a href="https://www.sp.senac.br/bolsas-de-estudo">Bolsas de Estudio</a>
+         
+        </p> 
+        </div> 
+    </div>
+        
+    
+    <div class="article">
+      <h2> Validacion de titulos en brasil </h2>
+
+      <p>
+        Es importante aprender el idioma portugués para los extranjeros que
+        buscan establecerse en países donde este es el idioma oficial, como es
+        el caso de Brasil. Aprender el idioma no solo es esencial para la
+        comunicación diaria con los locales, sino que también es necesario para
+        encontrar empleo y avanzar en la carrera en el país. Además, el
+        conocimiento del idioma permite una mejor integración en la cultura y
+        sociedad local, lo que a su vez facilita hacer amigos y tener una
+        experiencia más auténtica y significativa en el lugar. Validar los
+        estudios y seguir capacitándose en el idioma también son pasos
+        importantes para demostrar compromiso y mejorar las oportunidades
+        laborales y la calidad de vida.
+      </p>
+    </div>
+     
+</div>
 
 
+<!--que niveles de educacion ofrece brasil
+como inscribirse en el sistema de educacion del pais 
+como comvalidar titulos
+
+--> 
+
+
+   
+    <script>
+      //funcion de mostrar canales de youtube
+      function toggleInfo() {
+        let informacion = document.getElementById("info");
+        if (informacion.style.display === "none") {
+          informacion.style.display = "flex";
+        } else {
+          informacion.style.display = "none";
+        }
+      }
+      //funcion de mostrar informacion
+      function toggleInfo1() {
+        let informacion1 = document.getElementById("recurso");
+        if (informacion1.style.display === "none") {
+          informacion1.style.display = "flex";
+        } else {
+          informacion1.style.display = "none";
+        }
+      }
+
+
+
+    </script>
+
+    <footer>
+      <p>Derechos reservados © 2023 Educación en Brasil</p>
+    </footer>
+
+   
     <!-- <div class="gtranslate_wrapper"></div> -->
-    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","pt","ja","es","ht"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d","alt_flags":{"pt":"brazil"}}</script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>  
+    <script>
+      window.gtranslateSettings = {
+        default_language: "en",
+        native_language_names: true,
+        detect_browser_language: true,
+        languages: ["en", "fr", "pt", "ja", "es", "ht"],
+        wrapper_selector: ".gtranslate_wrapper",
+        switcher_horizontal_position: "inline",
+        float_switcher_open_direction: "bottom",
+        flag_style: "3d",
+        alt_flags: { pt: "brazil" },
+      };
+    </script>
+    <script
+      src="https://cdn.gtranslate.net/widgets/latest/float.js"
+      defer
+    ></script>
     <script src="resources/js/bootstrap.bundle.min.js"></script>
     <script src="resources/js/js.js"></script>
-</body>
+    
+  </body>
 </html>

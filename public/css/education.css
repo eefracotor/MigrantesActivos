@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* .prueba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    text-align: center;
+}
+.articulo{
+    width: 80%;
+    height: auto;
+    
+    text-align: center;
+} */
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  .article {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+  }
+  .article h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  .article p {
+    line-height: 1.5;
+  }
+  .article .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    background-color:#003063;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .button {
+    background-color: #003063; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+/* 
+  #contend{
+    display: flex;
+    
+    justify-content: center;
+  } */
+/*
+  #info{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  #recurso{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  .lista{
+    display: flex;
+    flex-direction: column;
+  }
+  .imagen{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height:fit-content;
+  }
+
+  /*estilos area de estudio*/
+.container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.container  img {
+  width: 15%;
+  margin-left: 0;
+  height: auto;
+}
+.container p{
+  width: 85%;
+  font-size: 18px;
+  font-style: bold;
+}
+  
+#info{
+ display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+#recurso{
+  display: flex;
+   padding: 20px;
+   justify-content: space-around;
+ }
