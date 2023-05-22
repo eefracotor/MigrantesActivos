@@ -5,11 +5,15 @@
 }
 
 body {
-    background-image: url("../img/rio-de-janeiro-g6229fcdb9_1280.jpg");
+    background-image: url("../img/fon.jpg");
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+img-resposive 
+
 
 section {
     width: 100%;
@@ -119,7 +123,7 @@ ul {
 }
 
 .gtranslate_wrapper {
-    margin: auto;    
+    /* margin: auto;     */
     padding: 10px 15px 15px 15px;
     /* align-content: center; */
     /* display: flex;
@@ -204,11 +208,4 @@ ul {
 .loged img {
     width: 50px;
     height: 50px;
-}
-
-
-@media screen and (max-width: 1090px) {
-    .logo {
-        width: 135px;
-    }
 }
