@@ -11,6 +11,11 @@ img {
     box-sizing: border-box;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+}
+
 .mr-main {
     width: 100%;
     height: auto;
@@ -25,6 +30,7 @@ img {
 .mr-title{
     width: 800px;
     margin: auto;
+    margin-top: 50px;
     margin-bottom: 50px;
     padding: 5px;
     border-radius: 5px 25px;
@@ -34,7 +40,7 @@ img {
 }
 
 .mr-title h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
 }
@@ -50,7 +56,8 @@ img {
     width: 750px;
     height: auto;
     margin: auto;
-    font-size: 1.5rem;
+    margin-top: 150px;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
     /* border: 1px solid #000; */
@@ -70,6 +77,7 @@ img {
     width: 100%;
     height: 100px;
     background-color: #f2f2f2;
+    top: 90px;
     /* background-color: #ffffff9c; */
     /* background-color: #E0FFFF; */
     display: flex;
@@ -122,8 +130,8 @@ img {
     /* height: 2vh;
 }  */
 
-.card-descrip-visa h2 {
-    font-size: 1.5rem;
+.card-descrip-visa h2, .card-descrip-cpf h2, .card-descrip-refugio h2 {
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 600;
 }
@@ -158,6 +166,7 @@ img {
 .card-container-cpf, .card-container-visa, .mapa-container {
     width: 100%;
     max-width: 1700px;
+    /* margin-top: 70px; */
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -165,10 +174,14 @@ img {
     margin: auto;
 }
 
+.mapa-container {
+    margin-top: 70px;;
+}
+
 
 .card-cpf, .card-visa {
-    width: 375px;
-    height: 650px;
+    width: 275px;
+    height: 550px;
     border-radius: 5px 35px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
@@ -181,7 +194,7 @@ img {
 }
 
 .card-refugio {
-    width: 375px;
+    width: 275px;
     height: auto;
     border-radius: 5px 35px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -201,8 +214,8 @@ img {
 
 .card-cpf img, .card-visa img, .card-refugio img {
     margin-top: 25px;
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
 }
 
 .card-descrip-cpf, .card-descrip-visa, .card-descrip-refugio {
@@ -212,21 +225,26 @@ img {
 }
 
 .card-parrafo {
-    height: 275px;
-    font-size: 1.2rem;
+    height: 225px;
+    /* font-size: 1.2rem; */
     margin: 15px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
+
 .card-parrafo-refugio {
-    height: 450px;
+    height: 350px;
     font-size: 1.2rem;
     margin: 15px;
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+}
+.card-parrafo p, .card-parrafo-refugio p {
+    font-size: .8rem;
 }
 
 .cft {
@@ -269,6 +287,10 @@ img {
     margin-bottom: 25px;
 }
 
+.mr-details-title h3 {
+    font-size: 1.3rem;
+}
+
 /* Estilos Mapa */
 
 /* .mapa-container { */
@@ -284,7 +306,7 @@ img {
     width: 600px;
     height: auto;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: justify;
     /* border: 1px solid #000; */
@@ -331,7 +353,7 @@ img {
  }
 
  .whatsis-visa p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
  }
 
@@ -363,6 +385,10 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.ask-title h2 {
+    font-size: 1.5rem;
 }
 
 /* Estilos Modales */
@@ -422,7 +448,24 @@ img {
 }
 
 .btn-close {
-    background-color: #ff0000
+    background-color: #ff0000;
     width: 2em;
     height: 2em;
 }
+
+
+@media screen and (max-width: 930px) {
+    .mr-title h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .mapa-Br {
+      /* background-color: lightblue; */
+      width: 80%;
+    }
+  }

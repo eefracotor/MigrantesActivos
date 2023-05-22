@@ -96,7 +96,14 @@ h1 {
  }
 
 
+.info-edu {
+  position: absolute;
+  top: 100px;
+}
 
+.info-edu{
+  text-align: center;
+}
 
 
 

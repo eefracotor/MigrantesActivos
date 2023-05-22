@@ -41,10 +41,6 @@ app.get('/login', (req, res) => {
     res.render('login'); //Usando plantillas
 })
 
-//Register
-app.get('/register', (req, res) => {
-    res.render('register'); //Usando plantillas
-})
 
 // Inforrmacion
 app.get('/info', (req, res)=>{
@@ -73,14 +69,21 @@ app.get('/profile', (req, res)=>{
             if(error){
                 console.log("error "+ error.message)
             }else if(req.session.rol == "migrante"){
+                req.session.user = resuluts[0].user;
+                req.session.name = resuluts[0].name;
+                req.session.email = resuluts[0].email;
                     res.render('profile',{
                         login: true,
-                        name: req.session.user});
+                        user: req.session.user,
+                        name: req.session.name,
+                        email: req.session.email
+                    });
     
                 }else{
                     res.render('profile-emp',{
                         login: true,
-                        name: req.session.user});
+                        user: req.session.user,
+                        name: req.session.name});
     
                 }
             // req.session.loggedin = true;
@@ -108,10 +111,16 @@ app.get('/profile', (req, res)=>{
     }
 })
 
-// Perfil de empresa
-app.get('/profile-emp', (req, res)=>{
-    res.render('profile-emp')
+
+//Register
+app.get('/register', (req, res) => {
+    res.render('register'); //Usando plantillas
 })
+
+// Perfil de empresa
+// app.get('/profile-emp', (req, res)=>{
+//     res.render('profile-emp')
+// })
 
 // Editar Perfil de empresa
 app.get('/edit-eprofile', (req, res)=>{
@@ -145,6 +154,16 @@ app.post('/register', async (req, res)=>{
             console.log(error);
         } else {
             // res.send('REGISTRO COMPLETADO CON EXITO!!') 
+            if(rol === 'migrante'){
+                connection.query('SELECT * FROM users WHERE user = ?', [user], async (error, resuluts)=>{
+                    const id = resuluts[0].id;
+                    connection.query('INSERT INTO migrantes SET ?', {nombre:name, apellido:'', fecha_nac:'', pais_nac:'', nacionalidad:'', pais_res:'',  estado_res:'', ciudad_res:'', escolaridad:'', id_user:id}, async(error, resuluts)=>{
+                        if(error){
+                            console.log(error)
+                        }
+                    })
+                })
+            }
             res.render('register',{
                 alert: true,
                 alertTitle: "Registration",
@@ -152,7 +171,7 @@ app.post('/register', async (req, res)=>{
                 alertIcon: 'success',
                 showConfirmButton:false,   
                 timer: 1500,
-                ruta:''
+                ruta:'login'
             })
         }
     })
@@ -209,7 +228,8 @@ app.get('/', (req, res)=>{
     if(req.session.loggedin){
         res.render('index',{
             login: true,
-            name: req.session.user
+            user : req.session.user,
+            name: req.session.name
         });
     }else{
         res.render('index',{
