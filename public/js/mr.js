@@ -547,7 +547,7 @@ function imprimirCpf() {
                         <img src="resources/img/uno.png" alt="fundo1">
                     <div class="card-descrip-cpf">
                         <div class="card-parrafo">
-                            <h4>Solicitar inscrição</h4>
+                            <h2>Solicitar inscrição</h2>
                             <p>Preencha e envie o formulário eletrônico pela internet ou solicite inscrição através da rede conveniada à Receita Federal. Informe os dados solicitados conforme seus documentos de identificação.</p>
                         </div>
                         <div class="cft">
@@ -560,9 +560,9 @@ function imprimirCpf() {
                 <!-- Item 3 -->
                 <div class="card-cpf" id="cv2">
                         <img src="resources/img/dos.png" alt="fundo2">
-                    <div class="card-descrip">
+                    <div class="card-descrip-cpf">
                         <div class="card-parrafo">
-                            <h4>Apresentar documentos</h4>
+                            <h2>Apresentar documentos</h2>
                             <p>Nos casos em que o preenchimento do formulário eletrônico ou atendimento por entidade conveniada resultar na emissão de um protocolo de atendimento, apresente o protocolo gerado e os documentos necessários, listados na etapa acima, à Receita Federal.</p>
                         </div>
                         <div class="cft">
@@ -575,9 +575,9 @@ function imprimirCpf() {
                 <!-- Item 4 -->
                 <div class="card-cpf" id="cv3">
                         <img src="resources/img/tres.png" alt="fundo3">
-                    <div class="card-descrip">
+                    <div class="card-descrip-cpf">
                         <div class="card-parrafo">
-                            <h4>Acompanhar o andamento do pedido</h4>
+                            <h2>Acompanhar o andamento do pedido</h2>
                             <p>Se você enviou os documentos da 2ª etapa por e-mail, acompanhe o andamento do pedido a partir do número de protocolo de atendimento gerado na 1ª etapa.</p>
                         </div>
                         <div class="cft">
@@ -763,7 +763,7 @@ function imprimirRefugio() {
                             <img src="resources/img/uno.png" alt="fundo1">
                         <div class="card-descrip-refugio">
                             <div class="card-parrafo-refugio">
-                                <h4>Criar um email, ou conferir se tem acesso a um email já existente</h4>
+                                <h2>Criar um email, ou conferir se tem acesso a um email já existente</h2>
                                 <p>Ter um email é essencial para acessar o Sisconare. Certifique-se de que você tem acesso ao seu email, ou crie um email, antes de iniciar o preenchimento do formulário no Sisconare.</p>
                             </div>
                             <div class="cft">
@@ -778,7 +778,7 @@ function imprimirRefugio() {
                             <img src="resources/img/dos.png" alt="fundo2">
                         <div class="card-descrip-refugio">
                             <div class="card-parrafo-refugio">
-                                <h4>Fazer cadastro no Sisconare</h4>
+                                <h2>Fazer cadastro no Sisconare</h2>
                                 <p>Entre no Sisconare (<a href="http://sisconare.mj.gov.br/" trarget="blank">sisconare.mj.gov.br</a>), clique em "cadastrar-se" e preencha o formulário com as suas informações. 
                                 Atenção:                                
                                 - Confira os seus dados pessoais. Eles aparecerão nos seus documentos de identidade (Protocolo de Refúgio e Documento Provisório de Registro Nacional Migratório). 
@@ -796,7 +796,7 @@ function imprimirRefugio() {
                             <img src="resources/img/tres.png" alt="fundo3">
                         <div class="card-descrip-refugio">
                             <div class="card-parrafo-refugio">
-                                <h4>Definir a senha para o Sisconare</h4>
+                                <h2>Definir a senha para o Sisconare</h2>
                                 <p>- Entre no seu email e busque a mensagem enviada pelo Sisconare.
                                 - Clique no link desse email. O link irá te direcionar para a tela de definição de senha do Sisconare.                                
                                 - Defina a senha de acordo com a sua preferência.</p>
@@ -813,7 +813,7 @@ function imprimirRefugio() {
                             <img src="resources/img/cuatro.png" alt="fundo3">
                         <div class="card-descrip-refugio">
                             <div class="card-parrafo-refugio">
-                                <h4>Realizar login no Sisconare</h4>
+                                <h2>Realizar login no Sisconare</h2>
                                 <p>- Acesse o <a href="http://sisconare.mj.gov.br/" target="blanck">sisconare.mj.gov.br</a>, e coloque o seu login e senha na caixa azul da primeira tela. </p>
                             </div>
                             <div class="cft">
@@ -828,7 +828,7 @@ function imprimirRefugio() {
                             <img src="resources/img/cinco.png" alt="fundo3">
                         <div class="card-descrip-refugio">
                             <div class="card-parrafo-refugio">
-                                <h4>Preencher o formulário de solicitação de refúgio</h4>
+                                <h2>Preencher o formulário de solicitação de refúgio</h2>
                                 <p>- Clique em "solicitações" e em "solicitação de refúgio". 
                                 - Preencha todas as informações. 
                                 - Na última página, clique em "finalizar". 
@@ -847,7 +847,7 @@ function imprimirRefugio() {
                             <img src="resources/img/seis.png" alt="fundo3">
                         <div class="card-descrip-refugio">
                             <div class="card-parrafo-refugio">
-                                <h4>Agendar horário na Polícia Federal, para emissão do Protocolo de Refúgio</h4>
+                                <h2>Agendar horário na Polícia Federal, para emissão do Protocolo de Refúgio</h2>
                                 <p>- Acesse o site <a href="https://servicos.dpf.gov.br/agenda-web/formulario/1" target="blamck">https://servicos.dpf.gov.br/agenda-web/formulario/1<a>.
                                 - Vá até a unidade da Polícia Federal no dia e horário escolhido. Leve todos os documentos que você tiver, inclusive o número de controle do Sisconare (impresso ou anotado).  
                                 - Se outras pessoas da sua família também tiverem pedido refúgio, será preciso agendar um horário para cada pessoa, e todos devem ir à Polícia Federal.</p>

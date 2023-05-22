@@ -16,6 +16,12 @@ section {
     /* height: 40vh; */
     display: flex;
 }
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
 img {
     width: 100%;
 }
@@ -100,7 +106,7 @@ ul {
 
 .srch-btn {
     width: 20%;
-    margin-right: -15%;
+    /* margin-right: -15%; */
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -124,7 +130,7 @@ ul {
     width: 90%;
     max-width: 600px;
     height: 65vh;
-    margin: 10vh auto;
+    margin: 25vh auto;
     /* background-color: #ffffff9c; */
     background: #6d707a38;
     border: 1px solid #3c97f1;
@@ -137,7 +143,7 @@ ul {
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     margin: auto;
@@ -197,4 +203,11 @@ ul {
 .loged img {
     width: 50px;
     height: 50px;
+}
+
+
+@media screen and (max-width: 1090px) {
+    .logo {
+        width: 135px;
+    }
 }

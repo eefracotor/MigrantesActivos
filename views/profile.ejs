@@ -36,7 +36,7 @@
                 <% if (login){ %>
                     <div class="loged">
                         <img src="resources/img/assets/icon-avatar.svg" alt="">
-                        <a href="/profile"><p><%= name %></p></a>
+                        <a href="/profile"><p><%= user %></p></a>
                         <!-- <p><%= name %></p> -->
                         <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
                     </div>
@@ -51,15 +51,16 @@
     <Section>
         <div class="header">
             <h1 class="title">
-                Nombre del Usuario
+                <%= name %>
             </h1>
             <div class="avatar"><img src="resources/img/assets/icon-person.svg" alt=""></div>
         </div>
         <div class="info-contact">
-            <div class="detail-info"><img src="resources/img/assets/icon-email.svg" alt=""><p>email@user.com</p></div>
+            <div class="detail-info"><img src="resources/img/assets/icon-email.svg" alt=""><p><%= email %></p></div>
             <div class="detail-info"><img src="resources/img/assets/icon-call.svg" alt=""><p>+00 00 000 00 00</p></div>
             <div class="detail-info"><img src="resources/img/assets/icon-location.svg" alt=""><p>Rua das Palmeiras</p></div>
         </div>
+        <button class="btn btn-primary">Actializar Perfil</button>
     </Section>
 
 
