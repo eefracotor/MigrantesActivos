@@ -61,9 +61,76 @@ app.get('/education', (req, res)=>{
     res.render('education')
 })
 
-//Ttrabajo (JOB)
+//Trabajo (JOB)
 app.get('/job', (req, res)=>{
     res.render('job')
+})
+
+app.get('/profile', (req, res)=>{
+    if(req.session.loggedin){
+        const user = req.session.user;
+        connection.query('SELECT * FROM users WHERE user = ?', [user], async (error, resuluts)=>{
+            if(error){
+                console.log("error "+ error.message)
+            }else if(req.session.rol == "migrante"){
+                    res.render('profile',{
+                        login: true,
+                        name: req.session.user});
+    
+                }else{
+                    res.render('profile-emp',{
+                        login: true,
+                        name: req.session.user});
+    
+                }
+            // req.session.loggedin = true;
+            // req.session.id = resuluts[0].id
+            // req.session.user = resuluts[0].user;
+            // req.session.rol = resuluts[0].rol;
+            // if(req.session.rol == "migrante"){
+            //     res.render('profile');
+
+            // }else{
+            //     res.render('profile-emp');
+
+            // }
+        })
+    } else {
+        res.render('login',{
+            alert: true,
+            alertTitle: "Error",
+            alertMessage: "¡Necesitas esta reguistrado para poder ver este contenido!",
+            alertIcon: 'error',
+            showConfirmButton:true,   
+            timer: false,
+            ruta:'login'
+        });
+    }
+})
+
+// Perfil de empresa
+app.get('/profile-emp', (req, res)=>{
+    res.render('profile-emp')
+})
+
+// Editar Perfil de empresa
+app.get('/edit-eprofile', (req, res)=>{
+    res.render('edit_emp')
+})
+
+// Perfil de usuario migrante
+// app.get('/profile', (req, res)=>{
+//     res.render('profile')
+// })
+
+// Editar Perfil de usuario migrante
+app.get('/edit-mprofile', (req, res)=>{
+    res.render('edit-mig')
+})
+
+// Listado de vagas
+app.get('/vagas', (req, res)=>{
+    res.render('vagas')
 })
 
 //10 - Creando el registro
@@ -110,10 +177,12 @@ app.post('/auth', async (req, res) =>{
                 });
             }else{
                 req.session.loggedin = true;
-                req.session.name = resuluts[0].name
+                req.session.id = resuluts[0].id
+                req.session.user = resuluts[0].user;
+                req.session.rol = resuluts[0].rol;
                 res.render('login',{
                     alert: true,
-                    alertTitle: "Conexión Exsitosa",
+                    alertTitle: "Conexión Exitosa",
                     alertMessage: "¡LOGIN CORRECTO!",
                     alertIcon: 'success',
                     showConfirmButton:false,   
@@ -140,12 +209,12 @@ app.get('/', (req, res)=>{
     if(req.session.loggedin){
         res.render('index',{
             login: true,
-            name: req.session.name
+            name: req.session.user
         });
     }else{
         res.render('index',{
             login: false,
-            name: 'Debe iniciar sesión'
+            // name: 'Debe iniciar sesión'
         });
     }
 })

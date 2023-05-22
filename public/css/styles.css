@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../img/fundo-body1.jpg");
+    background-image: url("../img/rio-de-janeiro-g6229fcdb9_1280.jpg");
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -26,10 +26,11 @@ ul {
     justify-content: center;
     align-items: center;
 }
+ 
+ li a {
+     text-decoration: none; 
+} 
 
-li a {
-    text-decoration: none;
-}
 .all {
     padding-bottom: 15px;
 }
@@ -83,6 +84,14 @@ li a {
     filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(107%) contrast(100%);
 }
 
+.btn img:hover {
+    filter: invert(36%) sepia(86%) saturate(2765%) hue-rotate(196deg) brightness(100%) contrast(103%);
+}
+
+.btn:hover {
+    color: #0780fa;
+}
+
 .pages button {
     width: auto;
     color: #fff;
@@ -90,36 +99,52 @@ li a {
 }
 
 .srch-btn {
-    width: 15%;
-    margin-right: 2%;
+    /* width: 20%; */
+    margin-right: -15%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
+.srch-btn a {
+    width: auto;
+    height: 45px;
+}
+
+.gtranslate_wrapper {
+    /* margin: auto;     */
+    padding: 10px 15px 15px 15px;
+    /* align-content: center; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center */
+}
+
 .wellcome {
-    width: 70%;
+    width: 90%;
     max-width: 600px;
-    height: 50vh;
+    height: 65vh;
     margin: 10vh auto;
-    background-color: #ffffff9c;
-    border: 1px solid #000;
+    /* background-color: #ffffff9c; */
+    background: #6d707a38;
+    border: 1px solid #3c97f1;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     text-align: center;
     margin: auto;
 }
 
 .info-title {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: auto;
     font-size: 1.5rem;
@@ -160,3 +185,16 @@ li a {
     font-size: 1rem;
 }
 
+
+.loged {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loged img {
+    width: 50px;
+    height: 50px;
+}
