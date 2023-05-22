@@ -86,8 +86,8 @@
         </div>
         <br>
         <!-- segunda parte interactiva -->
-        <li>Cursos de instituciones</li>
-
+        <li>Otros Recursos Online</li>
+<!-- 
         <button class="button" onclick="toggleInfo1()">
           Mostrar información
         </button>
@@ -98,17 +98,34 @@
             ><img width="320" height="180" src="resources/img/portugues.jpg" alt="Curso de Portugues"
           /></a>
           <a
-          href="https://www.pensarcursos.com.br/curso/basico-de-portugues"
+          href="https://www.duolingo.com/"
           target="_blank"
-          ><img width="320" height="180" src="resources/img/portugues.jpg" alt="Curso de Portugues"
+          ><img width="320" height="180" src="resources/img/duolingo1.png" alt="curso duolingo"
         /></a>
         <a
         href="https://www.pensarcursos.com.br/curso/basico-de-portugues"
         target="_blank"
-        ><img width="320" height="180" src="resources/img/portugues.jpg" alt="Curso de Portugues"
+        ><img width="320" height="180" src="resources/img/udemy.png" alt="Curso de Portugues"
       /></a>
+        </div> -->
+
+        <button class="button" onclick="toggleInfo1()">
+          Mostrar información
+        </button>
+        <div id="recurso" style="display: none">
+          <a href="https://www.pensarcursos.com.br/curso/basico-de-portugues" target="_blank">
+            <img src="resources/img/portugues.jpg" alt="Curso de Portugués">
+          </a>
+          <a href="https://www.duolingo.com/" target="_blank">
+            <img src="resources/img/duolingo1.png" alt="Curso Duolingo">
+          </a>
+          <a href="https://www.udemy.com/courses/search/?src=ukw&q=portugues+para+extranjeros" target="_blank">
+            <img src="resources/img/udemy.png" alt="Curso de udemy">
+          </a>
         </div>
-      </ul>
+
+
+      
     </div>
     <!-- articulos -->
     <div class="article">
@@ -131,42 +148,44 @@
     </div>
 
     <!-- Herramientas de educacion gratuitas mas populares -->
+    
+
     <div class="article lista" >
         <h2>Intituciones de capacitacion que brindan apoyo para el extranjero de manera gratuita.
         </h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="resources/img/toti.jpeg" alt="Imagen 1" class="card-img">
+            <div class="card-content">
+              <h3 class="card-title">Toti diversidade</h3>
+              <p class="card-description">Somos a primeira plataforma brasileira de ensino e inclusão de pessoas refugiadas e migrantes no mercado de trabalho de tecnologia.
+                Nosso propósito é inspirar a mudança conectando educação, tecnologia e diversidade.
+                <br>
+                link: <a target="_blank" href="https://totidiversidade.com.br/">Sitio Web</a></p>
+            </div>
+          </div>
         
-        <br>
-        <h4>Toti diversidade:</h4>
-           <div class="container">
-            <img src="resources/img/toti.jpeg"  alt="">
-            <a target="_blank" href="https://totidiversidade.com.br/"></a>
-            <p>Somos a primeira plataforma brasileira de ensino e inclusão de pessoas refugiadas e migrantes no mercado de trabalho de tecnologia.
-              Nosso propósito é inspirar a mudança conectando educação, tecnologia e diversidade.
-              <br>
-              link: <a target="_blank" href="https://totidiversidade.com.br/">Sitio Web</a>
-              
-          </p> 
-          </div> 
-            <br>  
-          <h4>Senai:</h4>
-          <div class="container">
-           <img src="resources/img/senai.png"  alt="">
-           <p>Com mais de 80 anos de atuação, o SENAI-SP supera 1 milhão de matrículas anuais, abrangendo desde cursos para a qualificação básica até a pós-graduação, nas modalidades presencial, semipresencial e online. São 92 unidades de formação profissional distribuídas em todo o estado de São Paulo, além de 78 escolas móveis, que levam soluções customizadas para a indústria. <br>
-             link: <a target="_blank" href="https://www.sp.senai.br/o-senai">Sitio web</a>-<a href="https://suzano.sp.senai.br/cursos/11/4312/bolsas-de-estudo?bolsa=true">Bolsas de Estudio</a>
-          
-         </p> 
-         </div> 
-         <h4>Senac:</h4>
-         <div class="container">
-          <img src="resources/img/senac.webp"  alt="">
-          <p>Desde 1946, trabalhamos para transformar vidas. Aqui, pessoas de todas as idades são incentivadas a desenvolver seu potencial para expandir suas possibilidades de futuro. É assim que formamos profissionais que sabem fazer grandes ideias virarem realidade. <br> link: <a target="_blank" href="https://www.sp.senac.br/sobre-o-senac">Sitio web</a>-<a href="https://www.sp.senac.br/bolsas-de-estudo">Bolsas de Estudio</a>
-         
-        </p> 
-        </div> 
-    </div>
+          <div class="card">
+            <img src="resources/img/senai.png" alt="Imagen 2" class="card-img">
+            <div class="card-content">
+              <h3 class="card-title">Senai</h3>
+              <p class="card-description">Com mais de 80 anos de atuação, o SENAI-SP supera 1 milhão de matrículas anuais, abrangendo desde cursos para a qualificação básica até a pós-graduação, nas modalidades presencial, semipresencial e online.  <br>
+                link: <a target="_blank" href="https://www.sp.senai.br/o-senai">Sitio web</a>-<a href="https://suzano.sp.senai.br/cursos/11/4312/bolsas-de-estudo?bolsa=true">Bolsas de Estudio</a></p>
+            </div>
+          </div>
         
+          <div class="card">
+            <img src="resources/img/senac.webp" alt="Imagen 3" class="card-img">
+            <div class="card-content">
+              <h3 class="card-title">Senac</h3>
+              <p class="card-description">Desde 1946, trabalhamos para transformar vidas. Aqui, pessoas de todas as idades são incentivadas a desenvolver seu potencial para expandir suas possibilidades de futuro. É assim que formamos profissionais que sabem fazer grandes ideias virarem realidade. <br> link: <a target="_blank" href="https://www.sp.senac.br/sobre-o-senac">Sitio web</a>-<a href="https://www.sp.senac.br/bolsas-de-estudo">Bolsas de Estudio</a></p>
+            </div>
+          </div>
+        </div>
+        
+       
     
-    <div class="article">
+    <!-- <div class="article">
       <h2> Validacion de titulos en brasil </h2>
 
       <p>
@@ -182,7 +201,7 @@
         importantes para demostrar compromiso y mejorar las oportunidades
         laborales y la calidad de vida.
       </p>
-    </div>
+    </div> -->
      
 </div>
 

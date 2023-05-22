@@ -25,6 +25,7 @@ h1 {
   }
   .article {
     background-color: #f2f2f2;
+    border-radius: 5px 25px;
     border: 1px solid #ccc;
     margin: 20px;
     padding: 20px;
@@ -59,36 +60,10 @@ h1 {
     margin: 4px 2px;
     cursor: pointer;
   }
-/* 
-  #contend{
-    display: flex;
-    
-    justify-content: center;
-  } */
-/*
-  #info{
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-  }
-  #recurso{
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-  }
-  .lista{
-    display: flex;
-    flex-direction: column;
-  }
-  .imagen{
-    display: flex;
-    justify-content: space-around;
-    width: 200px;
-    height:fit-content;
-  }
 
   /*estilos area de estudio*/
 .container{
+  border-radius:  5px 25px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -104,15 +79,136 @@ h1 {
   width: 85%;
   font-size: 18px;
   font-style: bold;
+ 
 }
   
 #info{
+  gap: 20px;
  display: flex;
   padding: 20px;
   justify-content: space-around;
 }
 #recurso{
+  gap: 20px;
   display: flex;
    padding: 20px;
    justify-content: space-around;
  }
+
+
+
+
+
+
+/* .card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.5;
+} */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #003063;
+  border-radius: 5px 25px;
+  margin: 0 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.card-img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+  max-height: 200px; /* Ajusta esta altura según tus necesidades */
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/*codigo de imagenes de cursos*/
+
+#recurso {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#recurso a {
+  width: 320px;
+  height: 180px;
+  margin-right: 10px;
+}
+
+#recurso img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 2px solid #003063;
+  border-radius: 5px 25px;
+}
