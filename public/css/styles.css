@@ -99,7 +99,7 @@ ul {
 }
 
 .srch-btn {
-    width: 20%;
+    /* width: 20%; */
     margin-right: -15%;
     display: flex;
     /* justify-content: space-between; */
@@ -112,7 +112,7 @@ ul {
 }
 
 .gtranslate_wrapper {
-    margin: auto;    
+    /* margin: auto;     */
     padding: 10px 15px 15px 15px;
     /* align-content: center; */
     /* display: flex;
