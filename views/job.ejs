@@ -12,24 +12,31 @@
 </head>
 <body>
     <nav class="all">
-       
         <div class="menu-top">
             <div class="pages">
-                <div class="logo"><a href="#"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
+                <div class="logo"><a href="/"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
                 <ul>
                     <li><a href="/"><button class="btn"><img src="resources/img/home.png"></button></a></li>
-                    
+                    <!-- <li><a href="info"><button class="btn">General Information</button></a></li> -->
                     <li><a href="mr"><button class="btn">Migratory Regularization</button></a></li>
                     <li><a href="education"><button class="btn">Education</button></a></li>
                     <li><a href="job"><button class="btn">Job</button></a></li>
                 </ul>
             </div>
             <div class="srch-btn">
-               
-                <a href="/login" class="btn btn-primary">login</a >
+                <!-- <div class="search">Buscar</div> -->
+                <% if (login){ %>
+                    <div class="loged">
+                        <img src="resources/img/assets/icon-avatar.svg" alt="">
+                        <a href="/profile"><p><%= user %></p></a>
+                        <!-- <p><%= name %></p> -->
+                        <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
+                    </div>
+                <% } else { %>
+                    <a href="/login" class="btn btn-primary">login</a >                
+                <% } %>
                 <div class="gtranslate_wrapper lng-google"></div>
-            </div>
-            
+            </div>            
         </div>
     </nav>
 

@@ -49,17 +49,50 @@ app.get('/info', (req, res)=>{
 
 //regulaacion migratoria
 app.get('/mr', (req, res)=>{
-    res.render('mr');
+    if(req.session.loggedin){
+        res.render('mr',{
+            login: true,
+            user : req.session.user,
+            name: req.session.name
+        });
+    }else{
+        res.render('mr',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
 //Educacion
-app.get('/education', (req, res)=>{
-    res.render('education')
+app.get('/education',(req, res)=>{
+    if(req.session.loggedin){
+        res.render('education',{
+            login: true,
+            user : req.session.user,
+            name: req.session.name
+        });
+    }else{
+        res.render('education',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
 //Trabajo (JOB)
 app.get('/job', (req, res)=>{
-    res.render('job')
+    if(req.session.loggedin){
+        res.render('job',{
+            login: true,
+            user : req.session.user,
+            name: req.session.name
+        });
+    }else{
+        res.render('job',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
 app.get('/profile', (req, res)=>{
