@@ -1,0 +1,20 @@
+<div id="">
+    <% resuluts.forEach((vaga)=> { %> 
+    <div class="title-vacant">
+        <div>
+            <h3><%= vaga.titulo %></h3>
+            <p class="nombre-emp detail-vaga"><%= vaga.id_empresas %></p>
+                <p class="localidad detail-vaga"><%= vaga.local %></p>
+            <button class="btn btn-primary">Ver más</button>
+        </div>
+    </div>
+    <div class="description-vacant">
+        <p class="centered"><%= vaga.responsabilidades %> </p>
+        <p class="centered"><%= vaga.beneficios %> </p>
+        <p class="centered"><%= vaga.jornada %> </p>
+        <p class="centered"><%= vaga.salario %> </p>
+        <p class="centered"><%= vaga.tipo_contrato %> </p>
+        <p class="centered"><%= vaga.horario %> </p>
+    </div>
+    <% }) %>
+</div>
