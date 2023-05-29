@@ -9,8 +9,36 @@ a{
 }
 
 .titulo {
-  justify-content: center;
+  margin-top: 100px;
+  /* justify-content: center; */
   text-align: center;
+}
+
+.busqueda {
+  text-align: center;
+}
+
+.busqueda input {
+  width: 25%;
+  height: 4vh;
+  text-align: center;
+  border-radius: 10px;
+  border-color: azure;
+}
+
+.busqueda button {
+  color: #fff;
+  background-color: #3c97f1;
+  border-radius: 15px;
+  width: 5%;
+  height: 4vh;
+  border-color: azure;
+}
+
+.busqueda button:hover {
+  color: #012449;
+  width: 5.50%;
+  height: 4.50vh;
 }
 
 .job-title {
@@ -25,8 +53,11 @@ a{
     width: 1000px;
     height: 80vh;
     /* background-color: blueviolet; */
-   display: flex;
-   flex-direction: row;
+   /* display: flex;
+   flex-direction: row; */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 50px;
    margin: auto;
    margin-top: 10vh;
 
@@ -54,12 +85,23 @@ a{
   background-color:#ffffff00 ;
   color: #fff;
   border-color: #3c97f1;
+  backdrop-filter: blur(15px);
+  border-color: blanchedalmond;
 }
 
 .card button {
   background-color: #3c97f1;
   border-radius: 15px;
   color: #fff;
+  border-color: azure;
+  width: 95%;
+  height: 6vh;
+}
+
+.card button:hover {
+  color: #012449;
+  width: 96%;
+  height: 7vh;
 }
 
 .card-vaga{
@@ -69,6 +111,7 @@ a{
     border-radius: 5px;
     margin: 10px auto;
     padding: 25px;
+    backdrop-filter: blur(15px);
 }
 
 .card-vaga h3 {
