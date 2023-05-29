@@ -111,9 +111,7 @@ ul {
 
 .srch-btn {
     width: 20%;
-    /* margin-right: -15%; */
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -123,12 +121,7 @@ ul {
 }
 
 .gtranslate_wrapper {
-    /* margin: auto;     */
     padding: 10px 15px 15px 15px;
-    /* align-content: center; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center */
 }
 
 .wellcome {
@@ -169,15 +162,12 @@ ul {
     display: grid;
     margin: auto;
     grid-template-columns: 400px 400px 400px;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-rows: 600px 600px; */
     grid-template-rows: auto;
     gap: 20px;
     padding: 20px;
 }
 
 .card {
-    /* width: 30%; */
     border-radius: 25px;
     height: auto;
     padding: 20px;
@@ -189,7 +179,6 @@ ul {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* height: 2vh; */
 }
 
 .card-descrip {

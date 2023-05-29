@@ -19,94 +19,124 @@ a{
 }
 
 .main-info {
-  color: #fff;
+  margin-top: 10vh;
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
 }
 
+.inf-emp {
+  width: 1000px;
+  height: 65vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242,242,242);
+  /* border: 1px solid #000; */
+ }
 .container-vagas {
-    width: 1000px;
-    height: 80vh;
-    /* background-color: blueviolet; */
-   display: flex;
-   flex-direction: row;
-   margin: auto;
-   margin-top: 10vh;
+  width: 1000px;
+  height: 65vh;
+ margin: auto;
 
 }
 
 .lista-vagas {
-    width: 500px;
-    max-height: 100%;
-    overflow: auto;
-    border: 1px solid #3c97f1;
-    border-radius: 5px;
-    /* background-color: #707070; */
+  width: 1000vh;
+  max-height: 100%;
+  display: flex;
+ flex-wrap: wrap;
+ overflow: auto;
+  /* border: 1px solid #000; */
+  border-radius: 5px;
 }
 
 .lista-vagas::-webkit-scrollbar {
-    display: none;
-}
-
-.card {
-  border-radius: 25px;
-  height: auto;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  background-color:#ffffff00 ;
-  color: #fff;
-  border-color: #3c97f1;
-}
-
-.card button {
-  background-color: #3c97f1;
-  border-radius: 15px;
-  color: #fff;
+  display: none;
 }
 
 .card-vaga{
-    width: 480px;
-    height: 220px;
-    border: 1px solid #3c97f1;
-    border-radius: 5px;
-    margin: 10px auto;
-    padding: 25px;
+  width: 480px;
+  height: 220px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 25px;
 }
 
 .card-vaga h3 {
-    text-align: justify;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.card-vaga p {
+  max-width: 450px; /* Ancho máximo de la div */
+  overflow: hidden; /* Ocultar el contenido que exceda el ancho máximo */
+  white-space: nowrap; /* Evitar el salto de línea */
+  text-overflow: ellipsis; /* Agregar puntos suspensivos (...) para indicar que se ha recortado el texto */
 }
 
 .data-post, .nombre-emp, .localidad, .descript {
-    color: #fff;
+  color: #707070;
 }
 .nombre-emp, .localidad {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .descript {
-    font-size: 12;
-    margin: 15px auto;
-    line-height: 13px;
+  font-size: 12;
+  margin: 15px auto;
+  line-height: 13px;
 }
 
- .data-post {
-    margin-bottom: 0;
-    font-size: 10px;
- }
-
- .details-vaga {
-    width: 500px;
-    max-height: 100%;
-    overflow: auto;
-    /* border: 1px solid #fff; */
-    border-radius: 5px;
-    background-color: #70707000;
- }
-
- .details-vaga::-webkit-scrollbar {
-    display: none;
+.data-post {
+  margin-bottom: 0;
+  font-size: 10px;
 }
-    
+
+/* .details-vaga {
+  width: 500px;
+  max-height: 100%;
+  overflow: auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  /* background-color: #707070; 
+} */
+
+.details-vaga::-webkit-scrollbar {
+  display: none;
+}
+
+.title-vacant {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.title-vacant h3 {
+  font-size: 1.25rem;
+  margin-top: 5vh;
+  margin-left: 30px;
+}
+
+.title-vacant button {
+  margin: 30px 0px 0px 250px;
+}
+
+.description-vacant {
+  width: 100%;
+  min-height: 80vh;
+  /* overflow: auto; */
+}
+
+.detail-vaga {
+  margin: 0 50px;
+  /* top: 0;
+  left: 25px; */
+}

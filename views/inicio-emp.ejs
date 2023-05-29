@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/inicio-emp.css">
+    <title>Distribucion Demografica</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+</head>
+<body>
+    <!-- <h1>ChartJs</h1> -->
+    <!-- <div id="cantMasc" data-variable="<%= resuluts[0].cant %>"></div>
+    <div id="cantFem" data-variable="<%= resuluts[1].cant %>"></div> -->
+    <input type="hidden" id="cantFem" value="<%= resuluts[0].cant %>">
+    <input type="hidden" id="cantMasc" value="<%= resuluts[1].cant %>">
+        <canvas id="myChart" class="myChart"></canvas>
+        
+      
+        
+        
+        
+    <script>
+        // Obtén una referencia al elemento canvas
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var cantMasc = document.getElementById('cantMasc').value;
+        var cantFem = document.getElementById('cantFem').value;
+        // Crea el objeto de configuración del gráfico
+        var chartConfig = {
+        type: 'bar', // Tipo de gráfico (en este caso, de barras)
+        data: {
+        labels: ['Masculino', 'Femenido'], // Etiquetas del eje X
+        datasets: [
+            {
+            label: 'Cantidades', // Etiqueta de la serie de datos
+            data: [ cantMasc , cantFem ] // Valores de la serie de datos
+            }
+        ]
+        }
+        };
+
+// Crea el gráfico utilizando Chart.js
+var myChart = new Chart(ctx, chartConfig);
+    </script>
+</body>
+</html>
