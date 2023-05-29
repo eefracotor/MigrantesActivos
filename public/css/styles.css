@@ -132,12 +132,11 @@ ul {
 }
 
 .wellcome {
-    width: 90%;
-    max-width: 600px;
+    width: 60%;
+    max-width: 850px;
     height: 65vh;
-    margin: 25vh auto;
-    /* background-color: #ffffff9c; */
-    background: #6d707a38;
+    margin: 20vh auto;
+    backdrop-filter: blur(15px);
     border: 1px solid #3c97f1;
     border-radius: 25px;
     display: flex;
@@ -151,7 +150,8 @@ ul {
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
+    margin-top: 40px;
 }
 
 .info-title {
@@ -208,4 +208,80 @@ ul {
 .loged img {
     width: 50px;
     height: 50px;
+}
+
+.migrante {
+    width: 70%;
+    max-width: 600px;
+    height: 90vh;
+    margin: 25vh auto;
+    backdrop-filter: blur(15px);
+    border: 1px solid #3c97f1;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center
+    /* background-image: url("../img/migrante.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat; */
+}
+.migrante img {
+    width: 94%;
+    height: 45vh;
+    border-radius: 15px;
+    margin-top: -90px;
+}
+
+.empresas {
+    width: 70%;
+    max-width: 600px;
+    height: 90vh;
+    margin: 25vh auto;
+    backdrop-filter: blur(15px);
+    border: 1px solid #3c97f1;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center
+    /* background-image: url("../img/empresa.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+     */
+}
+
+.empresas img {
+    width: 94%;
+    height: 45vh;
+    border-radius: 15px;
+    margin-top: -100px;
+}
+
+.imfo { 
+    /* margin-top: -270px; */
+    margin: -14% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid: gap 15px;
+}
+
+.imfo button {
+    border-color: bisque;
+    width: 135px;
+    border-radius: 10px;
+    color: white;
+    background-color: #004FA3;
+    text-align: center;
+}
+
+.imfo button:hover{
+ color: #3c97f1;
+ width: 140px;
 }

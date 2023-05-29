@@ -13,3 +13,12 @@ loginForm.addEventListener('submit', (e)=>{
     window.location.href = 'index.html'   
 
 })
+
+// const passwordField = document.getElementById('pass');
+// passwordField.addEventListener('click', function() {
+//   if (this.type === 'password') {
+//     this.type = 'text';
+//   } else {
+//     this.type = 'password';
+//   }
+// });
