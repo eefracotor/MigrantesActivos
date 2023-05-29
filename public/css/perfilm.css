@@ -9,11 +9,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
-
-    /* background: url(../img/fon.jpg) no-repeat;
-    background-position: center;
-    background-size: cover; */
   }
   
   form {
@@ -75,6 +70,3 @@
 
   }
   
-  .enviar{
-    
-  }

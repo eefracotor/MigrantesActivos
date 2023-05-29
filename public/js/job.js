@@ -3,8 +3,6 @@ var cardVaga2 = document.getElementById("card2")
 var cardVaga3 = document.getElementById("card3")
 var cardVaga4 = document.getElementById("card4")
 var cardVaga5 = document.getElementById("card5")
-// var cardVaga6 = document.getElementById("card6")
-// var cardVaga7 = document.getElementById("card7")
 
 var detalleVagas = document.getElementById("detalles-vaga")
 
