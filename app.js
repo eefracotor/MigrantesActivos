@@ -49,19 +49,72 @@ app.get('/info', (req, res)=>{
 
 //regulaacion migratoria
 app.get('/mr', (req, res)=>{
-    res.render('mr');
+    if(req.session.loggedin){
+        res.render('mr',{
+            login: true,
+            user : req.session.user,
+            name: req.session.name
+        });
+    }else{
+        res.render('mr',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
 //Educacion
-app.get('/education', (req, res)=>{
-    res.render('education')
+app.get('/education',(req, res)=>{
+    if(req.session.loggedin){
+        res.render('education',{
+            login: true,
+            user : req.session.user,
+            name: req.session.name
+        });
+    }else{
+        res.render('education',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
-//Trabajo (JOB)
+// Aba Emprego- Trabajo-JOB carga a lista de vagas postadas
 app.get('/job', (req, res)=>{
-    res.render('job')
+    connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa', async(error, resuluts)=>{
+        if(error){
+            console.log(error)
+        }else{
+            // console.log(resuluts);
+            if(req.session.loggedin){
+                res.render('job',{
+                    login: true,
+                    user : req.session.user,
+                    name: req.session.name,
+                    resuluts:resuluts,
+                    nombre: resuluts[0].nombre,
+                    descrip: resuluts[0].description
+                });
+            }else{
+                res.render('job',{
+                    login: false,
+                    resuluts:resuluts,
+                    nombre: resuluts[0].nombre,
+                    descrip: resuluts[0].description
+                    // name: 'Debe iniciar sesión'
+                });
+            }
+            // res.render('job', {
+            //     resuluts:resuluts,
+            //     nombre: resuluts[0].nombre,
+            //     descrip: resuluts[0].description
+            // })
+
+        }
+    })
 })
 
+// Para entrar noperfil da pesooa logada
 app.get('/profile', (req, res)=>{
     if(req.session.loggedin){
         const user = req.session.user;
@@ -80,23 +133,32 @@ app.get('/profile', (req, res)=>{
                     });
     
                 }else{
-                    res.render('profile-emp',{
-                        login: true,
-                        user: req.session.user,
-                        name: req.session.name});
+                    //cargar info BD 
+                    const id = resuluts[0].id;
+                    connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', [id], async(error, resuluts2)=>{
+                                if(error){
+                                    console.log(error)
+                                }else{
+                                    console.log(id);
+                                    console.log(resuluts2);
+                                    res.render('profile-emp', {
+                                        login: true,
+                                        empresa: true,
+                                        user: req.session.user,
+                                        name: req.session.name,
+                                        resuluts:resuluts2,
+                                        nombre: resuluts2[0].nombre,
+                                        descrip: resuluts2[0].description
+                                    })
+                        
+                                }
+                            })
+                    // res.render('profile-emp',{
+                    //     login: true,
+                    //     user: req.session.user,
+                    //     name: req.session.name});
     
                 }
-            // req.session.loggedin = true;
-            // req.session.id = resuluts[0].id
-            // req.session.user = resuluts[0].user;
-            // req.session.rol = resuluts[0].rol;
-            // if(req.session.rol == "migrante"){
-            //     res.render('profile');
-
-            // }else{
-            //     res.render('profile-emp');
-
-            // }
         })
     } else {
         res.render('login',{
@@ -127,10 +189,72 @@ app.get('/edit-eprofile', (req, res)=>{
     res.render('edit_emp')
 })
 
-// Perfil de usuario migrante
+// Teste apra motrar motrar perfil da empresa
 // app.get('/profile', (req, res)=>{
-//     res.render('profile')
-// })
+//     connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', 2, async(error, resuluts)=>{
+//         if(error){
+//             console.log(error)
+//         }else{
+//             // console.log(resuluts);
+//             res.render('profile-emp copy', {
+//                 resuluts:resuluts,
+//                 nombre: resuluts[0].nombre,
+//                 descrip: resuluts[0].description
+//             })
+
+//         }
+//     })
+// });
+
+// ENtrar no perfil da empresa
+app.get('/profile:id', (req, res)=>{  
+    const id = req.params.id;
+    if(req.session.loggedin){
+                const user = req.session.user;
+                connection.query('SELECT * FROM users WHERE user = ?', [user], async (error, resuluts)=>{
+                    if(error){
+                        console.log("error "+ error.message)
+                    }else {
+                        connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', [id], async(error, resuluts2)=>{
+                            if(error){
+                                console.log(error)
+                            }else{
+                                // console.log(resuluts);
+                                req.session.user = resuluts[0].user;
+                                res.render('profile-emp', {
+                                    login: true,
+                                    empresa: false,
+                                    user: req.session.user,
+                                    name: req.session.name,
+                                    resuluts:resuluts2,
+                                    nombre: resuluts2[0].nombre,
+                                    descrip: resuluts2[0].description
+                                })
+                    
+                            }
+                        })
+                }
+            })
+            }else{
+                connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', [id], async(error, resuluts)=>{
+                    if(error){
+                        console.log(error)
+                    }else{
+                        // console.log(resuluts);
+                        res.render('profile-emp', {
+                            login: false,
+                            empresa: false,
+                            resuluts:resuluts,
+                            nombre: resuluts[0].nombre,
+                            descrip: resuluts[0].description
+                        })
+            
+                    }
+                })
+                
+            };
+    
+})
 
 // Editar Perfil de usuario migrante
 app.get('/edit-mprofile', (req, res)=>{
@@ -140,6 +264,11 @@ app.get('/edit-mprofile', (req, res)=>{
 // Listado de vagas
 app.get('/vagas', (req, res)=>{
     res.render('vagas')
+})
+
+// creacion de vagaas
+app.get('/add-vagas', (req, res)=>{
+    res.render('add_vaga')
 })
 
 //10 - Creando el registro
@@ -199,15 +328,20 @@ app.post('/auth', async (req, res) =>{
                 req.session.id = resuluts[0].id
                 req.session.user = resuluts[0].user;
                 req.session.rol = resuluts[0].rol;
-                res.render('login',{
-                    alert: true,
-                    alertTitle: "Conexión Exitosa",
-                    alertMessage: "¡LOGIN CORRECTO!",
-                    alertIcon: 'success',
-                    showConfirmButton:false,   
-                    timer: 1500,
-                    ruta:''
-                });
+                if(req.session.rol === 'migrante') {
+                    // crear o definir pantala de inicio para migrantes
+                    res.render('login',{
+                        alert: true,
+                        alertTitle: "Conexión Exitosa",
+                        alertMessage: "¡LOGIN CORRECTO!",
+                        alertIcon: 'success',
+                        showConfirmButton:false,   
+                        timer: 1500,
+                        ruta:''
+                    });                    
+                }else{
+                    // crear pantalla de inicio para emopresas
+                }
             }
         })
     }else{
@@ -247,6 +381,20 @@ app.get('/logout', (req, res)=>{
 })
 
 
+// Teste python
+app.get('/python', (req, res)=>{
+    connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo;', async (error, resuluts) =>{
+        if(error){
+            console.log(error)
+        }else{
+            res.render('inicio-emp', {resuluts: resuluts})
+            console.log(resuluts)
+        }
+    })
+})
+
 app.listen(3000, (req, res)=>{
     console.log('SERVER IS RUNNIG IN http://localhost:3000');
-})
+});
+
+module.exports = connection;

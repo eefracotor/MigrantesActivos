@@ -37,6 +37,7 @@
                     <div class="loged">
                         <img src="resources/img/assets/icon-avatar.svg" alt="">
                         <a href="/profile"><p><%= user %></p></a>
+                        <!-- <p><%= name %></p> -->
                         <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
                     </div>
                 <% } else { %>
@@ -50,14 +51,9 @@
     <header>
         <div class="portada">
             <img src="resources/img//assets/icon-build.svg" alt="" >
-            <h1><%= nombre %></h1>
-            <% if (empresa) { %>
-                <button class="btn btn-primary">Editar Perfil</button>
-            <% }else{ %>
-                <button class="btn btn-primary">Seguir</button>
-                <button class="btn btn-primary">Escriba una reseña</button>
-            <% } %>
-
+            <h1>Nombre de la Empresa</h1>
+            <button class="btn btn-primary">Seguir</button>
+            <button class="btn btn-primary">Escriba una reseña</button>
         </div>
         <div class="sections">
             <button class="btn btn-sect" id="sobre">About</button>
@@ -70,52 +66,52 @@
 
 
     <div class="inf-emp" id="about">
-        <h2> <%= descrip %> </h2>
+        <h2> Info about company </h2>
 
     </div>
 
     <!-- Vacantes -->
     <div class="inf-emp container-vagas" id="vacancies">
         <div class="lista-vagas">
-            <% resuluts.forEach((vagas)=> { %> 
-                <div class="card-vaga" id='card<%= vagas.id %>' ><a  onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#vag<%= vagas.id %>">
-                    <h3><%= vagas.titulo %></h3>
-                    <p class="nombre-emp"><%= vagas.nombre %></p>
-                    <p class="localidad"><%= vagas.local %></p>
-                    <p class="descript"><%= vagas.responsabilidades %></p>
-                    <p class="data-post"><%= vagas.fecha_publicacion %></p></a>                
-                </div>
-            <% }) %>
-        </div>
-        <% resuluts.forEach((vagas)=> { %>
-        <div class="modal fade" id="vag<%= vagas.id %>">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exModalLabel"> <%= vagas.titulo %> </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><a href="/profile/<%= vagas.id_empresa %>"><%= vagas.nombre %></a></p>
-                        <p><%= vagas.local %> </p>
-                        <p><%= vagas.responsabilidades %> </p>
-                        <p><%= vagas.salario %> </p>
-                        <p><%= vagas.tipo_contrato %> </p>
-                        <p><%= vagas.horario %> </p>
-                        <p><%= vagas.fecha_publicacion %> </p>
-                    </div>
-                    <div class="modal-footer">
-                        <% if(empresa){ %>
-                            <button class="btn btn-primary">Edit</button>
-                        <% }else{ %>
-                            <button class="btn btn-primary">Apply</button>
-                        <% } %>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
+            <div class="card-vaga" id="card1"><a >
+                <h3>Titulo de la vaga 1</h3>
+                <p class="nombre-emp">Nombe de la Empresa</p>
+                <p class="localidad">Local de trabajo</p>
+                <p class="descript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus voluptate vel, dolores rem reprehenderit quae quibusdam laborum nesciunt minima, sequi harum quaerat placeat aliquid ducimus neque odio quis! Voluptatibus!</p>
+                <p class="data-post">01/01/2000</p></a>                
             </div>
+            <div class="card-vaga" id="card2"><a >
+                <h3>Titulo de la vaga 2</h3>
+                <p class="nombre-emp">Nombe de la Empresa</p>
+                <p class="localidad">Local de trabajo</p>
+                <p class="descript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus voluptate vel, dolores rem reprehenderit quae quibusdam laborum nesciunt minima, sequi harum quaerat placeat aliquid ducimus neque odio quis! Voluptatibus!</p>
+                <p class="data-post">01/01/2000</p></a>                
+            </div>
+            <div class="card-vaga" id="card3"><a >
+                <h3>Titulo de la vaga 3</h3>
+                <p class="nombre-emp">Nombe de la Empresa</p>
+                <p class="localidad">Local de trabajo</p>
+                <p class="descript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus voluptate vel, dolores rem reprehenderit quae quibusdam laborum nesciunt minima, sequi harum quaerat placeat aliquid ducimus neque odio quis! Voluptatibus!</p>
+                <p class="data-post">01/01/2000</p></a>                
+            </div>
+            <div class="card-vaga" id="card4"><a >
+                <h3>Titulo de la vaga 4</h3>
+                <p class="nombre-emp">Nombe de la Empresa</p>
+                <p class="localidad">Local de trabajo</p>
+                <p class="descript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus voluptate vel, dolores rem reprehenderit quae quibusdam laborum nesciunt minima, sequi harum quaerat placeat aliquid ducimus neque odio quis! Voluptatibus!</p>
+                <p class="data-post">01/01/2000</p></a>                
+            </div>
+            <div class="card-vaga" id="card5"><a >
+                <h3>Titulo de la vaga 5</h3>
+                <p class="nombre-emp">Nombe de la Empresa</p>
+                <p class="localidad">Local de trabajo</p>
+                <p class="descript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus voluptate vel, dolores rem reprehenderit quae quibusdam laborum nesciunt minima, sequi harum quaerat placeat aliquid ducimus neque odio quis! Voluptatibus!</p>
+                <p class="data-post">01/01/2000</p></a>                
+            </div>            
         </div>
-        <% }) %>
+
+        <!-- Detalles de la vaga seleccionada -->
+        <div id="detalles-vaga"></div>
     </div>
     <div class="inf-emp" id="aval">
         <h3>Coments </h3>
@@ -131,8 +127,7 @@
     <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>  
     <script src="resources/js/bootstrap.bundle.min.js"></script>
     <script src="resources/js/profile-emp.js"></script>
+    <!-- <script src="resources/js/vagas.js"></script> -->
     <script src="resources/js/js.js"></script>
-    <!-- <script src="../profile.js"></script> -->
-    <!-- <script src="" type="module" ></script> -->
 </body>
 </html>

@@ -9,17 +9,8 @@ img{
     width: 100%;
 }
 
-/* .profile {
-    background-color: aliceblue;
-} */
-/* path {
-    fill: #fff !important;
-} */
-
 section {
     width: 100%;
-    /* height: auto; */
-    /* background-color: bisque; */
 }
 
 ul {
@@ -113,13 +104,11 @@ li a {
 
 .header {
     width: 850px;
-    /* height: auto; */
     display: flex;
     margin: 50px auto;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* background-color: aquamarine; */
 }
 
 .header h1 {
@@ -136,7 +125,6 @@ li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: #4e4e4e; */
 }
 .portada img{
     width: 50px;
@@ -153,7 +141,6 @@ li a {
 .avatar {
     width: 100px;
     height: 100px;
-    /* background-color: blue; */
     border-radius: 50%;
     border: 2px solid #707070;
 }
@@ -179,8 +166,6 @@ li a {
     justify-content:left;
     align-items: center;
     margin: auto;
-    
-    /* background-color: blue; */
 }
 .detail-info img {
     width: 20px;
@@ -196,7 +181,6 @@ li a {
 .sections {
     width: 950px;
     margin: 0 auto;
-    /* background-color: #707070; */
     display: flex;
     flex-direction: row;
     justify-content: center;
