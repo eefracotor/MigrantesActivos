@@ -13,5 +13,11 @@ connection.connect((error)=>{
     }
     console.log('Conectado a la base de datos!!!')
 });
+<<<<<<< HEAD
 
 module.exports = connection;
+=======
+
+module.exports = connection;
+
+>>>>>>> b7969efe200d69e86f6ec7f5a6fb77dd69152959

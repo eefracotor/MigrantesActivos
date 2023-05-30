@@ -8,28 +8,37 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/styles.css">
     <link rel="stylesheet" href="resources/css/job.css">
+    <!-- <link rel="stylesheet" href="resources/css/profile-emp.css"> -->
+
     <title>Inicio</title>
 </head>
 <body>
     <nav class="all">
-       
         <div class="menu-top">
             <div class="pages">
-                <div class="logo"><a href="#"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
+                <div class="logo"><a href="/"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
                 <ul>
                     <li><a href="/"><button class="btn"><img src="resources/img/home.png"></button></a></li>
-                    
+                    <!-- <li><a href="info"><button class="btn">General Information</button></a></li> -->
                     <li><a href="mr"><button class="btn">Migratory Regularization</button></a></li>
                     <li><a href="education"><button class="btn">Education</button></a></li>
                     <li><a href="job"><button class="btn">Job</button></a></li>
                 </ul>
             </div>
             <div class="srch-btn">
-               
-                <a href="/login" class="btn btn-primary">login</a >
+                <!-- <div class="search">Buscar</div> -->
+                <% if (login){ %>
+                    <div class="loged">
+                        <img src="resources/img/assets/icon-avatar.svg" alt="">
+                        <a href="/profile"><p><%= user %></p></a>
+                        <!-- <p><%= name %></p> -->
+                        <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
+                    </div>
+                <% } else { %>
+                    <a href="/login" class="btn btn-primary">login</a >                
+                <% } %>
                 <div class="gtranslate_wrapper lng-google"></div>
-            </div>
-            
+            </div>            
         </div>
     </nav>
 
@@ -49,56 +58,45 @@
     </div> 
   </div>
 
-      <div class="container-vagas">
 
         <!-- Listado de vagas -->
-        <div class="lista-vagas">
-            <div class="card-vaga" id="card1"><a href="#">
-                <h3>DESENVOLVEDOR(A) Fullstack (Junior)</h3>
-                <p class="nombre-emp">Randoncorp</p>
-                <p class="localidad">Caxias do sul </p>
-                <p class="descript">Como membro do pequeno time de tecnologia da TechIn, você irá participar no desenvolvimento, release e suporte do projeto que estamos desenvolvendo.
-                  Você atuará diretamente com...</p>
-                <p class="data-post">12/05/2023</p></a>                
+        <div class="inf-emp container-vagas" id="vacancies">
+            <div class="lista-vagas">
+                <% resuluts.forEach((vagas)=> { %> 
+                    <div class="card-vaga" id='card<%= vagas.id %>' ><a  onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#vag<%= vagas.id %>">
+                        <h3><%= vagas.titulo %></h3>
+                        <p class="nombre-emp"><%= vagas.nombre %></p>
+                        <p class="localidad"><%= vagas.local %></p>
+                        <p class="descript"><%= vagas.responsabilidades %></p>
+                        <p class="data-post"><%= vagas.fecha_publicacion %></p></a>                
+                    </div>
+                <% }) %>
             </div>
-            <div class="card-vaga" id="card2"><a href="#">
-                <h3>DESENVOLVEDOR(A) PHP Fullstack Pleno</h3>
-                <p class="nombre-emp">Axel Byteblaze</p>
-                <p class="localidad">rio de janeiro</p>
-                <p class="descript">O Desenvolvedor de Sistemas PHP Fullstack Pleno é responsável por projetar, desenvolver e implementar soluções web usando a linguagem de programação PHP...</p>
-                <p class="data-post">22/05/2023</p></a>                
+            <% resuluts.forEach((vagas)=> { %>
+            <div class="modal fade" id="vag<%= vagas.id %>">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exModalLabel"> <%= vagas.titulo %> </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><a href="/profile<%= vagas.id_empresa %>"><%= vagas.nombre %></a></p>
+                            <p><%= vagas.local %> </p>
+                            <p><%= vagas.responsabilidades %> </p>
+                            <p><%= vagas.salario %> </p>
+                            <p><%= vagas.tipo_contrato %> </p>
+                            <p><%= vagas.horario %> </p>
+                            <p><%= vagas.fecha_publicacion %> </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">Apply</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-vaga" id="card3"><a href="#">
-                <h3>Desenvolvedor full stack - júnior - hídrido</h3>
-                <p class="nombre-emp">lolita</p>
-                <p class="localidad">Gramado</p>
-                <p class="descript">Implementação de UX (User Experience) e CX (Customer Experience)</p>
-                <p class="data-post">10/05/2023</p></a>                
-            </div>
-            <div class="card-vaga" id="card4"><a href="#">
-                <h3>DESENVOLVEDOR(A) C++</h3>
-                <p class="nombre-emp">Girasol</p>
-                <p class="localidad">Porto Alegre</p>
-                <p class="descript">A Bairesdev tem orgulho de ser a empresa que mais cresce nas Américas. Nossos times são formados por pessoas do mundo todo e somos tão fortes quanto nossas equipes multiculturais.</p>
-                <p class="data-post">20/05/2023</p></a>                
-            </div>
-            <div class="card-vaga" id="card5"><a href="#">
-                <h3>DESENVOLVEDOR(A)</h3>
-                <p class="nombre-emp">HotelFlow</p>
-                <p class="localidad">Gramado</p>
-                <p class="descript">Buscamos pessoas apaixonadas por tecnologia e que gostem de programar.  Desejável bons conhecimentos em HTML5, JavaScript e CSS.</p>
-
-                 
-                <p class="data-post">15/05/2023</p></a>                
-            </div>
-            
-            
-            
-        </div>
-
-        <!-- Detalles de la vaga seleccionada -->
-        <div class="details-vaga" id="detalles-vaga">
-            
+            <% }) %>
         </div>
     </div>
 
@@ -107,6 +105,7 @@
     <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> 
      <script src="resources/js/bootstrap.bundle.min.js"></script>
      <script src="resources/js/js.js"></script>
-     <script src="resources/js/job.js"></script>
+    <!-- <script src="resources/js/profile-emp.js"></script> -->
+    <script src="resources/js/job.js"></script>
 </body>
 </html>
