@@ -65,6 +65,10 @@ h1 {
   font-style: bold;
  
 }
+
+.info-edu h1 {
+  color: white;
+}
   
 #info{
   gap: 20px;
