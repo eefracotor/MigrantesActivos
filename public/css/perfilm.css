@@ -8,13 +8,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 90vh; */
   }
   
   form {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 90%;
+    /* max-width: 1200px; */
     align-items: center;
     padding: 20px;
 
@@ -24,6 +25,18 @@
     border-radius: 20px;
     backdrop-filter: blur(15px);
   }
+
+  .container-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.part-form{
+  margin: auto;
+}
   
   label {
     display: flex;
@@ -52,7 +65,7 @@
   
   input[type="submit"] {
     padding: 10px 20px;
-    background-color: #000;
+    /* background-color: #000; */
     color: #fff;
     border: none;
     border-radius: 4px;

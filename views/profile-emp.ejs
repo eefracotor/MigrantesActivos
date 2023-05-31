@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/profile.css">
     <link rel="stylesheet" href="resources/css/profile-emp.css">
     <!-- <link rel="stylesheet" href="resources/css/vagas.css"> -->
     <title>Document</title>
 </head>
+
 <body class="profile">
     <nav class="all">
         <!-- <div class="top">
@@ -36,28 +39,36 @@
                 <% if (login){ %>
                     <div class="loged">
                         <img src="resources/img/assets/icon-avatar.svg" alt="">
-                        <a href="/profile"><p><%= user %></p></a>
+                        <a href="/profile">
+                            <p>
+                                <%= user %>
+                            </p>
+                        </a>
                         <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
                     </div>
-                <% } else { %>
-                    <a href="/login" class="btn btn-primary">login</a >                
-                <% } %>
-                <div class="gtranslate_wrapper lng-google"></div>
+                    <% } else { %>
+                        <div class="loged">
+                            <a href="/login" class="btn btn-primary">login</a>
+                        </div>
+                        <% } %>
+                            <div class="gtranslate_wrapper lng-google"></div>
             </div>
-            
+
         </div>
     </nav>
     <header>
         <div class="portada">
-            <img src="resources/img//assets/icon-build.svg" alt="" >
-            <h1><%= nombre %></h1>
+            <img src="resources/img//assets/icon-build.svg" alt="">
+            <h1>
+                <%= nombre %>
+            </h1>
             <% if (empresa) { %>
                 <button class="btn btn-primary">Edit Profile</button>
                 <a href="/python" class="btn btn-primary">Summary</a>
-            <% }else{ %>
-                <button class="btn btn-primary">Seguir</button>
-                <button class="btn btn-primary">Escriba una reseña</button>
-            <% } %>
+                <% }else{ %>
+                    <button class="btn btn-primary">Seguir</button>
+                    <!-- <button class="btn btn-primary">Escriba una reseña</button> -->
+                    <% } %>
 
         </div>
         <div class="sections">
@@ -71,69 +82,258 @@
 
 
     <div class="inf-emp" id="about">
-        <h2> <%= descrip %> </h2>
+        <h2>
+            <%= descrip %>
+        </h2>
 
     </div>
 
     <!-- Vacantes -->
     <div class="inf-emp container-vagas" id="vacancies">
-        <div class="lista-vagas">
-            <% resuluts.forEach((vagas)=> { %> 
-                <div class="card-vaga" id='card<%= vagas.id %>' ><a  onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#vag<%= vagas.id %>">
-                    <h3><%= vagas.titulo %></h3>
-                    <p class="nombre-emp"><%= vagas.nombre %></p>
-                    <p class="localidad"><%= vagas.local %></p>
-                    <p class="descript"><%= vagas.responsabilidades %></p>
-                    <p class="data-post"><%= vagas.fecha_publicacion %></p></a>                
-                </div>
-            <% }) %>
-        </div>
-        <% resuluts.forEach((vagas)=> { %>
-        <div class="modal fade" id="vag<%= vagas.id %>">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exModalLabel"> <%= vagas.titulo %> </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><a href="/profile/<%= vagas.id_empresa %>"><%= vagas.nombre %></a></p>
-                        <p><%= vagas.local %> </p>
-                        <p><%= vagas.responsabilidades %> </p>
-                        <p><%= vagas.salario %> </p>
-                        <p><%= vagas.tipo_contrato %> </p>
-                        <p><%= vagas.horario %> </p>
-                        <p><%= vagas.fecha_publicacion %> </p>
-                    </div>
-                    <div class="modal-footer">
-                        <% if(empresa){ %>
-                            <button class="btn btn-primary">Edit</button>
-                        <% }else{ %>
-                            <button class="btn btn-primary">Apply</button>
-                        <% } %>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
+        <% if(empresa){ %>
+            <div class="add" id="add-vaga">
+                <button class="btn btn-primary">Add vacant</button>
             </div>
+            <% } %>
+                <div class="lista-vagas">
+                    <% resuluts.forEach((vagas)=> { %>
+                        <div class="card-vaga" id='card<%= vagas.id %>'><a onclick="event.preventDefault()"
+                                data-bs-toggle="modal" data-bs-target="#vag<%= vagas.id %>">
+                                <h3>
+                                    <%= vagas.titulo %>
+                                </h3>
+                                <p class="nombre-emp">
+                                    <%= vagas.nombre %>
+                                </p>
+                                <p class="localidad">
+                                    <%= vagas.local %>
+                                </p>
+                                <p class="descript">
+                                    <%= vagas.responsabilidades %>
+                                </p>
+                                <p class="data-post">
+                                    <%= vagas.fecha_publicacion %>
+                                </p>
+                            </a>
+                        </div>
+                        <% }) %>
+                </div>
+                <!-- Modal mostrar detalles de la vaga -->
+                <% resuluts.forEach((vagas)=> { %>
+                    <div class="modal fade" id="vag<%= vagas.id %>">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exModalLabel">
+                                        <%= vagas.titulo %>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><a href="/profile/<%= vagas.id_empresa %>">
+                                            <%= vagas.nombre %>
+                                        </a></p>
+                                    <p> <%= vagas.local %></p>
+                                    <p> <%= vagas.responsabilidades %></p>
+                                    <p> <%= vagas.salario %></p>
+                                    <p> <%= vagas.tipo_contrato %></p>
+                                    <p> <%= vagas.horario %></p>
+                                    <p> <%= vagas.fecha_publicacion %></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <% if(empresa){ %>
+                                        <button class="btn btn-primary" id="edit-vaga" data-bs-toggle="modal"
+                                            data-bs-target="#edit-<%= vagas.id %>">Edit</button>
+                                    <% }else{ %>
+                                            <button class="btn btn-primary">Apply</button>
+                                    <% } %>
+                                        <button type="button" class="btn btn-secondary"          data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal editar vagas -->
+                    <div class="modal fade" id="edit-<%= vagas.id %>">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exModalLabel">
+                                        <label for="title_vaga">
+                                            <input type="text" id="title_vaga" name="title_vaga" value="<%= vagas.titulo %>">
+                                        </label>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><a href="/profile/<%= vagas.id_empresa %>">
+                                            <%= vagas.nombre %>
+                                        </a></p>
+                                    <label for="location">
+                                        <input type="text" id="location" name="location" value="<%= vagas.local %>">
+                                    </label>
+                                        <p>  </p>
+                                    <p>  </p>
+                                    <label for="jordana">Jornada
+                                        <input type="text" id="jordana" name="jordana" value="<%= vagas.responsabilidades %>">
+                                    </label>
+                                    <p>  </p>
+                                    <label for="salario">Salario
+                                        <input type="text" id="salario" name="salario" value="<%= vagas.salario %>">
+                                    </label>
+                                    <p>  </p>
+                                    <label for="type_contrat">Tipo de contrato
+                                        <input type="text" id="type_contrat" name="type_contrat" value="<%= vagas.tipo_contrato %>">
+                                    </label>
+                                    <p>  </p>
+                                    <label for="horario">Horario
+                                        <input type="text" id="horario" name="horario" value="<%= vagas.horario %>">
+                                    </label>
+                                    <p><%= vagas.fecha_publicacion %></p>
+                                    <p>Please select your favorite Web language:</p>
+                                    <div class="radio-atv">
+                                        <label for="opn">Open</label>
+                                        <input type="radio" id="opn" name="fav_language" value=1>
+                                        <label for="clsd">Closed</label>
+                                        <input type="radio" id="clsd" name="fav_language" value=0>
+                                        
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <% if(empresa){ %>
+                                        <!-- <button class="btn btn-primary" id="edit-vaga">Edit</button> -->
+                                        <button class="btn btn-success">Send</button>
+                                        <% } %>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+
+    </div>
+
+    <!-- :Formulario add Vacantes -->
+    <% if(empresa){ %>
+        <div class="ad_vacant inf-emp container-vagas" id="add-vacant">
+            <form action="">
+                <!-- <h1>Perfil de la empresa</h1> -->
+                <label for="title_vaga">Title
+                    <input type="text" id="title_vaga" name="title_vaga">
+                </label>
+                <label for="location">Location
+                    <input type="text" id="location" name="location">
+                </label>
+                <label for="jordana">Jornada
+                    <input type="text" id="jordana" name="jordana">
+                </label>
+                
+                <label for="beneficios">Beneficios
+                    <input type="text" id="beneficios" name="beneficios">
+                </label>
+                <label for="type_contrat">Tipo de contrato
+                    <input type="text" id="type_contrat" name="type_contrat">
+                </label>
+                <label for="horario">Horario
+                    <input type="text" id="horario" name="horario">
+                </label>
+                <label for="details">Details
+                    <input type="text" id="details" name="details">
+                </label>
+                <div class="container-btn">
+                    <input class="btn btn-success enviar" type="submit" value="Enviar">
+                    <button class="btn btn-danger" id="cancel-add">Cancelar</button>
+                </div>
+            </form>
         </div>
-        <% }) %>
-    </div>
-    <div class="inf-emp" id="aval">
-        <h3>Coments </h3>
-    </div>
-    <div class="inf-emp" id="salary">
-        <h4>Salaries</h4>        
-    </div>
+        <% } %>
+
+            <div class="inf-emp" id="aval">
+                <h3>Coments </h3>
+                <% if(!empresa){ %>
+                    <div class="add" id="add-comment">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#input-comment">Add
+                            comments</button>
+                    </div>
+                    <div class="modal fade" id="input-comment">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exModalLabel"> Add comment about company </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- <div class="nota">Note</div> -->
+                                    <div class="sidebar-box">
+                                        <select class="styled-select">
+                                            <option>Rating</option>
+                                            <option>1 Star</option>
+                                            <option>2 Stars</option>
+                                            <option>3 Stars</option>
+                                            <option>4 Stars</option>
+                                            <option>5 Stars</option>
+                                        </select>
+                                    </div>
+                                    <div class="texto-nota">
+                                        <Label for="comment-text">comment
+                                            <textarea name="comment-text" id="comment-text" rows="4"
+                                                cols="45"></textarea>
+
+                                        </Label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <% if(!empresa){ %>
+                                        <button class="btn btn-primary btn-modal">Edit</button>
+                                        <button class="btn btn-primary btn-modal btn-success">Send</button>
+                                        <% } %>
+                                            <button type="button" class="btn btn-secondary btn-modal"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                        <div class="comments-container">
+                            <div class="comments">
+                                <div class="starts-comments">
+                                    <p>User</p>
+                                    <p>Stars</p>
+                                </div>
+                                <div class="description-comment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic sed
+                                        beatae ab accusantium! At deleniti cum, consectetur, impedit sit harum unde nisi
+                                        sequi expedita nesciunt earum laboriosam quas laborum.</p>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="starts-comments">
+                                    <p>User</p>
+                                    <p>Stars</p>
+                                </div>
+                                <div class="description-comment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic sed
+                                        beatae ab accusantium! At deleniti cum, consectetur, impedit sit harum unde nisi
+                                        sequi expedita nesciunt earum laboriosam quas laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            </div>
+            <div class="inf-emp" id="salary">
+                <h4>Salaries</h4>
+            </div>
 
 
 
 
-    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","pt","ja","es","ht"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d","alt_flags":{"pt":"brazil"}}</script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>  
-    <script src="resources/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/js/profile-emp.js"></script>
-    <script src="resources/js/js.js"></script>
-    <!-- <script src="../profile.js"></script> -->
-    <!-- <script src="" type="module" ></script> -->
+            <script>window.gtranslateSettings = { "default_language": "en", "native_language_names": true, "detect_browser_language": true, "languages": ["en", "fr", "pt", "ja", "es", "ht"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "inline", "float_switcher_open_direction": "bottom", "flag_style": "3d", "alt_flags": { "pt": "brazil" } }</script>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script src="resources/js/bootstrap.bundle.min.js"></script>
+            <script src="resources/js/profile-emp.js"></script>
+            <script src="resources/js/js.js"></script>
+            <!-- <script src="../profile.js"></script> -->
+            <!-- <script src="" type="module" ></script> -->
 </body>
+
 </html>

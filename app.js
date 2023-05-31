@@ -258,7 +258,26 @@ app.get('/profile:id', (req, res)=>{
 
 // Editar Perfil de usuario migrante
 app.get('/edit-mprofile', (req, res)=>{
-    res.render('edit-mig')
+    if(req.session.loggedin){
+        const user = req.session.user;
+        connection.query('SELECT * FROM users u INNER JOIN migrantes m ON u.id = m.id_user AND u.user = ?', [user],async (error, resuluts)=>{
+            if(error){
+                console.log(error)
+            }else{
+                res.render('edit-mig',{
+                    login: true,
+                    user : req.session.user,
+                    name: req.session.name,
+                    resuluts: resuluts
+                });
+            }
+        })
+    }else{
+        res.render('index',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
 // Listado de vagas
@@ -273,12 +292,13 @@ app.get('/add-vagas', (req, res)=>{
 
 //10 - Creando el registro
 app.post('/register', async (req, res)=>{
-    const user = req.body.user;
     const name = req.body.name;
+    const user = req.body.user;
+    const email = req.body.email;
     const rol = req.body.rol;
     const pass = req.body.pass;
     let passwordHaaah = await bcryptjs.hash(pass, 8);
-    connection.query('INSERT INTO users SET ?', {user:user, name:name, rol:rol, pass:passwordHaaah}, async(error, resuluts)=>{
+    connection.query('INSERT INTO users SET ?', {user:user, name:name, email:email, rol:rol, pass:passwordHaaah}, async(error, resuluts)=>{
         if(error) {
             console.log(error);
         } else {
@@ -415,11 +435,12 @@ app.get('/logout', (req, res)=>{
 // Teste python
 app.get('/python', (req, res)=>{
     if(req.session.loggedin){
-        req.session.user;
-        connection.query('SELECT * FROM users WHERE user = ?',[req.session.user], async (error, resuluts) =>{
+        const user = req.session.user;
+        connection.query('SELECT * FROM users WHERE user = ?',[user], async (error, resuluts) =>{
             if(error){
                 console.log(error)
             }else{
+                const id = resuluts[0].id;
                 connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo; ', async (error, resuluts1) =>{ //1
                     if(error){
                         console.log(error)
@@ -428,7 +449,7 @@ app.get('/python', (req, res)=>{
                         if(error){
                             console.log(error)
                         }else {//3
-                            connection.query('SELECT COUNT(titulo) cant FROM vagas v INNER JOIN empresa e ON e.id = v.id_empresa INNER JOIN users u ON u.id = e.id_user AND u.id = ? AND v.ativa = 1;', [req.session.id], async (error, resuluts3) =>{
+                            connection.query('SELECT COUNT(titulo) cant FROM vagas v INNER JOIN empresa e ON e.id = v.id_empresa INNER JOIN users u ON u.id = e.id_user AND u.id = ? AND v.ativa = 1;', [id], async (error, resuluts3) =>{
                                 if(error){
                                     console.log(error)
                                 }else{//4                                        
@@ -440,7 +461,7 @@ app.get('/python', (req, res)=>{
                                         resuluts2L: resuluts2.length,
                                         resuluts3: resuluts3
                                     })
-                                    console.log(id)
+                                    // console.log(id)
                                 }//4
                             })
                         }//3
