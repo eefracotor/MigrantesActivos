@@ -135,7 +135,8 @@ app.get('/profile', (req, res)=>{
                 }else{
                     //cargar info BD 
                     const id = resuluts[0].id;
-                    connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', [id], async(error, resuluts2)=>{
+                    req.session.name = resuluts[0].name;
+                    connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa INNER JOIN users as u ON u.id = e.id_user AND u.id = ?', [id], async(error, resuluts2)=>{
                                 if(error){
                                     console.log(error)
                                 }else{
@@ -230,7 +231,6 @@ app.get('/profile:id', (req, res)=>{
                                     nombre: resuluts2[0].nombre,
                                     descrip: resuluts2[0].description
                                 })
-                    
                             }
                         })
                 }
@@ -340,7 +340,38 @@ app.post('/auth', async (req, res) =>{
                         ruta:''
                     });                    
                 }else{
-                    // crear pantalla de inicio para emopresas
+                    req.session.loggedin = true;
+                    req.session.id = resuluts[0].id
+                    // const id = req.session.id;
+                    req.session.user = resuluts[0].user;
+                    req.session.rol = resuluts[0].rol;
+                    // crear pantalla de inicio para empresas
+                    connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo; ', async (error, resuluts1) =>{
+                        if(error){
+                            console.log(error)
+                        }else{ //2
+                        connection.query('SELECT COUNT(estado_res) cantidad, estado_res FROM migrantes WHERE pais_res = "Brasil" GROUP BY estado_res;', async (error, resuluts2) =>{
+                            if(error){
+                                console.log(error)
+                            }else {//3
+                                connection.query('SELECT COUNT(titulo) cant FROM vagas v INNER JOIN empresa e ON e.id = v.id_empresa INNER JOIN users u ON u.id = e.id_user AND u.id = ? AND v.ativa = 1;', [resuluts[0].id], async (error, resuluts3) =>{
+                                    if(error){
+                                        console.log(error)
+                                    }else{//4                                        
+                                        res.render('inicio-emp', {
+                                            login: true,
+                                            user: req.session.user,
+                                            resuluts: resuluts1,
+                                            resuluts2: resuluts2,
+                                            resuluts2L: resuluts2.length,
+                                            resuluts3: resuluts3
+                                        })
+                                    }//4
+                                })
+                            }//3
+                            })
+                        } //2
+                    })
                 }
             }
         })
@@ -383,17 +414,83 @@ app.get('/logout', (req, res)=>{
 
 // Teste python
 app.get('/python', (req, res)=>{
-    connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo;', async (error, resuluts) =>{
-        if(error){
-            console.log(error)
-        }else{
-            res.render('inicio-emp', {resuluts: resuluts})
-            console.log(resuluts)
-        }
-    })
-})
+    if(req.session.loggedin){
+        req.session.user;
+        connection.query('SELECT * FROM users WHERE user = ?',[req.session.user], async (error, resuluts) =>{
+            if(error){
+                console.log(error)
+            }else{
+                connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo; ', async (error, resuluts1) =>{ //1
+                    if(error){
+                        console.log(error)
+                    }else{ //2
+                    connection.query('SELECT COUNT(estado_res) cantidad, estado_res FROM migrantes WHERE pais_res = "Brasil" GROUP BY estado_res;', async (error, resuluts2) =>{
+                        if(error){
+                            console.log(error)
+                        }else {//3
+                            connection.query('SELECT COUNT(titulo) cant FROM vagas v INNER JOIN empresa e ON e.id = v.id_empresa INNER JOIN users u ON u.id = e.id_user AND u.id = ? AND v.ativa = 1;', [req.session.id], async (error, resuluts3) =>{
+                                if(error){
+                                    console.log(error)
+                                }else{//4                                        
+                                    res.render('inicio-emp', {
+                                        login: true,
+                                        user: req.session.user,
+                                        resuluts: resuluts1,
+                                        resuluts2: resuluts2,
+                                        resuluts2L: resuluts2.length,
+                                        resuluts3: resuluts3
+                                    })
+                                    console.log(id)
+                                }//4
+                            })
+                        }//3
+                        })
+                    } //2
+                }) //1
 
-app.listen(3000, (req, res)=>{
+            }
+        })
+        // res.render('index',{
+        //     login: true,
+        //     user : req.session.user,
+        //     name: req.session.name
+        // });
+    }
+    // connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo; ', async (error, resuluts) =>{
+    //     if(error){
+    //         console.log(error)
+    //     }else{ //2
+    //     connection.query('SELECT COUNT(estado_res) cantidad, estado_res FROM migrantes WHERE pais_res = "Brasil" GROUP BY estado_res;', async (error, resuluts2) =>{
+    //         if(error){
+    //             console.log(error)
+    //         }else {//3
+    //             connection.query('SELECT COUNT(titulo) cant FROM vagas WHERE id_empresa = 2 AND ativa = 1;', async (error, resuluts3) =>{
+    //                 if(error){
+    //                     console.log(error)
+    //                 }else{//4
+    //                     res.render('inicio-emp', {
+    //                         resuluts: resuluts,
+    //                         resuluts2: resuluts2,
+    //                         resuluts2L: resuluts2.length,
+    //                         resuluts3: resuluts3
+    //                     })
+    //                 }//4
+    //             })
+    //         }//3
+    //         })
+    //     } //2
+    // })
+    // req.session.loggedin = true;
+    // req.session.id = resuluts[0].id
+    // req.session.user = resuluts[0].user;
+    // req.session.rol = resuluts[0].rol;
+    // crear pantalla de inicio para empresas
+    
+                
+}
+)
+
+    app.listen(3000, (req, res)=>{
     console.log('SERVER IS RUNNIG IN http://localhost:3000');
 });
 
