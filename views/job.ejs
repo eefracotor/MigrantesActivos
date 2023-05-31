@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/styles.css">
-    <link rel="stylesheet" href="resources/css/job.css">
+    <link rel="stylesheet" href="resources/css/job1.css">
     <!-- <link rel="stylesheet" href="resources/css/profile-emp.css"> -->
 
     <title>Inicio</title>
@@ -52,7 +52,7 @@
         <div class="busqueda">
             <input type="text" id="input1" placeholder="Ingrese su búsqueda">
             <input type="text" id="input2" placeholder="Ingrese ubicación">
-            <button>Buscar</button>
+            <button onclick="mostrarSeccion()" >Buscar</button>
           </div>
         
     </div> 
@@ -60,7 +60,7 @@
 
 
         <!-- Listado de vagas -->
-        <div class="inf-emp container-vagas" id="vacancies">
+        <div class="inf-emp container-vagas" id="vacancies" style="display: none;">
             <div class="lista-vagas">
                 <% resuluts.forEach((vagas)=> { %> 
                     <div class="card-vaga" id='card<%= vagas.id %>' ><a  onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#vag<%= vagas.id %>">
