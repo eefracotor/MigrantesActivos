@@ -1,47 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/profile.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/perfilm.css">
     <title>Document</title>
 </head>
+
 <body>
+    <nav class="all">
+        <!-- <div class="top">
+            <div class="logo"><a href="#"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
+            <div class="login">
+                <a href="/login" class="btn btn-primary">login</a >
+            </div>
+        </div> -->
+        <div class="menu-top">
+            <div class="pages">
+                <div class="logo"><a href="#"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
+                <ul>
+                    <li><a href="/"><button class="btn"><img src="resources/img/home.png"></button></a></li>
+                    <!-- <li><a href="info"><button class="btn">General Information</button></a></li> -->
+                    <li><a href="mr"><button class="btn">Migratory Regularization</button></a></li>
+                    <li><a href="education"><button class="btn">Education</button></a></li>
+                    <li><a href="job"><button class="btn">Job</button></a></li>
+                </ul>
+            </div>
+            <div class="srch-btn">
+                <!-- <div class="search">Buscar</div> -->
+                <% if (login){ %>
+                    <div class="loged">
+                        <img src="resources/img/assets/icon-avatar.svg" alt="">
+                        <a href="/profile">
+                            <p>
+                                <%= user %>
+                            </p>
+                        </a>
+                        <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
+                    </div>
+                    <% } else { %>
+                        <a href="/login" class="btn btn-primary">login</a>
+                        <% } %>
+                            <div class="gtranslate_wrapper lng-google"></div>
+            </div>
+
+        </div>
+    </nav>
     <Section>
         <!-- <h1>Perfil del migrante</h1> -->
         <form action="">
-            <h1 class="titulo">Perfil del migrante</h1>
-            <label for="name">Nombre
-                <input type="text" id="name" name="name">
-            </label>
-            <label for="lastname">Apellido
-                <input type="text" id="lastname" name="lastname">
-            </label>
-            <label for="data-nac">Fecha de necimiento
-                <input type="date" id="data-nac" name="data-nac">
-            </label>
-            <label for="pais-nac">Pais de Nacimiento
-                <input type="text" id="pais-nac" name="pais-nac">
-            </label>
-            <label for="nacionalidad">Nacionalidad
-                <input type="text" id="nacionalidad" name="nacionalidad">
-            </label>
-            <label for="pais_res">Pais donde reside
-                <input type="text" id="pais_res" name="pais_res">
-            </label>
-            <label for="estado-res">Estado
-                <input type="text" id="estado-res" name="estado-res">
-            </label>
-            <label for="ciudad-res">Ciudad
-                <input type="text" id="ciudad-res" name="ciudad-res">
-            </label>
-            <label for="escolaridad">Escolaridad
-                <input type="text" id="escolaridad" name="escolaridad">
-            </label>
-            <input class="enviar" type="submit" value="Enviar">
+            <h2 class="titulo"><%= resuluts[0].user %></h2>
+            <div class="container-form">
+                <div class="part-form">
+                    <label for="name">Name
+                        <input type="text" id="name" name="name" value="<%= resuluts[0].nombre %>">
+                    </label>
+                    <label for="lastname">Last name
+                        <input type="text" id="lastname" name="lastname" value="<%= resuluts[0].apellido %>">
+                    </label>
+                    <label for="data-nac">Email
+                        <input type="text" id="data-email" name="data-email" value="<%= resuluts[0].email %>">
+                    </label>
+                    <div class="sidebar-box">
+                        <select class="styled-select">
+                            <option>Choose a Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Nobinary</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="part-form">
+                    <label for="pais-nac">Pais de Nacimiento
+                        <input type="text" id="pais-nac" name="pais-nac" value="<%= resuluts[0].pais_nac %>">
+                    </label>
+                    <label for="nacionalidad">Nacionalidad
+                        <input type="text" id="nacionalidad" name="nacionalidad" value="<%= resuluts[0].nacionalidad %>">
+                    </label>
+                    <label for="data-nac">Fecha de necimiento
+                        <input type="date" id="data-nac" name="data-nac" value="<%= resuluts[0].fecha_nac %>">
+                    </label>
+                </div>
+                <div class="part-form">
+                    <label for="pais_res">Pais donde reside
+                        <input type="text" id="pais_res" name="pais_res" value="<%= resuluts[0].pais_res %>">
+                    </label>
+                    <label for="estado-res">Estado
+                        <input type="text" id="estado-res" name="estado-res" value="<%= resuluts[0].estado_res %>">
+                    </label>
+                    <label for="ciudad-res">Ciudad
+                        <input type="text" id="ciudad-res" name="ciudad-res" value="<%= resuluts[0].ciudad_res %>">
+                    </label>
+                </div>
+            </div>
+            <h2>Informacion Academica</h2>
+            <div class="container-form">
+                <div class="part-form">
+                    <label for="escolaridad">Escolaridad
+                        <input type="text" id="escolaridad" name="escolaridad" value="<%= resuluts[0].escolaridad %>">
+                    </label>
+                    <label for="escolaridad">Nombre de la institucion
+                        <input type="text" id="escolaridad" name="escolaridad">
+                    </label>
+                </div>
+                <div class="part-form">
+                    <label for="escolaridad">resumen Currisular
+                        <input type="file" id="resumen_cur" name="resumen_cur" value="">
+                    </label>
+                    <!-- <label for="escolaridad">Nombre de la institucion
+                        <input type="text" id="escolaridad" name="escolaridad">
+                    </label> -->
+                </div>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Enviar">
         </form>
     </Section>
-    
+
 </body>
+
 </html>
