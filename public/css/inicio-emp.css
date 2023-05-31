@@ -1,4 +1,82 @@
-canvas {
-    width: 80vh;
-    height: 80vh;
+.canvas-container {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    margin: 3vh auto;
+    
 }
+
+#myChart {
+    display: block;
+    box-sizing: border-box;
+    height: 40vh;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+#myChartpastel, .canvas-anillo {
+    display: block;
+    box-sizing: border-box;
+    height: 325px;
+    width: 325px;
+    margin: auto;
+}
+
+.canvas-cant{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-cant {
+    width: 300px;
+    height: 25vh;
+    margin: 2vh auto;
+    background-color: blue;
+}
+
+
+.canvas-bar {
+    width: 60vh;
+    height: 50vh;
+    background-color: #fff;
+    margin: auto;
+}
+
+.canvas-pie, .canvas-anillo {
+    margin: 5vh auto;
+    width: 40vh;
+    height: 40vh;
+}
+
+.canvas-bar h3, .canvas-pie h3, .canvas-anillo h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-cant {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-cant h2 {
+    font-size: 5rem;
+    line-height: 0rem;
+    margin: auto;
+    margin-bottom: 0
+    ;
+}
+
+.card-cant p {
+    font-size: 1.5rem;
+    line-height: 0rem;
+    margin: auto;
+}
+

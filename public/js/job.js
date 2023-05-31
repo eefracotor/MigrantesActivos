@@ -77,3 +77,9 @@ cardVaga5.addEventListener("click", function() {
           </div>
         `
     })
+
+    function mostrarSeccion() {
+        var seccion = document.getElementById("vacancies");
+        seccion.style.display = "flex";
+      }
+      
