@@ -37,6 +37,10 @@ nav {
     background-color: #f2f2f2;
 }
 
+.mr-title img {
+    filter: invert(36%) sepia(86%) saturate(2765%) hue-rotate(196deg) brightness(100%) contrast(103%);
+}
+
 .mr-title h1 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -60,6 +64,7 @@ nav {
     text-align: justify;
     border-radius: 5px 25px;
     background-color: #f2f2f2;
+  
 }
 
 .main-info p {
@@ -71,7 +76,8 @@ nav {
 .carousel {
     width: 100%;
     height: 100px;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
+    backdrop-filter: blur(10px);
     top: 10vh;
     display: flex;
     
@@ -82,10 +88,11 @@ nav {
     height: auto;
     margin: auto;
     font-size: 2rem;
-    color: #000;
+    /* color: #000; */
+    color: #f2f2f2;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    justify-content: space-around;
 }
 
 
@@ -282,6 +289,10 @@ nav {
     align-content: center;
  }
 
+ .cft img {
+    filter: invert(36%) sepia(86%) saturate(2765%) hue-rotate(196deg) brightness(100%) contrast(103%);
+ }
+
  .whatsis-visa {
     padding: 30px;
  }
@@ -318,7 +329,9 @@ nav {
 .ask-title {
     display: flex;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .ask-title h2 {
