@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/profile.css">
+    <link rel="stylesheet" href="resources/css/profile-emp.css">
+    <link rel="stylesheet" href="resources/css/inicio-emp.css">
+    <title>Distribucion Demografica</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+</head>
+<body>
+    <nav class="all">
+        <!-- <div class="top">
+            <div class="logo"><a href="#"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
+            <div class="login">
+                <a href="/login" class="btn btn-primary">login</a >
+            </div>
+        </div> -->
+        <div class="menu-top">
+            <div class="pages">
+                <div class="logo"><a href="#"><img src="resources/img/logo-mig.png" alt="" class="logo-top"></a></div>
+                <ul>
+                    <li><a href="/"><button class="btn"><img src="resources/img/home.png"></button></a></li>
+                    <!-- <li><a href="info"><button class="btn">General Information</button></a></li> -->
+                    <li><a href="mr"><button class="btn">Migratory Regularization</button></a></li>
+                    <li><a href="education"><button class="btn">Education</button></a></li>
+                    <li><a href="job"><button class="btn">Job</button></a></li>
+                </ul>
+            </div>
+            <div class="srch-btn">
+                <!-- <div class="search">Buscar</div> -->
+                <% if (login){ %>
+                    <div class="loged">
+                        <img src="resources/img/assets/icon-avatar.svg" alt="">
+                        <a href="/profile"><p><%= user %></p></a>
+                        <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
+                    </div>
+                <% } else { %>
+                    <a href="/login" class="btn btn-primary">login</a >                
+                <% } %>
+                <div class="gtranslate_wrapper lng-google"></div>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- <h1>ChartJs</h1> -->
+    <!-- <div id="cantMasc" data-variable="<%= resuluts[0].cant %>"></div>
+    <div id="cantFem" data-variable="<%= resuluts[1].cant %>"></div> -->
+    <div class="canvas-cant">
+        <div class="card-cant">
+            <h2><%= resuluts3[0].cant %></h2>
+            <p>Active Vacancies</p>
+        </div>
+        <div class="card-cant">
+            <h2><%= resuluts3[0].cant %></h2>
+            <p>Evaluations</p>
+        </div>
+        <div class="card-cant filtros">
+            <!-- <h2>Filtros</h2> -->
+                <!-- <input type="select" class="mycheck" id="mycheck"> <label for="mycheck">Country</label> -->
+                <div class="sidebar-box">
+                    <select class="styled-select">
+                    <option>Choose a Country</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>   <option>Viernes</option>
+                    </select>
+                </div>
+                <!-- <input type="checkbox" class="mycheck" id="mycheck"> <label for="mycheck">State</label> -->
+
+                <div class="sidebar-box">
+                    <select class="styled-select">
+                    <option>Choose a State</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>   <option>Viernes</option>
+                    </select>
+                </div>
+                <!-- <input type="checkbox" class="mycheck" id="mycheck"> <label for="mycheck">City</label> -->
+                <div class="sidebar-box">
+                    <select class="styled-select">
+                    <option>Choose a City</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>   <option>Viernes</option>
+                    </select>
+                </div>
+        </div>
+        <div class="card-cant">
+                <!-- <input type="checkbox" class="mycheck" id="mycheck"> <label for="mycheck">Gender</label> -->
+                <div class="sidebar-box">
+                    <select class="styled-select">
+                    <option>Choose a Gender</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>   <option>Viernes</option>
+                    </select>
+                </div>
+                <!-- <input type="checkbox" class="mycheck" id="mycheck"> <label for="mycheck">Areas of Interests</label> -->
+                <div class="sidebar-box">
+                    <select class="styled-select">
+                    <option>Areas of Interests</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>   <option>Viernes</option>
+                    </select>
+                </div>
+                <div class="sidebar-box">
+                    <select class="styled-select">
+                    <option>Choose Age Group</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>   <option>Viernes</option>
+                    </select>
+                </div>
+        </div>
+    </div>
+
+    <!-- Graficos -->
+    <div class="canvas-container">
+        <div class="canvas-pie">
+            <h3>Registered migrants by state</h3>
+            <canvas id="myChartpastel" class="myChart"></canvas>
+        </div>
+        <div class="canvas-bar">
+            <h3>Registered migrants by gender</h3>
+            <canvas id="myChart" class="myChart"></canvas>
+        </div>
+        <div class="canvas-anillo">
+            <h3>Areas of Interests</h3>
+            <canvas id="myChartring" class="myChart"></canvas>
+        </div>
+        <div class="canvas"></div>
+    </div>
+
+
+    
+    <!-- estadisticas por estado -->
+    <% for(var i=0; i < resuluts2L; i++) { %> 
+        <input type="hidden" id="ce-<%= [i] %>" value="<%= resuluts2[i].cantidad %>">
+        <input type="hidden" id="es-<%= [i] %>" value="<%= resuluts2[i].estado_res %>">
+        <% } %>
+        <input type="hidden" id="estado_res" value="<%= resuluts2L %>">
+        <!-- fin estadisticas por estado -->
+        
+        <!-- Estadisticas por genero -->
+    <input type="hidden" id="cantFem" value="<%= resuluts[0].cant %>">
+    <input type="hidden" id="cantMasc" value="<%= resuluts[1].cant %>">
+        <!--Fin estadisticas por genero -->
+
+    <!-- estadisticas por areas de intereses -->
+    <% for(var i=0; i < resuluts2L; i++) { %> 
+        <input type="hidden" id="ce-<%= [i] %>" value="<%= resuluts2[i].cantidad %>">
+        <input type="hidden" id="es-<%= [i] %>" value="<%= resuluts2[i].estado_res %>">
+    <% } %>
+        <input type="hidden" id="estado_res" value="<%= resuluts2L %>">
+    <!-- fin estadisticas por estado -->
+           
+      
+    
+        
+        
+        <!-- Grafico por genero -->
+    <script>
+        // Obtén una referencia al elemento canvas
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var cantMasc = document.getElementById('cantMasc').value;
+        var cantFem = document.getElementById('cantFem').value;
+        // Crea el objeto de configuración del gráfico
+        var chartConfig = {
+        type: 'bar', // Tipo de gráfico (en este caso, de barras)
+        data: {
+        labels: ['Masculino', 'Femenino'], // Etiquetas del eje X
+        datasets: [
+            {
+            label: 'Cantidades', // Etiqueta de la serie de datos
+            data: [ cantMasc , cantFem ], // Valores de la serie de datos
+            // background
+            }
+        ]
+        }
+        };
+
+        // Crea el gráfico utilizando Chart.js
+        var myChart = new Chart(ctx, chartConfig);
+    </script>
+
+        
+    <!-- Grafico por estados do brasil -->
+    <script>
+        // Obtén una referencia al elemento canvas
+        var ctx = document.getElementById('myChartpastel').getContext('2d');
+        var num = document.getElementById('estado_res').value;
+        var CantEstado = []; 
+        var estado = []; 
+        // console.log(num);
+        for(var i=0; i < num ; i++) {
+            CantEstado.push(document.getElementById(`ce-${i}`).value) ; 
+            // console.log(document.getElementById(`ce-${i}`))
+            estado.push(document.getElementById(`es-${i}`).value);
+            // console.log(document.getElementById(`es-${i}`))
+        };
+        // Crea el objeto de configuración del gráfico
+        var chartConfig = {
+        type: 'pie', // Tipo de gráfico (en este caso, tipo pizza o pastel)
+        data: {
+        labels: estado, // Etiquetas del eje X
+        datasets: [
+            {
+            label: 'Cantidades', // Etiqueta de la serie de datos
+            data: CantEstado, 
+            }
+        ]
+        }
+        };
+
+    // Crea el gráfico utilizando Chart.js
+    var myChart = new Chart(ctx, chartConfig);
+    </script>
+
+    <!-- Grafico de areas de interese -->
+    <script>
+        // Obtén una referencia al elemento canvas
+        var ctx = document.getElementById('myChartring').getContext('2d');
+        var num = document.getElementById('estado_res').value;
+        var CantEstado = []; 
+        var estado = []; 
+        // console.log(num);
+        for(var i=0; i < num ; i++) {
+            CantEstado.push(document.getElementById(`ce-${i}`).value) ; 
+            // console.log(document.getElementById(`ce-${i}`))
+            estado.push(document.getElementById(`es-${i}`).value);
+            // console.log(document.getElementById(`es-${i}`))
+        };
+        // Crea el objeto de configuración del gráfico
+        var chartConfig = {
+        // type: 'doughnut', // Tipo de gráfico (en este caso, tipo pizza o pastel)
+        type: 'doughnut', // Tipo de gráfico (en este caso, tipo pizza o pastel)
+        data: {
+            datasets: [
+                {
+                    label: 'Cantidades', // Etiqueta de la serie de datos
+                    data: CantEstado, 
+                }
+            ],
+            labels: estado, // Etiquetas del eje X
+        }
+        };
+
+    // Crea el gráfico utilizando Chart.js
+    var myChart = new Chart(ctx, chartConfig);
+    </script>
+
+    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","pt","ja","es","ht"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d","alt_flags":{"pt":"brazil"}}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> 
+
+</body>
+</html>

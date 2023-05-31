@@ -49,19 +49,72 @@ app.get('/info', (req, res)=>{
 
 //regulaacion migratoria
 app.get('/mr', (req, res)=>{
-    res.render('mr');
+    if(req.session.loggedin){
+        res.render('mr',{
+            login: true,
+            user : req.session.user,
+            name: req.session.name
+        });
+    }else{
+        res.render('mr',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
 //Educacion
-app.get('/education', (req, res)=>{
-    res.render('education')
+app.get('/education',(req, res)=>{
+    if(req.session.loggedin){
+        res.render('education',{
+            login: true,
+            user : req.session.user,
+            name: req.session.name
+        });
+    }else{
+        res.render('education',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
-//Trabajo (JOB)
+// Aba Emprego- Trabajo-JOB carga a lista de vagas postadas
 app.get('/job', (req, res)=>{
-    res.render('job')
+    connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa', async(error, resuluts)=>{
+        if(error){
+            console.log(error)
+        }else{
+            // console.log(resuluts);
+            if(req.session.loggedin){
+                res.render('job',{
+                    login: true,
+                    user : req.session.user,
+                    name: req.session.name,
+                    resuluts:resuluts,
+                    nombre: resuluts[0].nombre,
+                    descrip: resuluts[0].description
+                });
+            }else{
+                res.render('job',{
+                    login: false,
+                    resuluts:resuluts,
+                    nombre: resuluts[0].nombre,
+                    descrip: resuluts[0].description
+                    // name: 'Debe iniciar sesión'
+                });
+            }
+            // res.render('job', {
+            //     resuluts:resuluts,
+            //     nombre: resuluts[0].nombre,
+            //     descrip: resuluts[0].description
+            // })
+
+        }
+    })
 })
 
+// Para entrar noperfil da pesooa logada
 app.get('/profile', (req, res)=>{
     if(req.session.loggedin){
         const user = req.session.user;
@@ -80,23 +133,33 @@ app.get('/profile', (req, res)=>{
                     });
     
                 }else{
-                    res.render('profile-emp',{
-                        login: true,
-                        user: req.session.user,
-                        name: req.session.name});
+                    //cargar info BD 
+                    const id = resuluts[0].id;
+                    req.session.name = resuluts[0].name;
+                    connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa INNER JOIN users as u ON u.id = e.id_user AND u.id = ?', [id], async(error, resuluts2)=>{
+                                if(error){
+                                    console.log(error)
+                                }else{
+                                    console.log(id);
+                                    console.log(resuluts2);
+                                    res.render('profile-emp', {
+                                        login: true,
+                                        empresa: true,
+                                        user: req.session.user,
+                                        name: req.session.name,
+                                        resuluts:resuluts2,
+                                        nombre: resuluts2[0].nombre,
+                                        descrip: resuluts2[0].description
+                                    })
+                        
+                                }
+                            })
+                    // res.render('profile-emp',{
+                    //     login: true,
+                    //     user: req.session.user,
+                    //     name: req.session.name});
     
                 }
-            // req.session.loggedin = true;
-            // req.session.id = resuluts[0].id
-            // req.session.user = resuluts[0].user;
-            // req.session.rol = resuluts[0].rol;
-            // if(req.session.rol == "migrante"){
-            //     res.render('profile');
-
-            // }else{
-            //     res.render('profile-emp');
-
-            // }
         })
     } else {
         res.render('login',{
@@ -127,14 +190,94 @@ app.get('/edit-eprofile', (req, res)=>{
     res.render('edit_emp')
 })
 
-// Perfil de usuario migrante
+// Teste apra motrar motrar perfil da empresa
 // app.get('/profile', (req, res)=>{
-//     res.render('profile')
-// })
+//     connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', 2, async(error, resuluts)=>{
+//         if(error){
+//             console.log(error)
+//         }else{
+//             // console.log(resuluts);
+//             res.render('profile-emp copy', {
+//                 resuluts:resuluts,
+//                 nombre: resuluts[0].nombre,
+//                 descrip: resuluts[0].description
+//             })
+
+//         }
+//     })
+// });
+
+// ENtrar no perfil da empresa
+app.get('/profile:id', (req, res)=>{  
+    const id = req.params.id;
+    if(req.session.loggedin){
+                const user = req.session.user;
+                connection.query('SELECT * FROM users WHERE user = ?', [user], async (error, resuluts)=>{
+                    if(error){
+                        console.log("error "+ error.message)
+                    }else {
+                        connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', [id], async(error, resuluts2)=>{
+                            if(error){
+                                console.log(error)
+                            }else{
+                                // console.log(resuluts);
+                                req.session.user = resuluts[0].user;
+                                res.render('profile-emp', {
+                                    login: true,
+                                    empresa: false,
+                                    user: req.session.user,
+                                    name: req.session.name,
+                                    resuluts:resuluts2,
+                                    nombre: resuluts2[0].nombre,
+                                    descrip: resuluts2[0].description
+                                })
+                            }
+                        })
+                }
+            })
+            }else{
+                connection.query('SELECT v.* ,e.nombre, e.description FROM vagas v INNER JOIN empresa as e ON e.id = v.id_empresa AND e.id = ?', [id], async(error, resuluts)=>{
+                    if(error){
+                        console.log(error)
+                    }else{
+                        // console.log(resuluts);
+                        res.render('profile-emp', {
+                            login: false,
+                            empresa: false,
+                            resuluts:resuluts,
+                            nombre: resuluts[0].nombre,
+                            descrip: resuluts[0].description
+                        })
+            
+                    }
+                })
+                
+            };
+    
+})
 
 // Editar Perfil de usuario migrante
 app.get('/edit-mprofile', (req, res)=>{
-    res.render('edit-mig')
+    if(req.session.loggedin){
+        const user = req.session.user;
+        connection.query('SELECT * FROM users u INNER JOIN migrantes m ON u.id = m.id_user AND u.user = ?', [user],async (error, resuluts)=>{
+            if(error){
+                console.log(error)
+            }else{
+                res.render('edit-mig',{
+                    login: true,
+                    user : req.session.user,
+                    name: req.session.name,
+                    resuluts: resuluts
+                });
+            }
+        })
+    }else{
+        res.render('index',{
+            login: false,
+            // name: 'Debe iniciar sesión'
+        });
+    }
 })
 
 // Listado de vagas
@@ -142,14 +285,20 @@ app.get('/vagas', (req, res)=>{
     res.render('vagas')
 })
 
+// creacion de vagaas
+app.get('/add-vagas', (req, res)=>{
+    res.render('add_vaga')
+})
+
 //10 - Creando el registro
 app.post('/register', async (req, res)=>{
-    const user = req.body.user;
     const name = req.body.name;
+    const user = req.body.user;
+    const email = req.body.email;
     const rol = req.body.rol;
     const pass = req.body.pass;
     let passwordHaaah = await bcryptjs.hash(pass, 8);
-    connection.query('INSERT INTO users SET ?', {user:user, name:name, rol:rol, pass:passwordHaaah}, async(error, resuluts)=>{
+    connection.query('INSERT INTO users SET ?', {user:user, name:name, email:email, rol:rol, pass:passwordHaaah}, async(error, resuluts)=>{
         if(error) {
             console.log(error);
         } else {
@@ -199,15 +348,51 @@ app.post('/auth', async (req, res) =>{
                 req.session.id = resuluts[0].id
                 req.session.user = resuluts[0].user;
                 req.session.rol = resuluts[0].rol;
-                res.render('login',{
-                    alert: true,
-                    alertTitle: "Conexión Exitosa",
-                    alertMessage: "¡LOGIN CORRECTO!",
-                    alertIcon: 'success',
-                    showConfirmButton:false,   
-                    timer: 1500,
-                    ruta:''
-                });
+                if(req.session.rol === 'migrante') {
+                    // crear o definir pantala de inicio para migrantes
+                    res.render('login',{
+                        alert: true,
+                        alertTitle: "Conexión Exitosa",
+                        alertMessage: "¡LOGIN CORRECTO!",
+                        alertIcon: 'success',
+                        showConfirmButton:false,   
+                        timer: 1500,
+                        ruta:''
+                    });                    
+                }else{
+                    req.session.loggedin = true;
+                    req.session.id = resuluts[0].id
+                    // const id = req.session.id;
+                    req.session.user = resuluts[0].user;
+                    req.session.rol = resuluts[0].rol;
+                    // crear pantalla de inicio para empresas
+                    connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo; ', async (error, resuluts1) =>{
+                        if(error){
+                            console.log(error)
+                        }else{ //2
+                        connection.query('SELECT COUNT(estado_res) cantidad, estado_res FROM migrantes WHERE pais_res = "Brasil" GROUP BY estado_res;', async (error, resuluts2) =>{
+                            if(error){
+                                console.log(error)
+                            }else {//3
+                                connection.query('SELECT COUNT(titulo) cant FROM vagas v INNER JOIN empresa e ON e.id = v.id_empresa INNER JOIN users u ON u.id = e.id_user AND u.id = ? AND v.ativa = 1;', [resuluts[0].id], async (error, resuluts3) =>{
+                                    if(error){
+                                        console.log(error)
+                                    }else{//4                                        
+                                        res.render('inicio-emp', {
+                                            login: true,
+                                            user: req.session.user,
+                                            resuluts: resuluts1,
+                                            resuluts2: resuluts2,
+                                            resuluts2L: resuluts2.length,
+                                            resuluts3: resuluts3
+                                        })
+                                    }//4
+                                })
+                            }//3
+                            })
+                        } //2
+                    })
+                }
             }
         })
     }else{
@@ -247,6 +432,87 @@ app.get('/logout', (req, res)=>{
 })
 
 
-app.listen(3000, (req, res)=>{
+// Teste python
+app.get('/python', (req, res)=>{
+    if(req.session.loggedin){
+        const user = req.session.user;
+        connection.query('SELECT * FROM users WHERE user = ?',[user], async (error, resuluts) =>{
+            if(error){
+                console.log(error)
+            }else{
+                const id = resuluts[0].id;
+                connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo; ', async (error, resuluts1) =>{ //1
+                    if(error){
+                        console.log(error)
+                    }else{ //2
+                    connection.query('SELECT COUNT(estado_res) cantidad, estado_res FROM migrantes WHERE pais_res = "Brasil" GROUP BY estado_res;', async (error, resuluts2) =>{
+                        if(error){
+                            console.log(error)
+                        }else {//3
+                            connection.query('SELECT COUNT(titulo) cant FROM vagas v INNER JOIN empresa e ON e.id = v.id_empresa INNER JOIN users u ON u.id = e.id_user AND u.id = ? AND v.ativa = 1;', [id], async (error, resuluts3) =>{
+                                if(error){
+                                    console.log(error)
+                                }else{//4                                        
+                                    res.render('inicio-emp', {
+                                        login: true,
+                                        user: req.session.user,
+                                        resuluts: resuluts1,
+                                        resuluts2: resuluts2,
+                                        resuluts2L: resuluts2.length,
+                                        resuluts3: resuluts3
+                                    })
+                                    // console.log(id)
+                                }//4
+                            })
+                        }//3
+                        })
+                    } //2
+                }) //1
+
+            }
+        })
+        // res.render('index',{
+        //     login: true,
+        //     user : req.session.user,
+        //     name: req.session.name
+        // });
+    }
+    // connection.query('SELECT COUNT(sexo) cant, sexo FROM migrantes GROUP BY sexo; ', async (error, resuluts) =>{
+    //     if(error){
+    //         console.log(error)
+    //     }else{ //2
+    //     connection.query('SELECT COUNT(estado_res) cantidad, estado_res FROM migrantes WHERE pais_res = "Brasil" GROUP BY estado_res;', async (error, resuluts2) =>{
+    //         if(error){
+    //             console.log(error)
+    //         }else {//3
+    //             connection.query('SELECT COUNT(titulo) cant FROM vagas WHERE id_empresa = 2 AND ativa = 1;', async (error, resuluts3) =>{
+    //                 if(error){
+    //                     console.log(error)
+    //                 }else{//4
+    //                     res.render('inicio-emp', {
+    //                         resuluts: resuluts,
+    //                         resuluts2: resuluts2,
+    //                         resuluts2L: resuluts2.length,
+    //                         resuluts3: resuluts3
+    //                     })
+    //                 }//4
+    //             })
+    //         }//3
+    //         })
+    //     } //2
+    // })
+    // req.session.loggedin = true;
+    // req.session.id = resuluts[0].id
+    // req.session.user = resuluts[0].user;
+    // req.session.rol = resuluts[0].rol;
+    // crear pantalla de inicio para empresas
+    
+                
+}
+)
+
+    app.listen(3000, (req, res)=>{
     console.log('SERVER IS RUNNIG IN http://localhost:3000');
-})
+});
+
+module.exports = connection;

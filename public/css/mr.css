@@ -35,8 +35,10 @@ nav {
     padding: 5px;
     border-radius: 5px 25px;
     background-color: #f2f2f2;
-    /* background-color: #ffffff9c; */
-    /* background-color: #E0FFFF; */
+}
+
+.mr-title img {
+    filter: invert(36%) sepia(86%) saturate(2765%) hue-rotate(196deg) brightness(100%) contrast(103%);
 }
 
 .mr-title h1 {
@@ -60,11 +62,9 @@ nav {
     font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
-    /* border: 1px solid #000; */
     border-radius: 5px 25px;
     background-color: #f2f2f2;
-    /* background-color: #ffffff9c; */
-    /* background-color: #E0FFFF; */
+  
 }
 
 .main-info p {
@@ -76,10 +76,9 @@ nav {
 .carousel {
     width: 100%;
     height: 100px;
-    background-color: #f2f2f2;
-    top: 90px;
-    /* background-color: #ffffff9c; */
-    /* background-color: #E0FFFF; */
+    /* background-color: #f2f2f2; */
+    backdrop-filter: blur(10px);
+    top: 10vh;
     display: flex;
     
 }
@@ -89,46 +88,15 @@ nav {
     height: auto;
     margin: auto;
     font-size: 2rem;
-    color: #000;
+    /* color: #000; */
+    color: #f2f2f2;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    justify-content: space-around;
 }
 
 
  /* Estils cards */
-
- /* .card-container-visa {
-    width: 80%;
-    height: auto;
-    display: grid;
-    justify-content: center;
-    margin: auto;
-    grid-template-columns: 400px 400px; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: 600px 600px; */
-    /* grid-template-rows: auto;
-    gap: 60px;
-    padding: 35px;
-} */
-
-/* .card-visa {
-    width: 400px;
-    border-radius: 25px;
-    height: auto;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    background-color: #E0FFFF;
-    background-clip: border-box;
-} */
-
-/* .card-img-visa {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    /* height: 2vh;
-}  */
 
 .card-descrip-visa h2, .card-descrip-cpf h2, .card-descrip-refugio h2 {
     font-size: 1.1rem;
@@ -157,16 +125,11 @@ nav {
     display: none;
 }
 
-/* .card-descrip-visa p {
-    font-size: 1rem;
-    text-align: justify;
-} */
 
 /* Estilos CPF */
 .card-container-cpf, .card-container-visa, .mapa-container {
     width: 100%;
     max-width: 1700px;
-    /* margin-top: 70px; */
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -187,9 +150,7 @@ nav {
     overflow: hidden;
     text-align: center;
     transition: all 0.25s;
-    /* background-color: #E0FFFF; */
     background-color: #f2f2f2;
-    /* background-color: #ffffff9c; */
     margin: 20px;
 }
 
@@ -201,9 +162,7 @@ nav {
     overflow: hidden;
     text-align: center;
     transition: all 0.25s;
-    /* background-color: #E0FFFF; */
     background-color: #f2f2f2;
-    /* background-color: #ffffff9c; */
     margin: 20px;
 }
 
@@ -226,7 +185,6 @@ nav {
 
 .card-parrafo {
     height: 225px;
-    /* font-size: 1.2rem; */
     margin: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -277,9 +235,7 @@ nav {
 
 .mr-details-title {
     width: 50%;
-    /* background-color: #ffffff9c; */
     background-color: #f2f2f2;
-    /* background-color: #E0FFFF; */
     text-align: center;
     border-radius: 5px 25px;
     padding: 20px;
@@ -293,15 +249,6 @@ nav {
 
 /* Estilos Mapa */
 
-/* .mapa-container { */
-    /* width: 80%;
-    height: auto;
-    display: flex;
-    margin: auto; */
-    /* justify-content: center;
-    align-items: center; */
-/* } */
-
 .mapa-info {
     width: 600px;
     height: auto;
@@ -309,11 +256,8 @@ nav {
     font-size: 1.1rem;
     font-weight: 500;
     text-align: justify;
-    /* border: 1px solid #000; */
     border-radius: 5px 25px;
     background-color: #f2f2f2;
-    /* background-color: #ffffff9c; */
-    /* background-color: #E0FFFF; */
 }
 
 .mapa-info p {
@@ -326,7 +270,6 @@ nav {
 .mapa-Br {
     width: 45%;
     margin: auto;
-    /* height: 70vh; */
  }
 
  .mapa-Br path {
@@ -337,8 +280,6 @@ nav {
 
  .mapa-Br path:hover {
     fill: #000080;
-    /* stroke: #8B4513;
-    stroke-width: 1px; */
  }
 
  .cft {
@@ -346,6 +287,10 @@ nav {
     display: flex;
     justify-content: center;
     align-content: center;
+ }
+
+ .cft img {
+    filter: invert(36%) sepia(86%) saturate(2765%) hue-rotate(196deg) brightness(100%) contrast(103%);
  }
 
  .whatsis-visa {
@@ -384,19 +329,19 @@ nav {
 .ask-title {
     display: flex;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .ask-title h2 {
     font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 /* Estilos Modales */
 .modal-dialog {
     max-width: 600px;
-    /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
@@ -432,7 +377,6 @@ nav {
 
 .txt {
     padding: 35px;
-    /* background-color: #cecece; */
 }
 
 .btn-secondary {
@@ -465,7 +409,6 @@ nav {
 
 @media screen and (max-width: 600px) {
     .mapa-Br {
-      /* background-color: lightblue; */
       width: 80%;
     }
   }

@@ -39,19 +39,25 @@
             <div class="inputbox">
                 <ion-icon name="full-name-outline"></ion-icon>
             <label>Nombre</label>
-            <input type="text"  id="name" name="name" required autofocus>
+            <input type="text"  id="name" name="name" required autofocus  autocomplete="off">
             </div>
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+            <label>User</label>
+            <input type="text"  id="user" name="user"  autocomplete="off">
+                </div>
             
             <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
-            <label>Mail</label>
-            <input type="text"  id="user" name="user" >
+            <label>E-mail</label>
+            <input type="text"  id="email" name="email"  autocomplete="off">
                 </div>
             
                 <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <label>Contraseña</label>
-                <input type="password"  id="pass" name="pass" required >
+                <input type="password"  id="pass" name="pass" required  >
                 </div>
 
                 <div class="" id="select">
@@ -90,5 +96,10 @@
             })
         </script>
     <% } %>
+
+    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","pt","ja","es","ht"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d","alt_flags":{"pt":"brazil"}}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>  
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/js.js"></script>
 </body>
 </html>

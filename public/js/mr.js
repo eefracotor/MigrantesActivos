@@ -527,7 +527,7 @@ function imprimirCpf() {
     `
         <div class="mr-title">
             <div class="ask-title">
-                <a id="whatsis-visa"><img src="resources/img/down.png"></a><h2>O que é o Cadastro de Pessoa Física (CPF)?</h2>
+                <a id="whatsis-visa"><img src="resources/img/down.png" class="whatsis-visaImg"></a><h2>O que é o Cadastro de Pessoa Física (CPF)?</h2>
             </div>
             <div class="whatsis-visa">
                 <p>É um banco de dados gerenciado pela Receita Federal do Brasil (RFB), que armazena informações cadastrais de contribuintes obrigados à inscrição no CPF ou de cidadãos que se inscreveram voluntariamente.</p>
