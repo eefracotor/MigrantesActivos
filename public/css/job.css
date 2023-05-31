@@ -9,7 +9,8 @@ a{
 }
 
 .titulo {
-  justify-content: center;
+  margin-top: 100px;
+  /* justify-content: center; */
   text-align: center;
 }
 
