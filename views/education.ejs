@@ -26,12 +26,12 @@
           <div class="srch-btn">
               <!-- <div class="search">Buscar</div> -->
               <% if (login){ %>
-                  <div class="loged">
-                      <img src="resources/img/assets/icon-avatar.svg" alt="">
-                      <a href="/profile"><p><%= user %></p></a>
-                      <!-- <p><%= name %></p> -->
-                      <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
-                  </div>
+                <div class="loged">
+                  <a href="/profile" title="<%= user %>">
+                   <img src="resources/img/assets/icon-avatar.svg" alt="">
+                  </a>
+                  <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
+              </div>
               <% } else { %>
                   <a href="/login" class="btn btn-primary">login</a >                
               <% } %>

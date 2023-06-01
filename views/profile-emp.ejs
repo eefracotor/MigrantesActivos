@@ -38,11 +38,8 @@
                 <!-- <div class="search">Buscar</div> -->
                 <% if (login){ %>
                     <div class="loged">
-                        <img src="resources/img/assets/icon-avatar.svg" alt="">
-                        <a href="/profile">
-                            <p>
-                                <%= user %>
-                            </p>
+                        <a href="/profile" title="<%= user %>">
+                         <img src="resources/img/assets/icon-avatar.svg" alt="">
                         </a>
                         <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
                     </div>
@@ -81,11 +78,10 @@
     </header>
 
 
-    <div class="inf-emp" id="about">
-        <h2>
-            <%= descrip %>
-        </h2>
-
+    <div class="inf-emp descrip" id="about">
+        <div class="description_emp">
+            <p><%= descrip %></p>
+        </div>
     </div>
 
     <!-- Vacantes -->
@@ -94,6 +90,8 @@
             <div class="add" id="add-vaga">
                 <button class="btn btn-primary">Add vacant</button>
             </div>
+            <% }else{ %>
+            <div class="add" id="add-vaga"></div>                
             <% } %>
                 <div class="lista-vagas">
                     <% resuluts.forEach((vagas)=> { %>
@@ -214,47 +212,88 @@
     </div>
 
     <!-- :Formulario add Vacantes -->
-    <% if(empresa){ %>
-        <div class="ad_vacant inf-emp container-vagas" id="add-vacant">
+    <% if(empresa){ %> <!-- 1 -->
+        <div class="add_vacant inf-emp container-vagas" id="add-vacant">
             <form action="">
                 <!-- <h1>Perfil de la empresa</h1> -->
-                <label for="title_vaga">Title
-                    <input type="text" id="title_vaga" name="title_vaga">
-                </label>
-                <label for="location">Location
-                    <input type="text" id="location" name="location">
-                </label>
-                <label for="jordana">Jornada
-                    <input type="text" id="jordana" name="jordana">
-                </label>
-                
-                <label for="beneficios">Beneficios
-                    <input type="text" id="beneficios" name="beneficios">
-                </label>
-                <label for="type_contrat">Tipo de contrato
-                    <input type="text" id="type_contrat" name="type_contrat">
-                </label>
-                <label for="horario">Horario
-                    <input type="text" id="horario" name="horario">
-                </label>
-                <label for="details">Details
-                    <input type="text" id="details" name="details">
-                </label>
+                <div class="detail-vaga-add">
+                    <label for="title_vaga">Title
+                        <input type="text" id="title_vaga" name="title_vaga">
+                    </label>
+                    <label for="location">Location
+                        <input type="text" id="location" name="location">
+                    </label>
+                </div>
+                <div class="detail-vaga-add">
+                    <label for="jordana">Jornada
+                        <input type="text" id="jordana" name="jordana">
+                    </label>
+                    
+                    <label for="beneficios">Beneficios
+                        <input type="text" id="beneficios" name="beneficios">
+                    </label>
+                </div>
+                <div class="detail-vaga-add">
+                    <label for="type_contrat">Tipo de contrato
+                        <input type="text" id="type_contrat" name="type_contrat">
+                    </label>
+                    <label for="horario">Horario
+                        <input type="text" id="horario" name="horario">
+                    </label>
+                </div>
+                <div class="detail-vaga-add">
+                    <label for="details">Details
+                        <input type="text" id="details" name="details">
+                    </label>
+                </div>
                 <div class="container-btn">
                     <input class="btn btn-success enviar" type="submit" value="Enviar">
                     <button class="btn btn-danger" id="cancel-add">Cancelar</button>
                 </div>
             </form>
         </div>
-        <% } %>
+    <% }else{ %> <!--1:2 -->
+            <div class="add_vacant inf-emp container-vagas" id="add-vacant"></div>
+                <div id="cancel-add"></div>
+    <% } %><!--1:2 -->
 
+
+            <!-- Comentarios -->
             <div class="inf-emp" id="aval">
                 <h3>Coments </h3>
                 <% if(!empresa){ %>
+                    <!-- Boton add comentarios -->
                     <div class="add" id="add-comment">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#input-comment">Add
-                            comments</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#input-comment">Add comments</button>
                     </div>
+                <% } %>
+                <div class="comments-container">
+                    <div class="comments">
+                        <div class="starts-comments">
+                            <p>User</p>
+                            <p>Stars</p>
+                        </div>
+                        <div class="description-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic sed
+                                beatae ab accusantium! At deleniti cum, consectetur, impedit sit harum unde nisi
+                                sequi expedita nesciunt earum laboriosam quas laborum.</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="starts-comments">
+                            <p>User</p>
+                            <p>Stars</p>
+                        </div>
+                        <div class="description-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic sed
+                                beatae ab accusantium! At deleniti cum, consectetur, impedit sit harum unde nisi
+                                sequi expedita nesciunt earum laboriosam quas laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <% if(!empresa){ %> <!-- 3 -->
+            </div>
+                    <!-- Modal para add comentario -->
                     <div class="modal fade" id="input-comment">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -283,43 +322,18 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <% if(!empresa){ %>
+                                    <% if(!empresa){ %> <!-- 3:1 -->
                                         <button class="btn btn-primary btn-modal">Edit</button>
                                         <button class="btn btn-primary btn-modal btn-success">Send</button>
-                                        <% } %>
-                                            <button type="button" class="btn btn-secondary btn-modal"
-                                                data-bs-dismiss="modal">Cerrar</button>
+                                    <% } %><!-- 3:1 -->
+                                        <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <% } %>
-                        <div class="comments-container">
-                            <div class="comments">
-                                <div class="starts-comments">
-                                    <p>User</p>
-                                    <p>Stars</p>
-                                </div>
-                                <div class="description-comment">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic sed
-                                        beatae ab accusantium! At deleniti cum, consectetur, impedit sit harum unde nisi
-                                        sequi expedita nesciunt earum laboriosam quas laborum.</p>
-                                </div>
-                            </div>
-                            <div class="comments">
-                                <div class="starts-comments">
-                                    <p>User</p>
-                                    <p>Stars</p>
-                                </div>
-                                <div class="description-comment">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam hic sed
-                                        beatae ab accusantium! At deleniti cum, consectetur, impedit sit harum unde nisi
-                                        sequi expedita nesciunt earum laboriosam quas laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-            </div>
+                <% } %><!-- 1;3 -->
+                        
+            
             <div class="inf-emp" id="salary">
                 <h4>Salaries</h4>
             </div>

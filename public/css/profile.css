@@ -90,7 +90,7 @@ li a {
     align-items: center;
 }
 .loged {
-    width: 150px;
+    width: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

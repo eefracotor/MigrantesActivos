@@ -36,11 +36,8 @@
                 <!-- <div class="search">Buscar</div> -->
                 <% if (login){ %>
                     <div class="loged">
-                        <img src="resources/img/assets/icon-avatar.svg" alt="">
-                        <a href="/profile">
-                            <p>
-                                <%= user %>
-                            </p>
+                        <a href="/profile" title="<%= user %>">
+                         <img src="resources/img/assets/icon-avatar.svg" alt="">
                         </a>
                         <a href="logout" title="Logout"><img src="resources/img/assets/turn-off.svg" alt=""></a>
                     </div>

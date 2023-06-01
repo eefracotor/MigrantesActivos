@@ -187,7 +187,7 @@ ul {
 
 
 .loged {
-    width: 150px;
+    width: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -198,7 +198,9 @@ ul {
     width: 50px;
     height: 50px;
 }
-
+ .btn-avat{
+    background-color: beige;
+ }
 .migrante {
     width: 70%;
     max-width: 600px;

@@ -3,13 +3,13 @@ var btnInfGeral = document.getElementById("sobre");
 var btnVacant = document.getElementById("vacant");
 var btnEval = document.getElementById("eval");
 var btnSalarios = document.getElementById("salarios");
-var btnaddVaga = document.getElementById('add-vaga')
-var btnCancelAddVga = document.getElementById("cancel-add")
+var btnaddVaga = document.getElementById('add-vaga');
+var btnCancelAddVga = document.getElementById("cancel-add");
 
 //Div donde se mostraran los detalles
 var InfGeral = document.getElementById("about");
 var Vacant = document.getElementById("vacancies");
-var addFormVaga = document.getElementById("add-vacant")
+var addFormVaga = document.getElementById("add-vacant");
 var Eval = document.getElementById("aval");
 var Salarios = document.getElementById("salary");
 
@@ -41,7 +41,7 @@ btnVacant.addEventListener("click", function(e){
 });
 
 // Btn- add-vaga
-btnaddVaga.addEventListener("click", function(e) {
+btnaddVaga.addEventListener("click", function(e){
     console.log("Add-vaga")
     formAddVagas();
 })
